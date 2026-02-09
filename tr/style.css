@@ -1,5 +1,5 @@
 
-  .basop {
+  .rtpsd {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,13 +7,13 @@
     justify-content: center;
   }
 
-  .basopslider {
+  .rtpsdslider {
     width: 100%;
     position: relative;
     z-index: 0;
   }
 
-  .basopmenu-sticky {
+  .rtpsdmenu-sticky {
     width: 100%;
     position: sticky;
     top: 0;
@@ -21,7 +21,7 @@
     margin-top: calc(-150px - 15px) ;
   }
 
-  .basoptitle {
+  .rtpsdtitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -30,12 +30,12 @@
     z-index: 1;
   }
 
-  .basoptitle:has(.basoptitlebodylang:empty),
-  .basoptitle:has(.basoptitlebodylang ul:empty) {
+  .rtpsdtitle:has(.rtpsdtitlebodylang:empty),
+  .rtpsdtitle:has(.rtpsdtitlebodylang ul:empty) {
     display: none;
   }
 
-  .basoptitlebody {
+  .rtpsdtitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -43,29 +43,29 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .basoptitlebodytitle {
+  .rtpsdtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .basoptitlebodylang {
+  .rtpsdtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .basoptitlebodylang:empty,
-  .basoptitlebodylang ul:empty {
+  .rtpsdtitlebodylang:empty,
+  .rtpsdtitlebodylang ul:empty {
     display: none;
   }
 
-  .basoptitlebodylang ul {
+  .rtpsdtitlebodylang ul {
     display: flex;
     gap: 5px;
   }
 
-  .basopheader {
+  .rtpsdheader {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -75,13 +75,13 @@
     gap: 30px;
   }
 
-  .basopbody {
+  .rtpsdbody {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
 
-  .basop-mobile-toggle {
+  .rtpsd-mobile-toggle {
     display: none;
     background: #116f65;
     color: #fff;
@@ -93,34 +93,34 @@
     cursor: pointer;
   }
 
-  .basop-mobile-toggle span {
+  .rtpsd-mobile-toggle span {
     font-size: 24px;
   }
 
   /* Overlay ve kapatma butonu: sadece mobilde kullanılır, masaüstünde gizli */
-  .basopmenuoverlay-slider {
+  .rtpsdmenuoverlay-slider {
     display: none;
   }
 
-  .basopmenuclose-slider {
+  .rtpsdmenuclose-slider {
     display: none;
   }
 
-  .basopmenu {
+  .rtpsdmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     padding: 0 10px 0 10px;
   }
 
-  .basopmenulist {
+  .rtpsdmenulist {
     background-color: #116f65;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
   }
 
-  .basopmenubody {
+  .rtpsdmenubody {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -130,7 +130,7 @@
   }
 
   /* Menü linkleri listesi (sadece doğrudan çocuk ul; dil listesi hariç) */
-  .basopmenulist > ul {
+  .rtpsdmenulist > ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -139,7 +139,7 @@
     padding: 0;
   }
 
-  .basopmenulist > ul a {
+  .rtpsdmenulist > ul a {
     padding: 10px;
     font-size: 16px;
     color: #fff !important;
@@ -151,18 +151,18 @@
     white-space: nowrap;
   }
 
-  .basopmenulist > ul a:hover {
+  .rtpsdmenulist > ul a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .basopmenulist > ul a.basop-menu-list-active {
+  .rtpsdmenulist > ul a.rtpsd-menu-list-active {
     color: #000000 !important;
   }
 
-  .basop-menu-list-active {
+  .rtpsd-menu-list-active {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
@@ -170,23 +170,23 @@
     cursor: pointer;
   }
 
-  .basopmenulistbody {
+  .rtpsdmenulistbody {
     width: 100%;
   }
 
-  .basoplanguages-mobile {
+  .rtpsdlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .basoplanguages-mobile:empty,
-  .basoplanguages-mobile ul:empty {
+  .rtpsdlanguages-mobile:empty,
+  .rtpsdlanguages-mobile ul:empty {
     display: none !important;
   }
 
   /* Dil seçici: li'ler her zaman yan yana (flex row) */
-  .basoplanguages-mobile ul {
+  .rtpsdlanguages-mobile ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -198,7 +198,7 @@
     align-items: center;
   }
 
-  .basoplanguages-mobile li {
+  .rtpsdlanguages-mobile li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -214,7 +214,7 @@
     justify-content: center;
   }
 
-  .basoplanguages-mobile li a {
+  .rtpsdlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +222,7 @@
     height: 100%;
   }
 
-  .basoplanguages-mobile li:hover {
+  .rtpsdlanguages-mobile li:hover {
     background-color: #ffffff;
     border-color: #000000;
   }
@@ -277,71 +277,71 @@
   }
 
   @media screen and (min-width: 1024px) {
-    .basopbodylogo {
+    .rtpsdbodylogo {
       height: 150px;
       max-width: 90vw;
     }
 
-    .basoptitle {
+    .rtpsdtitle {
       margin-bottom: -30px;
     }
   }
 
   @media screen and (max-width: 1024px) {
 
-    .basopmenu-sticky {
+    .rtpsdmenu-sticky {
       margin-top: -100px ;
     }
 
-    .basopheader {
+    .rtpsdheader {
       width: calc(100% - 20px);
       padding: 0 10px;
     }
 
-    .basopmenulist > ul {
+    .rtpsdmenulist > ul {
       flex-direction: row;
     }
 
-    .basopbodylogo {
+    .rtpsdbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .basoptitlebody {
+    .rtpsdtitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .basoptitlebodytitle {
+    .rtpsdtitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
 
-    .basoptitlebodylang {
+    .rtpsdtitlebodylang {
       display: none;
     }
 
-    .basopheader {
+    .rtpsdheader {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .basop-mobile-toggle {
+    .rtpsd-mobile-toggle {
       display: inline-flex;
     }
 
-    .basopbodylogo {
+    .rtpsdbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
     /* Overlay: mobilde menü açıkken arka plan karartma, tıklanınca kapanır */
-    .basopmenuoverlay-slider {
+    .rtpsdmenuoverlay-slider {
       display: none;
       position: fixed;
       top: 0;
@@ -355,7 +355,7 @@
       pointer-events: none;
     }
 
-    .basopmenuoverlay-slider.active {
+    .rtpsdmenuoverlay-slider.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
@@ -363,7 +363,7 @@
     }
 
     /* Sağdan açılan panel (Apple tarzı): fixed, sağda dışarıda başlar, açılınca kayar */
-    .basopmenulistbody {
+    .rtpsdmenulistbody {
       position: fixed;
       top: 0;
       right: -100%;
@@ -380,12 +380,12 @@
       padding: 0;
     }
 
-    .basopmenu.basopmenu-open .basopmenulistbody {
+    .rtpsdmenu.rtpsdmenu-open .rtpsdmenulistbody {
       right: 0;
     }
 
     /* Panel içi kapatma butonu */
-    .basopmenuclose-slider {
+    .rtpsdmenuclose-slider {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -396,11 +396,11 @@
       cursor: pointer;
     }
 
-    .basopmenuclose-slider span {
+    .rtpsdmenuclose-slider span {
       font-size: 28px;
     }
 
-    .basopmenulist {
+    .rtpsdmenulist {
       display: flex;
       flex-direction: column;
       padding: 0 12px 12px;
@@ -408,12 +408,12 @@
     }
 
     /* Mobil panel: menü linkleri dikey liste */
-    .basopmenulist > ul {
+    .rtpsdmenulist > ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .basopmenulist > ul a {
+    .rtpsdmenulist > ul a {
       font-size: 14px;
       width: 100%;
       padding: 12px;
@@ -422,27 +422,27 @@
       border-radius: 0;
     }
 
-    .basopmenulist > ul a:last-child {
+    .rtpsdmenulist > ul a:last-child {
       border-bottom: none;
     }
 
-    .basopmenulist > ul a:hover {
+    .rtpsdmenulist > ul a:hover {
       background-color: #ffffff;
       border-radius: 0;
     }
 
-    /* Dil seçici: panel açıkken görünür, li'ler yan yana (üstteki .basoplanguages-mobile ul/li kuralları geçerli) */
-    .basopmenu.basopmenu-open .basoplanguages-mobile {
+    /* Dil seçici: panel açıkken görünür, li'ler yan yana (üstteki .rtpsdlanguages-mobile ul/li kuralları geçerli) */
+    .rtpsdmenu.rtpsdmenu-open .rtpsdlanguages-mobile {
       display: block;
     }
 
-    .basoptitlebodytitle {
+    .rtpsdtitlebodytitle {
       font-size: 12px;
     }
   }
 
 
-  .vwhce {
+  .vs1qn {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -452,14 +452,14 @@
     width: 100%;
     box-sizing: border-box;
   }
-  .vwhcebody {
+  .vs1qnbody {
     width: var(--max);
     display: flex;
     flex-direction: column;
     gap: 60px;
     box-sizing: border-box;
   }
-  .vwhcebodyitem {
+  .vs1qnbodyitem {
     position: relative;
     background: #ffffff;
     border-radius: 36px;
@@ -477,7 +477,7 @@
     transform: translateY(60px) scale(0.95);
     animation: fadeInSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
-  .vwhcebodyitem.visible {
+  .vs1qnbodyitem.visible {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
@@ -519,7 +519,7 @@
       background-position: 1000px 0;
     }
   }
-  .vwhcebodyitem::before {
+  .vs1qnbodyitem::before {
     content: '';
     position: absolute;
     top: 0;
@@ -532,7 +532,7 @@
     z-index: 1;
     pointer-events: none;
   }
-  .vwhcebodyitem::after {
+  .vs1qnbodyitem::after {
     content: '';
     position: absolute;
     top: -50%;
@@ -546,38 +546,38 @@
     pointer-events: none;
     animation: shimmer 3s infinite;
   }
-  .vwhcebodyitem:hover {
+  .vs1qnbodyitem:hover {
     transform: translateY(-16px) scale(1.02);
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.16), 0 8px 24px rgba(0, 0, 0, 0.08);
     border-color: rgba(0, 0, 0, 0.1);
   }
-  .vwhcebodyitem:hover::before {
+  .vs1qnbodyitem:hover::before {
     opacity: 1;
   }
-  .vwhcebodyitem:hover::after {
+  .vs1qnbodyitem:hover::after {
     opacity: 1;
   }
-  .vwhcebodyitem.left {
+  .vs1qnbodyitem.left {
     flex-direction: row;
   }
-  .vwhcebodyitem.left .vwhcebodyitemimg {
+  .vs1qnbodyitem.left .vs1qnbodyitemimg {
     animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
-  .vwhcebodyitem.left .vwhcebodyitemcontent {
+  .vs1qnbodyitem.left .vs1qnbodyitemcontent {
     animation: slideInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     text-align: right;
   }
-  .vwhcebodyitem.right {
+  .vs1qnbodyitem.right {
     flex-direction: row-reverse;
   }
-  .vwhcebodyitem.right .vwhcebodyitemimg {
+  .vs1qnbodyitem.right .vs1qnbodyitemimg {
     animation: slideInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
-  .vwhcebodyitem.right .vwhcebodyitemcontent {
+  .vs1qnbodyitem.right .vs1qnbodyitemcontent {
     animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     text-align: left;
   }
-  .vwhcebodyitemimg {
+  .vs1qnbodyitemimg {
     position: relative;
     width: 30%;
     display: flex;
@@ -589,22 +589,22 @@
     opacity: 0;
     transition: background 0.5s ease;
   }
-  .vwhcebodyitem:hover .vwhcebodyitemimg {
+  .vs1qnbodyitem:hover .vs1qnbodyitemimg {
     background: linear-gradient(135deg, #f0f2f5 0%, #e1e5e9 50%, #f5f7fa 100%);
   }
-  .vwhcebodyitem.left .vwhcebodyitemimg {
+  .vs1qnbodyitem.left .vs1qnbodyitemimg {
     justify-content: flex-start;
     border-radius: 36px 0 0 36px;
     padding-left: 40px;
     padding-right: 20px;
   }
-  .vwhcebodyitem.right .vwhcebodyitemimg {
+  .vs1qnbodyitem.right .vs1qnbodyitemimg {
     justify-content: flex-end;
     border-radius: 0 36px 36px 0;
     padding-right: 40px;
     padding-left: 20px;
   }
-  .vwhcebodyitemimg img {
+  .vs1qnbodyitemimg img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
@@ -614,11 +614,11 @@
     display: block;
     filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.12)) brightness(1);
   }
-  .vwhcebodyitem:hover .vwhcebodyitemimg img {
+  .vs1qnbodyitem:hover .vs1qnbodyitemimg img {
     transform: scale(1.15) rotate(2deg);
     filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.2)) brightness(1.05);
   }
-  .vwhcebodyitemcontent {
+  .vs1qnbodyitemcontent {
     padding: 50px 45px;
     display: flex;
     flex-direction: column;
@@ -631,10 +631,10 @@
     opacity: 0;
     transition: padding 0.5s ease;
   }
-  .vwhcebodyitem:hover .vwhcebodyitemcontent {
+  .vs1qnbodyitem:hover .vs1qnbodyitemcontent {
     padding: 50px 50px;
   }
-  .vwhcebodyitemtitle {
+  .vs1qnbodyitemtitle {
     font-weight: 800;
     color: #1a1a1a;
     font-size: 1.75em;
@@ -644,20 +644,20 @@
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
   }
-  .vwhcebodyitem:hover .vwhcebodyitemtitle {
+  .vs1qnbodyitem:hover .vs1qnbodyitemtitle {
     color: #0a0a0a;
     transform: translateX(4px);
   }
-  .vwhcebodyitem.left .vwhcebodyitemtitle {
+  .vs1qnbodyitem.left .vs1qnbodyitemtitle {
     text-align: right;
   }
-  .vwhcebodyitem.left:hover .vwhcebodyitemtitle {
+  .vs1qnbodyitem.left:hover .vs1qnbodyitemtitle {
     transform: translateX(-4px);
   }
-  .vwhcebodyitem.right .vwhcebodyitemtitle {
+  .vs1qnbodyitem.right .vs1qnbodyitemtitle {
     text-align: left;
   }
-  .vwhcebodyitemdesc {
+  .vs1qnbodyitemdesc {
     color: #6b7280;
     font-size: 1.1em;
     line-height: 1.85;
@@ -665,20 +665,20 @@
     font-weight: 400;
     transition: color 0.3s ease, transform 0.3s ease;
   }
-  .vwhcebodyitem:hover .vwhcebodyitemdesc {
+  .vs1qnbodyitem:hover .vs1qnbodyitemdesc {
     color: #4b5563;
     transform: translateX(2px);
   }
-  .vwhcebodyitem.left .vwhcebodyitemdesc {
+  .vs1qnbodyitem.left .vs1qnbodyitemdesc {
     text-align: right;
   }
-  .vwhcebodyitem.left:hover .vwhcebodyitemdesc {
+  .vs1qnbodyitem.left:hover .vs1qnbodyitemdesc {
     transform: translateX(-2px);
   }
-  .vwhcebodyitem.right .vwhcebodyitemdesc {
+  .vs1qnbodyitem.right .vs1qnbodyitemdesc {
     text-align: left;
   }
-  .vwhcebodyitemlink {
+  .vs1qnbodyitemlink {
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -687,57 +687,57 @@
     box-sizing: border-box;
   }
   @media screen and (max-width: 1024px) {
-    .vwhcebody {
+    .vs1qnbody {
       gap: 50px;
     }
-    .vwhcebodyitem {
+    .vs1qnbodyitem {
       border-radius: 32px;
     }
-    .vwhcebodyitemimg {
+    .vs1qnbodyitemimg {
       width: 45%;
       min-height: 320px;
       padding: 35px;
     }
-    .vwhcebodyitem.left .vwhcebodyitemimg {
+    .vs1qnbodyitem.left .vs1qnbodyitemimg {
       border-radius: 32px 0 0 32px;
     }
-    .vwhcebodyitem.right .vwhcebodyitemimg {
+    .vs1qnbodyitem.right .vs1qnbodyitemimg {
       border-radius: 0 32px 32px 0;
     }
-    .vwhcebodyitemcontent {
+    .vs1qnbodyitemcontent {
       padding: 40px 35px;
     }
-    .vwhcebodyitemtitle {
+    .vs1qnbodyitemtitle {
       font-size: 1.6em;
     }
-    .vwhcebodyitemdesc {
+    .vs1qnbodyitemdesc {
       font-size: 1.05em;
     }
   }
   @media screen and (max-width: 768px) {
-    .vwhce {
+    .vs1qn {
       margin: 15px 10px;
     }
-    .vwhcebody {
+    .vs1qnbody {
       gap: 25px;
       width: 100%;
       max-width: 100%;
     }
-    .vwhcebodyitem {
+    .vs1qnbodyitem {
       flex-direction: column !important;
       border-radius: 20px;
       width: 100%;
       max-width: 100%;
     }
-    .vwhcebodyitem:hover {
+    .vs1qnbodyitem:hover {
       transform: translateY(-6px) scale(1.01);
     }
-    .vwhcebodyitemlink {
+    .vs1qnbodyitemlink {
       flex-direction: column !important;
       width: 100%;
     }
     /* Mobilde her zaman resim üstte */
-    .vwhcebodyitemimg {
+    .vs1qnbodyitemimg {
       width: 100% !important;
       max-width: 100%;
       max-height: 220px;
@@ -751,14 +751,14 @@
       flex-shrink: 0;
       overflow: hidden;
     }
-    .vwhcebodyitem.left .vwhcebodyitemimg,
-    .vwhcebodyitem.right .vwhcebodyitemimg {
+    .vs1qnbodyitem.left .vs1qnbodyitemimg,
+    .vs1qnbodyitem.right .vs1qnbodyitemimg {
       border-radius: 20px 20px 0 0 !important;
       padding-left: 12px !important;
       padding-right: 12px !important;
       justify-content: center !important;
     }
-    .vwhcebodyitemimg img {
+    .vs1qnbodyitemimg img {
       max-width: 100%;
       max-height: 100%;
       width: auto;
@@ -766,140 +766,140 @@
       object-fit: contain;
     }
     /* Mobilde her zaman içerik altta */
-    .vwhcebodyitemcontent {
+    .vs1qnbodyitemcontent {
       padding: 20px 15px;
       order: 1 !important;
       flex: 1;
       width: 100%;
       box-sizing: border-box;
     }
-    .vwhcebodyitem.left .vwhcebodyitemcontent,
-    .vwhcebodyitem.right .vwhcebodyitemcontent {
+    .vs1qnbodyitem.left .vs1qnbodyitemcontent,
+    .vs1qnbodyitem.right .vs1qnbodyitemcontent {
       text-align: center !important;
     }
-    .vwhcebodyitemtitle {
+    .vs1qnbodyitemtitle {
       font-size: 1.25em;
       text-align: center;
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
-    .vwhcebodyitem.left:hover .vwhcebodyitemtitle,
-    .vwhcebodyitem.right:hover .vwhcebodyitemtitle {
+    .vs1qnbodyitem.left:hover .vs1qnbodyitemtitle,
+    .vs1qnbodyitem.right:hover .vs1qnbodyitemtitle {
       transform: translateY(-2px);
     }
-    .vwhcebodyitemdesc {
+    .vs1qnbodyitemdesc {
       font-size: 0.9em;
       text-align: center;
       line-height: 1.6;
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
-    .vwhcebodyitem.left:hover .vwhcebodyitemdesc,
-    .vwhcebodyitem.right:hover .vwhcebodyitemdesc {
+    .vs1qnbodyitem.left:hover .vs1qnbodyitemdesc,
+    .vs1qnbodyitem.right:hover .vs1qnbodyitemdesc {
       transform: translateY(-1px);
     }
   }
   @media screen and (max-width: 480px) {
-    .vwhce {
+    .vs1qn {
       margin: 10px 8px;
     }
-    .vwhcebody {
+    .vs1qnbody {
       gap: 20px;
       width: 100%;
       max-width: 100%;
     }
-    .vwhcebodyitem {
+    .vs1qnbodyitem {
       border-radius: 16px;
       width: 100%;
       max-width: 100%;
     }
-    .vwhcebodyitem:hover {
+    .vs1qnbodyitem:hover {
       transform: translateY(-4px) scale(1);
     }
-    .vwhcebodyitemimg {
+    .vs1qnbodyitemimg {
       border-radius: 16px 16px 0 0 !important;
       max-height: 180px;
       aspect-ratio: 16/9;
       padding: 10px;
       order: -1 !important;
     }
-    .vwhcebodyitem.left .vwhcebodyitemimg,
-    .vwhcebodyitem.right .vwhcebodyitemimg {
+    .vs1qnbodyitem.left .vs1qnbodyitemimg,
+    .vs1qnbodyitem.right .vs1qnbodyitemimg {
       border-radius: 16px 16px 0 0 !important;
       padding-left: 10px !important;
       padding-right: 10px !important;
     }
-    .vwhcebodyitemcontent {
+    .vs1qnbodyitemcontent {
       padding: 18px 12px;
       gap: 12px;
       order: 1 !important;
     }
-    .vwhcebodyitemtitle {
+    .vs1qnbodyitemtitle {
       font-size: 1.1em;
       letter-spacing: -0.3px;
     }
-    .vwhcebodyitemdesc {
+    .vs1qnbodyitemdesc {
       font-size: 0.85em;
       line-height: 1.5;
     }
   }
   @media screen and (max-width: 360px) {
-    .vwhce {
+    .vs1qn {
       margin: 8px 5px;
     }
-    .vwhcebody {
+    .vs1qnbody {
       gap: 18px;
       width: 100%;
       max-width: 100%;
     }
-    .vwhcebodyitem {
+    .vs1qnbodyitem {
       border-radius: 12px;
       width: 100%;
       max-width: 100%;
     }
-    .vwhcebodyitemimg {
+    .vs1qnbodyitemimg {
       border-radius: 12px 12px 0 0 !important;
       max-height: 160px;
       aspect-ratio: 16/9;
       padding: 8px;
       order: -1 !important;
     }
-    .vwhcebodyitem.left .vwhcebodyitemimg,
-    .vwhcebodyitem.right .vwhcebodyitemimg {
+    .vs1qnbodyitem.left .vs1qnbodyitemimg,
+    .vs1qnbodyitem.right .vs1qnbodyitemimg {
       border-radius: 12px 12px 0 0 !important;
       padding-left: 8px !important;
       padding-right: 8px !important;
     }
-    .vwhcebodyitemcontent {
+    .vs1qnbodyitemcontent {
       padding: 15px 10px;
       gap: 10px;
       order: 1 !important;
     }
-    .vwhcebodyitemtitle {
+    .vs1qnbodyitemtitle {
       font-size: 1em;
     }
-    .vwhcebodyitemdesc {
+    .vs1qnbodyitemdesc {
       font-size: 0.8em;
       line-height: 1.4;
     }
   }
   @media (hover: none) and (pointer: coarse) {
-    .vwhcebodyitem:hover {
+    .vs1qnbodyitem:hover {
       transform: none;
     }
-    .vwhcebodyitem:hover .vwhcebodyitemimg {
+    .vs1qnbodyitem:hover .vs1qnbodyitemimg {
       transform: none;
       filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.12)) brightness(1);
     }
-    .vwhcebodyitem:hover .vwhcebodyitemtitle {
+    .vs1qnbodyitem:hover .vs1qnbodyitemtitle {
       transform: none;
       color: #1a1a1a;
     }
-    .vwhcebodyitem:hover .vwhcebodyitemdesc {
+    .vs1qnbodyitem:hover .vs1qnbodyitemdesc {
       transform: none;
       color: #6b7280;
     }
-    .vwhcebodyitem:hover .vwhcebodyitemcontent {
+    .vs1qnbodyitem:hover .vs1qnbodyitemcontent {
       padding: 50px 45px;
     }
   }
