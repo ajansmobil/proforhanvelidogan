@@ -1,7 +1,7 @@
 
  
 
-  .heati {
+  .fypfw {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .heatititle {
+  .fypfwtitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .heatititle:has(.heatititlebodylang:empty),
-  .heatititle:has(.heatititlebodylang ul:empty) {
+  .fypfwtitle:has(.fypfwtitlebodylang:empty),
+  .fypfwtitle:has(.fypfwtitlebodylang ul:empty) {
     display: none;
   }
 
-  .heatititlebody {
+  .fypfwtitlebody {
     color: #ffffff;
     width: var(--max);
     display: flex;
@@ -31,29 +31,29 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .heatititlebodytitle {
+  .fypfwtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .heatititlebodylang {
+  .fypfwtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .heatititlebodylang:empty,
-  .heatititlebodylang ul:empty {
+  .fypfwtitlebodylang:empty,
+  .fypfwtitlebodylang ul:empty {
     display: none;
   }
 
-  .heatititlebodylang ul {
+  .fypfwtitlebodylang ul {
     display: flex;
     gap: 5px;
   }
 
-  .heatibody {
+  .fypfwbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
     position: relative;
   }
 
-  .heati-mobile-toggle {
+  .fypfw-mobile-toggle {
     display: none;
     background: #116f65;
     color: #ffffff;
@@ -76,18 +76,18 @@
     right: 0;
   }
 
-  .heati-mobile-toggle span {
+  .fypfw-mobile-toggle span {
     font-size: 24px;
   }
 
-  .heatimenu {
+  .fypfwmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .heatimenulist {
+  .fypfwmenulist {
     width: calc(100% - 20px);
     background-color: #116f65;
     padding: 10px;
@@ -96,7 +96,7 @@
     display: flex;
   }
 
-  .heatimenubody {
+  .fypfwmenubody {
     width: 100%;
     background-color: #116f65;
     display: flex;
@@ -104,7 +104,7 @@
     justify-content: center;
   }
 
-  .heatimenulist ul {
+  .fypfwmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -113,7 +113,7 @@
     padding: 0;
   }
 
-  .heatimenulist ul a {
+  .fypfwmenulist ul a {
     padding: 10px 15px;
     font-size: 16px;
     color: #ffffff !important;
@@ -126,40 +126,40 @@
     margin: 0 2px;
   }
 
-  .heatimenulist ul a:hover {
+  .fypfwmenulist ul a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .heatimenulist ul a.heati-menu-list-active {
+  .fypfwmenulist ul a.fypfw-menu-list-active {
     color: #000000 !important;
   }
 
-  .heati-menu-list-active {
+  .fypfw-menu-list-active {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .heatimenulistbody {
+  .fypfwmenulistbody {
     width: 100%;
   }
 
-  .heatilanguages-mobile {
+  .fypfwlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .heatilanguages-mobile:empty,
-  .heatilanguages-mobile ul:empty {
+  .fypfwlanguages-mobile:empty,
+  .fypfwlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .heatilanguages-mobile ul {
+  .fypfwlanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -168,7 +168,7 @@
     justify-content: center;
   }
 
-  .heatilanguages-mobile li {
+  .fypfwlanguages-mobile li {
     list-style: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
@@ -183,25 +183,25 @@
     transition: all 0.3s ease;
   }
 
-  .heatilanguages-mobile li a {
+  .fypfwlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .heatilanguages-mobile li:hover {
+  .fypfwlanguages-mobile li:hover {
     background-color: #ffffff;
     border-color: #000000;
   }
 
   @media screen and (min-width: 1024px) {
-    .heatibodylogo {
+    .fypfwbodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .heatititle {
+    .fypfwtitle {
     margin-bottom: -30px;
   }
 
@@ -209,77 +209,77 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .heatibody {
+    .fypfwbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .heatimenulist ul {
+    .fypfwmenulist ul {
       flex-direction: row;
     }
 
-    .heatibodylogo {
+    .fypfwbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .heatititlebody {
+    .fypfwtitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .heatititlebodytitle {
+    .fypfwtitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .heatititlebodylang {
+    .fypfwtitlebodylang {
       display: none;
     }
 
-    .heatibody {
+    .fypfwbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .heati-mobile-toggle {
+    .fypfw-mobile-toggle {
       display: inline-flex;
     }
 
-    .heatibodylogo {
+    .fypfwbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
-    .heatimenulist {
+    .fypfwmenulist {
       display: none;
       flex-direction: column;
       width: calc(100% - 24px);
       padding: 12px;
     }
 
-    .heatimenu.heatimenu-open .heatimenulist {
+    .fypfwmenu.fypfwmenu-open .fypfwmenulist {
       display: flex;
     }
 
-    .heatimenu.heatimenu-open .heatilanguages-mobile {
+    .fypfwmenu.fypfwmenu-open .fypfwlanguages-mobile {
       display: block;
     }
 
-    .heatimenulist ul {
+    .fypfwmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .heatimenulist ul a {
+    .fypfwmenulist ul a {
       font-size: 14px;
       width: 100%;
       padding: 12px;
@@ -288,16 +288,16 @@
       border-radius: 0;
     }
 
-    .heatimenulist ul a:last-child {
+    .fypfwmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .heatimenulist ul a:hover {
+    .fypfwmenulist ul a:hover {
       background-color: #ffffff;
       border-radius: 0;
     }
 
-    .heatititlebodytitle {
+    .fypfwtitlebodytitle {
       font-size: 12px;
     }
   }
