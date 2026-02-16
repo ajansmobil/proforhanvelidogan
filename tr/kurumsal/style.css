@@ -1,7 +1,7 @@
 
  
 
-  .rfpb8 {
+  .vwhml {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .rfpb8title {
+  .vwhmltitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .rfpb8title:has(.rfpb8titlebodylang:empty),
-  .rfpb8title:has(.rfpb8titlebodylang ul:empty) {
+  .vwhmltitle:has(.vwhmltitlebodylang:empty),
+  .vwhmltitle:has(.vwhmltitlebodylang ul:empty) {
     display: none;
   }
 
-  .rfpb8titlebody {
+  .vwhmltitlebody {
     color: #ffffff;
     width: var(--max);
     display: flex;
@@ -31,29 +31,57 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .rfpb8titlebodytitle {
+  .vwhmltitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .rfpb8titlebodylang {
+  .vwhmltitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .rfpb8titlebodylang:empty,
-  .rfpb8titlebodylang ul:empty {
+  .vwhmltitlebodylang:empty,
+  .vwhmltitlebodylang ul:empty {
     display: none;
   }
 
-  .rfpb8titlebodylang ul {
+  .vwhmltitlebodylang ul {
     display: flex;
-    gap: 5px;
+    gap: 8px;
   }
 
-  .rfpb8body {
+  /* Dil seçici: TR / EN metin, bordür tema rengiyle uyumlu (renk uyumsuzluğu yok) */
+  .vwhmltitlebodylang li {
+    list-style: none;
+  }
+
+  .vwhmltitlebodylang li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #116f65 !important;
+    text-decoration: none;
+    border: 1px solid color-mix(in srgb, #116f65 40%, transparent);
+    border-radius: 8px;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .vwhmltitlebodylang li a:hover {
+    border-color: #000000;
+    background: #ffffff;
+    color: #000000 !important;
+  }
+
+  .vwhmlbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -62,7 +90,8 @@
     position: relative;
   }
 
-  .rfpb8-mobile-toggle {
+  /* Mobil hamburger butonu: onclick olduğu için cursor: pointer zorunlu (kural) */
+  .vwhml-mobile-toggle {
     display: none;
     background: #116f65;
     color: #ffffff;
@@ -76,18 +105,18 @@
     right: 0;
   }
 
-  .rfpb8-mobile-toggle span {
+  .vwhml-mobile-toggle span {
     font-size: 24px;
   }
 
-  .rfpb8menu {
+  .vwhmlmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .rfpb8menulist {
+  .vwhmlmenulist {
     width: calc(100% - 20px);
     background-color: #116f65;
     padding: 10px;
@@ -96,7 +125,7 @@
     display: flex;
   }
 
-  .rfpb8menubody {
+  .vwhmlmenubody {
     width: 100%;
     background-color: #116f65;
     display: flex;
@@ -104,7 +133,7 @@
     justify-content: center;
   }
 
-  .rfpb8menulist ul {
+  .vwhmlmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -113,7 +142,7 @@
     padding: 0;
   }
 
-  .rfpb8menulist ul a {
+  .vwhmlmenulist ul a {
     padding: 10px 15px;
     font-size: 16px;
     color: #ffffff !important;
@@ -126,40 +155,40 @@
     margin: 0 2px;
   }
 
-  .rfpb8menulist ul a:hover {
+  .vwhmlmenulist ul a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .rfpb8menulist ul a.rfpb8-menu-list-active {
+  .vwhmlmenulist ul a.vwhml-menu-list-active {
     color: #000000 !important;
   }
 
-  .rfpb8-menu-list-active {
+  .vwhml-menu-list-active {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .rfpb8menulistbody {
+  .vwhmlmenulistbody {
     width: 100%;
   }
 
-  .rfpb8languages-mobile {
+  .vwhmllanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .rfpb8languages-mobile:empty,
-  .rfpb8languages-mobile ul:empty {
+  .vwhmllanguages-mobile:empty,
+  .vwhmllanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .rfpb8languages-mobile ul {
+  .vwhmllanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -168,40 +197,59 @@
     justify-content: center;
   }
 
-  .rfpb8languages-mobile li {
+  /* Dil seçici: TR / EN metin, bordür ve arka plan tema ile uyumlu */
+  .vwhmllanguages-mobile li {
     list-style: none;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 8px;
-    aspect-ratio: 1/1;
-    width: 35px;
-    height: 35px;
+    border: 1px solid color-mix(in srgb, #ffffff 35%, transparent);
+    padding: 0;
+    min-width: 44px;
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    border-radius: 10px;
+    background: color-mix(in srgb, #ffffff 8%, transparent);
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .rfpb8languages-mobile li a {
+  .vwhmllanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #ffffff !important;
+    text-decoration: none;
+    cursor: pointer;
   }
 
-  .rfpb8languages-mobile li:hover {
+  .vwhmllanguages-mobile li:hover {
     background-color: #ffffff;
     border-color: #000000;
+    box-shadow: 0 2px 8px color-mix(in srgb, #000000 25%, transparent);
+  }
+
+  .vwhmllanguages-mobile li:hover a {
+    color: #000000 !important;
+  }
+
+  /* Mobil drawer için backdrop: masaüstünde görünmez */
+  .vwhml-menu-backdrop {
+    display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    .rfpb8bodylogo {
+    .vwhmlbodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .rfpb8title {
+    .vwhmltitle {
     margin-bottom: -30px;
   }
 
@@ -209,95 +257,170 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .rfpb8body {
+    .vwhmlbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .rfpb8menulist ul {
+    .vwhmlmenulist ul {
       flex-direction: row;
     }
 
-    .rfpb8bodylogo {
+    .vwhmlbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .rfpb8titlebody {
+    .vwhmltitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .rfpb8titlebodytitle {
+    .vwhmltitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
   }
 
+    /* Mobil: app tarzı sağdan kayan drawer menü */
   @media screen and (max-width: 768px) {
-    .rfpb8titlebodylang {
+    .vwhmltitlebodylang {
       display: none;
     }
 
-    .rfpb8body {
+    .vwhmlbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .rfpb8-mobile-toggle {
+    .vwhml-mobile-toggle {
       display: inline-flex;
     }
 
-    .rfpb8bodylogo {
+    .vwhmlbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
-    .rfpb8menulist {
-      display: none;
-      flex-direction: column;
-      width: calc(100% - 24px);
-      padding: 12px;
+    /* Backdrop: sadece menü açıkken görünür; tıklanınca menü kapanır (onclick ile) */
+    .vwhml-menu-backdrop {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      cursor: pointer;
     }
 
-    .rfpb8menu.rfpb8menu-open .rfpb8menulist {
+    .vwhml.vwhmlmenu-open .vwhml-menu-backdrop {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Drawer: sağdan kayan panel, fixed, tam yükseklik; kapalıyken ekran dışında */
+    .vwhmlmenubody {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 85%;
+      max-width: 320px;
+      height: 100vh;
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      z-index: 1000;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+      overflow-y: auto;
+    }
+
+    .vwhml.vwhmlmenu-open .vwhmlmenubody {
+      transform: translateX(0);
+    }
+
+    .vwhmlmenu {
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .vwhmlmenulistbody {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .vwhmlmenulist {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 16px 12px;
+      box-sizing: border-box;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .vwhml.vwhmlmenu-open .vwhmlmenulist {
       display: flex;
     }
 
-    .rfpb8menu.rfpb8menu-open .rfpb8languages-mobile {
-      display: block;
+    /* Mobil kural: lang sayfanın (drawer) en altında ve ortada */
+    .vwhml.vwhmlmenu-open .vwhmllanguages-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 16px 12px;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
     }
 
-    .rfpb8menulist ul {
+    .vwhml.vwhmlmenu-open .vwhmllanguages-mobile ul {
+      justify-content: center;
+    }
+
+    .vwhmlmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .rfpb8menulist ul a {
-      font-size: 14px;
+    .vwhmlmenulist ul a {
+      font-size: 15px;
       width: 100%;
-      padding: 12px;
+      padding: 14px 12px;
       text-align: left;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 0;
+      cursor: pointer;
+      box-sizing: border-box;
     }
 
-    .rfpb8menulist ul a:last-child {
+    .vwhmlmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .rfpb8menulist ul a:hover {
+    .vwhmlmenulist ul a:hover {
       background-color: #ffffff;
       border-radius: 0;
     }
 
-    .rfpb8titlebodytitle {
+    .vwhmltitlebodytitle {
       font-size: 12px;
     }
   }
@@ -305,9 +428,9 @@
 
   .footer {
     background-color: #00613f;
-    color: #ecf0f1;
+    color: #fff !important;
     padding: 20px;
-    border-top: 5px solid #2980b9;
+    border-top: 5px solid --bordercolor--;
   }
 
   .footer-top {

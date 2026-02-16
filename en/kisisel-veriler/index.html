@@ -12,9 +12,9 @@
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
   <title>Personal Data</title>
+  <meta property="og:title" content="Personal Data" />
   <meta name="description" content="Processing of personal data, data controller information and data security under Turkish PDPA. Assoc. Prof. Orhan Veli Doğan website." />
   <meta name="keywords" content="personal data, PDPA, data controller, data security" />
-  <meta property="og:title" content="Personal Data" />
   <meta property="og:description" content="Processing of personal data, data controller information and data security under Turkish PDPA. Assoc. Prof. Orhan Veli Doğan website." />
   <meta property="og:image" content="https://proforhanvelidogan.com/img/icon.png" />
   <meta name="robots" content="index, follow" />
@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=scz2f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=scz2f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=dvou7" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=dvou7" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=scz2f" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=dvou7" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,93 +52,99 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=scz2f">
+<link rel="stylesheet" href="style.css?v=dvou7">
 </head>
 
 <body>
-  <div id="header"><div class="rzs30">
-  <div class="rzs30title">
-    <div class="rzs30titlebody">
-      <div class="rzs30titlebodylang">
+  <div id="header"><div class="d0mfz">
+  <div class="d0mfztitle">
+    <div class="d0mfztitlebody">
+      <div class="d0mfztitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png" alt="tr" loading="lazy"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png" alt="en" loading="lazy"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png" alt="de" loading="lazy"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png" alt="ru" loading="lazy"></a></li>
+          <li><a href="/tr/kisisel-veriler/">TR</a></li><li><a href="/en/kisisel-veriler/">EN</a></li><li><a href="/de/kisisel-veriler/">DE</a></li><li><a href="/ru/kisisel-veriler/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="rzs30body">
+  <div class="d0mfzbody">
     <a href="/en/"
       ><img
-        src="/img/logo.svg?v=scz2f"
+        src="/img/logo.svg?v=dvou7"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="rzs30bodylogo"
+        class="d0mfzbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="rzs30-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="d0mfz-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="rzs30menubody">
-    <div class="rzs30menu" id="menu-2-root">
-      <div class="rzs30menulistbody">
-        <div class="rzs30menulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="d0mfz-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="d0mfzmenubody">
+    <div class="d0mfzmenu" id="menu-2-root">
+      <div class="d0mfzmenulistbody">
+        <div class="d0mfzmenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
-          <div class="rzs30languages-mobile">
-            <ul>
-              <li><a href="/tr/"><img height="25" src="/src/lang/tr.png" alt="tr" loading="lazy"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png" alt="en" loading="lazy"></a></li><li><a href="/de/"><img height="25" src="/src/lang/de.png" alt="de" loading="lazy"></a></li><li><a href="/ru/"><img height="25" src="/src/lang/ru.png" alt="ru" loading="lazy"></a></li>
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="d0mfzlanguages-mobile">
+        <ul>
+          <li><a href="/tr/kisisel-veriler/">TR</a></li><li><a href="/en/kisisel-veriler/">EN</a></li><li><a href="/de/kisisel-veriler/">DE</a></li><li><a href="/ru/kisisel-veriler/">RU</a></li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.d0mfz) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("rzs30menu-open")) {
-        root.classList.remove("rzs30menu-open");
+      var wrapper = root.closest ? root.closest(".d0mfz") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("d0mfzmenu-open")) {
+        target.classList.remove("d0mfzmenu-open");
       } else {
-        root.classList.add("rzs30menu-open");
+        target.classList.add("d0mfzmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="ckjta-title f36">
+  <div id="content"><div class="wa3hu-title f36">
   <h1>Personal Data</h1>
 </div>
-<div class="ckjta">
-  <div class="ckjta-menu-btn">
+<div class="wa3hu">
+  <div class="wa3hu-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined ckjta-icon">menu</span>
+    <span class="material-symbols-outlined wa3hu-icon">menu</span>
   </div>
-  <div class="ckjta-menu-overlay" id="ckjta-menu-overlay" aria-hidden="true"></div>
-  <div class="ckjta-menu" id="ckjta-menu">
-    <button class="ckjta-menu-close" type="button" aria-label="Close Menu" aria-controls="ckjta-menu">
+  <div class="wa3hu-menu-overlay" id="wa3hu-menu-overlay" aria-hidden="true"></div>
+  <div class="wa3hu-menu" id="wa3hu-menu">
+    <button class="wa3hu-menu-close" type="button" aria-label="Close Menu" aria-controls="wa3hu-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="ckjta-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="ckjta-menu-link" href="/en/misyon/">Mission</a><a class="ckjta-menu-link" href="/en/vizyon/">Vision</a><a class="ckjta-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="ckjta-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="ckjta-menu-link active" href="/en/kisisel-veriler/">Personal Data</a><a class="ckjta-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="ckjta-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="wa3hu-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="wa3hu-menu-link" href="/en/misyon/">Mission</a><a class="wa3hu-menu-link" href="/en/vizyon/">Vision</a><a class="wa3hu-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="wa3hu-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="wa3hu-menu-link active" href="/en/kisisel-veriler/">Personal Data</a><a class="wa3hu-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="wa3hu-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="ckjta-desc">
+  <div class="wa3hu-desc">
     
-    <div class="ckjta-body"></div>
+    <div class="wa3hu-body"><p><b>Processing of personal data</b></p> <p>This page provides information on the processing of your personal data by Assoc. Prof. Orhan Veli Doğan / proforhanvelidogan.com under Turkish Personal Data Protection Law (KVKK). As data controller, we process your data for appointment and communication, patient information and legal obligations. Your data are protected by appropriate technical and organisational measures. For full information and your rights, see the Turkish version or contact us.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".ckjta-menu-btn");
-    var menu = document.querySelector(".ckjta-menu");
-    var overlay = document.querySelector(".ckjta-menu-overlay");
-    var closeButton = document.querySelector(".ckjta-menu-close");
+    var menuToggleBtn = document.querySelector(".wa3hu-menu-btn");
+    var menu = document.querySelector(".wa3hu-menu");
+    var overlay = document.querySelector(".wa3hu-menu-overlay");
+    var closeButton = document.querySelector(".wa3hu-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -208,7 +214,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".ckjta-menu-close");
+      var closeBtn = event.target.closest(".wa3hu-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -256,15 +262,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".ckjta-top").forEach(function (button) {
+    document.querySelectorAll(".wa3hu-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".ckjta-menu-group");
+        var group = this.closest(".wa3hu-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".ckjta-sub");
+        var sub = group.querySelector(".wa3hu-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".ckjta-icon");
+        var icon = this.querySelector(".wa3hu-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -283,7 +289,7 @@
       <img src="/img/logo.svg" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/en">Home</a></li><li class="menu__item"><a class="menu_link" href="/en/kurumsal">Curriculum Vitae</a></li><li class="menu__item"><a class="menu_link" href="/en/tedavi-yontemleri">Treatment Methods</a></li><li class="menu__item"><a class="menu_link" href="/en/akademik-yayinlar">Academic Publications</a></li><li class="menu__item"><a class="menu_link" href="/en/iletisim">Contact</a></li>
+      <li class="menu__item"><a class="menu_link" href="/en/">Home</a></li><li class="menu__item"><a class="menu_link" href="/en/kurumsal/">Curriculum Vitae</a></li><li class="menu__item"><a class="menu_link" href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li class="menu__item"><a class="menu_link" href="/en/akademik-yayinlar/">Academic Publications</a></li><li class="menu__item"><a class="menu_link" href="/en/iletisim/">Contact</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -302,8 +308,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=scz2f"></script>
-<script defer src="/src/cookie.js?v=scz2f"></script>
+<script defer type="text/javascript" src="/src/js.js?v=dvou7"></script>
+<script defer src="/src/cookie.js?v=dvou7"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
