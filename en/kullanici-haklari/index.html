@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=x0ff6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=x0ff6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=o3ru4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=o3ru4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=x0ff6" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=o3ru4" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=x0ff6">
+<link rel="stylesheet" href="style.css?v=o3ru4">
 </head>
 
 <body>
-  <div id="header"><div class="qb3bg">
-  <div class="qb3bgtitle">
-    <div class="qb3bgtitlebody">
-      <div class="qb3bgtitlebodylang">
+  <div id="header"><div class="mlsla">
+  <div class="mlslatitle">
+    <div class="mlslatitlebody">
+      <div class="mlslatitlebodylang">
         <ul>
           <li><a href="/tr/kullanici-haklari/">TR</a></li><li><a href="/en/kullanici-haklari/">EN</a></li><li><a href="/de/kullanici-haklari/">DE</a></li><li><a href="/ru/kullanici-haklari/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="qb3bgbody">
+  <div class="mlslabody">
     <a href="/en/"
       ><img
-        src="/img/logo.svg?v=x0ff6"
+        src="/img/logo.svg?v=o3ru4"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="qb3bgbodylogo"
+        class="mlslabodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="qb3bg-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="mlsla-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="qb3bg-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="qb3bgmenubody">
-    <div class="qb3bgmenu" id="menu-2-root">
-      <div class="qb3bgmenulistbody">
-        <div class="qb3bgmenulist">
+  <div class="mlsla-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="mlslamenubody">
+    <div class="mlslamenu" id="menu-2-root">
+      <div class="mlslamenulistbody">
+        <div class="mlslamenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="qb3bglanguages-mobile">
+      <div class="mlslalanguages-mobile">
         <ul>
           <li><a href="/tr/kullanici-haklari/">TR</a></li><li><a href="/en/kullanici-haklari/">EN</a></li><li><a href="/de/kullanici-haklari/">DE</a></li><li><a href="/ru/kullanici-haklari/">RU</a></li>
         </ul>
@@ -100,51 +100,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.qb3bg) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.mlsla) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".qb3bg") : null;
+      var wrapper = root.closest ? root.closest(".mlsla") : null;
       var target = wrapper || root;
-      if (target.classList.contains("qb3bgmenu-open")) {
-        target.classList.remove("qb3bgmenu-open");
+      if (target.classList.contains("mlslamenu-open")) {
+        target.classList.remove("mlslamenu-open");
       } else {
-        target.classList.add("qb3bgmenu-open");
+        target.classList.add("mlslamenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="lvuu1-title f36">
+  <div id="content"><div class="pakiz-title f36">
   <h1>User Rights</h1>
 </div>
-<div class="lvuu1">
-  <div class="lvuu1-menu-btn">
+<div class="pakiz">
+  <div class="pakiz-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined lvuu1-icon">menu</span>
+    <span class="material-symbols-outlined pakiz-icon">menu</span>
   </div>
-  <div class="lvuu1-menu-overlay" id="lvuu1-menu-overlay" aria-hidden="true"></div>
-  <div class="lvuu1-menu" id="lvuu1-menu">
-    <button class="lvuu1-menu-close" type="button" aria-label="Close Menu" aria-controls="lvuu1-menu">
+  <div class="pakiz-menu-overlay" id="pakiz-menu-overlay" aria-hidden="true"></div>
+  <div class="pakiz-menu" id="pakiz-menu">
+    <button class="pakiz-menu-close" type="button" aria-label="Close Menu" aria-controls="pakiz-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="lvuu1-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="lvuu1-menu-link" href="/en/misyon/">Mission</a><a class="lvuu1-menu-link" href="/en/vizyon/">Vision</a><a class="lvuu1-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="lvuu1-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="lvuu1-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="lvuu1-menu-link active" href="/en/kullanici-haklari/">User Rights</a><a class="lvuu1-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="pakiz-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="pakiz-menu-link" href="/en/misyon/">Mission</a><a class="pakiz-menu-link" href="/en/vizyon/">Vision</a><a class="pakiz-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="pakiz-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="pakiz-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="pakiz-menu-link active" href="/en/kullanici-haklari/">User Rights</a><a class="pakiz-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="lvuu1-desc">
+  <div class="pakiz-desc">
     
-    <div class="lvuu1-body"><p><b>Your rights as data subject</b></p> <p>Under Turkish Personal Data Protection Law (KVKK), you have the right to request information, access, rectification, erasure and objection regarding your personal data processed by Assoc. Prof. Orhan Veli Doğan / proforhanvelidogan.com. To exercise these rights, please apply to the data controller in the manner and within the periods set out in the full text. For the full text, see the Turkish version or contact us.</p></div>
+    <div class="pakiz-body"><p><b>Your rights as data subject</b></p> <p>Under Turkish Personal Data Protection Law (KVKK), you have the right to request information, access, rectification, erasure and objection regarding your personal data processed by Assoc. Prof. Orhan Veli Doğan / proforhanvelidogan.com. To exercise these rights, please apply to the data controller in the manner and within the periods set out in the full text. For the full text, see the Turkish version or contact us.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".lvuu1-menu-btn");
-    var menu = document.querySelector(".lvuu1-menu");
-    var overlay = document.querySelector(".lvuu1-menu-overlay");
-    var closeButton = document.querySelector(".lvuu1-menu-close");
+    var menuToggleBtn = document.querySelector(".pakiz-menu-btn");
+    var menu = document.querySelector(".pakiz-menu");
+    var overlay = document.querySelector(".pakiz-menu-overlay");
+    var closeButton = document.querySelector(".pakiz-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -214,7 +214,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".lvuu1-menu-close");
+      var closeBtn = event.target.closest(".pakiz-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -262,15 +262,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".lvuu1-top").forEach(function (button) {
+    document.querySelectorAll(".pakiz-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".lvuu1-menu-group");
+        var group = this.closest(".pakiz-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".lvuu1-sub");
+        var sub = group.querySelector(".pakiz-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".lvuu1-icon");
+        var icon = this.querySelector(".pakiz-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -308,8 +308,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=x0ff6"></script>
-<script defer src="/src/cookie.js?v=x0ff6"></script>
+<script defer type="text/javascript" src="/src/js.js?v=o3ru4"></script>
+<script defer src="/src/cookie.js?v=o3ru4"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

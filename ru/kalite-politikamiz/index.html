@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=b4bdb" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=b4bdb" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=xazgm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=xazgm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=b4bdb" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=xazgm" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=b4bdb">
+<link rel="stylesheet" href="style.css?v=xazgm">
 </head>
 
 <body>
-  <div id="header"><div class="nyhul">
-  <div class="nyhultitle">
-    <div class="nyhultitlebody">
-      <div class="nyhultitlebodylang">
+  <div id="header"><div class="mavz3">
+  <div class="mavz3title">
+    <div class="mavz3titlebody">
+      <div class="mavz3titlebodylang">
         <ul>
           <li><a href="/tr/kalite-politikamiz/">TR</a></li><li><a href="/en/kalite-politikamiz/">EN</a></li><li><a href="/de/kalite-politikamiz/">DE</a></li><li><a href="/ru/kalite-politikamiz/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="nyhulbody">
+  <div class="mavz3body">
     <a href="/ru/"
       ><img
-        src="/img/logo.svg?v=b4bdb"
+        src="/img/logo.svg?v=xazgm"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="nyhulbodylogo"
+        class="mavz3bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="nyhul-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="mavz3-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="nyhul-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="nyhulmenubody">
-    <div class="nyhulmenu" id="menu-2-root">
-      <div class="nyhulmenulistbody">
-        <div class="nyhulmenulist">
+  <div class="mavz3-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="mavz3menubody">
+    <div class="mavz3menu" id="menu-2-root">
+      <div class="mavz3menulistbody">
+        <div class="mavz3menulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="nyhullanguages-mobile">
+      <div class="mavz3languages-mobile">
         <ul>
           <li><a href="/tr/kalite-politikamiz/">TR</a></li><li><a href="/en/kalite-politikamiz/">EN</a></li><li><a href="/de/kalite-politikamiz/">DE</a></li><li><a href="/ru/kalite-politikamiz/">RU</a></li>
         </ul>
@@ -100,51 +100,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.nyhul) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.mavz3) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".nyhul") : null;
+      var wrapper = root.closest ? root.closest(".mavz3") : null;
       var target = wrapper || root;
-      if (target.classList.contains("nyhulmenu-open")) {
-        target.classList.remove("nyhulmenu-open");
+      if (target.classList.contains("mavz3menu-open")) {
+        target.classList.remove("mavz3menu-open");
       } else {
-        target.classList.add("nyhulmenu-open");
+        target.classList.add("mavz3menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="phic0-title f36">
+  <div id="content"><div class="g46ko-title f36">
   <h1>Наша политика качества</h1>
 </div>
-<div class="phic0">
-  <div class="phic0-menu-btn">
+<div class="g46ko">
+  <div class="g46ko-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined phic0-icon">menu</span>
+    <span class="material-symbols-outlined g46ko-icon">menu</span>
   </div>
-  <div class="phic0-menu-overlay" id="phic0-menu-overlay" aria-hidden="true"></div>
-  <div class="phic0-menu" id="phic0-menu">
-    <button class="phic0-menu-close" type="button" aria-label="Закрыть меню" aria-controls="phic0-menu">
+  <div class="g46ko-menu-overlay" id="g46ko-menu-overlay" aria-hidden="true"></div>
+  <div class="g46ko-menu" id="g46ko-menu">
+    <button class="g46ko-menu-close" type="button" aria-label="Закрыть меню" aria-controls="g46ko-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="phic0-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="phic0-menu-link" href="/ru/misyon/">Миссия</a><a class="phic0-menu-link" href="/ru/vizyon/">Видение</a><a class="phic0-menu-link active" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="phic0-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="phic0-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="phic0-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="phic0-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
+    <a class="g46ko-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="g46ko-menu-link" href="/ru/misyon/">Миссия</a><a class="g46ko-menu-link" href="/ru/vizyon/">Видение</a><a class="g46ko-menu-link active" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="g46ko-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="g46ko-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="g46ko-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="g46ko-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
   </div>
-  <div class="phic0-desc">
+  <div class="g46ko-desc">
     
-    <div class="phic0-body"><p><b>Наша политика качества</b></p> <p>Наша политика качества ориентирована на безопасность пациентов и постоянное улучшение в области сердечно-сосудистой хирургии. Мы соблюдаем национальные и международные стандарты качества. Полный текст: см. турецкую версию или контакты.</p></div>
+    <div class="g46ko-body"><p><b>Наша политика качества</b></p> <p>Наша политика качества ориентирована на безопасность пациентов и постоянное улучшение в области сердечно-сосудистой хирургии. Мы соблюдаем национальные и международные стандарты качества. Полный текст: см. турецкую версию или контакты.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".phic0-menu-btn");
-    var menu = document.querySelector(".phic0-menu");
-    var overlay = document.querySelector(".phic0-menu-overlay");
-    var closeButton = document.querySelector(".phic0-menu-close");
+    var menuToggleBtn = document.querySelector(".g46ko-menu-btn");
+    var menu = document.querySelector(".g46ko-menu");
+    var overlay = document.querySelector(".g46ko-menu-overlay");
+    var closeButton = document.querySelector(".g46ko-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -214,7 +214,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".phic0-menu-close");
+      var closeBtn = event.target.closest(".g46ko-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -262,15 +262,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".phic0-top").forEach(function (button) {
+    document.querySelectorAll(".g46ko-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".phic0-menu-group");
+        var group = this.closest(".g46ko-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".phic0-sub");
+        var sub = group.querySelector(".g46ko-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".phic0-icon");
+        var icon = this.querySelector(".g46ko-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -308,8 +308,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=b4bdb"></script>
-<script defer src="/src/cookie.js?v=b4bdb"></script>
+<script defer type="text/javascript" src="/src/js.js?v=xazgm"></script>
+<script defer src="/src/cookie.js?v=xazgm"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

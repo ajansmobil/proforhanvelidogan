@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=dbx1x" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=dbx1x" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=enmkr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=enmkr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=dbx1x" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=enmkr" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=dbx1x">
+<link rel="stylesheet" href="style.css?v=enmkr">
 </head>
 
 <body>
-  <div id="header"><div class="w30pl">
-  <div class="w30pltitle">
-    <div class="w30pltitlebody">
-      <div class="w30pltitlebodylang">
+  <div id="header"><div class="lgbry">
+  <div class="lgbrytitle">
+    <div class="lgbrytitlebody">
+      <div class="lgbrytitlebodylang">
         <ul>
           <li><a href="/tr/yonetilen-yuksek-lisans-tezleri/">TR</a></li><li><a href="/en/yonetilen-yuksek-lisans-tezleri/">EN</a></li><li><a href="/de/yonetilen-yuksek-lisans-tezleri/">DE</a></li><li><a href="/ru/yonetilen-yuksek-lisans-tezleri/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="w30plbody">
+  <div class="lgbrybody">
     <a href="/en/"
       ><img
-        src="/img/logo.svg?v=dbx1x"
+        src="/img/logo.svg?v=enmkr"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="w30plbodylogo"
+        class="lgbrybodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="w30pl-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="lgbry-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="w30pl-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="w30plmenubody">
-    <div class="w30plmenu" id="menu-2-root">
-      <div class="w30plmenulistbody">
-        <div class="w30plmenulist">
+  <div class="lgbry-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="lgbrymenubody">
+    <div class="lgbrymenu" id="menu-2-root">
+      <div class="lgbrymenulistbody">
+        <div class="lgbrymenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="w30pllanguages-mobile">
+      <div class="lgbrylanguages-mobile">
         <ul>
           <li><a href="/tr/yonetilen-yuksek-lisans-tezleri/">TR</a></li><li><a href="/en/yonetilen-yuksek-lisans-tezleri/">EN</a></li><li><a href="/de/yonetilen-yuksek-lisans-tezleri/">DE</a></li><li><a href="/ru/yonetilen-yuksek-lisans-tezleri/">RU</a></li>
         </ul>
@@ -100,51 +100,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.w30pl) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.lgbry) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".w30pl") : null;
+      var wrapper = root.closest ? root.closest(".lgbry") : null;
       var target = wrapper || root;
-      if (target.classList.contains("w30plmenu-open")) {
-        target.classList.remove("w30plmenu-open");
+      if (target.classList.contains("lgbrymenu-open")) {
+        target.classList.remove("lgbrymenu-open");
       } else {
-        target.classList.add("w30plmenu-open");
+        target.classList.add("lgbrymenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="jo2ay-title f36">
+  <div id="content"><div class="ryltm-title f36">
   <h1>Supervised Master's Theses</h1>
 </div>
-<div class="jo2ay">
-  <div class="jo2ay-menu-btn">
+<div class="ryltm">
+  <div class="ryltm-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined jo2ay-icon">menu</span>
+    <span class="material-symbols-outlined ryltm-icon">menu</span>
   </div>
-  <div class="jo2ay-menu-overlay" id="jo2ay-menu-overlay" aria-hidden="true"></div>
-  <div class="jo2ay-menu" id="jo2ay-menu">
-    <button class="jo2ay-menu-close" type="button" aria-label="Close Menu" aria-controls="jo2ay-menu">
+  <div class="ryltm-menu-overlay" id="ryltm-menu-overlay" aria-hidden="true"></div>
+  <div class="ryltm-menu" id="ryltm-menu">
+    <button class="ryltm-menu-close" type="button" aria-label="Close Menu" aria-controls="ryltm-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="jo2ay-menu-link active" href="/en/yonetilen-yuksek-lisans-tezleri/">Supervised Master's Theses</a><a class="jo2ay-menu-link" href="/en/dergi-hakemligi/">Journal Peer Review</a><a class="jo2ay-menu-link" href="/en/kongre-hakemligi/">Congress Peer Review</a><a class="jo2ay-menu-link" href="/en/bilimsel-etkinlikler/">Scientific Activities</a><a class="jo2ay-menu-link" href="/en/oduller/">Awards</a>
+    <a class="ryltm-menu-link active" href="/en/yonetilen-yuksek-lisans-tezleri/">Supervised Master's Theses</a><a class="ryltm-menu-link" href="/en/dergi-hakemligi/">Journal Peer Review</a><a class="ryltm-menu-link" href="/en/kongre-hakemligi/">Congress Peer Review</a><a class="ryltm-menu-link" href="/en/bilimsel-etkinlikler/">Scientific Activities</a><a class="ryltm-menu-link" href="/en/oduller/">Awards</a>
   </div>
-  <div class="jo2ay-desc">
+  <div class="ryltm-desc">
     
-    <div class="jo2ay-body"><p>Supervised master's theses: Coronary bypass with pulsatile and non-pulsatile cardiopulmonary bypass (Dr. Hasan Erdem, 2004); Proximal aortic surgery outcomes (Dr. Deniz Ceylan); Modified surgical maze in secondary atrial fibrillation (ADEAH, 2004).</p></div>
+    <div class="ryltm-body"><p>Supervised master's theses: Coronary bypass with pulsatile and non-pulsatile cardiopulmonary bypass (Dr. Hasan Erdem, 2004); Proximal aortic surgery outcomes (Dr. Deniz Ceylan); Modified surgical maze in secondary atrial fibrillation (ADEAH, 2004).</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".jo2ay-menu-btn");
-    var menu = document.querySelector(".jo2ay-menu");
-    var overlay = document.querySelector(".jo2ay-menu-overlay");
-    var closeButton = document.querySelector(".jo2ay-menu-close");
+    var menuToggleBtn = document.querySelector(".ryltm-menu-btn");
+    var menu = document.querySelector(".ryltm-menu");
+    var overlay = document.querySelector(".ryltm-menu-overlay");
+    var closeButton = document.querySelector(".ryltm-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -214,7 +214,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".jo2ay-menu-close");
+      var closeBtn = event.target.closest(".ryltm-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -262,15 +262,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".jo2ay-top").forEach(function (button) {
+    document.querySelectorAll(".ryltm-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".jo2ay-menu-group");
+        var group = this.closest(".ryltm-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".jo2ay-sub");
+        var sub = group.querySelector(".ryltm-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".jo2ay-icon");
+        var icon = this.querySelector(".ryltm-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -308,8 +308,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=dbx1x"></script>
-<script defer src="/src/cookie.js?v=dbx1x"></script>
+<script defer type="text/javascript" src="/src/js.js?v=enmkr"></script>
+<script defer src="/src/cookie.js?v=enmkr"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
