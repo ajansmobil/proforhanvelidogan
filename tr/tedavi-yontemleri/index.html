@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=r0tsg" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=r0tsg" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=o3djk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=o3djk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=r0tsg" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=o3djk" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=r0tsg">
+<link rel="stylesheet" href="style.css?v=o3djk">
 </head>
 
 <body>
-  <div id="header"><div class="visp6">
-  <div class="visp6title">
-    <div class="visp6titlebody">
-      <div class="visp6titlebodylang">
+  <div id="header"><div class="ym5qx">
+  <div class="ym5qxtitle">
+    <div class="ym5qxtitlebody">
+      <div class="ym5qxtitlebodylang">
         <ul>
           <li><a href="/tr/tedavi-yontemleri/">TR</a></li><li><a href="/en/tedavi-yontemleri/">EN</a></li><li><a href="/de/tedavi-yontemleri/">DE</a></li><li><a href="/ru/tedavi-yontemleri/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="visp6body">
+  <div class="ym5qxbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=r0tsg"
+        src="/img/logo.svg?v=o3djk"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="visp6bodylogo"
+        class="ym5qxbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="visp6-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ym5qx-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="visp6-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="visp6menubody">
-    <div class="visp6menu" id="menu-2-root">
-      <div class="visp6menulistbody">
-        <div class="visp6menulist">
+  <div class="ym5qx-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ym5qxmenubody">
+    <div class="ym5qxmenu" id="menu-2-root">
+      <div class="ym5qxmenulistbody">
+        <div class="ym5qxmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a class="visp6-menu-list-active" href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a class="ym5qx-menu-list-active" href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="visp6languages-mobile">
+      <div class="ym5qxlanguages-mobile">
         <ul>
           <li><a href="/tr/tedavi-yontemleri/">TR</a></li><li><a href="/en/tedavi-yontemleri/">EN</a></li><li><a href="/de/tedavi-yontemleri/">DE</a></li><li><a href="/ru/tedavi-yontemleri/">RU</a></li>
         </ul>
@@ -100,19 +100,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.visp6) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.ym5qx) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".visp6") : null;
+      var wrapper = root.closest ? root.closest(".ym5qx") : null;
       var target = wrapper || root;
-      if (target.classList.contains("visp6menu-open")) {
-        target.classList.remove("visp6menu-open");
+      if (target.classList.contains("ym5qxmenu-open")) {
+        target.classList.remove("ym5qxmenu-open");
       } else {
-        target.classList.add("visp6menu-open");
+        target.classList.add("ym5qxmenu-open");
       }
     }
   }
@@ -144,8 +144,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=r0tsg"></script>
-<script defer src="/src/cookie.js?v=r0tsg"></script>
+<script defer type="text/javascript" src="/src/js.js?v=o3djk"></script>
+<script defer src="/src/cookie.js?v=o3djk"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

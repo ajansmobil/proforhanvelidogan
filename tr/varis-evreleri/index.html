@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=pt6la" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=pt6la" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=r1yn0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=r1yn0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=pt6la" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=r1yn0" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=pt6la">
+<link rel="stylesheet" href="style.css?v=r1yn0">
 </head>
 
 <body>
-  <div id="header"><div class="mo6ej">
-  <div class="mo6ejtitle">
-    <div class="mo6ejtitlebody">
-      <div class="mo6ejtitlebodylang">
+  <div id="header"><div class="sftag">
+  <div class="sftagtitle">
+    <div class="sftagtitlebody">
+      <div class="sftagtitlebodylang">
         <ul>
           <li><a href="/tr/varis-evreleri/">TR</a></li><li><a href="/en/varis-evreleri/">EN</a></li><li><a href="/de/varis-evreleri/">DE</a></li><li><a href="/ru/varis-evreleri/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="mo6ejbody">
+  <div class="sftagbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=pt6la"
+        src="/img/logo.svg?v=r1yn0"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="mo6ejbodylogo"
+        class="sftagbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="mo6ej-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="sftag-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="mo6ej-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="mo6ejmenubody">
-    <div class="mo6ejmenu" id="menu-2-root">
-      <div class="mo6ejmenulistbody">
-        <div class="mo6ejmenulist">
+  <div class="sftag-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="sftagmenubody">
+    <div class="sftagmenu" id="menu-2-root">
+      <div class="sftagmenulistbody">
+        <div class="sftagmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="mo6ejlanguages-mobile">
+      <div class="sftaglanguages-mobile">
         <ul>
           <li><a href="/tr/varis-evreleri/">TR</a></li><li><a href="/en/varis-evreleri/">EN</a></li><li><a href="/de/varis-evreleri/">DE</a></li><li><a href="/ru/varis-evreleri/">RU</a></li>
         </ul>
@@ -100,51 +100,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.mo6ej) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.sftag) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".mo6ej") : null;
+      var wrapper = root.closest ? root.closest(".sftag") : null;
       var target = wrapper || root;
-      if (target.classList.contains("mo6ejmenu-open")) {
-        target.classList.remove("mo6ejmenu-open");
+      if (target.classList.contains("sftagmenu-open")) {
+        target.classList.remove("sftagmenu-open");
       } else {
-        target.classList.add("mo6ejmenu-open");
+        target.classList.add("sftagmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="fp03t-title f36">
+  <div id="content"><div class="vnsjf-title f36">
   <h1>Varis Evreleri Nelerdir?</h1>
 </div>
-<div class="fp03t">
-  <div class="fp03t-menu-btn">
+<div class="vnsjf">
+  <div class="vnsjf-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined fp03t-icon">menu</span>
+    <span class="material-symbols-outlined vnsjf-icon">menu</span>
   </div>
-  <div class="fp03t-menu-overlay" id="fp03t-menu-overlay" aria-hidden="true"></div>
-  <div class="fp03t-menu" id="fp03t-menu">
-    <button class="fp03t-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="fp03t-menu">
+  <div class="vnsjf-menu-overlay" id="vnsjf-menu-overlay" aria-hidden="true"></div>
+  <div class="vnsjf-menu" id="vnsjf-menu">
+    <button class="vnsjf-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="vnsjf-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="fp03t-menu-link" href="/tr/varis-nedir/">Varis Nedir?</a><a class="fp03t-menu-link" href="/tr/varis-turleri/">Varis Türleri Nelerdir?</a><a class="fp03t-menu-link active" href="/tr/varis-evreleri/">Varis Evreleri Nelerdir?</a><a class="fp03t-menu-link" href="/tr/varis-neden-olur/">Varis Neden Olur?</a><a class="fp03t-menu-link" href="/tr/varis-belirtileri/">Varis Belirtileri Nelerdir?</a><a class="fp03t-menu-link" href="/tr/varis-teshis/">Varis Nasıl Teşhis Edilir?</a><a class="fp03t-menu-link" href="/tr/varis-tedavi-nasil-yapilir/">Varis Tedavisi Nasıl Yapılır?</a><a class="fp03t-menu-link" href="/tr/varise-ne-iyi-gelir/">Varise Ne İyi Gelir?</a><a class="fp03t-menu-link" href="/tr/varisten-korunma/">Varisten Korunma Yolları</a><a class="fp03t-menu-link" href="/tr/varis-sss/">Varis Hakkında Sıkça Sorulan Sorular</a>
+    <a class="vnsjf-menu-link" href="/tr/varis-nedir/">Varis Nedir?</a><a class="vnsjf-menu-link" href="/tr/varis-turleri/">Varis Türleri Nelerdir?</a><a class="vnsjf-menu-link active" href="/tr/varis-evreleri/">Varis Evreleri Nelerdir?</a><a class="vnsjf-menu-link" href="/tr/varis-neden-olur/">Varis Neden Olur?</a><a class="vnsjf-menu-link" href="/tr/varis-belirtileri/">Varis Belirtileri Nelerdir?</a><a class="vnsjf-menu-link" href="/tr/varis-teshis/">Varis Nasıl Teşhis Edilir?</a><a class="vnsjf-menu-link" href="/tr/varis-tedavi-nasil-yapilir/">Varis Tedavisi Nasıl Yapılır?</a><a class="vnsjf-menu-link" href="/tr/varise-ne-iyi-gelir/">Varise Ne İyi Gelir?</a><a class="vnsjf-menu-link" href="/tr/varisten-korunma/">Varisten Korunma Yolları</a><a class="vnsjf-menu-link" href="/tr/varis-sss/">Varis Hakkında Sıkça Sorulan Sorular</a>
   </div>
-  <div class="fp03t-desc">
+  <div class="vnsjf-desc">
     
-    <div class="fp03t-body"><p><b>Varis evreleri nelerdir?</b></p> <p>Varis evreleri uluslararası <b>CEAP sınıflaması</b> ile tanımlanır. C (Clinical): C0 görünür belirti yok, C1 telanjiektazi/retiküler, C2 varis, C3 ödem, C4 cilt değişiklikleri (pigmentasyon, egzama, lipodermatoskleroz), C5 iyileşmiş ülser, C6 aktif ülser. E (Etiological), A (Anatomical), P (Pathophysiological) alt sınıfları da tanıda kullanılır.</p> <p>Evreye göre tedavi planı değişir. Erken evrelerde yaşam tarzı önlemleri ve kompresyon; ileri evrelerde endovenöz ablasyon, skleroterapi veya cerrahi gündeme gelir. Doç. Dr. Orhan Veli Doğan vasküler ve endovasküler (EVAR, TEVAR, periferik anjiyoplasti) deneyimi ile CEAP evresine uygun tedavi önerir.</p> <p>Beceri Alanları kapsamında tüm kompleks vasküler ve endovasküler girişimler uygulanmaktadır; varis evrelemesi Doppler ve klinik muayene ile yapılır. Hasta güvenliği ve kanıta dayalı kılavuzlar ön planda tutulur. Detaylı değerlendirme için randevu alabilirsiniz.</p> <p>Özet: Varis evreleri CEAP sınıflaması ile C0–C6 arasında tanımlanır. Doç. Dr. Orhan Veli Doğan kalp damar cerrahisi ve endovasküler tedavi deneyimi ile evreye uygun tanı ve tedavi sunar. İletişim sayfamızdan bize ulaşabilirsiniz.</p> <p>Doç. Dr. Orhan Veli Doğan, kalp damar cerrahisi alanında vasküler ve endovasküler girişimler (EVAR, TEVAR, periferik anjiyoplasti) konusunda deneyimlidir. CEAP evrelemesi Doppler ultrasonografi ve klinik muayene ile yapılır; evreye uygun tedavi seçenekleri hasta ile paylaşılır. Mustafa Kemal Üniversitesi Tıp Fakültesi ve özel hastane deneyimi ile kaliteli hasta bakımı hedeflenir. Ek bilgi için randevu alabilirsiniz.</p> <p>CEAP sınıflaması uluslararası kabul görmüş bir evreleme sistemidir; tedavi kararları evreye ve hastanın şikayetlerine göre verilir. Varis evreleri hakkında daha fazla bilgi almak için Doç. Dr. Orhan Veli Doğan ile iletişime geçebilirsiniz. CEAP evrelemesi ve evreye uygun tedavi hakkında randevu alabilirsiniz.</p> <p>Evreye uygun tedavi ile semptomların azaltılması ve ilerlemenin önlenmesi hedeflenir.</p></div>
+    <div class="vnsjf-body"><p><b>Varis evreleri nelerdir?</b></p> <p>Varis evreleri uluslararası <b>CEAP sınıflaması</b> ile tanımlanır. C (Clinical): C0 görünür belirti yok, C1 telanjiektazi/retiküler, C2 varis, C3 ödem, C4 cilt değişiklikleri (pigmentasyon, egzama, lipodermatoskleroz), C5 iyileşmiş ülser, C6 aktif ülser. E (Etiological), A (Anatomical), P (Pathophysiological) alt sınıfları da tanıda kullanılır.</p> <p>Evreye göre tedavi planı değişir. Erken evrelerde yaşam tarzı önlemleri ve kompresyon; ileri evrelerde endovenöz ablasyon, skleroterapi veya cerrahi gündeme gelir. Doç. Dr. Orhan Veli Doğan vasküler ve endovasküler (EVAR, TEVAR, periferik anjiyoplasti) deneyimi ile CEAP evresine uygun tedavi önerir.</p> <p>Beceri Alanları kapsamında tüm kompleks vasküler ve endovasküler girişimler uygulanmaktadır; varis evrelemesi Doppler ve klinik muayene ile yapılır. Hasta güvenliği ve kanıta dayalı kılavuzlar ön planda tutulur. Detaylı değerlendirme için randevu alabilirsiniz.</p> <p>Özet: Varis evreleri CEAP sınıflaması ile C0–C6 arasında tanımlanır. Doç. Dr. Orhan Veli Doğan kalp damar cerrahisi ve endovasküler tedavi deneyimi ile evreye uygun tanı ve tedavi sunar. İletişim sayfamızdan bize ulaşabilirsiniz.</p> <p>Doç. Dr. Orhan Veli Doğan, kalp damar cerrahisi alanında vasküler ve endovasküler girişimler (EVAR, TEVAR, periferik anjiyoplasti) konusunda deneyimlidir. CEAP evrelemesi Doppler ultrasonografi ve klinik muayene ile yapılır; evreye uygun tedavi seçenekleri hasta ile paylaşılır. Mustafa Kemal Üniversitesi Tıp Fakültesi ve özel hastane deneyimi ile kaliteli hasta bakımı hedeflenir. Ek bilgi için randevu alabilirsiniz.</p> <p>CEAP sınıflaması uluslararası kabul görmüş bir evreleme sistemidir; tedavi kararları evreye ve hastanın şikayetlerine göre verilir. Varis evreleri hakkında daha fazla bilgi almak için Doç. Dr. Orhan Veli Doğan ile iletişime geçebilirsiniz. CEAP evrelemesi ve evreye uygun tedavi hakkında randevu alabilirsiniz.</p> <p>Evreye uygun tedavi ile semptomların azaltılması ve ilerlemenin önlenmesi hedeflenir.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".fp03t-menu-btn");
-    var menu = document.querySelector(".fp03t-menu");
-    var overlay = document.querySelector(".fp03t-menu-overlay");
-    var closeButton = document.querySelector(".fp03t-menu-close");
+    var menuToggleBtn = document.querySelector(".vnsjf-menu-btn");
+    var menu = document.querySelector(".vnsjf-menu");
+    var overlay = document.querySelector(".vnsjf-menu-overlay");
+    var closeButton = document.querySelector(".vnsjf-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -214,7 +214,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".fp03t-menu-close");
+      var closeBtn = event.target.closest(".vnsjf-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -262,15 +262,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".fp03t-top").forEach(function (button) {
+    document.querySelectorAll(".vnsjf-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".fp03t-menu-group");
+        var group = this.closest(".vnsjf-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".fp03t-sub");
+        var sub = group.querySelector(".vnsjf-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".fp03t-icon");
+        var icon = this.querySelector(".vnsjf-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -308,8 +308,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=pt6la"></script>
-<script defer src="/src/cookie.js?v=pt6la"></script>
+<script defer type="text/javascript" src="/src/js.js?v=r1yn0"></script>
+<script defer src="/src/cookie.js?v=r1yn0"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

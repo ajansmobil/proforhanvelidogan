@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=k6d7p" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=k6d7p" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=hm1d1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=hm1d1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=k6d7p" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=hm1d1" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=k6d7p">
+<link rel="stylesheet" href="style.css?v=hm1d1">
 </head>
 
 <body>
-  <div id="header"><div class="wepuq">
-  <div class="wepuqtitle">
-    <div class="wepuqtitlebody">
-      <div class="wepuqtitlebodylang">
+  <div id="header"><div class="rwowm">
+  <div class="rwowmtitle">
+    <div class="rwowmtitlebody">
+      <div class="rwowmtitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="wepuqbody">
+  <div class="rwowmbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=k6d7p"
+        src="/img/logo.svg?v=hm1d1"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="wepuqbodylogo"
+        class="rwowmbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="wepuq-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="rwowm-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="wepuq-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="wepuqmenubody">
-    <div class="wepuqmenu" id="menu-2-root">
-      <div class="wepuqmenulistbody">
-        <div class="wepuqmenulist">
+  <div class="rwowm-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="rwowmmenubody">
+    <div class="rwowmmenu" id="menu-2-root">
+      <div class="rwowmmenulistbody">
+        <div class="rwowmmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a class="wepuq-menu-list-active" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a class="rwowm-menu-list-active" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="wepuqlanguages-mobile">
+      <div class="rwowmlanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -100,19 +100,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.wepuq) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.rwowm) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".wepuq") : null;
+      var wrapper = root.closest ? root.closest(".rwowm") : null;
       var target = wrapper || root;
-      if (target.classList.contains("wepuqmenu-open")) {
-        target.classList.remove("wepuqmenu-open");
+      if (target.classList.contains("rwowmmenu-open")) {
+        target.classList.remove("rwowmmenu-open");
       } else {
-        target.classList.add("wepuqmenu-open");
+        target.classList.add("rwowmmenu-open");
       }
     }
   }
@@ -144,8 +144,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=k6d7p"></script>
-<script defer src="/src/cookie.js?v=k6d7p"></script>
+<script defer type="text/javascript" src="/src/js.js?v=hm1d1"></script>
+<script defer src="/src/cookie.js?v=hm1d1"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
