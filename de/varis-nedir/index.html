@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=qia8y" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=qia8y" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=kb9xp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=kb9xp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qia8y" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=kb9xp" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,8 +36,8 @@
   "name": "Prof OVD Orhan VELİ DOĞAN",
   "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
   "url": "https://proforhanvelidogan.com",
-  "logo": "https://proforhanvelidogan.com/img/logo.svg",
-  "image": "https://proforhanvelidogan.com/img/logo.svg"
+  "logo": "https://proforhanvelidogan.com/img/logo.png",
+  "image": "https://proforhanvelidogan.com/img/logo.png"
 }
 </script>
 <script type="application/ld+json">
@@ -46,51 +46,51 @@
   "@type": "Organization",
   "name": "Prof OVD Orhan VELİ DOĞAN",
   "url": "https://proforhanvelidogan.com",
-  "logo": "https://proforhanvelidogan.com/img/logo.svg"
+  "logo": "https://proforhanvelidogan.com/img/logo.png"
 }
 </script>
   
   
   
-<link rel="stylesheet" href="style.css?v=qia8y">
+<link rel="stylesheet" href="style.css?v=kb9xp">
 </head>
 
 <body>
-  <div id="header"><div class="hvksq">
-  <div class="hvksqtitle">
-    <div class="hvksqtitlebody">
-      <div class="hvksqtitlebodylang">
+  <div id="header"><div class="ovlti">
+  <div class="ovltititle">
+    <div class="ovltititlebody">
+      <div class="ovltititlebodylang">
         <ul>
           <li><a href="/tr/varis-nedir/">TR</a></li><li><a href="/en/varis-nedir/">EN</a></li><li><a href="/de/varis-nedir/">DE</a></li><li><a href="/ru/varis-nedir/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="hvksqbody">
+  <div class="ovltibody">
     <a href="/de/"
       ><img
-        src="/img/logo.svg?v=qia8y"
+        src="/img/logo.png?v=kb9xp"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="hvksqbodylogo"
+        class="ovltibodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="hvksq-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ovlti-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="hvksq-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="hvksqmenubody">
-    <div class="hvksqmenu" id="menu-2-root">
-      <div class="hvksqmenulistbody">
-        <div class="hvksqmenulist">
+  <div class="ovlti-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ovltimenubody">
+    <div class="ovltimenu" id="menu-2-root">
+      <div class="ovltimenulistbody">
+        <div class="ovltimenulist">
           <ul>
             <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="hvksqlanguages-mobile">
+      <div class="ovltilanguages-mobile">
         <ul>
           <li><a href="/tr/varis-nedir/">TR</a></li><li><a href="/en/varis-nedir/">EN</a></li><li><a href="/de/varis-nedir/">DE</a></li><li><a href="/ru/varis-nedir/">RU</a></li>
         </ul>
@@ -100,54 +100,54 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.hvksq) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.ovlti) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".hvksq") : null;
+      var wrapper = root.closest ? root.closest(".ovlti") : null;
       var target = wrapper || root;
-      if (target.classList.contains("hvksqmenu-open")) {
-        target.classList.remove("hvksqmenu-open");
+      if (target.classList.contains("ovltimenu-open")) {
+        target.classList.remove("ovltimenu-open");
       } else {
-        target.classList.add("hvksqmenu-open");
+        target.classList.add("ovltimenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="qqo83-title f36">
+  <div id="content"><div class="k3xnf-title f36">
   <h1>Was sind Krampfadern?</h1>
 </div>
-<div class="qqo83">
-  <div class="qqo83-menu-btn">
+<div class="k3xnf">
+  <div class="k3xnf-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined qqo83-icon">menu</span>
+    <span class="material-symbols-outlined k3xnf-icon">menu</span>
   </div>
-  <div class="qqo83-menu-overlay" id="qqo83-menu-overlay" aria-hidden="true"></div>
-  <div class="qqo83-menu" id="qqo83-menu">
-    <button class="qqo83-menu-close" type="button" aria-label="Menü schließen" aria-controls="qqo83-menu">
+  <div class="k3xnf-menu-overlay" id="k3xnf-menu-overlay" aria-hidden="true"></div>
+  <div class="k3xnf-menu" id="k3xnf-menu">
+    <button class="k3xnf-menu-close" type="button" aria-label="Menü schließen" aria-controls="k3xnf-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="qqo83-menu-link active" href="/de/varis-nedir/">Was sind Krampfadern?</a><a class="qqo83-menu-link" href="/de/varis-turleri/">Welche Arten von Krampfadern gibt es?</a><a class="qqo83-menu-link" href="/de/varis-evreleri/">Welche Stadien haben Krampfadern?</a><a class="qqo83-menu-link" href="/de/varis-neden-olur/">Was verursacht Krampfadern?</a><a class="qqo83-menu-link" href="/de/varis-belirtileri/">Welche Symptome haben Krampfadern?</a><a class="qqo83-menu-link" href="/de/varis-teshis/">Wie werden Krampfadern diagnostiziert?</a><a class="qqo83-menu-link" href="/de/varis-tedavi-nasil-yapilir/">Wie wird die Krampfaderbehandlung durchgeführt?</a>
+    <a class="k3xnf-menu-link active" href="/de/varis-nedir/">Was sind Krampfadern?</a><a class="k3xnf-menu-link" href="/de/varis-turleri/">Welche Arten von Krampfadern gibt es?</a><a class="k3xnf-menu-link" href="/de/varis-evreleri/">Welche Stadien haben Krampfadern?</a><a class="k3xnf-menu-link" href="/de/varis-neden-olur/">Was verursacht Krampfadern?</a><a class="k3xnf-menu-link" href="/de/varis-belirtileri/">Welche Symptome haben Krampfadern?</a><a class="k3xnf-menu-link" href="/de/varis-teshis/">Wie werden Krampfadern diagnostiziert?</a><a class="k3xnf-menu-link" href="/de/varis-tedavi-nasil-yapilir/">Wie wird die Krampfaderbehandlung durchgeführt?</a>
   </div>
-  <div class="qqo83-desc">
+  <div class="k3xnf-desc">
     
-    <div class="qqo83-desc-body">
-            <img src="/page/z7cy6mn33q/ilj83.jpg?v=qia8y" width="100%" alt="Was sind Krampfadern?" loading="lazy" />
+    <div class="k3xnf-desc-body">
+            <img src="/page/z7cy6mn33q/ilj83.jpg?v=kb9xp" width="100%" alt="Was sind Krampfadern?" loading="lazy" />
     </div>
-    <div class="qqo83-body"></div>
+    <div class="k3xnf-body"></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".qqo83-menu-btn");
-    var menu = document.querySelector(".qqo83-menu");
-    var overlay = document.querySelector(".qqo83-menu-overlay");
-    var closeButton = document.querySelector(".qqo83-menu-close");
+    var menuToggleBtn = document.querySelector(".k3xnf-menu-btn");
+    var menu = document.querySelector(".k3xnf-menu");
+    var overlay = document.querySelector(".k3xnf-menu-overlay");
+    var closeButton = document.querySelector(".k3xnf-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -217,7 +217,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".qqo83-menu-close");
+      var closeBtn = event.target.closest(".k3xnf-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -265,15 +265,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".qqo83-top").forEach(function (button) {
+    document.querySelectorAll(".k3xnf-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".qqo83-menu-group");
+        var group = this.closest(".k3xnf-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".qqo83-sub");
+        var sub = group.querySelector(".k3xnf-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".qqo83-icon");
+        var icon = this.querySelector(".k3xnf-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -289,7 +289,7 @@
   <div id="footer"><footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
-      <img src="/img/logo.svg" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
+      <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
       <li class="menu__item"><a class="menu_link" href="/de/">Startseite</a></li><li class="menu__item"><a class="menu_link" href="/de/kurumsal/">Lebenslauf</a></li><li class="menu__item"><a class="menu_link" href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li class="menu__item"><a class="menu_link" href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li class="menu__item"><a class="menu_link" href="/de/iletisim/">Kontakt</a></li>
@@ -311,8 +311,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=qia8y"></script>
-<script defer src="/src/cookie.js?v=qia8y"></script>
+<script defer type="text/javascript" src="/src/js.js?v=kb9xp"></script>
+<script defer src="/src/cookie.js?v=kb9xp"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

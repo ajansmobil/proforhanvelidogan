@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prof OVD Orhan VELİ DOĞAN</title>
+  <meta name="description" content="Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi." />
+  <link rel="canonical" href="https://proforhanvelidogan.com/" />
+  <link rel="alternate" hreflang="tr" href="https://proforhanvelidogan.com/tr/" />
+  <link rel="alternate" hreflang="en" href="https://proforhanvelidogan.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://proforhanvelidogan.com/de/" />
+  <link rel="alternate" hreflang="ru" href="https://proforhanvelidogan.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://proforhanvelidogan.com/tr/" />
   <script>
 (function() {
   var available = ["tr","en","de","ru"];
@@ -29,9 +36,13 @@
   if (chosen === null) {
     chosen = fallbackEn;
   }
-  location.replace('/' + chosen + '/');
+  var target = '/' + chosen + '/' + (location.search || '') + (location.hash || '');
+  location.replace(target);
 })();
   </script>
 </head>
-<body><p>Prof OVD Orhan VELİ DOĞAN</p></body>
+<body>
+  <p>Prof OVD Orhan VELİ DOĞAN</p>
+  <noscript><p>Dil seçin: <a href="/tr/">TR</a> | <a href="/en/">EN</a> | <a href="/de/">DE</a> | <a href="/ru/">RU</a></p></noscript>
+</body>
 </html>
