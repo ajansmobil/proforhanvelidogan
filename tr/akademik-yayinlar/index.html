@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=qzvpy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=qzvpy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ajn14" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ajn14" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qzvpy" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ajn14" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=qzvpy">
+<link rel="stylesheet" href="style.css?v=ajn14">
 </head>
 
 <body>
-  <div id="header"><div class="k0g0a">
-  <div class="k0g0atitle">
-    <div class="k0g0atitlebody">
-      <div class="k0g0atitlebodylang">
+  <div id="header"><div class="jefid">
+  <div class="jefidtitle">
+    <div class="jefidtitlebody">
+      <div class="jefidtitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="k0g0abody">
+  <div class="jefidbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=qzvpy"
+        src="/img/logo.svg?v=ajn14"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="k0g0abodylogo"
+        class="jefidbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="k0g0a-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="jefid-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="k0g0a-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="k0g0amenubody">
-    <div class="k0g0amenu" id="menu-2-root">
-      <div class="k0g0amenulistbody">
-        <div class="k0g0amenulist">
+  <div class="jefid-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="jefidmenubody">
+    <div class="jefidmenu" id="menu-2-root">
+      <div class="jefidmenulistbody">
+        <div class="jefidmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a class="k0g0a-menu-list-active" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a class="jefid-menu-list-active" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="k0g0alanguages-mobile">
+      <div class="jefidlanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -100,19 +100,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.k0g0a) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.jefid) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".k0g0a") : null;
+      var wrapper = root.closest ? root.closest(".jefid") : null;
       var target = wrapper || root;
-      if (target.classList.contains("k0g0amenu-open")) {
-        target.classList.remove("k0g0amenu-open");
+      if (target.classList.contains("jefidmenu-open")) {
+        target.classList.remove("jefidmenu-open");
       } else {
-        target.classList.add("k0g0amenu-open");
+        target.classList.add("jefidmenu-open");
       }
     }
   }
@@ -144,8 +144,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=qzvpy"></script>
-<script defer src="/src/cookie.js?v=qzvpy"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ajn14"></script>
+<script defer src="/src/cookie.js?v=ajn14"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

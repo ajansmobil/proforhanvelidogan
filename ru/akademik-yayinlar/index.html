@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=nij49" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=nij49" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=t85s7" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=t85s7" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=nij49" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=t85s7" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,45 +52,45 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=nij49">
+<link rel="stylesheet" href="style.css?v=t85s7">
 </head>
 
 <body>
-  <div id="header"><div class="bv2xc">
-  <div class="bv2xctitle">
-    <div class="bv2xctitlebody">
-      <div class="bv2xctitlebodylang">
+  <div id="header"><div class="tfbhq">
+  <div class="tfbhqtitle">
+    <div class="tfbhqtitlebody">
+      <div class="tfbhqtitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="bv2xcbody">
+  <div class="tfbhqbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.svg?v=nij49"
+        src="/img/logo.svg?v=t85s7"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="bv2xcbodylogo"
+        class="tfbhqbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="bv2xc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="tfbhq-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="bv2xc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="bv2xcmenubody">
-    <div class="bv2xcmenu" id="menu-2-root">
-      <div class="bv2xcmenulistbody">
-        <div class="bv2xcmenulist">
+  <div class="tfbhq-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="tfbhqmenubody">
+    <div class="tfbhqmenu" id="menu-2-root">
+      <div class="tfbhqmenulistbody">
+        <div class="tfbhqmenulist">
           <ul>
-            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a class="bv2xc-menu-list-active" href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
+            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a class="tfbhq-menu-list-active" href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="bv2xclanguages-mobile">
+      <div class="tfbhqlanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -100,19 +100,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.bv2xc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.tfbhq) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".bv2xc") : null;
+      var wrapper = root.closest ? root.closest(".tfbhq") : null;
       var target = wrapper || root;
-      if (target.classList.contains("bv2xcmenu-open")) {
-        target.classList.remove("bv2xcmenu-open");
+      if (target.classList.contains("tfbhqmenu-open")) {
+        target.classList.remove("tfbhqmenu-open");
       } else {
-        target.classList.add("bv2xcmenu-open");
+        target.classList.add("tfbhqmenu-open");
       }
     }
   }
@@ -144,8 +144,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=nij49"></script>
-<script defer src="/src/cookie.js?v=nij49"></script>
+<script defer type="text/javascript" src="/src/js.js?v=t85s7"></script>
+<script defer src="/src/cookie.js?v=t85s7"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
