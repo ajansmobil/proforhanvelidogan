@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=i2xst" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=i2xst" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=isyx4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=isyx4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=i2xst" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=isyx4" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=i2xst">
+<link rel="stylesheet" href="style.css?v=isyx4">
 </head>
 
 <body>
-  <div id="header"><div class="kaz92">
-  <div class="kaz92title">
-    <div class="kaz92titlebody">
-      <div class="kaz92titlebodylang">
+  <div id="header"><div class="hocml">
+  <div class="hocmltitle">
+    <div class="hocmltitlebody">
+      <div class="hocmltitlebodylang">
         <ul>
           <li><a href="/tr/kullanici-haklari/">TR</a></li><li><a href="/en/kullanici-haklari/">EN</a></li><li><a href="/de/kullanici-haklari/">DE</a></li><li><a href="/ru/kullanici-haklari/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="kaz92body">
+  <div class="hocmlbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=imkg6"
+        src="/img/logo.png?v=i0gwg"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="kaz92bodylogo"
+        class="hocmlbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="kaz92-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="hocml-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="kaz92-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="kaz92menubody">
-    <div class="kaz92menu" id="menu-2-root">
-      <div class="kaz92menulistbody">
-        <div class="kaz92menulist">
+  <div class="hocml-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="hocmlmenubody">
+    <div class="hocmlmenu" id="menu-2-root">
+      <div class="hocmlmenulistbody">
+        <div class="hocmlmenulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="kaz92languages-mobile">
+      <div class="hocmllanguages-mobile">
         <ul>
           <li><a href="/tr/kullanici-haklari/">TR</a></li><li><a href="/en/kullanici-haklari/">EN</a></li><li><a href="/de/kullanici-haklari/">DE</a></li><li><a href="/ru/kullanici-haklari/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.kaz92) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.hocml) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".kaz92") : null;
+      var wrapper = root.closest ? root.closest(".hocml") : null;
       var target = wrapper || root;
-      if (target.classList.contains("kaz92menu-open")) {
-        target.classList.remove("kaz92menu-open");
+      if (target.classList.contains("hocmlmenu-open")) {
+        target.classList.remove("hocmlmenu-open");
       } else {
-        target.classList.add("kaz92menu-open");
+        target.classList.add("hocmlmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="bedyc-title f36">
+  <div id="content"><div class="kkco4-title f36">
   <h1>Права пользователей</h1>
 </div>
-<div class="bedyc">
-  <div class="bedyc-menu-btn">
+<div class="kkco4">
+  <div class="kkco4-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined bedyc-icon">menu</span>
+    <span class="material-symbols-outlined kkco4-icon">menu</span>
   </div>
-  <div class="bedyc-menu-overlay" id="bedyc-menu-overlay" aria-hidden="true"></div>
-  <div class="bedyc-menu" id="bedyc-menu">
-    <button class="bedyc-menu-close" type="button" aria-label="Закрыть меню" aria-controls="bedyc-menu">
+  <div class="kkco4-menu-overlay" id="kkco4-menu-overlay" aria-hidden="true"></div>
+  <div class="kkco4-menu" id="kkco4-menu">
+    <button class="kkco4-menu-close" type="button" aria-label="Закрыть меню" aria-controls="kkco4-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="bedyc-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="bedyc-menu-link" href="/ru/misyon/">Миссия</a><a class="bedyc-menu-link" href="/ru/vizyon/">Видение</a><a class="bedyc-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="bedyc-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="bedyc-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="bedyc-menu-link active" href="/ru/kullanici-haklari/">Права пользователей</a><a class="bedyc-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
+    <a class="kkco4-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="kkco4-menu-link" href="/ru/misyon/">Миссия</a><a class="kkco4-menu-link" href="/ru/vizyon/">Видение</a><a class="kkco4-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="kkco4-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="kkco4-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="kkco4-menu-link active" href="/ru/kullanici-haklari/">Права пользователей</a><a class="kkco4-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
   </div>
-  <div class="bedyc-desc">
+  <div class="kkco4-desc">
     
-    <div class="bedyc-body"><p><b>Ваши права как субъекта данных</b></p> <p>По турецкому Закону о защите персональных данных (KVKK) вы имеете право на информацию, доступ, исправление, удаление и возражение. Полный текст и порядок обращения: см. турецкую версию или контакты.</p></div>
+    <div class="kkco4-body"><p><b>Ваши права как субъекта данных</b></p> <p>По турецкому Закону о защите персональных данных (KVKK) вы имеете право на информацию, доступ, исправление, удаление и возражение. Полный текст и порядок обращения: см. турецкую версию или контакты.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".bedyc-menu-btn");
-    var menu = document.querySelector(".bedyc-menu");
-    var overlay = document.querySelector(".bedyc-menu-overlay");
-    var closeButton = document.querySelector(".bedyc-menu-close");
+    var menuToggleBtn = document.querySelector(".kkco4-menu-btn");
+    var menu = document.querySelector(".kkco4-menu");
+    var overlay = document.querySelector(".kkco4-menu-overlay");
+    var closeButton = document.querySelector(".kkco4-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".bedyc-menu-close");
+      var closeBtn = event.target.closest(".kkco4-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".bedyc-top").forEach(function (button) {
+    document.querySelectorAll(".kkco4-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".bedyc-menu-group");
+        var group = this.closest(".kkco4-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".bedyc-sub");
+        var sub = group.querySelector(".kkco4-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".bedyc-icon");
+        var icon = this.querySelector(".kkco4-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=i2xst"></script>
-<script defer src="/src/cookie.js?v=i2xst"></script>
+<script defer type="text/javascript" src="/src/js.js?v=isyx4"></script>
+<script defer src="/src/cookie.js?v=isyx4"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

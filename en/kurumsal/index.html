@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=i9jag" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=i9jag" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=s9x29" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=s9x29" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=i9jag" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=s9x29" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=i9jag">
+<link rel="stylesheet" href="style.css?v=s9x29">
 </head>
 
 <body>
-  <div id="header"><div class="mvy4f">
-  <div class="mvy4ftitle">
-    <div class="mvy4ftitlebody">
-      <div class="mvy4ftitlebodylang">
+  <div id="header"><div class="eyv49">
+  <div class="eyv49title">
+    <div class="eyv49titlebody">
+      <div class="eyv49titlebodylang">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="mvy4fbody">
+  <div class="eyv49body">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=j9kl2"
+        src="/img/logo.png?v=nrvsj"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="mvy4fbodylogo"
+        class="eyv49bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="mvy4f-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="eyv49-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="mvy4f-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="mvy4fmenubody">
-    <div class="mvy4fmenu" id="menu-2-root">
-      <div class="mvy4fmenulistbody">
-        <div class="mvy4fmenulist">
+  <div class="eyv49-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="eyv49menubody">
+    <div class="eyv49menu" id="menu-2-root">
+      <div class="eyv49menulistbody">
+        <div class="eyv49menulist">
           <ul>
-            <a href="/en/">Home </a><a class="mvy4f-menu-list-active" href="/en/kurumsal/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
+            <a href="/en/">Home </a><a class="eyv49-menu-list-active" href="/en/kurumsal/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="mvy4flanguages-mobile">
+      <div class="eyv49languages-mobile">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
@@ -98,19 +98,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.mvy4f) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.eyv49) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".mvy4f") : null;
+      var wrapper = root.closest ? root.closest(".eyv49") : null;
       var target = wrapper || root;
-      if (target.classList.contains("mvy4fmenu-open")) {
-        target.classList.remove("mvy4fmenu-open");
+      if (target.classList.contains("eyv49menu-open")) {
+        target.classList.remove("eyv49menu-open");
       } else {
-        target.classList.add("mvy4fmenu-open");
+        target.classList.add("eyv49menu-open");
       }
     }
   }
@@ -138,8 +138,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=i9jag"></script>
-<script defer src="/src/cookie.js?v=i9jag"></script>
+<script defer type="text/javascript" src="/src/js.js?v=s9x29"></script>
+<script defer src="/src/cookie.js?v=s9x29"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
