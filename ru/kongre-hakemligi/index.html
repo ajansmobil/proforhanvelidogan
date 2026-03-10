@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=e2d17" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=e2d17" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ppjzk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ppjzk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=e2d17" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ppjzk" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Доц. д-р Орхан Вели Доган выполняет коронарное шунтирование, операции на клапанах, эндоваскулярные вмешательства и лечение варикоза.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=e2d17">
+<link rel="stylesheet" href="style.css?v=ppjzk">
 </head>
 
 <body>
-  <div id="header"><div class="xtruc">
-  <div class="xtructitle">
-    <div class="xtructitlebody">
-      <div class="xtructitlebodylang">
+  <div id="header"><div class="d8dsa">
+  <div class="d8dsatitle">
+    <div class="d8dsatitlebody">
+      <div class="d8dsatitlebodylang">
         <ul>
           <li><a href="/tr/kongre-hakemligi/">TR</a></li><li><a href="/en/kongre-hakemligi/">EN</a></li><li><a href="/de/kongre-hakemligi/">DE</a></li><li><a href="/ru/kongre-hakemligi/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="xtrucbody">
+  <div class="d8dsabody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=pzia3"
+        src="/img/logo.png?v=v5o3h"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="xtrucbodylogo"
+        class="d8dsabodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="xtruc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="d8dsa-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="xtruc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="xtrucmenubody">
-    <div class="xtrucmenu" id="menu-2-root">
-      <div class="xtrucmenulistbody">
-        <div class="xtrucmenulist">
+  <div class="d8dsa-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="d8dsamenubody">
+    <div class="d8dsamenu" id="menu-2-root">
+      <div class="d8dsamenulistbody">
+        <div class="d8dsamenulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="xtruclanguages-mobile">
+      <div class="d8dsalanguages-mobile">
         <ul>
           <li><a href="/tr/kongre-hakemligi/">TR</a></li><li><a href="/en/kongre-hakemligi/">EN</a></li><li><a href="/de/kongre-hakemligi/">DE</a></li><li><a href="/ru/kongre-hakemligi/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.xtruc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.d8dsa) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".xtruc") : null;
+      var wrapper = root.closest ? root.closest(".d8dsa") : null;
       var target = wrapper || root;
-      if (target.classList.contains("xtrucmenu-open")) {
-        target.classList.remove("xtrucmenu-open");
+      if (target.classList.contains("d8dsamenu-open")) {
+        target.classList.remove("d8dsamenu-open");
       } else {
-        target.classList.add("xtrucmenu-open");
+        target.classList.add("d8dsamenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="wp6we-title f36">
+  <div id="content"><div class="gkwgp-title f36">
   <h1>Рецензирование конгрессов</h1>
 </div>
-<div class="wp6we">
-  <div class="wp6we-menu-btn">
+<div class="gkwgp">
+  <div class="gkwgp-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined wp6we-icon">menu</span>
+    <span class="material-symbols-outlined gkwgp-icon">menu</span>
   </div>
-  <div class="wp6we-menu-overlay" id="wp6we-menu-overlay" aria-hidden="true"></div>
-  <div class="wp6we-menu" id="wp6we-menu">
-    <button class="wp6we-menu-close" type="button" aria-label="Закрыть меню" aria-controls="wp6we-menu">
+  <div class="gkwgp-menu-overlay" id="gkwgp-menu-overlay" aria-hidden="true"></div>
+  <div class="gkwgp-menu" id="gkwgp-menu">
+    <button class="gkwgp-menu-close" type="button" aria-label="Закрыть меню" aria-controls="gkwgp-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="wp6we-menu-link" href="/ru/yonetilen-yuksek-lisans-tezleri/">Научное руководство магистерскими диссертациями</a><a class="wp6we-menu-link" href="/ru/dergi-hakemligi/">Рецензирование журналов</a><a class="wp6we-menu-link active" href="/ru/kongre-hakemligi/">Рецензирование конгрессов</a><a class="wp6we-menu-link" href="/ru/bilimsel-etkinlikler/">Научная деятельность</a><a class="wp6we-menu-link" href="/ru/oduller/">Награды</a>
+    <a class="gkwgp-menu-link" href="/ru/yonetilen-yuksek-lisans-tezleri/">Научное руководство магистерскими диссертациями</a><a class="gkwgp-menu-link" href="/ru/dergi-hakemligi/">Рецензирование журналов</a><a class="gkwgp-menu-link active" href="/ru/kongre-hakemligi/">Рецензирование конгрессов</a><a class="gkwgp-menu-link" href="/ru/bilimsel-etkinlikler/">Научная деятельность</a><a class="gkwgp-menu-link" href="/ru/oduller/">Награды</a>
   </div>
-  <div class="wp6we-desc">
+  <div class="gkwgp-desc">
     
-    <div class="wp6we-body"><p>Доц. д-р Орхан Вели Доган – рецензент тезисов 11-го и 12-го Турецкого конгресса торакальной и сердечно-сосудистой хирургии.</p></div>
+    <div class="gkwgp-body"><p>Доц. д-р Орхан Вели Доган – рецензент тезисов 11-го и 12-го Турецкого конгресса торакальной и сердечно-сосудистой хирургии.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".wp6we-menu-btn");
-    var menu = document.querySelector(".wp6we-menu");
-    var overlay = document.querySelector(".wp6we-menu-overlay");
-    var closeButton = document.querySelector(".wp6we-menu-close");
+    var menuToggleBtn = document.querySelector(".gkwgp-menu-btn");
+    var menu = document.querySelector(".gkwgp-menu");
+    var overlay = document.querySelector(".gkwgp-menu-overlay");
+    var closeButton = document.querySelector(".gkwgp-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".wp6we-menu-close");
+      var closeBtn = event.target.closest(".gkwgp-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".wp6we-top").forEach(function (button) {
+    document.querySelectorAll(".gkwgp-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".wp6we-menu-group");
+        var group = this.closest(".gkwgp-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".wp6we-sub");
+        var sub = group.querySelector(".gkwgp-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".wp6we-icon");
+        var icon = this.querySelector(".gkwgp-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=e2d17"></script>
-<script defer src="/src/cookie.js?v=e2d17"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ppjzk"></script>
+<script defer src="/src/cookie.js?v=ppjzk"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

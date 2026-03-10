@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=bu3vd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=bu3vd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=d2ca5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=d2ca5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=bu3vd" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=d2ca5" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Assoc. Prof. Orhan Veli Dogan provides coronary bypass, valve surgery, endovascular procedures and varicose vein treatment in cardiovascular surgery.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=bu3vd">
+<link rel="stylesheet" href="style.css?v=d2ca5">
 </head>
 
 <body>
-  <div id="header"><div class="uk1hn">
-  <div class="uk1hntitle">
-    <div class="uk1hntitlebody">
-      <div class="uk1hntitlebodylang">
+  <div id="header"><div class="ltr6x">
+  <div class="ltr6xtitle">
+    <div class="ltr6xtitlebody">
+      <div class="ltr6xtitlebodylang">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="uk1hnbody">
+  <div class="ltr6xbody">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=mc7rz"
+        src="/img/logo.png?v=kbo93"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="uk1hnbodylogo"
+        class="ltr6xbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="uk1hn-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ltr6x-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="uk1hn-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="uk1hnmenubody">
-    <div class="uk1hnmenu" id="menu-2-root">
-      <div class="uk1hnmenulistbody">
-        <div class="uk1hnmenulist">
+  <div class="ltr6x-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ltr6xmenubody">
+    <div class="ltr6xmenu" id="menu-2-root">
+      <div class="ltr6xmenulistbody">
+        <div class="ltr6xmenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="uk1hnlanguages-mobile">
+      <div class="ltr6xlanguages-mobile">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.uk1hn) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.ltr6x) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".uk1hn") : null;
+      var wrapper = root.closest ? root.closest(".ltr6x") : null;
       var target = wrapper || root;
-      if (target.classList.contains("uk1hnmenu-open")) {
-        target.classList.remove("uk1hnmenu-open");
+      if (target.classList.contains("ltr6xmenu-open")) {
+        target.classList.remove("ltr6xmenu-open");
       } else {
-        target.classList.add("uk1hnmenu-open");
+        target.classList.add("ltr6xmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="nntog-title f36">
+  <div id="content"><div class="vr0h8-title f36">
   <h1>Mission</h1>
 </div>
-<div class="nntog">
-  <div class="nntog-menu-btn">
+<div class="vr0h8">
+  <div class="vr0h8-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined nntog-icon">menu</span>
+    <span class="material-symbols-outlined vr0h8-icon">menu</span>
   </div>
-  <div class="nntog-menu-overlay" id="nntog-menu-overlay" aria-hidden="true"></div>
-  <div class="nntog-menu" id="nntog-menu">
-    <button class="nntog-menu-close" type="button" aria-label="Close Menu" aria-controls="nntog-menu">
+  <div class="vr0h8-menu-overlay" id="vr0h8-menu-overlay" aria-hidden="true"></div>
+  <div class="vr0h8-menu" id="vr0h8-menu">
+    <button class="vr0h8-menu-close" type="button" aria-label="Close Menu" aria-controls="vr0h8-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="nntog-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="nntog-menu-link active" href="/en/misyon/">Mission</a><a class="nntog-menu-link" href="/en/vizyon/">Vision</a><a class="nntog-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="nntog-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="nntog-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="nntog-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="nntog-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="vr0h8-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="vr0h8-menu-link active" href="/en/misyon/">Mission</a><a class="vr0h8-menu-link" href="/en/vizyon/">Vision</a><a class="vr0h8-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="vr0h8-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="vr0h8-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="vr0h8-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="vr0h8-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="nntog-desc">
+  <div class="vr0h8-desc">
     
-    <div class="nntog-body"><p><b>Our mission</b></p> <p>Assoc. Prof. Orhan Veli Doğan and his team are committed to patient-centred, evidence-based and reliable cardiovascular surgery care. We apply current guidelines in diagnosis and treatment; we aim to be a reference centre in coronary bypass, valve surgery, TAVI and vascular and endovascular interventions. Patient safety and quality standards are our priority. For more information, see the Turkish version or contact us.</p></div>
+    <div class="vr0h8-body"><p><b>Our mission</b></p> <p>Assoc. Prof. Orhan Veli Doğan and his team are committed to patient-centred, evidence-based and reliable cardiovascular surgery care. We apply current guidelines in diagnosis and treatment; we aim to be a reference centre in coronary bypass, valve surgery, TAVI and vascular and endovascular interventions. Patient safety and quality standards are our priority. For more information, see the Turkish version or contact us.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".nntog-menu-btn");
-    var menu = document.querySelector(".nntog-menu");
-    var overlay = document.querySelector(".nntog-menu-overlay");
-    var closeButton = document.querySelector(".nntog-menu-close");
+    var menuToggleBtn = document.querySelector(".vr0h8-menu-btn");
+    var menu = document.querySelector(".vr0h8-menu");
+    var overlay = document.querySelector(".vr0h8-menu-overlay");
+    var closeButton = document.querySelector(".vr0h8-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".nntog-menu-close");
+      var closeBtn = event.target.closest(".vr0h8-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".nntog-top").forEach(function (button) {
+    document.querySelectorAll(".vr0h8-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".nntog-menu-group");
+        var group = this.closest(".vr0h8-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".nntog-sub");
+        var sub = group.querySelector(".vr0h8-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".nntog-icon");
+        var icon = this.querySelector(".vr0h8-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=bu3vd"></script>
-<script defer src="/src/cookie.js?v=bu3vd"></script>
+<script defer type="text/javascript" src="/src/js.js?v=d2ca5"></script>
+<script defer src="/src/cookie.js?v=d2ca5"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

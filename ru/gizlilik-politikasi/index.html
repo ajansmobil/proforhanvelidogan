@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=bpuz5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=bpuz5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=kbsrz" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=kbsrz" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=bpuz5" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=kbsrz" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Доц. д-р Орхан Вели Доган выполняет коронарное шунтирование, операции на клапанах, эндоваскулярные вмешательства и лечение варикоза.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=bpuz5">
+<link rel="stylesheet" href="style.css?v=kbsrz">
 </head>
 
 <body>
-  <div id="header"><div class="ibol2">
-  <div class="ibol2title">
-    <div class="ibol2titlebody">
-      <div class="ibol2titlebodylang">
+  <div id="header"><div class="rlcis">
+  <div class="rlcistitle">
+    <div class="rlcistitlebody">
+      <div class="rlcistitlebodylang">
         <ul>
           <li><a href="/tr/gizlilik-politikasi/">TR</a></li><li><a href="/en/gizlilik-politikasi/">EN</a></li><li><a href="/de/gizlilik-politikasi/">DE</a></li><li><a href="/ru/gizlilik-politikasi/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="ibol2body">
+  <div class="rlcisbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=gjjn0"
+        src="/img/logo.png?v=j0uaa"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="ibol2bodylogo"
+        class="rlcisbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="ibol2-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="rlcis-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="ibol2-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="ibol2menubody">
-    <div class="ibol2menu" id="menu-2-root">
-      <div class="ibol2menulistbody">
-        <div class="ibol2menulist">
+  <div class="rlcis-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="rlcismenubody">
+    <div class="rlcismenu" id="menu-2-root">
+      <div class="rlcismenulistbody">
+        <div class="rlcismenulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="ibol2languages-mobile">
+      <div class="rlcislanguages-mobile">
         <ul>
           <li><a href="/tr/gizlilik-politikasi/">TR</a></li><li><a href="/en/gizlilik-politikasi/">EN</a></li><li><a href="/de/gizlilik-politikasi/">DE</a></li><li><a href="/ru/gizlilik-politikasi/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.ibol2) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.rlcis) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".ibol2") : null;
+      var wrapper = root.closest ? root.closest(".rlcis") : null;
       var target = wrapper || root;
-      if (target.classList.contains("ibol2menu-open")) {
-        target.classList.remove("ibol2menu-open");
+      if (target.classList.contains("rlcismenu-open")) {
+        target.classList.remove("rlcismenu-open");
       } else {
-        target.classList.add("ibol2menu-open");
+        target.classList.add("rlcismenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="mw3nk-title f36">
+  <div id="content"><div class="jry2k-title f36">
   <h1>Политика конфиденциальности</h1>
 </div>
-<div class="mw3nk">
-  <div class="mw3nk-menu-btn">
+<div class="jry2k">
+  <div class="jry2k-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined mw3nk-icon">menu</span>
+    <span class="material-symbols-outlined jry2k-icon">menu</span>
   </div>
-  <div class="mw3nk-menu-overlay" id="mw3nk-menu-overlay" aria-hidden="true"></div>
-  <div class="mw3nk-menu" id="mw3nk-menu">
-    <button class="mw3nk-menu-close" type="button" aria-label="Закрыть меню" aria-controls="mw3nk-menu">
+  <div class="jry2k-menu-overlay" id="jry2k-menu-overlay" aria-hidden="true"></div>
+  <div class="jry2k-menu" id="jry2k-menu">
+    <button class="jry2k-menu-close" type="button" aria-label="Закрыть меню" aria-controls="jry2k-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="mw3nk-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="mw3nk-menu-link" href="/ru/misyon/">Миссия</a><a class="mw3nk-menu-link" href="/ru/vizyon/">Видение</a><a class="mw3nk-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="mw3nk-menu-link active" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="mw3nk-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="mw3nk-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="mw3nk-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
+    <a class="jry2k-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="jry2k-menu-link" href="/ru/misyon/">Миссия</a><a class="jry2k-menu-link" href="/ru/vizyon/">Видение</a><a class="jry2k-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="jry2k-menu-link active" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="jry2k-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="jry2k-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="jry2k-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
   </div>
-  <div class="mw3nk-desc">
+  <div class="jry2k-desc">
     
-    <div class="mw3nk-body"><p><b>Политика конфиденциальности</b></p> <p>Proforhanvelidogan.com соблюдает безопасность и конфиденциальность ваших персональных данных. Здесь описано, как мы собираем, используем и защищаем информацию при посещении сайта или использовании формы обратной связи. Полный текст: см. турецкую версию или контакты.</p></div>
+    <div class="jry2k-body"><p><b>Политика конфиденциальности</b></p> <p>Proforhanvelidogan.com соблюдает безопасность и конфиденциальность ваших персональных данных. Здесь описано, как мы собираем, используем и защищаем информацию при посещении сайта или использовании формы обратной связи. Полный текст: см. турецкую версию или контакты.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".mw3nk-menu-btn");
-    var menu = document.querySelector(".mw3nk-menu");
-    var overlay = document.querySelector(".mw3nk-menu-overlay");
-    var closeButton = document.querySelector(".mw3nk-menu-close");
+    var menuToggleBtn = document.querySelector(".jry2k-menu-btn");
+    var menu = document.querySelector(".jry2k-menu");
+    var overlay = document.querySelector(".jry2k-menu-overlay");
+    var closeButton = document.querySelector(".jry2k-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".mw3nk-menu-close");
+      var closeBtn = event.target.closest(".jry2k-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".mw3nk-top").forEach(function (button) {
+    document.querySelectorAll(".jry2k-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".mw3nk-menu-group");
+        var group = this.closest(".jry2k-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".mw3nk-sub");
+        var sub = group.querySelector(".jry2k-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".mw3nk-icon");
+        var icon = this.querySelector(".jry2k-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=bpuz5"></script>
-<script defer src="/src/cookie.js?v=bpuz5"></script>
+<script defer type="text/javascript" src="/src/js.js?v=kbsrz"></script>
+<script defer src="/src/cookie.js?v=kbsrz"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=x7e2s" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=x7e2s" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=f2rjg" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=f2rjg" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=x7e2s" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=f2rjg" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Doz. Dr. Orhan Veli Dogan bietet in der Herz Gefasschirurgie Koronarbypass, Klappenchirurgie, endovaskulare Eingriffe und Varizenbehandlung an.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=x7e2s">
+<link rel="stylesheet" href="style.css?v=f2rjg">
 </head>
 
 <body>
-  <div id="header"><div class="khah3">
-  <div class="khah3title">
-    <div class="khah3titlebody">
-      <div class="khah3titlebodylang">
+  <div id="header"><div class="l0zyz">
+  <div class="l0zyztitle">
+    <div class="l0zyztitlebody">
+      <div class="l0zyztitlebodylang">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="khah3body">
+  <div class="l0zyzbody">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=s3icb"
+        src="/img/logo.png?v=jbrbg"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="khah3bodylogo"
+        class="l0zyzbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="khah3-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="l0zyz-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="khah3-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="khah3menubody">
-    <div class="khah3menu" id="menu-2-root">
-      <div class="khah3menulistbody">
-        <div class="khah3menulist">
+  <div class="l0zyz-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="l0zyzmenubody">
+    <div class="l0zyzmenu" id="menu-2-root">
+      <div class="l0zyzmenulistbody">
+        <div class="l0zyzmenulist">
           <ul>
             <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="khah3languages-mobile">
+      <div class="l0zyzlanguages-mobile">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.khah3) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.l0zyz) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".khah3") : null;
+      var wrapper = root.closest ? root.closest(".l0zyz") : null;
       var target = wrapper || root;
-      if (target.classList.contains("khah3menu-open")) {
-        target.classList.remove("khah3menu-open");
+      if (target.classList.contains("l0zyzmenu-open")) {
+        target.classList.remove("l0zyzmenu-open");
       } else {
-        target.classList.add("khah3menu-open");
+        target.classList.add("l0zyzmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="axu0u-title f36">
+  <div id="content"><div class="yilmc-title f36">
   <h1>Mission</h1>
 </div>
-<div class="axu0u">
-  <div class="axu0u-menu-btn">
+<div class="yilmc">
+  <div class="yilmc-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined axu0u-icon">menu</span>
+    <span class="material-symbols-outlined yilmc-icon">menu</span>
   </div>
-  <div class="axu0u-menu-overlay" id="axu0u-menu-overlay" aria-hidden="true"></div>
-  <div class="axu0u-menu" id="axu0u-menu">
-    <button class="axu0u-menu-close" type="button" aria-label="Menü schließen" aria-controls="axu0u-menu">
+  <div class="yilmc-menu-overlay" id="yilmc-menu-overlay" aria-hidden="true"></div>
+  <div class="yilmc-menu" id="yilmc-menu">
+    <button class="yilmc-menu-close" type="button" aria-label="Menü schließen" aria-controls="yilmc-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="axu0u-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="axu0u-menu-link active" href="/de/misyon/">Mission</a><a class="axu0u-menu-link" href="/de/vizyon/">Vision</a><a class="axu0u-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="axu0u-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="axu0u-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="axu0u-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="axu0u-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
+    <a class="yilmc-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="yilmc-menu-link active" href="/de/misyon/">Mission</a><a class="yilmc-menu-link" href="/de/vizyon/">Vision</a><a class="yilmc-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="yilmc-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="yilmc-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="yilmc-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="yilmc-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
   </div>
-  <div class="axu0u-desc">
+  <div class="yilmc-desc">
     
-    <div class="axu0u-body"><p><b>Unsere Mission</b></p> <p>Doç. Dr. Orhan Veli Doğan und sein Team verpflichten sich zu patientenorientierter, evidenzbasierter und zuverlässiger Herz-Gefäßchirurgie. Wir wenden aktuelle Leitlinien an und streben ein Referenzzentrum für Bypass, Klappenchirurgie, TAVI und vaskuläre sowie endovaskuläre Eingriffe an. Patientensicherheit und Qualitätsstandards haben Priorität. Weitere Informationen: siehe türkische Version oder Kontakt.</p></div>
+    <div class="yilmc-body"><p><b>Unsere Mission</b></p> <p>Doç. Dr. Orhan Veli Doğan und sein Team verpflichten sich zu patientenorientierter, evidenzbasierter und zuverlässiger Herz-Gefäßchirurgie. Wir wenden aktuelle Leitlinien an und streben ein Referenzzentrum für Bypass, Klappenchirurgie, TAVI und vaskuläre sowie endovaskuläre Eingriffe an. Patientensicherheit und Qualitätsstandards haben Priorität. Weitere Informationen: siehe türkische Version oder Kontakt.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".axu0u-menu-btn");
-    var menu = document.querySelector(".axu0u-menu");
-    var overlay = document.querySelector(".axu0u-menu-overlay");
-    var closeButton = document.querySelector(".axu0u-menu-close");
+    var menuToggleBtn = document.querySelector(".yilmc-menu-btn");
+    var menu = document.querySelector(".yilmc-menu");
+    var overlay = document.querySelector(".yilmc-menu-overlay");
+    var closeButton = document.querySelector(".yilmc-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".axu0u-menu-close");
+      var closeBtn = event.target.closest(".yilmc-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".axu0u-top").forEach(function (button) {
+    document.querySelectorAll(".yilmc-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".axu0u-menu-group");
+        var group = this.closest(".yilmc-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".axu0u-sub");
+        var sub = group.querySelector(".yilmc-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".axu0u-icon");
+        var icon = this.querySelector(".yilmc-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=x7e2s"></script>
-<script defer src="/src/cookie.js?v=x7e2s"></script>
+<script defer type="text/javascript" src="/src/js.js?v=f2rjg"></script>
+<script defer src="/src/cookie.js?v=f2rjg"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

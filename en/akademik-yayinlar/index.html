@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=cjva6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=cjva6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=pu6er" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=pu6er" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=cjva6" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=pu6er" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Assoc. Prof. Orhan Veli Dogan provides coronary bypass, valve surgery, endovascular procedures and varicose vein treatment in cardiovascular surgery.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=cjva6">
+<link rel="stylesheet" href="style.css?v=pu6er">
 </head>
 
 <body>
-  <div id="header"><div class="sdpga">
-  <div class="sdpgatitle">
-    <div class="sdpgatitlebody">
-      <div class="sdpgatitlebodylang">
+  <div id="header"><div class="finqf">
+  <div class="finqftitle">
+    <div class="finqftitlebody">
+      <div class="finqftitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="sdpgabody">
+  <div class="finqfbody">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=yysmu"
+        src="/img/logo.png?v=xiyt0"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="sdpgabodylogo"
+        class="finqfbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="sdpga-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="finqf-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="sdpga-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="sdpgamenubody">
-    <div class="sdpgamenu" id="menu-2-root">
-      <div class="sdpgamenulistbody">
-        <div class="sdpgamenulist">
+  <div class="finqf-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="finqfmenubody">
+    <div class="finqfmenu" id="menu-2-root">
+      <div class="finqfmenulistbody">
+        <div class="finqfmenulist">
           <ul>
-            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a class="sdpga-menu-list-active" href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
+            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a class="finqf-menu-list-active" href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="sdpgalanguages-mobile">
+      <div class="finqflanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -98,25 +98,60 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.sdpga) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.finqf) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".sdpga") : null;
+      var wrapper = root.closest ? root.closest(".finqf") : null;
       var target = wrapper || root;
-      if (target.classList.contains("sdpgamenu-open")) {
-        target.classList.remove("sdpgamenu-open");
+      if (target.classList.contains("finqfmenu-open")) {
+        target.classList.remove("finqfmenu-open");
       } else {
-        target.classList.add("sdpgamenu-open");
+        target.classList.add("finqfmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"></div>
+  <div id="content"><div class="b8zjs">
+  <div class="b8zjsbody"><a href="/en/yonetilen-yuksek-lisans-tezleri/" class="b8zjsbodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="b8zjsbodyitem lefts"><span class="b8zjsbodyitemtitle">Supervised Master's Theses</span><div class="b8zjsbodyitechile">Coronary bypass surgery with pulsatile and non-pulsatile cardiopulmonary bypass (Dr. Hasan Erdem, 2004); Proximal aortic surgery outcomes (Dr. Deniz Ceylan); Modified surgical maze in secondary atrial fibrillation (ADEAH, 2004).</div></div></a><a href="/en/dergi-hakemligi/" class="b8zjsbodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="b8zjsbodyitem rights"><span class="b8zjsbodyitemtitle">Journal Peer Review</span><div class="b8zjsbodyitechile">Peer review for Turkish Journal of Thoracic and Cardiovascular Surgery, Türkiye Klinikleri, Journal of Vascular Surgery, Cardiovascular Journal of Africa.</div></div></a><a href="/en/kongre-hakemligi/" class="b8zjsbodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="b8zjsbodyitem lefts"><span class="b8zjsbodyitemtitle">Congress Peer Review</span><div class="b8zjsbodyitechile">Peer review of abstracts for the 11th and 12th Turkish Thoracic and Cardiovascular Surgery Congress.</div></div></a><a href="/en/bilimsel-etkinlikler/" class="b8zjsbodyitems right" style="animation-delay: 0.8s; cursor: pointer;"><div class="b8zjsbodyitem rights"><span class="b8zjsbodyitemtitle">Scientific Activities</span><div class="b8zjsbodyitechile">Invited speaker at international panel (Kyrgyzstan), national congresses (AAA 2012 Antalya), Sakarya Endovascular Interventions Course, 9th International Cardiology Congress and 22nd Asian Society session chair, XV-XVI National Vascular Surgery Congress session chair.</div></div></a><a href="/en/oduller/" class="b8zjsbodyitems left" style="animation-delay: 1s; cursor: pointer;"><div class="b8zjsbodyitem lefts"><span class="b8zjsbodyitemtitle">Awards</span><div class="b8zjsbodyitechile">Best poster award: Chlamydia pneumonia ompA Gene DNA (2nd Molecular and Diagnostic Microbiology Congress, 2002 Kemer-Antalya). Letter of commendation from Governorship of Trabzon.</div></div></a></div>
+</div>
+
+<script>
+  /* Viewport'a girdiğinde kartları sırayla görünür yap (setTimeout: DOMContentLoaded yasak) */
+  setTimeout(function () {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry, idx) {
+          if (entry.isIntersecting) {
+            if (window.innerWidth <= 1024) {
+              entry.target.classList.add("visible");
+            } else {
+              setTimeout(function () {
+                entry.target.classList.add("visible");
+              }, idx * 80);
+            }
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -24px 0px" }
+    );
+    var items = Array.prototype.slice.call(document.querySelectorAll(".b8zjsbodyitems"));
+    items
+      .sort(function (a, b) {
+        return a.offsetTop - b.offsetTop;
+      })
+      .forEach(function (item) {
+        observer.observe(item);
+      });
+  }, 100);
+</script>
+</div>
   <div id="footer"><footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
@@ -138,8 +173,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=cjva6"></script>
-<script defer src="/src/cookie.js?v=cjva6"></script>
+<script defer type="text/javascript" src="/src/js.js?v=pu6er"></script>
+<script defer src="/src/cookie.js?v=pu6er"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

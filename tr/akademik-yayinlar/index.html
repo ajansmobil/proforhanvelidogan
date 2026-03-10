@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=jr12l" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=jr12l" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=lcyfw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=lcyfw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=jr12l" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=lcyfw" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Doç. Dr. Orhan Veli Doğan kalp ve damar cerrahisi alanında koroner bypass, kapak cerrahisi, endovasküler girişimler ve varis tedavisi sunar.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=jr12l">
+<link rel="stylesheet" href="style.css?v=lcyfw">
 </head>
 
 <body>
-  <div id="header"><div class="im8n4">
-  <div class="im8n4title">
-    <div class="im8n4titlebody">
-      <div class="im8n4titlebodylang">
+  <div id="header"><div class="wccgt">
+  <div class="wccgttitle">
+    <div class="wccgttitlebody">
+      <div class="wccgttitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="im8n4body">
+  <div class="wccgtbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=qdp1x"
+        src="/img/logo.png?v=cwk1o"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="im8n4bodylogo"
+        class="wccgtbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="im8n4-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="wccgt-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="im8n4-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="im8n4menubody">
-    <div class="im8n4menu" id="menu-2-root">
-      <div class="im8n4menulistbody">
-        <div class="im8n4menulist">
+  <div class="wccgt-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="wccgtmenubody">
+    <div class="wccgtmenu" id="menu-2-root">
+      <div class="wccgtmenulistbody">
+        <div class="wccgtmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a class="im8n4-menu-list-active" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a class="wccgt-menu-list-active" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="im8n4languages-mobile">
+      <div class="wccgtlanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -98,25 +98,60 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.im8n4) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.wccgt) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".im8n4") : null;
+      var wrapper = root.closest ? root.closest(".wccgt") : null;
       var target = wrapper || root;
-      if (target.classList.contains("im8n4menu-open")) {
-        target.classList.remove("im8n4menu-open");
+      if (target.classList.contains("wccgtmenu-open")) {
+        target.classList.remove("wccgtmenu-open");
       } else {
-        target.classList.add("im8n4menu-open");
+        target.classList.add("wccgtmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"></div>
+  <div id="content"><div class="tzr3t">
+  <div class="tzr3tbody"><a href="/tr/yonetilen-yuksek-lisans-tezleri/" class="tzr3tbodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="tzr3tbodyitem lefts"><span class="tzr3tbodyitemtitle">Yönetilen Yüksek Lisans Tezleri</span><div class="tzr3tbodyitechile">Doç. Dr. Orhan Veli Doğan yönetilen yüksek lisans tezleri: koroner bypass, proksimal aort cerrahisi, atrial fibrilasyon (Dr. Hasan Erdem, Dr. Deniz Ceylan, ADEAH).</div></div></a><a href="/tr/dergi-hakemligi/" class="tzr3tbodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="tzr3tbodyitem rights"><span class="tzr3tbodyitemtitle">Dergi Hakemliği</span><div class="tzr3tbodyitechile">Doç. Dr. Orhan Veli Doğan dergi hakemliği: Türk Kalp Damar Cerrahisi Dergisi, Türkiye Klinikleri, Damar Cerrahi Dergisi, Cardiovascular Journal of Africa.</div></div></a><a href="/tr/kongre-hakemligi/" class="tzr3tbodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="tzr3tbodyitem lefts"><span class="tzr3tbodyitemtitle">Kongre Hakemliği</span><div class="tzr3tbodyitechile">11. ve 12. Türk Kalp Damar Cerrahisi Kongresi Bildiri Hakemliği. bilgi.text.</div></div></a><a href="/tr/bilimsel-etkinlikler/" class="tzr3tbodyitems right" style="animation-delay: 0.8s; cursor: pointer;"><div class="tzr3tbodyitem rights"><span class="tzr3tbodyitemtitle">Bilimsel Etkinlikler</span><div class="tzr3tbodyitechile">Uluslararası panelde davetli konuşmacı (Kırgızistan), ulusal kongrelerde davetli konuşmacı (AAA 2012 Antalya), Sakarya Endovasküler Girişimler Kursu, 9. Uluslararası Kardiyoloji Kongresi ve 22nd Asian Society oturum başkanlığı, XV-XVI. Ulusal Vasküler Cerrahi Kongresi oturum başkanlığı. bilgi.text.</div></div></a><a href="/tr/oduller/" class="tzr3tbodyitems left" style="animation-delay: 1s; cursor: pointer;"><div class="tzr3tbodyitem lefts"><span class="tzr3tbodyitemtitle">Ödüller</span><div class="tzr3tbodyitechile">En iyi poster ödülü: Chlamydia pneumonia ompA Gene DNA (2nd Molecular and Diagnostic Microbiology Congress, 2002 Kemer-Antalya). Trabzon Valiliğince verilen takdirname. bilgi.text.</div></div></a></div>
+</div>
+
+<script>
+  /* Viewport'a girdiğinde kartları sırayla görünür yap (setTimeout: DOMContentLoaded yasak) */
+  setTimeout(function () {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry, idx) {
+          if (entry.isIntersecting) {
+            if (window.innerWidth <= 1024) {
+              entry.target.classList.add("visible");
+            } else {
+              setTimeout(function () {
+                entry.target.classList.add("visible");
+              }, idx * 80);
+            }
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -24px 0px" }
+    );
+    var items = Array.prototype.slice.call(document.querySelectorAll(".tzr3tbodyitems"));
+    items
+      .sort(function (a, b) {
+        return a.offsetTop - b.offsetTop;
+      })
+      .forEach(function (item) {
+        observer.observe(item);
+      });
+  }, 100);
+</script>
+</div>
   <div id="footer"><footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
@@ -138,8 +173,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=jr12l"></script>
-<script defer src="/src/cookie.js?v=jr12l"></script>
+<script defer type="text/javascript" src="/src/js.js?v=lcyfw"></script>
+<script defer src="/src/cookie.js?v=lcyfw"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

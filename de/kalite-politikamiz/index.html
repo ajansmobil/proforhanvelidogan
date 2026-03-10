@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=hoogz" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=hoogz" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=a94hy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=a94hy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=hoogz" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=a94hy" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Doz. Dr. Orhan Veli Dogan bietet in der Herz Gefasschirurgie Koronarbypass, Klappenchirurgie, endovaskulare Eingriffe und Varizenbehandlung an.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=hoogz">
+<link rel="stylesheet" href="style.css?v=a94hy">
 </head>
 
 <body>
-  <div id="header"><div class="v0l2f">
-  <div class="v0l2ftitle">
-    <div class="v0l2ftitlebody">
-      <div class="v0l2ftitlebodylang">
+  <div id="header"><div class="dectm">
+  <div class="dectmtitle">
+    <div class="dectmtitlebody">
+      <div class="dectmtitlebodylang">
         <ul>
           <li><a href="/tr/kalite-politikamiz/">TR</a></li><li><a href="/en/kalite-politikamiz/">EN</a></li><li><a href="/de/kalite-politikamiz/">DE</a></li><li><a href="/ru/kalite-politikamiz/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="v0l2fbody">
+  <div class="dectmbody">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=mwm4m"
+        src="/img/logo.png?v=kbpae"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="v0l2fbodylogo"
+        class="dectmbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="v0l2f-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="dectm-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="v0l2f-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="v0l2fmenubody">
-    <div class="v0l2fmenu" id="menu-2-root">
-      <div class="v0l2fmenulistbody">
-        <div class="v0l2fmenulist">
+  <div class="dectm-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="dectmmenubody">
+    <div class="dectmmenu" id="menu-2-root">
+      <div class="dectmmenulistbody">
+        <div class="dectmmenulist">
           <ul>
             <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="v0l2flanguages-mobile">
+      <div class="dectmlanguages-mobile">
         <ul>
           <li><a href="/tr/kalite-politikamiz/">TR</a></li><li><a href="/en/kalite-politikamiz/">EN</a></li><li><a href="/de/kalite-politikamiz/">DE</a></li><li><a href="/ru/kalite-politikamiz/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.v0l2f) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.dectm) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".v0l2f") : null;
+      var wrapper = root.closest ? root.closest(".dectm") : null;
       var target = wrapper || root;
-      if (target.classList.contains("v0l2fmenu-open")) {
-        target.classList.remove("v0l2fmenu-open");
+      if (target.classList.contains("dectmmenu-open")) {
+        target.classList.remove("dectmmenu-open");
       } else {
-        target.classList.add("v0l2fmenu-open");
+        target.classList.add("dectmmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="h99z6-title f36">
+  <div id="content"><div class="p09mj-title f36">
   <h1>Unsere Qualitätspolitik</h1>
 </div>
-<div class="h99z6">
-  <div class="h99z6-menu-btn">
+<div class="p09mj">
+  <div class="p09mj-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined h99z6-icon">menu</span>
+    <span class="material-symbols-outlined p09mj-icon">menu</span>
   </div>
-  <div class="h99z6-menu-overlay" id="h99z6-menu-overlay" aria-hidden="true"></div>
-  <div class="h99z6-menu" id="h99z6-menu">
-    <button class="h99z6-menu-close" type="button" aria-label="Menü schließen" aria-controls="h99z6-menu">
+  <div class="p09mj-menu-overlay" id="p09mj-menu-overlay" aria-hidden="true"></div>
+  <div class="p09mj-menu" id="p09mj-menu">
+    <button class="p09mj-menu-close" type="button" aria-label="Menü schließen" aria-controls="p09mj-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="h99z6-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="h99z6-menu-link" href="/de/misyon/">Mission</a><a class="h99z6-menu-link" href="/de/vizyon/">Vision</a><a class="h99z6-menu-link active" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="h99z6-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="h99z6-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="h99z6-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="h99z6-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
+    <a class="p09mj-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="p09mj-menu-link" href="/de/misyon/">Mission</a><a class="p09mj-menu-link" href="/de/vizyon/">Vision</a><a class="p09mj-menu-link active" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="p09mj-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="p09mj-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="p09mj-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="p09mj-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
   </div>
-  <div class="h99z6-desc">
+  <div class="p09mj-desc">
     
-    <div class="h99z6-body"><p><b>Unsere Qualitätspolitik</b></p> <p>Unsere Qualitätspolitik zielt auf Patientensicherheit und kontinuierliche Verbesserung in der Herz-Gefäßchirurgie. Wir beachten nationale und internationale Qualitätsstandards. Volltext: siehe türkische Version oder Kontakt.</p></div>
+    <div class="p09mj-body"><p><b>Unsere Qualitätspolitik</b></p> <p>Unsere Qualitätspolitik zielt auf Patientensicherheit und kontinuierliche Verbesserung in der Herz-Gefäßchirurgie. Wir beachten nationale und internationale Qualitätsstandards. Volltext: siehe türkische Version oder Kontakt.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".h99z6-menu-btn");
-    var menu = document.querySelector(".h99z6-menu");
-    var overlay = document.querySelector(".h99z6-menu-overlay");
-    var closeButton = document.querySelector(".h99z6-menu-close");
+    var menuToggleBtn = document.querySelector(".p09mj-menu-btn");
+    var menu = document.querySelector(".p09mj-menu");
+    var overlay = document.querySelector(".p09mj-menu-overlay");
+    var closeButton = document.querySelector(".p09mj-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".h99z6-menu-close");
+      var closeBtn = event.target.closest(".p09mj-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".h99z6-top").forEach(function (button) {
+    document.querySelectorAll(".p09mj-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".h99z6-menu-group");
+        var group = this.closest(".p09mj-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".h99z6-sub");
+        var sub = group.querySelector(".p09mj-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".h99z6-icon");
+        var icon = this.querySelector(".p09mj-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=hoogz"></script>
-<script defer src="/src/cookie.js?v=hoogz"></script>
+<script defer type="text/javascript" src="/src/js.js?v=a94hy"></script>
+<script defer src="/src/cookie.js?v=a94hy"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=qi6wf" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=qi6wf" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=sxscj" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=sxscj" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qi6wf" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=sxscj" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Doz. Dr. Orhan Veli Dogan bietet in der Herz Gefasschirurgie Koronarbypass, Klappenchirurgie, endovaskulare Eingriffe und Varizenbehandlung an.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=qi6wf">
+<link rel="stylesheet" href="style.css?v=sxscj">
 </head>
 
 <body>
-  <div id="header"><div class="hhlxu">
-  <div class="hhlxutitle">
-    <div class="hhlxutitlebody">
-      <div class="hhlxutitlebodylang">
+  <div id="header"><div class="f5rt5">
+  <div class="f5rt5title">
+    <div class="f5rt5titlebody">
+      <div class="f5rt5titlebodylang">
         <ul>
           <li><a href="/tr/vizyon/">TR</a></li><li><a href="/en/vizyon/">EN</a></li><li><a href="/de/vizyon/">DE</a></li><li><a href="/ru/vizyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="hhlxubody">
+  <div class="f5rt5body">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=h0a74"
+        src="/img/logo.png?v=ioqdz"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="hhlxubodylogo"
+        class="f5rt5bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="hhlxu-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="f5rt5-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="hhlxu-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="hhlxumenubody">
-    <div class="hhlxumenu" id="menu-2-root">
-      <div class="hhlxumenulistbody">
-        <div class="hhlxumenulist">
+  <div class="f5rt5-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="f5rt5menubody">
+    <div class="f5rt5menu" id="menu-2-root">
+      <div class="f5rt5menulistbody">
+        <div class="f5rt5menulist">
           <ul>
             <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="hhlxulanguages-mobile">
+      <div class="f5rt5languages-mobile">
         <ul>
           <li><a href="/tr/vizyon/">TR</a></li><li><a href="/en/vizyon/">EN</a></li><li><a href="/de/vizyon/">DE</a></li><li><a href="/ru/vizyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.hhlxu) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.f5rt5) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".hhlxu") : null;
+      var wrapper = root.closest ? root.closest(".f5rt5") : null;
       var target = wrapper || root;
-      if (target.classList.contains("hhlxumenu-open")) {
-        target.classList.remove("hhlxumenu-open");
+      if (target.classList.contains("f5rt5menu-open")) {
+        target.classList.remove("f5rt5menu-open");
       } else {
-        target.classList.add("hhlxumenu-open");
+        target.classList.add("f5rt5menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="xgas7-title f36">
+  <div id="content"><div class="a96uy-title f36">
   <h1>Vision</h1>
 </div>
-<div class="xgas7">
-  <div class="xgas7-menu-btn">
+<div class="a96uy">
+  <div class="a96uy-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined xgas7-icon">menu</span>
+    <span class="material-symbols-outlined a96uy-icon">menu</span>
   </div>
-  <div class="xgas7-menu-overlay" id="xgas7-menu-overlay" aria-hidden="true"></div>
-  <div class="xgas7-menu" id="xgas7-menu">
-    <button class="xgas7-menu-close" type="button" aria-label="Menü schließen" aria-controls="xgas7-menu">
+  <div class="a96uy-menu-overlay" id="a96uy-menu-overlay" aria-hidden="true"></div>
+  <div class="a96uy-menu" id="a96uy-menu">
+    <button class="a96uy-menu-close" type="button" aria-label="Menü schließen" aria-controls="a96uy-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="xgas7-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="xgas7-menu-link" href="/de/misyon/">Mission</a><a class="xgas7-menu-link active" href="/de/vizyon/">Vision</a><a class="xgas7-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="xgas7-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="xgas7-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="xgas7-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="xgas7-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
+    <a class="a96uy-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="a96uy-menu-link" href="/de/misyon/">Mission</a><a class="a96uy-menu-link active" href="/de/vizyon/">Vision</a><a class="a96uy-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="a96uy-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="a96uy-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="a96uy-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="a96uy-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
   </div>
-  <div class="xgas7-desc">
+  <div class="a96uy-desc">
     
-    <div class="xgas7-body"><p><b>Unsere Vision</b></p> <p>Führendes und vertrauenswürdiges Zentrum in der Herz-Gefäßchirurgie; regionale Referenz durch Ausbildung und wissenschaftliche Entwicklung. Wir wenden aktuelle chirurgische und endovaskuläre Methoden bei Koronar-, Klappen-, Aorten- und angeborenen Herzerkrankungen an. Volltext: siehe türkische Version oder Kontakt.</p></div>
+    <div class="a96uy-body"><p><b>Unsere Vision</b></p> <p>Führendes und vertrauenswürdiges Zentrum in der Herz-Gefäßchirurgie; regionale Referenz durch Ausbildung und wissenschaftliche Entwicklung. Wir wenden aktuelle chirurgische und endovaskuläre Methoden bei Koronar-, Klappen-, Aorten- und angeborenen Herzerkrankungen an. Volltext: siehe türkische Version oder Kontakt.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".xgas7-menu-btn");
-    var menu = document.querySelector(".xgas7-menu");
-    var overlay = document.querySelector(".xgas7-menu-overlay");
-    var closeButton = document.querySelector(".xgas7-menu-close");
+    var menuToggleBtn = document.querySelector(".a96uy-menu-btn");
+    var menu = document.querySelector(".a96uy-menu");
+    var overlay = document.querySelector(".a96uy-menu-overlay");
+    var closeButton = document.querySelector(".a96uy-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".xgas7-menu-close");
+      var closeBtn = event.target.closest(".a96uy-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".xgas7-top").forEach(function (button) {
+    document.querySelectorAll(".a96uy-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".xgas7-menu-group");
+        var group = this.closest(".a96uy-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".xgas7-sub");
+        var sub = group.querySelector(".a96uy-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".xgas7-icon");
+        var icon = this.querySelector(".a96uy-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=qi6wf"></script>
-<script defer src="/src/cookie.js?v=qi6wf"></script>
+<script defer type="text/javascript" src="/src/js.js?v=sxscj"></script>
+<script defer src="/src/cookie.js?v=sxscj"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

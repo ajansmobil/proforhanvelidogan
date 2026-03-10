@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=ghx9a" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=ghx9a" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ldd3y" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ldd3y" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ghx9a" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ldd3y" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Доц. д-р Орхан Вели Доган выполняет коронарное шунтирование, операции на клапанах, эндоваскулярные вмешательства и лечение варикоза.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=ghx9a">
+<link rel="stylesheet" href="style.css?v=ldd3y">
 </head>
 
 <body>
-  <div id="header"><div class="xiebv">
-  <div class="xiebvtitle">
-    <div class="xiebvtitlebody">
-      <div class="xiebvtitlebodylang">
+  <div id="header"><div class="qdxak">
+  <div class="qdxaktitle">
+    <div class="qdxaktitlebody">
+      <div class="qdxaktitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="xiebvbody">
+  <div class="qdxakbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=tozl6"
+        src="/img/logo.png?v=ijx1o"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="xiebvbodylogo"
+        class="qdxakbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="xiebv-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="qdxak-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="xiebv-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="xiebvmenubody">
-    <div class="xiebvmenu" id="menu-2-root">
-      <div class="xiebvmenulistbody">
-        <div class="xiebvmenulist">
+  <div class="qdxak-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="qdxakmenubody">
+    <div class="qdxakmenu" id="menu-2-root">
+      <div class="qdxakmenulistbody">
+        <div class="qdxakmenulist">
           <ul>
-            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a class="xiebv-menu-list-active" href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
+            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a class="qdxak-menu-list-active" href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="xiebvlanguages-mobile">
+      <div class="qdxaklanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -98,25 +98,60 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.xiebv) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.qdxak) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".xiebv") : null;
+      var wrapper = root.closest ? root.closest(".qdxak") : null;
       var target = wrapper || root;
-      if (target.classList.contains("xiebvmenu-open")) {
-        target.classList.remove("xiebvmenu-open");
+      if (target.classList.contains("qdxakmenu-open")) {
+        target.classList.remove("qdxakmenu-open");
       } else {
-        target.classList.add("xiebvmenu-open");
+        target.classList.add("qdxakmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"></div>
+  <div id="content"><div class="bhxkl">
+  <div class="bhxklbody"><a href="/ru/yonetilen-yuksek-lisans-tezleri/" class="bhxklbodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="bhxklbodyitem lefts"><span class="bhxklbodyitemtitle">Научное руководство магистерскими диссертациями</span><div class="bhxklbodyitechile">Коронарное шунтирование с пульсативным и непульсативным искусственным кровообращением (д-р Хасан Эрдем, 2004); Результаты проксимальной хирургии аорты (д-р Дениз Джейлан); Модифицированная хирургия лабиринта при вторичной фибрилляции предсердий (ADEAH, 2004).</div></div></a><a href="/ru/dergi-hakemligi/" class="bhxklbodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="bhxklbodyitem rights"><span class="bhxklbodyitemtitle">Рецензирование журналов</span><div class="bhxklbodyitechile">Рецензирование: турецкий журнал торакальной и сердечно-сосудистой хирургии, Türkiye Klinikleri, Cardiovascular Journal of Africa.</div></div></a><a href="/ru/kongre-hakemligi/" class="bhxklbodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="bhxklbodyitem lefts"><span class="bhxklbodyitemtitle">Рецензирование конгрессов</span><div class="bhxklbodyitechile">Рецензирование тезисов 11-го и 12-го Турецкого конгресса торакальной и сердечно-сосудистой хирургии.</div></div></a><a href="/ru/bilimsel-etkinlikler/" class="bhxklbodyitems right" style="animation-delay: 0.8s; cursor: pointer;"><div class="bhxklbodyitem rights"><span class="bhxklbodyitemtitle">Научная деятельность</span><div class="bhxklbodyitechile">Приглашённый докладчик на международной панели (Кыргызстан), национальных конгрессах (AAA 2012 Анталья), курс эндоваскулярных вмешательств Сакарья, председатель секций 9-го Международного конгресса кардиологии и 22nd Asian Society, XV–XVI Национального конгресса сосудистой хирургии.</div></div></a><a href="/ru/oduller/" class="bhxklbodyitems left" style="animation-delay: 1s; cursor: pointer;"><div class="bhxklbodyitem lefts"><span class="bhxklbodyitemtitle">Награды</span><div class="bhxklbodyitechile">Награда за лучший постер: Chlamydia pneumonia ompA Gene DNA (2-й конгресс молекулярной и диагностической микробиологии, 2002 Кемер-Анталья). Благодарность от губернаторства Трабзона.</div></div></a></div>
+</div>
+
+<script>
+  /* Viewport'a girdiğinde kartları sırayla görünür yap (setTimeout: DOMContentLoaded yasak) */
+  setTimeout(function () {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry, idx) {
+          if (entry.isIntersecting) {
+            if (window.innerWidth <= 1024) {
+              entry.target.classList.add("visible");
+            } else {
+              setTimeout(function () {
+                entry.target.classList.add("visible");
+              }, idx * 80);
+            }
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -24px 0px" }
+    );
+    var items = Array.prototype.slice.call(document.querySelectorAll(".bhxklbodyitems"));
+    items
+      .sort(function (a, b) {
+        return a.offsetTop - b.offsetTop;
+      })
+      .forEach(function (item) {
+        observer.observe(item);
+      });
+  }, 100);
+</script>
+</div>
   <div id="footer"><footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
@@ -138,8 +173,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=ghx9a"></script>
-<script defer src="/src/cookie.js?v=ghx9a"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ldd3y"></script>
+<script defer src="/src/cookie.js?v=ldd3y"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

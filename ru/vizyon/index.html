@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=t8lzz" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=t8lzz" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=mlph8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=mlph8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=t8lzz" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=mlph8" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Доц. д-р Орхан Вели Доган выполняет коронарное шунтирование, операции на клапанах, эндоваскулярные вмешательства и лечение варикоза.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=t8lzz">
+<link rel="stylesheet" href="style.css?v=mlph8">
 </head>
 
 <body>
-  <div id="header"><div class="g4rvj">
-  <div class="g4rvjtitle">
-    <div class="g4rvjtitlebody">
-      <div class="g4rvjtitlebodylang">
+  <div id="header"><div class="lqbah">
+  <div class="lqbahtitle">
+    <div class="lqbahtitlebody">
+      <div class="lqbahtitlebodylang">
         <ul>
           <li><a href="/tr/vizyon/">TR</a></li><li><a href="/en/vizyon/">EN</a></li><li><a href="/de/vizyon/">DE</a></li><li><a href="/ru/vizyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="g4rvjbody">
+  <div class="lqbahbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=j8l20"
+        src="/img/logo.png?v=phrnq"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="g4rvjbodylogo"
+        class="lqbahbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="g4rvj-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="lqbah-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="g4rvj-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="g4rvjmenubody">
-    <div class="g4rvjmenu" id="menu-2-root">
-      <div class="g4rvjmenulistbody">
-        <div class="g4rvjmenulist">
+  <div class="lqbah-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="lqbahmenubody">
+    <div class="lqbahmenu" id="menu-2-root">
+      <div class="lqbahmenulistbody">
+        <div class="lqbahmenulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="g4rvjlanguages-mobile">
+      <div class="lqbahlanguages-mobile">
         <ul>
           <li><a href="/tr/vizyon/">TR</a></li><li><a href="/en/vizyon/">EN</a></li><li><a href="/de/vizyon/">DE</a></li><li><a href="/ru/vizyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.g4rvj) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.lqbah) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".g4rvj") : null;
+      var wrapper = root.closest ? root.closest(".lqbah") : null;
       var target = wrapper || root;
-      if (target.classList.contains("g4rvjmenu-open")) {
-        target.classList.remove("g4rvjmenu-open");
+      if (target.classList.contains("lqbahmenu-open")) {
+        target.classList.remove("lqbahmenu-open");
       } else {
-        target.classList.add("g4rvjmenu-open");
+        target.classList.add("lqbahmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="bfzdg-title f36">
+  <div id="content"><div class="c6gke-title f36">
   <h1>Видение</h1>
 </div>
-<div class="bfzdg">
-  <div class="bfzdg-menu-btn">
+<div class="c6gke">
+  <div class="c6gke-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined bfzdg-icon">menu</span>
+    <span class="material-symbols-outlined c6gke-icon">menu</span>
   </div>
-  <div class="bfzdg-menu-overlay" id="bfzdg-menu-overlay" aria-hidden="true"></div>
-  <div class="bfzdg-menu" id="bfzdg-menu">
-    <button class="bfzdg-menu-close" type="button" aria-label="Закрыть меню" aria-controls="bfzdg-menu">
+  <div class="c6gke-menu-overlay" id="c6gke-menu-overlay" aria-hidden="true"></div>
+  <div class="c6gke-menu" id="c6gke-menu">
+    <button class="c6gke-menu-close" type="button" aria-label="Закрыть меню" aria-controls="c6gke-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="bfzdg-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="bfzdg-menu-link" href="/ru/misyon/">Миссия</a><a class="bfzdg-menu-link active" href="/ru/vizyon/">Видение</a><a class="bfzdg-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="bfzdg-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="bfzdg-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="bfzdg-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="bfzdg-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
+    <a class="c6gke-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="c6gke-menu-link" href="/ru/misyon/">Миссия</a><a class="c6gke-menu-link active" href="/ru/vizyon/">Видение</a><a class="c6gke-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="c6gke-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="c6gke-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="c6gke-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="c6gke-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
   </div>
-  <div class="bfzdg-desc">
+  <div class="c6gke-desc">
     
-    <div class="bfzdg-body"><p><b>Наше видение</b></p> <p>Быть ведущим и надёжным центром в области сердечно-сосудистой хирургии; региональный ориентир через образование и научное развитие. Мы применяем современные хирургические и эндоваскулярные методы при коронарной, клапанной, аортальной и врождённой патологии. Полный текст: см. турецкую версию или контакты.</p></div>
+    <div class="c6gke-body"><p><b>Наше видение</b></p> <p>Быть ведущим и надёжным центром в области сердечно-сосудистой хирургии; региональный ориентир через образование и научное развитие. Мы применяем современные хирургические и эндоваскулярные методы при коронарной, клапанной, аортальной и врождённой патологии. Полный текст: см. турецкую версию или контакты.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".bfzdg-menu-btn");
-    var menu = document.querySelector(".bfzdg-menu");
-    var overlay = document.querySelector(".bfzdg-menu-overlay");
-    var closeButton = document.querySelector(".bfzdg-menu-close");
+    var menuToggleBtn = document.querySelector(".c6gke-menu-btn");
+    var menu = document.querySelector(".c6gke-menu");
+    var overlay = document.querySelector(".c6gke-menu-overlay");
+    var closeButton = document.querySelector(".c6gke-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".bfzdg-menu-close");
+      var closeBtn = event.target.closest(".c6gke-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".bfzdg-top").forEach(function (button) {
+    document.querySelectorAll(".c6gke-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".bfzdg-menu-group");
+        var group = this.closest(".c6gke-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".bfzdg-sub");
+        var sub = group.querySelector(".c6gke-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".bfzdg-icon");
+        var icon = this.querySelector(".c6gke-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=t8lzz"></script>
-<script defer src="/src/cookie.js?v=t8lzz"></script>
+<script defer type="text/javascript" src="/src/js.js?v=mlph8"></script>
+<script defer src="/src/cookie.js?v=mlph8"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,16 +25,16 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=c9x67" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=c9x67" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=n7w5m" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=n7w5m" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=c9x67" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=n7w5m" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Prof OVD Orhan VELİ DOĞAN",
-  "description": "Doç. Dr. Orhan Veli Doğan - Kalp Damar Cerrahisi. Hacettepe ve Mustafa Kemal Üniversitesi. Koroner bypass, kapak cerrahisi, TAVİ, endovasküler ve varis tedavisi.",
+  "description": "Doç. Dr. Orhan Veli Doğan kalp ve damar cerrahisi alanında koroner bypass, kapak cerrahisi, endovasküler girişimler ve varis tedavisi sunar.",
   "url": "https://proforhanvelidogan.com",
   "logo": "https://proforhanvelidogan.com/img/logo.png",
   "image": "https://proforhanvelidogan.com/img/logo.png"
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=c9x67">
+<link rel="stylesheet" href="style.css?v=n7w5m">
 </head>
 
 <body>
-  <div id="header"><div class="cicwo">
-  <div class="cicwotitle">
-    <div class="cicwotitlebody">
-      <div class="cicwotitlebodylang">
+  <div id="header"><div class="sjrz5">
+  <div class="sjrz5title">
+    <div class="sjrz5titlebody">
+      <div class="sjrz5titlebodylang">
         <ul>
           <li><a href="/tr/yonetilen-yuksek-lisans-tezleri/">TR</a></li><li><a href="/en/yonetilen-yuksek-lisans-tezleri/">EN</a></li><li><a href="/de/yonetilen-yuksek-lisans-tezleri/">DE</a></li><li><a href="/ru/yonetilen-yuksek-lisans-tezleri/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="cicwobody">
+  <div class="sjrz5body">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=i107r"
+        src="/img/logo.png?v=q0y4y"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="cicwobodylogo"
+        class="sjrz5bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="cicwo-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="sjrz5-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="cicwo-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="cicwomenubody">
-    <div class="cicwomenu" id="menu-2-root">
-      <div class="cicwomenulistbody">
-        <div class="cicwomenulist">
+  <div class="sjrz5-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="sjrz5menubody">
+    <div class="sjrz5menu" id="menu-2-root">
+      <div class="sjrz5menulistbody">
+        <div class="sjrz5menulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="cicwolanguages-mobile">
+      <div class="sjrz5languages-mobile">
         <ul>
           <li><a href="/tr/yonetilen-yuksek-lisans-tezleri/">TR</a></li><li><a href="/en/yonetilen-yuksek-lisans-tezleri/">EN</a></li><li><a href="/de/yonetilen-yuksek-lisans-tezleri/">DE</a></li><li><a href="/ru/yonetilen-yuksek-lisans-tezleri/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.cicwo) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.sjrz5) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".cicwo") : null;
+      var wrapper = root.closest ? root.closest(".sjrz5") : null;
       var target = wrapper || root;
-      if (target.classList.contains("cicwomenu-open")) {
-        target.classList.remove("cicwomenu-open");
+      if (target.classList.contains("sjrz5menu-open")) {
+        target.classList.remove("sjrz5menu-open");
       } else {
-        target.classList.add("cicwomenu-open");
+        target.classList.add("sjrz5menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="jnqro-title f36">
+  <div id="content"><div class="gips9-title f36">
   <h1>Yönetilen Yüksek Lisans Tezleri</h1>
 </div>
-<div class="jnqro">
-  <div class="jnqro-menu-btn">
+<div class="gips9">
+  <div class="gips9-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined jnqro-icon">menu</span>
+    <span class="material-symbols-outlined gips9-icon">menu</span>
   </div>
-  <div class="jnqro-menu-overlay" id="jnqro-menu-overlay" aria-hidden="true"></div>
-  <div class="jnqro-menu" id="jnqro-menu">
-    <button class="jnqro-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="jnqro-menu">
+  <div class="gips9-menu-overlay" id="gips9-menu-overlay" aria-hidden="true"></div>
+  <div class="gips9-menu" id="gips9-menu">
+    <button class="gips9-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="gips9-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="jnqro-menu-link active" href="/tr/yonetilen-yuksek-lisans-tezleri/">Yönetilen Yüksek Lisans Tezleri</a><a class="jnqro-menu-link" href="/tr/dergi-hakemligi/">Dergi Hakemliği</a><a class="jnqro-menu-link" href="/tr/kongre-hakemligi/">Kongre Hakemliği</a><a class="jnqro-menu-link" href="/tr/bilimsel-etkinlikler/">Bilimsel Etkinlikler</a><a class="jnqro-menu-link" href="/tr/oduller/">Ödüller</a>
+    <a class="gips9-menu-link active" href="/tr/yonetilen-yuksek-lisans-tezleri/">Yönetilen Yüksek Lisans Tezleri</a><a class="gips9-menu-link" href="/tr/dergi-hakemligi/">Dergi Hakemliği</a><a class="gips9-menu-link" href="/tr/kongre-hakemligi/">Kongre Hakemliği</a><a class="gips9-menu-link" href="/tr/bilimsel-etkinlikler/">Bilimsel Etkinlikler</a><a class="gips9-menu-link" href="/tr/oduller/">Ödüller</a>
   </div>
-  <div class="jnqro-desc">
+  <div class="gips9-desc">
     
-    <div class="jnqro-body"><p>Doç. Dr. Orhan Veli Doğan yönetilen yüksek lisans tezleri: Pulsatil ve Nonpulsatil kardiyopulmoner bypass ile koroner bypass (Dr. Hasan Erdem, 2004); Proksimal aort cerrahisi sonuçları (Dr. Deniz Ceylan); Sekonder atrial fibrilasyonlu hastalarda modifiye cerrahi maze (ADEAH, 2004).</p></div>
+    <div class="gips9-body"><p>Doç. Dr. Orhan Veli Doğan yönetilen yüksek lisans tezleri: Pulsatil ve Nonpulsatil kardiyopulmoner bypass ile koroner bypass (Dr. Hasan Erdem, 2004); Proksimal aort cerrahisi sonuçları (Dr. Deniz Ceylan); Sekonder atrial fibrilasyonlu hastalarda modifiye cerrahi maze (ADEAH, 2004).</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".jnqro-menu-btn");
-    var menu = document.querySelector(".jnqro-menu");
-    var overlay = document.querySelector(".jnqro-menu-overlay");
-    var closeButton = document.querySelector(".jnqro-menu-close");
+    var menuToggleBtn = document.querySelector(".gips9-menu-btn");
+    var menu = document.querySelector(".gips9-menu");
+    var overlay = document.querySelector(".gips9-menu-overlay");
+    var closeButton = document.querySelector(".gips9-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".jnqro-menu-close");
+      var closeBtn = event.target.closest(".gips9-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".jnqro-top").forEach(function (button) {
+    document.querySelectorAll(".gips9-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".jnqro-menu-group");
+        var group = this.closest(".gips9-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".jnqro-sub");
+        var sub = group.querySelector(".gips9-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".jnqro-icon");
+        var icon = this.querySelector(".gips9-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=c9x67"></script>
-<script defer src="/src/cookie.js?v=c9x67"></script>
+<script defer type="text/javascript" src="/src/js.js?v=n7w5m"></script>
+<script defer src="/src/cookie.js?v=n7w5m"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
