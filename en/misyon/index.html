@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=liokv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=liokv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=bu3vd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=bu3vd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=liokv" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=bu3vd" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=liokv">
+<link rel="stylesheet" href="style.css?v=bu3vd">
 </head>
 
 <body>
-  <div id="header"><div class="yu5f1">
-  <div class="yu5f1title">
-    <div class="yu5f1titlebody">
-      <div class="yu5f1titlebodylang">
+  <div id="header"><div class="uk1hn">
+  <div class="uk1hntitle">
+    <div class="uk1hntitlebody">
+      <div class="uk1hntitlebodylang">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="yu5f1body">
+  <div class="uk1hnbody">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=zzvo6"
+        src="/img/logo.png?v=mc7rz"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="yu5f1bodylogo"
+        class="uk1hnbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="yu5f1-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="uk1hn-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="yu5f1-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="yu5f1menubody">
-    <div class="yu5f1menu" id="menu-2-root">
-      <div class="yu5f1menulistbody">
-        <div class="yu5f1menulist">
+  <div class="uk1hn-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="uk1hnmenubody">
+    <div class="uk1hnmenu" id="menu-2-root">
+      <div class="uk1hnmenulistbody">
+        <div class="uk1hnmenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="yu5f1languages-mobile">
+      <div class="uk1hnlanguages-mobile">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.yu5f1) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.uk1hn) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".yu5f1") : null;
+      var wrapper = root.closest ? root.closest(".uk1hn") : null;
       var target = wrapper || root;
-      if (target.classList.contains("yu5f1menu-open")) {
-        target.classList.remove("yu5f1menu-open");
+      if (target.classList.contains("uk1hnmenu-open")) {
+        target.classList.remove("uk1hnmenu-open");
       } else {
-        target.classList.add("yu5f1menu-open");
+        target.classList.add("uk1hnmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="pn7dm-title f36">
+  <div id="content"><div class="nntog-title f36">
   <h1>Mission</h1>
 </div>
-<div class="pn7dm">
-  <div class="pn7dm-menu-btn">
+<div class="nntog">
+  <div class="nntog-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined pn7dm-icon">menu</span>
+    <span class="material-symbols-outlined nntog-icon">menu</span>
   </div>
-  <div class="pn7dm-menu-overlay" id="pn7dm-menu-overlay" aria-hidden="true"></div>
-  <div class="pn7dm-menu" id="pn7dm-menu">
-    <button class="pn7dm-menu-close" type="button" aria-label="Close Menu" aria-controls="pn7dm-menu">
+  <div class="nntog-menu-overlay" id="nntog-menu-overlay" aria-hidden="true"></div>
+  <div class="nntog-menu" id="nntog-menu">
+    <button class="nntog-menu-close" type="button" aria-label="Close Menu" aria-controls="nntog-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="pn7dm-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="pn7dm-menu-link active" href="/en/misyon/">Mission</a><a class="pn7dm-menu-link" href="/en/vizyon/">Vision</a><a class="pn7dm-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="pn7dm-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="pn7dm-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="pn7dm-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="pn7dm-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="nntog-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="nntog-menu-link active" href="/en/misyon/">Mission</a><a class="nntog-menu-link" href="/en/vizyon/">Vision</a><a class="nntog-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="nntog-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="nntog-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="nntog-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="nntog-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="pn7dm-desc">
+  <div class="nntog-desc">
     
-    <div class="pn7dm-body"><p><b>Our mission</b></p> <p>Assoc. Prof. Orhan Veli Doğan and his team are committed to patient-centred, evidence-based and reliable cardiovascular surgery care. We apply current guidelines in diagnosis and treatment; we aim to be a reference centre in coronary bypass, valve surgery, TAVI and vascular and endovascular interventions. Patient safety and quality standards are our priority. For more information, see the Turkish version or contact us.</p></div>
+    <div class="nntog-body"><p><b>Our mission</b></p> <p>Assoc. Prof. Orhan Veli Doğan and his team are committed to patient-centred, evidence-based and reliable cardiovascular surgery care. We apply current guidelines in diagnosis and treatment; we aim to be a reference centre in coronary bypass, valve surgery, TAVI and vascular and endovascular interventions. Patient safety and quality standards are our priority. For more information, see the Turkish version or contact us.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".pn7dm-menu-btn");
-    var menu = document.querySelector(".pn7dm-menu");
-    var overlay = document.querySelector(".pn7dm-menu-overlay");
-    var closeButton = document.querySelector(".pn7dm-menu-close");
+    var menuToggleBtn = document.querySelector(".nntog-menu-btn");
+    var menu = document.querySelector(".nntog-menu");
+    var overlay = document.querySelector(".nntog-menu-overlay");
+    var closeButton = document.querySelector(".nntog-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".pn7dm-menu-close");
+      var closeBtn = event.target.closest(".nntog-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".pn7dm-top").forEach(function (button) {
+    document.querySelectorAll(".nntog-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".pn7dm-menu-group");
+        var group = this.closest(".nntog-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".pn7dm-sub");
+        var sub = group.querySelector(".nntog-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".pn7dm-icon");
+        var icon = this.querySelector(".nntog-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=liokv"></script>
-<script defer src="/src/cookie.js?v=liokv"></script>
+<script defer type="text/javascript" src="/src/js.js?v=bu3vd"></script>
+<script defer src="/src/cookie.js?v=bu3vd"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

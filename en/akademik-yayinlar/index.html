@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=zta5q" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=zta5q" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=cjva6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=cjva6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=zta5q" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=cjva6" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=zta5q">
+<link rel="stylesheet" href="style.css?v=cjva6">
 </head>
 
 <body>
-  <div id="header"><div class="htr0g">
-  <div class="htr0gtitle">
-    <div class="htr0gtitlebody">
-      <div class="htr0gtitlebodylang">
+  <div id="header"><div class="sdpga">
+  <div class="sdpgatitle">
+    <div class="sdpgatitlebody">
+      <div class="sdpgatitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="htr0gbody">
+  <div class="sdpgabody">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=orr1q"
+        src="/img/logo.png?v=yysmu"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="htr0gbodylogo"
+        class="sdpgabodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="htr0g-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="sdpga-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="htr0g-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="htr0gmenubody">
-    <div class="htr0gmenu" id="menu-2-root">
-      <div class="htr0gmenulistbody">
-        <div class="htr0gmenulist">
+  <div class="sdpga-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="sdpgamenubody">
+    <div class="sdpgamenu" id="menu-2-root">
+      <div class="sdpgamenulistbody">
+        <div class="sdpgamenulist">
           <ul>
-            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a class="htr0g-menu-list-active" href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
+            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a class="sdpga-menu-list-active" href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="htr0glanguages-mobile">
+      <div class="sdpgalanguages-mobile">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
@@ -98,19 +98,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.htr0g) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.sdpga) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".htr0g") : null;
+      var wrapper = root.closest ? root.closest(".sdpga") : null;
       var target = wrapper || root;
-      if (target.classList.contains("htr0gmenu-open")) {
-        target.classList.remove("htr0gmenu-open");
+      if (target.classList.contains("sdpgamenu-open")) {
+        target.classList.remove("sdpgamenu-open");
       } else {
-        target.classList.add("htr0gmenu-open");
+        target.classList.add("sdpgamenu-open");
       }
     }
   }
@@ -138,8 +138,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=zta5q"></script>
-<script defer src="/src/cookie.js?v=zta5q"></script>
+<script defer type="text/javascript" src="/src/js.js?v=cjva6"></script>
+<script defer src="/src/cookie.js?v=cjva6"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

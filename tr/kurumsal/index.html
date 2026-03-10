@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=yreh7" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=yreh7" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=jferd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=jferd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=yreh7" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=jferd" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=yreh7">
+<link rel="stylesheet" href="style.css?v=jferd">
 </head>
 
 <body>
-  <div id="header"><div class="jmg0s">
-  <div class="jmg0stitle">
-    <div class="jmg0stitlebody">
-      <div class="jmg0stitlebodylang">
+  <div id="header"><div class="s2bxr">
+  <div class="s2bxrtitle">
+    <div class="s2bxrtitlebody">
+      <div class="s2bxrtitlebodylang">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="jmg0sbody">
+  <div class="s2bxrbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=cbepq"
+        src="/img/logo.png?v=jij4h"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="jmg0sbodylogo"
+        class="s2bxrbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="jmg0s-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="s2bxr-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="jmg0s-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="jmg0smenubody">
-    <div class="jmg0smenu" id="menu-2-root">
-      <div class="jmg0smenulistbody">
-        <div class="jmg0smenulist">
+  <div class="s2bxr-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="s2bxrmenubody">
+    <div class="s2bxrmenu" id="menu-2-root">
+      <div class="s2bxrmenulistbody">
+        <div class="s2bxrmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a class="jmg0s-menu-list-active" href="/tr/kurumsal/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a class="s2bxr-menu-list-active" href="/tr/kurumsal/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="jmg0slanguages-mobile">
+      <div class="s2bxrlanguages-mobile">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
@@ -98,19 +98,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.jmg0s) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.s2bxr) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".jmg0s") : null;
+      var wrapper = root.closest ? root.closest(".s2bxr") : null;
       var target = wrapper || root;
-      if (target.classList.contains("jmg0smenu-open")) {
-        target.classList.remove("jmg0smenu-open");
+      if (target.classList.contains("s2bxrmenu-open")) {
+        target.classList.remove("s2bxrmenu-open");
       } else {
-        target.classList.add("jmg0smenu-open");
+        target.classList.add("s2bxrmenu-open");
       }
     }
   }
@@ -138,8 +138,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=yreh7"></script>
-<script defer src="/src/cookie.js?v=yreh7"></script>
+<script defer type="text/javascript" src="/src/js.js?v=jferd"></script>
+<script defer src="/src/cookie.js?v=jferd"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

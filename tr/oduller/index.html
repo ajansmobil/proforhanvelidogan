@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=gj2ua" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=gj2ua" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=uudko" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=uudko" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=gj2ua" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=uudko" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=gj2ua">
+<link rel="stylesheet" href="style.css?v=uudko">
 </head>
 
 <body>
-  <div id="header"><div class="ppflr">
-  <div class="ppflrtitle">
-    <div class="ppflrtitlebody">
-      <div class="ppflrtitlebodylang">
+  <div id="header"><div class="q7a6o">
+  <div class="q7a6otitle">
+    <div class="q7a6otitlebody">
+      <div class="q7a6otitlebodylang">
         <ul>
           <li><a href="/tr/oduller/">TR</a></li><li><a href="/en/oduller/">EN</a></li><li><a href="/de/oduller/">DE</a></li><li><a href="/ru/oduller/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="ppflrbody">
+  <div class="q7a6obody">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=v5o4s"
+        src="/img/logo.png?v=dwzob"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="ppflrbodylogo"
+        class="q7a6obodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="ppflr-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="q7a6o-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="ppflr-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="ppflrmenubody">
-    <div class="ppflrmenu" id="menu-2-root">
-      <div class="ppflrmenulistbody">
-        <div class="ppflrmenulist">
+  <div class="q7a6o-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="q7a6omenubody">
+    <div class="q7a6omenu" id="menu-2-root">
+      <div class="q7a6omenulistbody">
+        <div class="q7a6omenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="ppflrlanguages-mobile">
+      <div class="q7a6olanguages-mobile">
         <ul>
           <li><a href="/tr/oduller/">TR</a></li><li><a href="/en/oduller/">EN</a></li><li><a href="/de/oduller/">DE</a></li><li><a href="/ru/oduller/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.ppflr) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.q7a6o) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".ppflr") : null;
+      var wrapper = root.closest ? root.closest(".q7a6o") : null;
       var target = wrapper || root;
-      if (target.classList.contains("ppflrmenu-open")) {
-        target.classList.remove("ppflrmenu-open");
+      if (target.classList.contains("q7a6omenu-open")) {
+        target.classList.remove("q7a6omenu-open");
       } else {
-        target.classList.add("ppflrmenu-open");
+        target.classList.add("q7a6omenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="g4w6v-title f36">
+  <div id="content"><div class="hp3f3-title f36">
   <h1>Ödüller</h1>
 </div>
-<div class="g4w6v">
-  <div class="g4w6v-menu-btn">
+<div class="hp3f3">
+  <div class="hp3f3-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined g4w6v-icon">menu</span>
+    <span class="material-symbols-outlined hp3f3-icon">menu</span>
   </div>
-  <div class="g4w6v-menu-overlay" id="g4w6v-menu-overlay" aria-hidden="true"></div>
-  <div class="g4w6v-menu" id="g4w6v-menu">
-    <button class="g4w6v-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="g4w6v-menu">
+  <div class="hp3f3-menu-overlay" id="hp3f3-menu-overlay" aria-hidden="true"></div>
+  <div class="hp3f3-menu" id="hp3f3-menu">
+    <button class="hp3f3-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="hp3f3-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="g4w6v-menu-link" href="/tr/yonetilen-yuksek-lisans-tezleri/">Yönetilen Yüksek Lisans Tezleri</a><a class="g4w6v-menu-link" href="/tr/dergi-hakemligi/">Dergi Hakemliği</a><a class="g4w6v-menu-link" href="/tr/kongre-hakemligi/">Kongre Hakemliği</a><a class="g4w6v-menu-link" href="/tr/bilimsel-etkinlikler/">Bilimsel Etkinlikler</a><a class="g4w6v-menu-link active" href="/tr/oduller/">Ödüller</a>
+    <a class="hp3f3-menu-link" href="/tr/yonetilen-yuksek-lisans-tezleri/">Yönetilen Yüksek Lisans Tezleri</a><a class="hp3f3-menu-link" href="/tr/dergi-hakemligi/">Dergi Hakemliği</a><a class="hp3f3-menu-link" href="/tr/kongre-hakemligi/">Kongre Hakemliği</a><a class="hp3f3-menu-link" href="/tr/bilimsel-etkinlikler/">Bilimsel Etkinlikler</a><a class="hp3f3-menu-link active" href="/tr/oduller/">Ödüller</a>
   </div>
-  <div class="g4w6v-desc">
+  <div class="hp3f3-desc">
     
-    <div class="g4w6v-body"><p>En iyi poster ödülü: Chlamydia pneumonia ompA Gene DNA (2nd Molecular and Diagnostic Microbiology Congress, 2002 Kemer-Antalya). Trabzon Valiliğince verilen takdirname.</p></div>
+    <div class="hp3f3-body"><p>En iyi poster ödülü: Chlamydia pneumonia ompA Gene DNA (2nd Molecular and Diagnostic Microbiology Congress, 2002 Kemer-Antalya). Trabzon Valiliğince verilen takdirname.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".g4w6v-menu-btn");
-    var menu = document.querySelector(".g4w6v-menu");
-    var overlay = document.querySelector(".g4w6v-menu-overlay");
-    var closeButton = document.querySelector(".g4w6v-menu-close");
+    var menuToggleBtn = document.querySelector(".hp3f3-menu-btn");
+    var menu = document.querySelector(".hp3f3-menu");
+    var overlay = document.querySelector(".hp3f3-menu-overlay");
+    var closeButton = document.querySelector(".hp3f3-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".g4w6v-menu-close");
+      var closeBtn = event.target.closest(".hp3f3-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".g4w6v-top").forEach(function (button) {
+    document.querySelectorAll(".hp3f3-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".g4w6v-menu-group");
+        var group = this.closest(".hp3f3-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".g4w6v-sub");
+        var sub = group.querySelector(".hp3f3-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".g4w6v-icon");
+        var icon = this.querySelector(".hp3f3-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -302,8 +302,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=gj2ua"></script>
-<script defer src="/src/cookie.js?v=gj2ua"></script>
+<script defer type="text/javascript" src="/src/js.js?v=uudko"></script>
+<script defer src="/src/cookie.js?v=uudko"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
