@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=bqtor" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=bqtor" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=zroly" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=zroly" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=bqtor" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=zroly" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,47 +50,45 @@
 }
 </script>
   
-  
-  
-<link rel="stylesheet" href="style.css?v=bqtor">
+<link rel="stylesheet" href="style.css?v=zroly">
 </head>
 
 <body>
-  <div id="header"><div class="twveq">
-  <div class="twveqtitle">
-    <div class="twveqtitlebody">
-      <div class="twveqtitlebodylang">
+  <div id="header"><div class="mecrc">
+  <div class="mecrctitle">
+    <div class="mecrctitlebody">
+      <div class="mecrctitlebodylang">
         <ul>
           <li><a href="/tr/kisisel-veriler/">TR</a></li><li><a href="/en/kisisel-veriler/">EN</a></li><li><a href="/de/kisisel-veriler/">DE</a></li><li><a href="/ru/kisisel-veriler/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="twveqbody">
+  <div class="mecrcbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=bqtor"
+        src="/img/logo.png?v=ykp12"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="twveqbodylogo"
+        class="mecrcbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="twveq-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="mecrc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="twveq-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="twveqmenubody">
-    <div class="twveqmenu" id="menu-2-root">
-      <div class="twveqmenulistbody">
-        <div class="twveqmenulist">
+  <div class="mecrc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="mecrcmenubody">
+    <div class="mecrcmenu" id="menu-2-root">
+      <div class="mecrcmenulistbody">
+        <div class="mecrcmenulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="twveqlanguages-mobile">
+      <div class="mecrclanguages-mobile">
         <ul>
           <li><a href="/tr/kisisel-veriler/">TR</a></li><li><a href="/en/kisisel-veriler/">EN</a></li><li><a href="/de/kisisel-veriler/">DE</a></li><li><a href="/ru/kisisel-veriler/">RU</a></li>
         </ul>
@@ -100,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.twveq) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.mecrc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".twveq") : null;
+      var wrapper = root.closest ? root.closest(".mecrc") : null;
       var target = wrapper || root;
-      if (target.classList.contains("twveqmenu-open")) {
-        target.classList.remove("twveqmenu-open");
+      if (target.classList.contains("mecrcmenu-open")) {
+        target.classList.remove("mecrcmenu-open");
       } else {
-        target.classList.add("twveqmenu-open");
+        target.classList.add("mecrcmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="y3crz-title f36">
+  <div id="content"><div class="tntai-title f36">
   <h1>Персональные данные</h1>
 </div>
-<div class="y3crz">
-  <div class="y3crz-menu-btn">
+<div class="tntai">
+  <div class="tntai-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined y3crz-icon">menu</span>
+    <span class="material-symbols-outlined tntai-icon">menu</span>
   </div>
-  <div class="y3crz-menu-overlay" id="y3crz-menu-overlay" aria-hidden="true"></div>
-  <div class="y3crz-menu" id="y3crz-menu">
-    <button class="y3crz-menu-close" type="button" aria-label="Закрыть меню" aria-controls="y3crz-menu">
+  <div class="tntai-menu-overlay" id="tntai-menu-overlay" aria-hidden="true"></div>
+  <div class="tntai-menu" id="tntai-menu">
+    <button class="tntai-menu-close" type="button" aria-label="Закрыть меню" aria-controls="tntai-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="y3crz-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="y3crz-menu-link" href="/ru/misyon/">Миссия</a><a class="y3crz-menu-link" href="/ru/vizyon/">Видение</a><a class="y3crz-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="y3crz-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="y3crz-menu-link active" href="/ru/kisisel-veriler/">Персональные данные</a><a class="y3crz-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="y3crz-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
+    <a class="tntai-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="tntai-menu-link" href="/ru/misyon/">Миссия</a><a class="tntai-menu-link" href="/ru/vizyon/">Видение</a><a class="tntai-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="tntai-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="tntai-menu-link active" href="/ru/kisisel-veriler/">Персональные данные</a><a class="tntai-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="tntai-menu-link" href="/ru/yasal-uyari/">Правовая оговорка</a>
   </div>
-  <div class="y3crz-desc">
+  <div class="tntai-desc">
     
-    <div class="y3crz-body"><p><b>Обработка персональных данных</b></p> <p>На этой странице представлена информация об обработке ваших персональных данных доц. д-ром Орханом Вели Доганом / proforhanvelidogan.com в соответствии с турецким Законом о защите персональных данных (KVKK). Полная информация и ваши права: см. турецкую версию или контакты.</p></div>
+    <div class="tntai-body"><p><b>Обработка персональных данных</b></p> <p>На этой странице представлена информация об обработке ваших персональных данных доц. д-ром Орханом Вели Доганом / proforhanvelidogan.com в соответствии с турецким Законом о защите персональных данных (KVKK). Полная информация и ваши права: см. турецкую версию или контакты.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".y3crz-menu-btn");
-    var menu = document.querySelector(".y3crz-menu");
-    var overlay = document.querySelector(".y3crz-menu-overlay");
-    var closeButton = document.querySelector(".y3crz-menu-close");
+    var menuToggleBtn = document.querySelector(".tntai-menu-btn");
+    var menu = document.querySelector(".tntai-menu");
+    var overlay = document.querySelector(".tntai-menu-overlay");
+    var closeButton = document.querySelector(".tntai-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -214,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".y3crz-menu-close");
+      var closeBtn = event.target.closest(".tntai-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -262,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".y3crz-top").forEach(function (button) {
+    document.querySelectorAll(".tntai-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".y3crz-menu-group");
+        var group = this.closest(".tntai-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".y3crz-sub");
+        var sub = group.querySelector(".tntai-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".y3crz-icon");
+        var icon = this.querySelector(".tntai-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -299,17 +297,13 @@
 
 </div>
 </body>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<link rel="preload" href="/src/material-symbols-outlined.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=bqtor"></script>
-<script defer src="/src/cookie.js?v=bqtor"></script>
+<script defer type="text/javascript" src="/src/js.js?v=zroly"></script>
+<script defer src="/src/cookie.js?v=zroly"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
