@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=cw651" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=cw651" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=zqn2f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=zqn2f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=cw651" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=zqn2f" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=cw651">
+<link rel="stylesheet" href="style.css?v=zqn2f">
 </head>
 
 <body>
-  <div id="header"><div class="dvr3d">
-  <div class="dvr3dtitle">
-    <div class="dvr3dtitlebody">
-      <div class="dvr3dtitlebodylang">
+  <div id="header"><div class="lsrx4">
+  <div class="lsrx4title">
+    <div class="lsrx4titlebody">
+      <div class="lsrx4titlebodylang">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="dvr3dbody">
+  <div class="lsrx4body">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=f9pxr"
+        src="/img/logo.png?v=fp3de"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="dvr3dbodylogo"
+        class="lsrx4bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="dvr3d-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="lsrx4-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="dvr3d-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="dvr3dmenubody">
-    <div class="dvr3dmenu" id="menu-2-root">
-      <div class="dvr3dmenulistbody">
-        <div class="dvr3dmenulist">
+  <div class="lsrx4-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="lsrx4menubody">
+    <div class="lsrx4menu" id="menu-2-root">
+      <div class="lsrx4menulistbody">
+        <div class="lsrx4menulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a class="dvr3d-menu-list-active" href="/tr/kurumsal/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a><a href="/tr/akademik-yayinlar/">Akademik Yayınlar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a class="lsrx4-menu-list-active" href="/tr/kurumsal/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Hastalıklar</a><a href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="dvr3dlanguages-mobile">
+      <div class="lsrx4languages-mobile">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
@@ -98,19 +98,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.dvr3d) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.lsrx4) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".dvr3d") : null;
+      var wrapper = root.closest ? root.closest(".lsrx4") : null;
       var target = wrapper || root;
-      if (target.classList.contains("dvr3dmenu-open")) {
-        target.classList.remove("dvr3dmenu-open");
+      if (target.classList.contains("lsrx4menu-open")) {
+        target.classList.remove("lsrx4menu-open");
       } else {
-        target.classList.add("dvr3dmenu-open");
+        target.classList.add("lsrx4menu-open");
       }
     }
   }
@@ -123,11 +123,15 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/kurumsal/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Tedavi Yöntemleri</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Akademik Yayınlar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
+      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/kurumsal/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
+    
+    <a href="https://www.342ajans.com" target="_blank"><img src="/module/txt39m/342.png" alt="342 Ajans" height="17"  loading="lazy"/></a>
+
     <p>&copy; Prof OVD Orhan VELİ DOĞAN 2026. All Rights Reserved.</p>
+
   </div>
 </footer>
 
@@ -138,8 +142,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=cw651"></script>
-<script defer src="/src/cookie.js?v=cw651"></script>
+<script defer type="text/javascript" src="/src/js.js?v=zqn2f"></script>
+<script defer src="/src/cookie.js?v=zqn2f"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

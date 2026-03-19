@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=f2rjg" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=f2rjg" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ovqlv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ovqlv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=f2rjg" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ovqlv" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=f2rjg">
+<link rel="stylesheet" href="style.css?v=ovqlv">
 </head>
 
 <body>
-  <div id="header"><div class="l0zyz">
-  <div class="l0zyztitle">
-    <div class="l0zyztitlebody">
-      <div class="l0zyztitlebodylang">
+  <div id="header"><div class="fuuay">
+  <div class="fuuaytitle">
+    <div class="fuuaytitlebody">
+      <div class="fuuaytitlebodylang">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="l0zyzbody">
+  <div class="fuuaybody">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=jbrbg"
+        src="/img/logo.png?v=wc5ed"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="l0zyzbodylogo"
+        class="fuuaybodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="l0zyz-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="fuuay-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="l0zyz-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="l0zyzmenubody">
-    <div class="l0zyzmenu" id="menu-2-root">
-      <div class="l0zyzmenulistbody">
-        <div class="l0zyzmenulist">
+  <div class="fuuay-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="fuuaymenubody">
+    <div class="fuuaymenu" id="menu-2-root">
+      <div class="fuuaymenulistbody">
+        <div class="fuuaymenulist">
           <ul>
             <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="l0zyzlanguages-mobile">
+      <div class="fuuaylanguages-mobile">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.l0zyz) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.fuuay) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".l0zyz") : null;
+      var wrapper = root.closest ? root.closest(".fuuay") : null;
       var target = wrapper || root;
-      if (target.classList.contains("l0zyzmenu-open")) {
-        target.classList.remove("l0zyzmenu-open");
+      if (target.classList.contains("fuuaymenu-open")) {
+        target.classList.remove("fuuaymenu-open");
       } else {
-        target.classList.add("l0zyzmenu-open");
+        target.classList.add("fuuaymenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="yilmc-title f36">
+  <div id="content"><div class="mu0cq-title f36">
   <h1>Mission</h1>
 </div>
-<div class="yilmc">
-  <div class="yilmc-menu-btn">
+<div class="mu0cq">
+  <div class="mu0cq-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined yilmc-icon">menu</span>
+    <span class="material-symbols-outlined mu0cq-icon">menu</span>
   </div>
-  <div class="yilmc-menu-overlay" id="yilmc-menu-overlay" aria-hidden="true"></div>
-  <div class="yilmc-menu" id="yilmc-menu">
-    <button class="yilmc-menu-close" type="button" aria-label="Menü schließen" aria-controls="yilmc-menu">
+  <div class="mu0cq-menu-overlay" id="mu0cq-menu-overlay" aria-hidden="true"></div>
+  <div class="mu0cq-menu" id="mu0cq-menu">
+    <button class="mu0cq-menu-close" type="button" aria-label="Menü schließen" aria-controls="mu0cq-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="yilmc-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="yilmc-menu-link active" href="/de/misyon/">Mission</a><a class="yilmc-menu-link" href="/de/vizyon/">Vision</a><a class="yilmc-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="yilmc-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="yilmc-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="yilmc-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="yilmc-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
+    <a class="mu0cq-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="mu0cq-menu-link active" href="/de/misyon/">Mission</a><a class="mu0cq-menu-link" href="/de/vizyon/">Vision</a><a class="mu0cq-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="mu0cq-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="mu0cq-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="mu0cq-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="mu0cq-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
   </div>
-  <div class="yilmc-desc">
+  <div class="mu0cq-desc">
     
-    <div class="yilmc-body"><p><b>Unsere Mission</b></p> <p>Doç. Dr. Orhan Veli Doğan und sein Team verpflichten sich zu patientenorientierter, evidenzbasierter und zuverlässiger Herz-Gefäßchirurgie. Wir wenden aktuelle Leitlinien an und streben ein Referenzzentrum für Bypass, Klappenchirurgie, TAVI und vaskuläre sowie endovaskuläre Eingriffe an. Patientensicherheit und Qualitätsstandards haben Priorität. Weitere Informationen: siehe türkische Version oder Kontakt.</p></div>
+    <div class="mu0cq-body"><p><b>Unsere Mission</b></p> <p>Doç. Dr. Orhan Veli Doğan und sein Team verpflichten sich zu patientenorientierter, evidenzbasierter und zuverlässiger Herz-Gefäßchirurgie. Wir wenden aktuelle Leitlinien an und streben ein Referenzzentrum für Bypass, Klappenchirurgie, TAVI und vaskuläre sowie endovaskuläre Eingriffe an. Patientensicherheit und Qualitätsstandards haben Priorität. Weitere Informationen: siehe türkische Version oder Kontakt.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".yilmc-menu-btn");
-    var menu = document.querySelector(".yilmc-menu");
-    var overlay = document.querySelector(".yilmc-menu-overlay");
-    var closeButton = document.querySelector(".yilmc-menu-close");
+    var menuToggleBtn = document.querySelector(".mu0cq-menu-btn");
+    var menu = document.querySelector(".mu0cq-menu");
+    var overlay = document.querySelector(".mu0cq-menu-overlay");
+    var closeButton = document.querySelector(".mu0cq-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".yilmc-menu-close");
+      var closeBtn = event.target.closest(".mu0cq-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".yilmc-top").forEach(function (button) {
+    document.querySelectorAll(".mu0cq-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".yilmc-menu-group");
+        var group = this.closest(".mu0cq-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".yilmc-sub");
+        var sub = group.querySelector(".mu0cq-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".yilmc-icon");
+        var icon = this.querySelector(".mu0cq-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -291,7 +291,11 @@
     </ul>
   </div>
   <div class="footer-bottom">
+    
+    <a href="https://www.342ajans.com" target="_blank"><img src="/module/txt39m/342.png" alt="342 Ajans" height="17"  loading="lazy"/></a>
+
     <p>&copy; Prof OVD Orhan VELİ DOĞAN 2026. All Rights Reserved.</p>
+
   </div>
 </footer>
 
@@ -302,8 +306,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=f2rjg"></script>
-<script defer src="/src/cookie.js?v=f2rjg"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ovqlv"></script>
+<script defer src="/src/cookie.js?v=ovqlv"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
