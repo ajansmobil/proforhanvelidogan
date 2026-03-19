@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=siq2e" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=siq2e" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=oqo20" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=oqo20" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=siq2e" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=oqo20" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=siq2e">
+<link rel="stylesheet" href="style.css?v=oqo20">
 </head>
 
 <body>
-  <div id="header"><div class="cw8zc">
-  <div class="cw8zctitle">
-    <div class="cw8zctitlebody">
-      <div class="cw8zctitlebodylang">
+  <div id="header"><div class="rtkj8">
+  <div class="rtkj8title">
+    <div class="rtkj8titlebody">
+      <div class="rtkj8titlebodylang">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="cw8zcbody">
+  <div class="rtkj8body">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=sce67"
+        src="/img/logo.png?v=hsily"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="cw8zcbodylogo"
+        class="rtkj8bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="cw8zc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="rtkj8-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="cw8zc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="cw8zcmenubody">
-    <div class="cw8zcmenu" id="menu-2-root">
-      <div class="cw8zcmenulistbody">
-        <div class="cw8zcmenulist">
+  <div class="rtkj8-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="rtkj8menubody">
+    <div class="rtkj8menu" id="menu-2-root">
+      <div class="rtkj8menulistbody">
+        <div class="rtkj8menulist">
           <ul>
-            <a href="/de/">Startseite </a><a class="cw8zc-menu-list-active" href="/de/kurumsal/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
+            <a href="/de/">Startseite </a><a class="rtkj8-menu-list-active" href="/de/kurumsal/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="cw8zclanguages-mobile">
+      <div class="rtkj8languages-mobile">
         <ul>
           <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
         </ul>
@@ -98,19 +98,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.cw8zc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.rtkj8) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".cw8zc") : null;
+      var wrapper = root.closest ? root.closest(".rtkj8") : null;
       var target = wrapper || root;
-      if (target.classList.contains("cw8zcmenu-open")) {
-        target.classList.remove("cw8zcmenu-open");
+      if (target.classList.contains("rtkj8menu-open")) {
+        target.classList.remove("rtkj8menu-open");
       } else {
-        target.classList.add("cw8zcmenu-open");
+        target.classList.add("rtkj8menu-open");
       }
     }
   }
@@ -142,8 +142,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=siq2e"></script>
-<script defer src="/src/cookie.js?v=siq2e"></script>
+<script defer type="text/javascript" src="/src/js.js?v=oqo20"></script>
+<script defer src="/src/cookie.js?v=oqo20"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

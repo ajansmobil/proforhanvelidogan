@@ -1,7 +1,7 @@
 
  
 
-  .mf8rf {
+  .abbpi {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .mf8rftitle {
+  .abbpititle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .mf8rftitle:has(.mf8rftitlebodylang:empty),
-  .mf8rftitle:has(.mf8rftitlebodylang ul:empty) {
+  .abbpititle:has(.abbpititlebodylang:empty),
+  .abbpititle:has(.abbpititlebodylang ul:empty) {
     display: none;
   }
 
-  .mf8rftitlebody {
+  .abbpititlebody {
     color: #ffffff;
     width: var(--max);
     display: flex;
@@ -31,34 +31,34 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .mf8rftitlebodytitle {
+  .abbpititlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .mf8rftitlebodylang {
+  .abbpititlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .mf8rftitlebodylang:empty,
-  .mf8rftitlebodylang ul:empty {
+  .abbpititlebodylang:empty,
+  .abbpititlebodylang ul:empty {
     display: none;
   }
 
-  .mf8rftitlebodylang ul {
+  .abbpititlebodylang ul {
     display: flex;
     gap: 8px;
   }
 
   /* Dil seçici: TR / EN metin, bordür tema rengiyle uyumlu (renk uyumsuzluğu yok) */
-  .mf8rftitlebodylang li {
+  .abbpititlebodylang li {
     list-style: none;
   }
 
-  .mf8rftitlebodylang li a {
+  .abbpititlebodylang li a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -75,13 +75,13 @@
     cursor: pointer;
   }
 
-  .mf8rftitlebodylang li a:hover {
+  .abbpititlebodylang li a:hover {
     border-color: #000000;
     background: #ffffff;
     color: #000000 !important;
   }
 
-  .mf8rfbody {
+  .abbpibody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@
   }
 
   /* Mobil hamburger butonu: onclick olduğu için cursor: pointer zorunlu (kural) */
-  .mf8rf-mobile-toggle {
+  .abbpi-mobile-toggle {
     display: none;
     background: #9a3d23;
     color: #ffffff;
@@ -105,18 +105,18 @@
     right: 0;
   }
 
-  .mf8rf-mobile-toggle span {
+  .abbpi-mobile-toggle span {
     font-size: 24px;
   }
 
-  .mf8rfmenu {
+  .abbpimenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .mf8rfmenulist {
+  .abbpimenulist {
     width: calc(100% - 20px);
     background-color: #9a3d23;
     padding: 10px;
@@ -125,7 +125,7 @@
     display: flex;
   }
 
-  .mf8rfmenubody {
+  .abbpimenubody {
     width: 100%;
     background-color: #9a3d23;
     display: flex;
@@ -133,7 +133,7 @@
     justify-content: center;
   }
 
-  .mf8rfmenulist ul {
+  .abbpimenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -142,7 +142,7 @@
     padding: 0;
   }
 
-  .mf8rfmenulist ul a {
+  .abbpimenulist ul a {
     padding: 10px 15px;
     font-size: 16px;
     color: #ffffff !important;
@@ -155,40 +155,40 @@
     margin: 0 2px;
   }
 
-  .mf8rfmenulist ul a:hover {
+  .abbpimenulist ul a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .mf8rfmenulist ul a.mf8rf-menu-list-active {
+  .abbpimenulist ul a.abbpi-menu-list-active {
     color: #000000 !important;
   }
 
-  .mf8rf-menu-list-active {
+  .abbpi-menu-list-active {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .mf8rfmenulistbody {
+  .abbpimenulistbody {
     width: 100%;
   }
 
-  .mf8rflanguages-mobile {
+  .abbpilanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .mf8rflanguages-mobile:empty,
-  .mf8rflanguages-mobile ul:empty {
+  .abbpilanguages-mobile:empty,
+  .abbpilanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .mf8rflanguages-mobile ul {
+  .abbpilanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -198,7 +198,7 @@
   }
 
   /* Dil seçici: TR / EN metin, bordür ve arka plan tema ile uyumlu */
-  .mf8rflanguages-mobile li {
+  .abbpilanguages-mobile li {
     list-style: none;
     border: 1px solid color-mix(in srgb, #ffffff 35%, transparent);
     padding: 0;
@@ -212,7 +212,7 @@
     transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .mf8rflanguages-mobile li a {
+  .abbpilanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,29 +227,29 @@
     cursor: pointer;
   }
 
-  .mf8rflanguages-mobile li:hover {
+  .abbpilanguages-mobile li:hover {
     background-color: #ffffff;
     border-color: #000000;
     box-shadow: 0 2px 8px color-mix(in srgb, #000000 25%, transparent);
   }
 
-  .mf8rflanguages-mobile li:hover a {
+  .abbpilanguages-mobile li:hover a {
     color: #000000 !important;
   }
 
   /* Mobil drawer için backdrop: masaüstünde görünmez */
-  .mf8rf-menu-backdrop {
+  .abbpi-menu-backdrop {
     display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    .mf8rfbodylogo {
+    .abbpibodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .mf8rftitle {
+    .abbpititle {
     margin-bottom: -30px;
   }
 
@@ -257,30 +257,30 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .mf8rfbody {
+    .abbpibody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .mf8rfmenulist ul {
+    .abbpimenulist ul {
       flex-direction: row;
     }
 
-    .mf8rfbodylogo {
+    .abbpibodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .mf8rftitlebody {
+    .abbpititlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .mf8rftitlebodytitle {
+    .abbpititlebodytitle {
       text-align: center;
       font-size: 14px;
     }
@@ -288,28 +288,28 @@
 
     /* Mobil: app tarzı sağdan kayan drawer menü */
   @media screen and (max-width: 768px) {
-    .mf8rftitlebodylang {
+    .abbpititlebodylang {
       display: none;
     }
 
-    .mf8rfbody {
+    .abbpibody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .mf8rf-mobile-toggle {
+    .abbpi-mobile-toggle {
       display: inline-flex;
     }
 
-    .mf8rfbodylogo {
+    .abbpibodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
     /* Backdrop: sadece menü açıkken görünür; tıklanınca menü kapanır (onclick ile) */
-    .mf8rf-menu-backdrop {
+    .abbpi-menu-backdrop {
       display: block;
       position: fixed;
       inset: 0;
@@ -322,14 +322,14 @@
       cursor: pointer;
     }
 
-    .mf8rf.mf8rfmenu-open .mf8rf-menu-backdrop {
+    .abbpi.abbpimenu-open .abbpi-menu-backdrop {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
     /* Drawer: sağdan kayan panel, fixed, tam yükseklik; kapalıyken ekran dışında */
-    .mf8rfmenubody {
+    .abbpimenubody {
       position: fixed;
       top: 0;
       right: 0;
@@ -349,22 +349,22 @@
       overflow-y: auto;
     }
 
-    .mf8rf.mf8rfmenu-open .mf8rfmenubody {
+    .abbpi.abbpimenu-open .abbpimenubody {
       transform: translateX(0);
     }
 
-    .mf8rfmenu {
+    .abbpimenu {
       width: 100%;
       flex-direction: column;
       height: 100%;
     }
 
-    .mf8rfmenulistbody {
+    .abbpimenulistbody {
       flex: 1;
       overflow-y: auto;
     }
 
-    .mf8rfmenulist {
+    .abbpimenulist {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -374,12 +374,12 @@
       box-shadow: none;
     }
 
-    .mf8rf.mf8rfmenu-open .mf8rfmenulist {
+    .abbpi.abbpimenu-open .abbpimenulist {
       display: flex;
     }
 
     /* Mobil kural: lang sayfanın (drawer) en altında ve ortada */
-    .mf8rf.mf8rfmenu-open .mf8rflanguages-mobile {
+    .abbpi.abbpimenu-open .abbpilanguages-mobile {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -391,16 +391,16 @@
       flex-shrink: 0;
     }
 
-    .mf8rf.mf8rfmenu-open .mf8rflanguages-mobile ul {
+    .abbpi.abbpimenu-open .abbpilanguages-mobile ul {
       justify-content: center;
     }
 
-    .mf8rfmenulist ul {
+    .abbpimenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .mf8rfmenulist ul a {
+    .abbpimenulist ul a {
       font-size: 15px;
       width: 100%;
       padding: 14px 12px;
@@ -411,16 +411,16 @@
       box-sizing: border-box;
     }
 
-    .mf8rfmenulist ul a:last-child {
+    .abbpimenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .mf8rfmenulist ul a:hover {
+    .abbpimenulist ul a:hover {
       background-color: #ffffff;
       border-radius: 0;
     }
 
-    .mf8rftitlebodytitle {
+    .abbpititlebodytitle {
       font-size: 12px;
     }
   }
@@ -430,7 +430,7 @@
     justify-content: start;
   }
 
-  .lghfh {
+  .dt0ow {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -439,11 +439,11 @@
     box-sizing: border-box;
   }
 
-  .lghfh * {
+  .dt0ow * {
     box-sizing: border-box;
   }
 
-  .lghfh-menu-btn {
+  .dt0ow-menu-btn {
     display: none;
     background-color: #000;
     padding: 10px 20px;
@@ -455,11 +455,11 @@
     align-items: center;
   }
 
-  .lghfh-menu-btn .lghfh-icon {
+  .dt0ow-menu-btn .dt0ow-icon {
     font-size: 20px;
   }
 
-  .lghfh-menu {
+  .dt0ow-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -470,15 +470,15 @@
     float: left;
   }
 
-  .lghfh-desc {
+  .dt0ow-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .lghfh-menu-link,
-  .lghfh-top {
+  .dt0ow-menu-link,
+  .dt0ow-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -493,52 +493,52 @@
     text-align: left;
   }
 
-  .lghfh-menu-link.active,
-  .lghfh-menu-link:hover,
-  .lghfh-top.active,
-  .lghfh-top:hover {
+  .dt0ow-menu-link.active,
+  .dt0ow-menu-link:hover,
+  .dt0ow-top.active,
+  .dt0ow-top:hover {
     background-color: #000;
     color: #fff;
   }
 
-  .lghfh-menu-group {
+  .dt0ow-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .lghfh-top {
+  .dt0ow-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .lghfh-top > div {
+  .dt0ow-top > div {
     text-align: left;
   }
 
-  .lghfh-top .lghfh-icon {
+  .dt0ow-top .dt0ow-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .lghfh-menu-group.open .lghfh-top .lghfh-icon {
+  .dt0ow-menu-group.open .dt0ow-top .dt0ow-icon {
     transform: rotate(180deg);
   }
 
-  .lghfh-sub {
+  .dt0ow-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .lghfh-sub.show {
+  .dt0ow-sub.show {
     display: flex;
   }
 
-  .lghfh-sub-link {
+  .dt0ow-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -548,13 +548,13 @@
     text-align: left;
   }
 
-  .lghfh-sub-link.active,
-  .lghfh-sub-link:hover {
+  .dt0ow-sub-link.active,
+  .dt0ow-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .lghfh-desc-menu {
+  .dt0ow-desc-menu {
     width: 200px;
     background-color: #000;
     display: flex;
@@ -562,19 +562,19 @@
     border-radius: 5px;
   }
 
-  .lghfh-desc-menu > div {
+  .dt0ow-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .lghfh-desc-body {
+  .dt0ow-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .lghfh-title {
+  .dt0ow-title {
     width: 100%;
     height: 200px;
     background-color: #000;
@@ -587,7 +587,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .lghfh-title::before {
+  .dt0ow-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -602,7 +602,7 @@
     z-index: 1;
   }
 
-  .lghfh-title h1 {
+  .dt0ow-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -610,39 +610,39 @@
     color: #fff !important;
   }
 
-  .lghfh-body {
+  .dt0ow-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .lghfh-img {
+  .dt0ow-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .lghfh-img img {
+  .dt0ow-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .lghfh-menu-overlay {
+    .dt0ow-menu-overlay {
       display: none !important;
     }
 
-    .lghfh-menu-close {
+    .dt0ow-menu-close {
       display: none !important;
     }
 
-    .lghfh-desc {
+    .dt0ow-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .lghfh-menu {
+    .dt0ow-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -654,17 +654,17 @@
       padding: 10px;
     }
 
-    .lghfh-menu-link {
+    .dt0ow-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .lghfh-top {
+    .dt0ow-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .lghfh-menu-btn {
+    .dt0ow-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -673,13 +673,13 @@
       z-index: 1;
     }
 
-    .lghfh-menu-btn:focus {
+    .dt0ow-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .lghfh-menu-overlay {
+    .dt0ow-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -693,13 +693,13 @@
       pointer-events: none;
     }
 
-    .lghfh-menu-overlay.active {
+    .dt0ow-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .lghfh {
+    .dt0ow {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -708,18 +708,18 @@
       margin-top: 0px;
     }
 
-    .lghfh-img {
+    .dt0ow-img {
       width: 100%;
     }
 
-    .lghfh-body {
+    .dt0ow-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .lghfh-menu {
+    .dt0ow-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -741,13 +741,13 @@
       visibility: hidden;
     }
 
-    .lghfh-menu.active {
+    .dt0ow-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .lghfh-menu-close {
+    .dt0ow-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -763,21 +763,21 @@
     }
 
     /* Menü içeriği için padding */
-    .lghfh-menu > .lghfh-menu-group,
-    .lghfh-menu > .lghfh-menu-link {
+    .dt0ow-menu > .dt0ow-menu-group,
+    .dt0ow-menu > .dt0ow-menu-link {
       padding: 10px;
     }
 
-    .lghfh-menu-close span {
+    .dt0ow-menu-close span {
       font-size: 28px;
     }
 
-    .lghfh-menu-close:focus {
+    .dt0ow-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .lghfh-desc {
+    .dt0ow-desc {
       width: 100% !important;
       order: 2;
     }

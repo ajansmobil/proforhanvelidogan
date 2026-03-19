@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=ovqlv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=ovqlv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=wktwd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=wktwd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ovqlv" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=wktwd" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=ovqlv">
+<link rel="stylesheet" href="style.css?v=wktwd">
 </head>
 
 <body>
-  <div id="header"><div class="fuuay">
-  <div class="fuuaytitle">
-    <div class="fuuaytitlebody">
-      <div class="fuuaytitlebodylang">
+  <div id="header"><div class="etpsl">
+  <div class="etpsltitle">
+    <div class="etpsltitlebody">
+      <div class="etpsltitlebodylang">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="fuuaybody">
+  <div class="etpslbody">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=wc5ed"
+        src="/img/logo.png?v=mayjr"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="fuuaybodylogo"
+        class="etpslbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="fuuay-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="etpsl-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="fuuay-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="fuuaymenubody">
-    <div class="fuuaymenu" id="menu-2-root">
-      <div class="fuuaymenulistbody">
-        <div class="fuuaymenulist">
+  <div class="etpsl-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="etpslmenubody">
+    <div class="etpslmenu" id="menu-2-root">
+      <div class="etpslmenulistbody">
+        <div class="etpslmenulist">
           <ul>
             <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="fuuaylanguages-mobile">
+      <div class="etpsllanguages-mobile">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.fuuay) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.etpsl) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".fuuay") : null;
+      var wrapper = root.closest ? root.closest(".etpsl") : null;
       var target = wrapper || root;
-      if (target.classList.contains("fuuaymenu-open")) {
-        target.classList.remove("fuuaymenu-open");
+      if (target.classList.contains("etpslmenu-open")) {
+        target.classList.remove("etpslmenu-open");
       } else {
-        target.classList.add("fuuaymenu-open");
+        target.classList.add("etpslmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="mu0cq-title f36">
+  <div id="content"><div class="z93px-title f36">
   <h1>Mission</h1>
 </div>
-<div class="mu0cq">
-  <div class="mu0cq-menu-btn">
+<div class="z93px">
+  <div class="z93px-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined mu0cq-icon">menu</span>
+    <span class="material-symbols-outlined z93px-icon">menu</span>
   </div>
-  <div class="mu0cq-menu-overlay" id="mu0cq-menu-overlay" aria-hidden="true"></div>
-  <div class="mu0cq-menu" id="mu0cq-menu">
-    <button class="mu0cq-menu-close" type="button" aria-label="Menü schließen" aria-controls="mu0cq-menu">
+  <div class="z93px-menu-overlay" id="z93px-menu-overlay" aria-hidden="true"></div>
+  <div class="z93px-menu" id="z93px-menu">
+    <button class="z93px-menu-close" type="button" aria-label="Menü schließen" aria-controls="z93px-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="mu0cq-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="mu0cq-menu-link active" href="/de/misyon/">Mission</a><a class="mu0cq-menu-link" href="/de/vizyon/">Vision</a><a class="mu0cq-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="mu0cq-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="mu0cq-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="mu0cq-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="mu0cq-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
+    <a class="z93px-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="z93px-menu-link active" href="/de/misyon/">Mission</a><a class="z93px-menu-link" href="/de/vizyon/">Vision</a><a class="z93px-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="z93px-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="z93px-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="z93px-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="z93px-menu-link" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
   </div>
-  <div class="mu0cq-desc">
+  <div class="z93px-desc">
     
-    <div class="mu0cq-body"><p><b>Unsere Mission</b></p> <p>Doç. Dr. Orhan Veli Doğan und sein Team verpflichten sich zu patientenorientierter, evidenzbasierter und zuverlässiger Herz-Gefäßchirurgie. Wir wenden aktuelle Leitlinien an und streben ein Referenzzentrum für Bypass, Klappenchirurgie, TAVI und vaskuläre sowie endovaskuläre Eingriffe an. Patientensicherheit und Qualitätsstandards haben Priorität. Weitere Informationen: siehe türkische Version oder Kontakt.</p></div>
+    <div class="z93px-body"><p><b>Unsere Mission</b></p> <p>Doç. Dr. Orhan Veli Doğan und sein Team verpflichten sich zu patientenorientierter, evidenzbasierter und zuverlässiger Herz-Gefäßchirurgie. Wir wenden aktuelle Leitlinien an und streben ein Referenzzentrum für Bypass, Klappenchirurgie, TAVI und vaskuläre sowie endovaskuläre Eingriffe an. Patientensicherheit und Qualitätsstandards haben Priorität. Weitere Informationen: siehe türkische Version oder Kontakt.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".mu0cq-menu-btn");
-    var menu = document.querySelector(".mu0cq-menu");
-    var overlay = document.querySelector(".mu0cq-menu-overlay");
-    var closeButton = document.querySelector(".mu0cq-menu-close");
+    var menuToggleBtn = document.querySelector(".z93px-menu-btn");
+    var menu = document.querySelector(".z93px-menu");
+    var overlay = document.querySelector(".z93px-menu-overlay");
+    var closeButton = document.querySelector(".z93px-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".mu0cq-menu-close");
+      var closeBtn = event.target.closest(".z93px-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".mu0cq-top").forEach(function (button) {
+    document.querySelectorAll(".z93px-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".mu0cq-menu-group");
+        var group = this.closest(".z93px-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".mu0cq-sub");
+        var sub = group.querySelector(".z93px-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".mu0cq-icon");
+        var icon = this.querySelector(".z93px-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -306,8 +306,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=ovqlv"></script>
-<script defer src="/src/cookie.js?v=ovqlv"></script>
+<script defer type="text/javascript" src="/src/js.js?v=wktwd"></script>
+<script defer src="/src/cookie.js?v=wktwd"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
