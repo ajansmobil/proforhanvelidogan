@@ -1,7 +1,7 @@
 
  
 
-  .rtkj8 {
+  .jdpot {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .rtkj8title {
+  .jdpottitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .rtkj8title:has(.rtkj8titlebodylang:empty),
-  .rtkj8title:has(.rtkj8titlebodylang ul:empty) {
+  .jdpottitle:has(.jdpottitlebodylang:empty),
+  .jdpottitle:has(.jdpottitlebodylang ul:empty) {
     display: none;
   }
 
-  .rtkj8titlebody {
+  .jdpottitlebody {
     color: #ffffff;
     width: var(--max);
     display: flex;
@@ -31,34 +31,34 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .rtkj8titlebodytitle {
+  .jdpottitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .rtkj8titlebodylang {
+  .jdpottitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .rtkj8titlebodylang:empty,
-  .rtkj8titlebodylang ul:empty {
+  .jdpottitlebodylang:empty,
+  .jdpottitlebodylang ul:empty {
     display: none;
   }
 
-  .rtkj8titlebodylang ul {
+  .jdpottitlebodylang ul {
     display: flex;
     gap: 8px;
   }
 
   /* Dil seçici: TR / EN metin, bordür tema rengiyle uyumlu (renk uyumsuzluğu yok) */
-  .rtkj8titlebodylang li {
+  .jdpottitlebodylang li {
     list-style: none;
   }
 
-  .rtkj8titlebodylang li a {
+  .jdpottitlebodylang li a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -75,13 +75,13 @@
     cursor: pointer;
   }
 
-  .rtkj8titlebodylang li a:hover {
+  .jdpottitlebodylang li a:hover {
     border-color: #000000;
     background: #ffffff;
     color: #000000 !important;
   }
 
-  .rtkj8body {
+  .jdpotbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@
   }
 
   /* Mobil hamburger butonu: onclick olduğu için cursor: pointer zorunlu (kural) */
-  .rtkj8-mobile-toggle {
+  .jdpot-mobile-toggle {
     display: none;
     background: #9a3d23;
     color: #ffffff;
@@ -105,18 +105,18 @@
     right: 0;
   }
 
-  .rtkj8-mobile-toggle span {
+  .jdpot-mobile-toggle span {
     font-size: 24px;
   }
 
-  .rtkj8menu {
+  .jdpotmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .rtkj8menulist {
+  .jdpotmenulist {
     width: calc(100% - 20px);
     background-color: #9a3d23;
     padding: 10px;
@@ -125,7 +125,7 @@
     display: flex;
   }
 
-  .rtkj8menubody {
+  .jdpotmenubody {
     width: 100%;
     background-color: #9a3d23;
     display: flex;
@@ -133,7 +133,7 @@
     justify-content: center;
   }
 
-  .rtkj8menulist ul {
+  .jdpotmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -142,7 +142,7 @@
     padding: 0;
   }
 
-  .rtkj8menulist ul a {
+  .jdpotmenulist ul a {
     padding: 10px 15px;
     font-size: 16px;
     color: #ffffff !important;
@@ -155,40 +155,40 @@
     margin: 0 2px;
   }
 
-  .rtkj8menulist ul a:hover {
+  .jdpotmenulist ul a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .rtkj8menulist ul a.rtkj8-menu-list-active {
+  .jdpotmenulist ul a.jdpot-menu-list-active {
     color: #000000 !important;
   }
 
-  .rtkj8-menu-list-active {
+  .jdpot-menu-list-active {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .rtkj8menulistbody {
+  .jdpotmenulistbody {
     width: 100%;
   }
 
-  .rtkj8languages-mobile {
+  .jdpotlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .rtkj8languages-mobile:empty,
-  .rtkj8languages-mobile ul:empty {
+  .jdpotlanguages-mobile:empty,
+  .jdpotlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .rtkj8languages-mobile ul {
+  .jdpotlanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -198,7 +198,7 @@
   }
 
   /* Dil seçici: TR / EN metin, bordür ve arka plan tema ile uyumlu */
-  .rtkj8languages-mobile li {
+  .jdpotlanguages-mobile li {
     list-style: none;
     border: 1px solid color-mix(in srgb, #ffffff 35%, transparent);
     padding: 0;
@@ -212,7 +212,7 @@
     transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .rtkj8languages-mobile li a {
+  .jdpotlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,29 +227,29 @@
     cursor: pointer;
   }
 
-  .rtkj8languages-mobile li:hover {
+  .jdpotlanguages-mobile li:hover {
     background-color: #ffffff;
     border-color: #000000;
     box-shadow: 0 2px 8px color-mix(in srgb, #000000 25%, transparent);
   }
 
-  .rtkj8languages-mobile li:hover a {
+  .jdpotlanguages-mobile li:hover a {
     color: #000000 !important;
   }
 
   /* Mobil drawer için backdrop: masaüstünde görünmez */
-  .rtkj8-menu-backdrop {
+  .jdpot-menu-backdrop {
     display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    .rtkj8bodylogo {
+    .jdpotbodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .rtkj8title {
+    .jdpottitle {
     margin-bottom: -30px;
   }
 
@@ -257,30 +257,30 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .rtkj8body {
+    .jdpotbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .rtkj8menulist ul {
+    .jdpotmenulist ul {
       flex-direction: row;
     }
 
-    .rtkj8bodylogo {
+    .jdpotbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .rtkj8titlebody {
+    .jdpottitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .rtkj8titlebodytitle {
+    .jdpottitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
@@ -288,28 +288,28 @@
 
     /* Mobil: app tarzı sağdan kayan drawer menü */
   @media screen and (max-width: 768px) {
-    .rtkj8titlebodylang {
+    .jdpottitlebodylang {
       display: none;
     }
 
-    .rtkj8body {
+    .jdpotbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .rtkj8-mobile-toggle {
+    .jdpot-mobile-toggle {
       display: inline-flex;
     }
 
-    .rtkj8bodylogo {
+    .jdpotbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
     /* Backdrop: sadece menü açıkken görünür; tıklanınca menü kapanır (onclick ile) */
-    .rtkj8-menu-backdrop {
+    .jdpot-menu-backdrop {
       display: block;
       position: fixed;
       inset: 0;
@@ -322,14 +322,14 @@
       cursor: pointer;
     }
 
-    .rtkj8.rtkj8menu-open .rtkj8-menu-backdrop {
+    .jdpot.jdpotmenu-open .jdpot-menu-backdrop {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
     /* Drawer: sağdan kayan panel, fixed, tam yükseklik; kapalıyken ekran dışında */
-    .rtkj8menubody {
+    .jdpotmenubody {
       position: fixed;
       top: 0;
       right: 0;
@@ -349,22 +349,22 @@
       overflow-y: auto;
     }
 
-    .rtkj8.rtkj8menu-open .rtkj8menubody {
+    .jdpot.jdpotmenu-open .jdpotmenubody {
       transform: translateX(0);
     }
 
-    .rtkj8menu {
+    .jdpotmenu {
       width: 100%;
       flex-direction: column;
       height: 100%;
     }
 
-    .rtkj8menulistbody {
+    .jdpotmenulistbody {
       flex: 1;
       overflow-y: auto;
     }
 
-    .rtkj8menulist {
+    .jdpotmenulist {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -374,12 +374,12 @@
       box-shadow: none;
     }
 
-    .rtkj8.rtkj8menu-open .rtkj8menulist {
+    .jdpot.jdpotmenu-open .jdpotmenulist {
       display: flex;
     }
 
     /* Mobil kural: lang sayfanın (drawer) en altında ve ortada */
-    .rtkj8.rtkj8menu-open .rtkj8languages-mobile {
+    .jdpot.jdpotmenu-open .jdpotlanguages-mobile {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -391,16 +391,16 @@
       flex-shrink: 0;
     }
 
-    .rtkj8.rtkj8menu-open .rtkj8languages-mobile ul {
+    .jdpot.jdpotmenu-open .jdpotlanguages-mobile ul {
       justify-content: center;
     }
 
-    .rtkj8menulist ul {
+    .jdpotmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .rtkj8menulist ul a {
+    .jdpotmenulist ul a {
       font-size: 15px;
       width: 100%;
       padding: 14px 12px;
@@ -411,16 +411,16 @@
       box-sizing: border-box;
     }
 
-    .rtkj8menulist ul a:last-child {
+    .jdpotmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .rtkj8menulist ul a:hover {
+    .jdpotmenulist ul a:hover {
       background-color: #ffffff;
       border-radius: 0;
     }
 
-    .rtkj8titlebodytitle {
+    .jdpottitlebodytitle {
       font-size: 12px;
     }
   }

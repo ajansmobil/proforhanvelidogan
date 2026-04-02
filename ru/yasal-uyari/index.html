@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=m89a5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=m89a5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=plisk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=plisk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=m89a5" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=plisk" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,45 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=m89a5">
+<link rel="stylesheet" href="style.css?v=plisk">
 </head>
 
 <body>
-  <div id="header"><div class="jknpc">
-  <div class="jknpctitle">
-    <div class="jknpctitlebody">
-      <div class="jknpctitlebodylang">
+  <div id="header"><div class="ngagh">
+  <div class="ngaghtitle">
+    <div class="ngaghtitlebody">
+      <div class="ngaghtitlebodylang">
         <ul>
           <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="jknpcbody">
+  <div class="ngaghbody">
     <a href="/ru/"
       ><img
-        src="/img/logo.png?v=dwinz"
+        src="/img/logo.png?v=er539"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="jknpcbodylogo"
+        class="ngaghbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="jknpc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ngagh-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
   <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="jknpc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="jknpcmenubody">
-    <div class="jknpcmenu" id="menu-2-root">
-      <div class="jknpcmenulistbody">
-        <div class="jknpcmenulist">
+  <div class="ngagh-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ngaghmenubody">
+    <div class="ngaghmenu" id="menu-2-root">
+      <div class="ngaghmenulistbody">
+        <div class="ngaghmenulist">
           <ul>
             <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
           </ul>
         </div>
       </div>
       <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="jknpclanguages-mobile">
+      <div class="ngaghlanguages-mobile">
         <ul>
           <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
         </ul>
@@ -98,51 +98,51 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.jknpc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  /* Mobil menü aç/kapat: class wrapper (.ngagh) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".jknpc") : null;
+      var wrapper = root.closest ? root.closest(".ngagh") : null;
       var target = wrapper || root;
-      if (target.classList.contains("jknpcmenu-open")) {
-        target.classList.remove("jknpcmenu-open");
+      if (target.classList.contains("ngaghmenu-open")) {
+        target.classList.remove("ngaghmenu-open");
       } else {
-        target.classList.add("jknpcmenu-open");
+        target.classList.add("ngaghmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="e84os-title f36">
+  <div id="content"><div class="d3pl7-title f36">
   <h1>Правовая оговорка</h1>
 </div>
-<div class="e84os">
-  <div class="e84os-menu-btn">
+<div class="d3pl7">
+  <div class="d3pl7-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined e84os-icon">menu</span>
+    <span class="material-symbols-outlined d3pl7-icon">menu</span>
   </div>
-  <div class="e84os-menu-overlay" id="e84os-menu-overlay" aria-hidden="true"></div>
-  <div class="e84os-menu" id="e84os-menu">
-    <button class="e84os-menu-close" type="button" aria-label="Закрыть меню" aria-controls="e84os-menu">
+  <div class="d3pl7-menu-overlay" id="d3pl7-menu-overlay" aria-hidden="true"></div>
+  <div class="d3pl7-menu" id="d3pl7-menu">
+    <button class="d3pl7-menu-close" type="button" aria-label="Закрыть меню" aria-controls="d3pl7-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="e84os-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="e84os-menu-link" href="/ru/misyon/">Миссия</a><a class="e84os-menu-link" href="/ru/vizyon/">Видение</a><a class="e84os-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="e84os-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="e84os-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="e84os-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="e84os-menu-link active" href="/ru/yasal-uyari/">Правовая оговорка</a>
+    <a class="d3pl7-menu-link" href="/ru/ozgecmis/">Резюме</a><a class="d3pl7-menu-link" href="/ru/misyon/">Миссия</a><a class="d3pl7-menu-link" href="/ru/vizyon/">Видение</a><a class="d3pl7-menu-link" href="/ru/kalite-politikamiz/">Наша политика качества</a><a class="d3pl7-menu-link" href="/ru/gizlilik-politikasi/">Политика конфиденциальности</a><a class="d3pl7-menu-link" href="/ru/kisisel-veriler/">Персональные данные</a><a class="d3pl7-menu-link" href="/ru/kullanici-haklari/">Права пользователей</a><a class="d3pl7-menu-link active" href="/ru/yasal-uyari/">Правовая оговорка</a>
   </div>
-  <div class="e84os-desc">
+  <div class="d3pl7-desc">
     
-    <div class="e84os-body"><p><b>Правовая оговорка</b></p> <p>Доступ и использование proforhanvelidogan.com означают согласие с условиями использования. Медицинская информация на сайте носит общий характер и не заменяет личную диагностику или лечение. Полный текст: см. турецкую версию или контакты.</p></div>
+    <div class="d3pl7-body"><p><b>Правовая оговорка</b></p> <p>Доступ и использование proforhanvelidogan.com означают согласие с условиями использования. Медицинская информация на сайте носит общий характер и не заменяет личную диагностику или лечение. Полный текст: см. турецкую версию или контакты.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".e84os-menu-btn");
-    var menu = document.querySelector(".e84os-menu");
-    var overlay = document.querySelector(".e84os-menu-overlay");
-    var closeButton = document.querySelector(".e84os-menu-close");
+    var menuToggleBtn = document.querySelector(".d3pl7-menu-btn");
+    var menu = document.querySelector(".d3pl7-menu");
+    var overlay = document.querySelector(".d3pl7-menu-overlay");
+    var closeButton = document.querySelector(".d3pl7-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -212,7 +212,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".e84os-menu-close");
+      var closeBtn = event.target.closest(".d3pl7-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -260,15 +260,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".e84os-top").forEach(function (button) {
+    document.querySelectorAll(".d3pl7-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".e84os-menu-group");
+        var group = this.closest(".d3pl7-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".e84os-sub");
+        var sub = group.querySelector(".d3pl7-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".e84os-icon");
+        var icon = this.querySelector(".d3pl7-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -306,8 +306,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=m89a5"></script>
-<script defer src="/src/cookie.js?v=m89a5"></script>
+<script defer type="text/javascript" src="/src/js.js?v=plisk"></script>
+<script defer src="/src/cookie.js?v=plisk"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
