@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=zni8f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=zni8f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=vraf3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=vraf3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=zni8f" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=vraf3" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,16 +50,16 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=zni8f">
+<link rel="stylesheet" href="style.css?v=vraf3">
 </head>
 
 <body>
   <div id="header">
-<div class="cykkj">
+<div class="sztkr">
   
-  <div class="cykkjtitle">
-    <div class="cykkjtitlebody">
-      <div class="cykkjtitlebodylang">
+  <div class="sztkrtitle">
+    <div class="sztkrtitlebody">
+      <div class="sztkrtitlebodylang">
         <ul>
           <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
         </ul>
@@ -67,36 +67,36 @@
     </div>
   </div>
 
-  <div class="cykkj-bar">
-    <div class="cykkjbody">
-      <div class="cykkjbody-inner">
-        <a href="/ru/" class="cykkjbodylogolink" title="Домашняя страница"
+  <div class="sztkr-bar">
+    <div class="sztkrbody">
+      <div class="sztkrbody-inner">
+        <a href="/ru/" class="sztkrbodylogolink" title="Домашняя страница"
           ><img
-            src="/img/logo.png?v=uxfrd"
+            src="/img/logo.png?v=dd6pl"
             alt="Prof OVD Orhan VELİ DOĞAN Logo"
-            class="cykkjbodylogo"
+            class="sztkrbodylogo"
             loading="lazy"
         /></a>
-        <button type="button" class="cykkj-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+        <button type="button" class="sztkr-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
           <span class="material-symbols-outlined" aria-hidden="true">menu</span>
         </button>
       </div>
     </div>
 
-    <div class="cykkj-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+    <div class="sztkr-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
 
-    <div class="cykkjmenubody">
-      <div class="cykkjmenu" id="menu-2-root">
-        <div class="cykkj-drawer-header">
-          <span class="cykkj-drawer-title">Меню</span>
-          <button type="button" class="cykkj-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+    <div class="sztkrmenubody">
+      <div class="sztkrmenu" id="menu-2-root">
+        <div class="sztkr-drawer-header">
+          <span class="sztkr-drawer-title">Меню</span>
+          <button type="button" class="sztkr-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
             <span class="material-symbols-outlined" aria-hidden="true">close</span>
           </button>
         </div>
-        <div class="cykkj-mainnav-wrap">
-          <div class="cykkjmenulistbody">
-            <div class="cykkjmenulist">
-              <nav class="cykkjmenunav" aria-label="Ana menü">
+        <div class="sztkr-mainnav-wrap">
+          <div class="sztkrmenulistbody">
+            <div class="sztkrmenulist">
+              <nav class="sztkrmenunav" aria-label="Ana menü">
                 <ul>
                   <li><a href="/ru/">Домашняя страница </a></li><li><a href="/ru/ozgecmis/">Резюме</a></li><li><a href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li><a href="/ru/akademik-yayinlar/">Научные публикации</a></li><li><a href="/ru/iletisim/">Контакты</a></li>
                 </ul>
@@ -104,9 +104,9 @@
             </div>
           </div>
           
-          <a class="cykkj-cta" href="/ru/iletisim/">Связаться с нами</a>
+          <a class="sztkr-cta" href="/ru/iletisim/">Связаться с нами</a>
         </div>
-        <div class="cykkjlanguages-mobile">
+        <div class="sztkrlanguages-mobile">
           <ul>
             <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
           </ul>
@@ -123,18 +123,18 @@
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".cykkj") : null;
+      var wrapper = root.closest ? root.closest(".sztkr") : null;
       var target = wrapper || root;
-      if (target.classList.contains("cykkjmenu-open")) {
-        target.classList.remove("cykkjmenu-open");
+      if (target.classList.contains("sztkrmenu-open")) {
+        target.classList.remove("sztkrmenu-open");
       } else {
-        target.classList.add("cykkjmenu-open");
+        target.classList.add("sztkrmenu-open");
       }
     }
   }
 </script>
-<div class="swiper-container i96rl">
-  <div class="swiper-wrapper" id="i96rl"><div class="swiper-slide"><img src="/img/vey1el/1.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/2.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/3.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/4.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div></div>
+<div class="swiper-container hgw49">
+  <div class="swiper-wrapper" id="hgw49"><div class="swiper-slide"><img src="/img/vey1el/1.webp?v=1775281357145" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/2.webp?v=1775281357145" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/3.webp?v=1775281357145" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/4.webp?v=1775281357145" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -184,7 +184,7 @@
       attempts++;
       if (typeof Swiper === "function") {
         clearInterval(timer);
-        new Swiper(".i96rl", {
+        new Swiper(".hgw49", {
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
@@ -208,20 +208,20 @@
     }, 250);
   })();
 </script></div>
-  <div id="content"><div class="qhvyr qhvyrcardio" role="region" aria-label="">
-  <div class="qhvyrcardio-inner">
-    <header class="qhvyrcardio-hero">
-      <div class="qhvyrcardio-hero-icon" aria-hidden="true">
+  <div id="content"><div class="ibojy ibojycardio" role="region" aria-label="">
+  <div class="ibojycardio-inner">
+    <header class="ibojycardio-hero">
+      <div class="ibojycardio-hero-icon" aria-hidden="true">
         <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle class="qhvyrcardio-svg-ring" cx="32" cy="32" r="30" stroke="#0D9488" stroke-width="2" opacity="0.4" />
-          <path class="qhvyrcardio-svg-ekg" d="M8 34h8l4-12 6 24 8-32 6 20h16" stroke="#0F766E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <circle class="ibojycardio-svg-ring" cx="32" cy="32" r="30" stroke="#0D9488" stroke-width="2" opacity="0.4" />
+          <path class="ibojycardio-svg-ekg" d="M8 34h8l4-12 6 24 8-32 6 20h16" stroke="#0F766E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
       </div>
-      <p class="qhvyrcardio-eyebrow"></p>
-      <h2 class="qhvyrcardio-title"></h2>
-      <p class="qhvyrcardio-lead"></p>
+      <p class="ibojycardio-eyebrow"></p>
+      <h2 class="ibojycardio-title"></h2>
+      <p class="ibojycardio-lead"></p>
     </header>
-    <div class="qhvyrbody"><div class="qhvyrbodyitem left" style="transition-delay: 0s;"><a href="/ru/varis-nedir/" class="qhvyrbodyitemlink" title="Что такое варикоз?"><div class="qhvyrbodyitemimg"><img alt="Что такое варикоз?" src="/page/z7cy6mn33q/ilj83.webp" loading="lazy"></div><div class="qhvyrbodyitemcontent"><div class="qhvyrbodyitemtitle">Что такое варикоз?</div><div class="qhvyrbodyitemdesc">Информационная страница о том, что такое варикоз, почему он возникает и какими симптомами проявляется.</div><span class="qhvyrbodyitemcta"><span class="qhvyrbodyitemcta-text">Detaylı bilgi</span><span class="qhvyrbodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div><div class="qhvyrbodyitem right" style="transition-delay: 0.12s;"><a href="/ru/varis-turleri/" class="qhvyrbodyitemlink" title="Какие бывают типы варикоза?"><div class="qhvyrbodyitemcontent"><div class="qhvyrbodyitemtitle">Какие бывают типы варикоза?</div><div class="qhvyrbodyitemdesc">Страница с основными типами варикоза: сосудистые звездочки, ретикулярные и стволовые вены с клиническими особенностями.</div><span class="qhvyrbodyitemcta"><span class="qhvyrbodyitemcta-text">Detaylı bilgi</span><span class="qhvyrbodyitemcta-arrow" aria-hidden="true">→</span></span></div><div class="qhvyrbodyitemimg"><img alt="Какие бывают типы варикоза?" src="/page/varisTurleri/uqfhy.webp" loading="lazy"></div></a></div><div class="qhvyrbodyitem left" style="transition-delay: 0.24s;"><a href="/ru/varis-neden-olur/" class="qhvyrbodyitemlink" title="Почему возникает варикоз?"><div class="qhvyrbodyitemimg"><img alt="Почему возникает варикоз?" src="/page/varisNedenOlur/d39qw.webp" loading="lazy"></div><div class="qhvyrbodyitemcontent"><div class="qhvyrbodyitemtitle">Почему возникает варикоз?</div><div class="qhvyrbodyitemdesc">Причины: венозная недостаточность, повреждение клапанов, длительное стояние, генетика.</div><span class="qhvyrbodyitemcta"><span class="qhvyrbodyitemcta-text">Detaylı bilgi</span><span class="qhvyrbodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div></div>
+    <div class="ibojybody"><div class="ibojybodyitem left" style="transition-delay: 0s;"><a href="/ru/varis-nedir/" class="ibojybodyitemlink" title="Что такое варикоз?"><div class="ibojybodyitemimg"><img alt="Что такое варикоз?" src="/page/z7cy6mn33q/ilj83.webp" loading="lazy"></div><div class="ibojybodyitemcontent"><div class="ibojybodyitemtitle">Что такое варикоз?</div><div class="ibojybodyitemdesc">Информационная страница о том, что такое варикоз, почему он возникает и какими симптомами проявляется.</div><span class="ibojybodyitemcta"><span class="ibojybodyitemcta-text">Detaylı bilgi</span><span class="ibojybodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div><div class="ibojybodyitem right" style="transition-delay: 0.12s;"><a href="/ru/varis-turleri/" class="ibojybodyitemlink" title="Какие бывают типы варикоза?"><div class="ibojybodyitemcontent"><div class="ibojybodyitemtitle">Какие бывают типы варикоза?</div><div class="ibojybodyitemdesc">Страница с основными типами варикоза: сосудистые звездочки, ретикулярные и стволовые вены с клиническими особенностями.</div><span class="ibojybodyitemcta"><span class="ibojybodyitemcta-text">Detaylı bilgi</span><span class="ibojybodyitemcta-arrow" aria-hidden="true">→</span></span></div><div class="ibojybodyitemimg"><img alt="Какие бывают типы варикоза?" src="/page/varisTurleri/uqfhy.webp" loading="lazy"></div></a></div><div class="ibojybodyitem left" style="transition-delay: 0.24s;"><a href="/ru/varis-neden-olur/" class="ibojybodyitemlink" title="Почему возникает варикоз?"><div class="ibojybodyitemimg"><img alt="Почему возникает варикоз?" src="/page/varisNedenOlur/d39qw.webp" loading="lazy"></div><div class="ibojybodyitemcontent"><div class="ibojybodyitemtitle">Почему возникает варикоз?</div><div class="ibojybodyitemdesc">Причины: венозная недостаточность, повреждение клапанов, длительное стояние, генетика.</div><span class="ibojybodyitemcta"><span class="ibojybodyitemcta-text">Detaylı bilgi</span><span class="ibojybodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div></div>
   </div>
 </div>
 
@@ -240,12 +240,12 @@
         threshold: 0.06,
         rootMargin: '0px 0px -32px 0px'
       });
-      var items = document.querySelectorAll('.qhvyrbodyitem');
+      var items = document.querySelectorAll('.ibojybodyitem');
       items.forEach(function(item) {
         observer.observe(item);
       });
     } else {
-      var items = document.querySelectorAll('.qhvyrbodyitem');
+      var items = document.querySelectorAll('.ibojybodyitem');
       items.forEach(function(item) {
         item.classList.add('visible');
       });
@@ -253,23 +253,23 @@
   }, 100);
 </script>
 
-<div class="ytb4ndyentnbody">
-  <div class="ytb4ndyentn">
+<div class="ytb4ndixb9vbody">
+  <div class="ytb4ndixb9v">
     
-    <div class="ytb4ndyentntitle">YouTube videoları</div>
-    <div class="ytb4ndyentnchannel"><a href="https://www.youtube.com/@Prof.Dr.OrhanVeliDogan" target="_blank" rel="noopener noreferrer">YouTube kanalı →</a></div>
+    <div class="ytb4ndixb9vtitle">YouTube videoları</div>
+    <div class="ytb4ndixb9vchannel"><a href="https://www.youtube.com/@Prof.Dr.OrhanVeliDogan" target="_blank" rel="noopener noreferrer">YouTube kanalı →</a></div>
     
-    <div class="yentn swiper-container ytb4nd-yentn-swiper">
+    <div class="ixb9v swiper-container ytb4nd-ixb9v-swiper">
       <div class="swiper-wrapper"><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/pManSQfMPYI?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 1/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/FRXNY3teHVc?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 2/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/ryqt2MUVe7U?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 3/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/SpZeJZ50Z9U?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 4/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/YDHpkw7kSnA?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 5/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div></div>
       <div
-        class="swiper-button-next swiper-button-next-ytb4nd-yentn"
+        class="swiper-button-next swiper-button-next-ytb4nd-ixb9v"
         aria-hidden="true"
       ></div>
       <div
-        class="swiper-button-prev swiper-button-prev-ytb4nd-yentn"
+        class="swiper-button-prev swiper-button-prev-ytb4nd-ixb9v"
         aria-hidden="true"
       ></div>
-      <div class="swiper-pagination swiper-pagination-ytb4nd-yentn"></div>
+      <div class="swiper-pagination swiper-pagination-ytb4nd-ixb9v"></div>
     </div>
   </div>
 </div>
@@ -277,7 +277,7 @@
 <script>
   
   setTimeout(function ytb4ndSwiperBoot() {
-    var rootSel = ".ytb4nd-yentn-swiper";
+    var rootSel = ".ytb4nd-ixb9v-swiper";
     var maxTry = 24;
     var intervalMs = 250;
     var n = 0;
@@ -299,12 +299,12 @@
         speed: 500,
         autoplay: { delay: 8000, disableOnInteraction: false },
         pagination: {
-          el: ".swiper-pagination-ytb4nd-yentn",
+          el: ".swiper-pagination-ytb4nd-ixb9v",
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next-ytb4nd-yentn",
-          prevEl: ".swiper-button-prev-ytb4nd-yentn",
+          nextEl: ".swiper-button-next-ytb4nd-ixb9v",
+          prevEl: ".swiper-button-prev-ytb4nd-ixb9v",
         },
         
         on: {
@@ -335,8 +335,8 @@
         },
       };
       if ("true" !== "true") {
-        var btnNext = document.querySelector(".swiper-button-next-ytb4nd-yentn");
-        var btnPrev = document.querySelector(".swiper-button-prev-ytb4nd-yentn");
+        var btnNext = document.querySelector(".swiper-button-next-ytb4nd-ixb9v");
+        var btnPrev = document.querySelector(".swiper-button-prev-ytb4nd-ixb9v");
         if (btnNext) {
           btnNext.style.display = "none";
         }
@@ -348,27 +348,27 @@
     }, intervalMs);
   }, 500);
 </script>
-<div class="sliderxzw445body">
-  <div class="sliderxzw445">
-    <div class="sliderxzw445title"></div>
-    <div class="zw445">
+<div class="sliderxnauoibody">
+  <div class="sliderxnauoi">
+    <div class="sliderxnauoititle"></div>
+    <div class="nauoi">
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Facebook">
-            <img src="/src/icon/facebook.png" alt="Facebook" class="zw445-media" loading="lazy" />
+            <img src="/src/icon/facebook.png" alt="Facebook" class="nauoi-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Instagram">
-            <img src="/src/icon/instagram.png" alt="Instagram" class="zw445-media" loading="lazy" />
+            <img src="/src/icon/instagram.png" alt="Instagram" class="nauoi-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="LinkedIn">
-            <img src="/src/icon/linkedin.png" alt="LinkedIn" class="zw445-media" loading="lazy" />
+            <img src="/src/icon/linkedin.png" alt="LinkedIn" class="nauoi-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="YouTube">
-            <img src="/src/icon/youtube.png" alt="YouTube" class="zw445-media" loading="lazy" />
+            <img src="/src/icon/youtube.png" alt="YouTube" class="nauoi-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="WhatsApp">
-            <img src="/src/icon/whatsapp.png" alt="WhatsApp" class="zw445-media" loading="lazy" />
+            <img src="/src/icon/whatsapp.png" alt="WhatsApp" class="nauoi-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Google Maps">
-            <img src="/src/icon/google-maps.png" alt="Google Maps" class="zw445-media" loading="lazy" />
+            <img src="/src/icon/google-maps.png" alt="Google Maps" class="nauoi-media" loading="lazy" />
         </a></div>
   </div>
 </div>
@@ -399,8 +399,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=zni8f"></script>
-<script defer src="/src/cookie.js?v=zni8f"></script>
+<script defer type="text/javascript" src="/src/js.js?v=vraf3"></script>
+<script defer src="/src/cookie.js?v=vraf3"></script>
 
 <script>
   setTimeout(function() {
