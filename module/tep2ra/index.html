@@ -1,0 +1,686 @@
+
+<div class="modulex">
+  
+  <div class="modulextitle">
+    <div class="modulextitlebody">
+      <div class="modulextitlebodylang">
+        <ul>
+          {{langhtml}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modulex-bar">
+    <div class="modulexbody">
+      <div class="modulexbody-inner">
+        <a href="/{{lang}}/" class="modulexbodylogolink" title="@home@"
+          ><img
+            src="/img/{{logo}}?v={{random}}"
+            alt="{{web-name}} Logo"
+            class="modulexbodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="modulex-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="modulex-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="modulexmenubody">
+      <div class="modulexmenu" id="menu-2-root">
+        <div class="modulex-drawer-header">
+          <span class="modulex-drawer-title">@menu@</span>
+          <button type="button" class="modulex-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="modulex-mainnav-wrap">
+          <div class="modulexmenulistbody">
+            <div class="modulexmenulist">
+              <nav class="modulexmenunav" aria-label="Ana menü">
+                <ul>
+                  {{html}}
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="modulex-cta" href="/{{lang}}/iletisim/">@contact-us@</a>
+        </div>
+        <div class="modulexlanguages-mobile">
+          <ul>
+            {{langhtml}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  
+
+  .modulex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: --bgcolor--;
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    border-bottom: 1px solid color-mix(in srgb, --color-- 12%, transparent);
+    box-shadow: 0 2px 12px color-mix(in srgb, --color-- 5%, transparent);
+  }
+
+  
+  .modulextitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, --color-- 5%, --bgcolor--);
+    border-bottom: 1px solid color-mix(in srgb, --color-- 8%, transparent);
+  }
+
+  .modulextitle:has(.modulextitlebodylang:empty),
+  .modulextitle:has(.modulextitlebodylang ul:empty) {
+    display: none;
+  }
+
+  .modulextitlebody {
+    color: --color--;
+    width: var(--max);
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 20px;
+    box-sizing: border-box;
+  }
+
+  .modulextitlebodylang:empty,
+  .modulextitlebodylang ul:empty {
+    display: none;
+  }
+
+  .modulextitlebodylang ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .modulextitlebodylang li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modulextitlebodylang li a {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, --color-- 70%, transparent) !important;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+    min-height: 32px;
+    box-sizing: border-box;
+  }
+
+  .modulextitlebodylang li:not(:last-child) a {
+    margin-right: 6px;
+    padding-right: 12px;
+    border-right: 1px solid color-mix(in srgb, --color-- 15%, transparent);
+  }
+
+  .modulextitlebodylang li a:hover {
+    color: --activebgcolor-- !important;
+    background: color-mix(in srgb, --activebgcolor-- 6%, transparent);
+  }
+
+  .modulextitlebodylang li a:focus-visible {
+    outline: 2px solid --activebgcolor--;
+    outline-offset: 2px;
+  }
+
+  
+  .modulex-bar {
+    width: 100%;
+    max-width: var(--max);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 12px 20px 14px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .modulexbody {
+    flex: 0 1 auto;
+    max-width: 42%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .modulexbody-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 48px;
+  }
+
+  .modulexbodylogolink {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+  }
+
+  .modulexbodylogolink:hover {
+    opacity: 0.85;
+  }
+
+  .modulexbodylogolink:focus-visible {
+    outline: 2px solid --activebgcolor--;
+    outline-offset: 4px;
+  }
+
+  .modulex-mobile-toggle {
+    display: none;
+    background: transparent;
+    color: --color--;
+    border: 1px solid color-mix(in srgb, --color-- 18%, transparent);
+    border-radius: 6px;
+    padding: 10px 11px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 44px;
+    min-height: 44px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  }
+
+  .modulex-mobile-toggle:hover {
+    border-color: --activebgcolor--;
+    color: --activebgcolor--;
+    background: color-mix(in srgb, --activebgcolor-- 6%, transparent);
+  }
+
+  .modulex-mobile-toggle:focus-visible {
+    outline: 2px solid --activebgcolor--;
+    outline-offset: 2px;
+  }
+
+  .modulex-mobile-toggle span {
+    font-size: 24px;
+  }
+
+  .modulexmenubody {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .modulexmenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .modulex-mainnav-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px 20px;
+    width: 100%;
+  }
+
+  .modulexmenulist {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .modulexmenunav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px 4px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modulexmenunav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .modulexmenunav ul a {
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: --color-- !important;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+
+  .modulexmenunav ul a:hover {
+    color: --activebgcolor-- !important;
+    background: color-mix(in srgb, --activebgcolor-- 6%, transparent);
+    border-bottom-color: color-mix(in srgb, --activebgcolor-- 35%, transparent);
+  }
+
+  .modulexmenunav ul a:focus-visible {
+    outline: 2px solid --activebgcolor--;
+    outline-offset: 2px;
+  }
+
+  .modulexmenunav ul a.modulex-menu-list-active,
+  .modulex-menu-list-active {
+    color: --activebgcolor-- !important;
+    border-bottom-color: --activebgcolor--;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  
+  .modulex-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    min-height: 44px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: --activecolor-- !important;
+    background: --activebgcolor--;
+    border: 1px solid color-mix(in srgb, --activebgcolor-- 90%, transparent);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: filter 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .modulex-cta:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 2px 10px color-mix(in srgb, --activebgcolor-- 35%, transparent);
+  }
+
+  .modulex-cta:focus-visible {
+    outline: 2px solid --activebgcolor--;
+    outline-offset: 3px;
+  }
+
+  .modulexmenulistbody {
+    width: auto;
+  }
+
+  .modulex-drawer-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid color-mix(in srgb, --color-- 10%, transparent);
+    background: color-mix(in srgb, --color-- 4%, --bgcolor--);
+    flex-shrink: 0;
+  }
+
+  .modulex-drawer-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: --color--;
+  }
+
+  .modulex-drawer-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid color-mix(in srgb, --color-- 16%, transparent);
+    background: transparent;
+    color: --color--;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .modulex-drawer-close:hover {
+    background: color-mix(in srgb, --activebgcolor-- 8%, transparent);
+    color: --activebgcolor--;
+  }
+
+  .modulex-drawer-close:focus-visible {
+    outline: 2px solid --activebgcolor--;
+    outline-offset: 2px;
+  }
+
+  .modulex-drawer-close span {
+    font-size: 22px;
+  }
+
+  .modulexlanguages-mobile {
+    display: none;
+    padding: 14px 16px 20px 16px;
+    border-top: 1px solid color-mix(in srgb, --color-- 10%, transparent);
+  }
+
+  .modulexlanguages-mobile:empty,
+  .modulexlanguages-mobile ul:empty {
+    display: none !important;
+  }
+
+  .modulexlanguages-mobile ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .modulexlanguages-mobile li {
+    list-style: none;
+    border: 1px solid color-mix(in srgb, --color-- 14%, transparent);
+    border-radius: 6px;
+  }
+
+  .modulexlanguages-mobile li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 44px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: --color-- !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modulexlanguages-mobile li:hover {
+    border-color: --activebgcolor--;
+    background: color-mix(in srgb, --activebgcolor-- 6%, transparent);
+  }
+
+  .modulexlanguages-mobile li:hover a {
+    color: --activebgcolor-- !important;
+  }
+
+  .modulex-menu-backdrop {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .modulexbodylogo {
+      max-width: min(300px, 36vw);
+      max-height: 84px;
+      object-fit: contain;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .modulex-bar {
+      flex-wrap: wrap;
+      padding: 10px 16px 12px 16px;
+    }
+
+    .modulexbody {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+
+    .modulexbody-inner {
+      justify-content: center;
+    }
+
+    .modulexbodylogo {
+      max-width: 240px;
+      max-height: 76px;
+      object-fit: contain;
+    }
+
+    .modulexmenubody {
+      flex: 1 1 100%;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .modulexmenu {
+      align-items: center;
+    }
+
+    .modulex-mainnav-wrap {
+      justify-content: center;
+      border-top: 1px solid color-mix(in srgb, --color-- 8%, transparent);
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+
+    .modulexmenunav ul {
+      justify-content: center;
+    }
+
+    .modulex-cta {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modulextitlebodylang {
+      display: none;
+    }
+
+    .modulex-bar {
+      padding: 8px 12px 10px 12px;
+    }
+
+    .modulexbody-inner {
+      justify-content: flex-start;
+    }
+
+    .modulex-mobile-toggle {
+      display: inline-flex;
+    }
+
+    .modulexbodylogo {
+      max-width: 190px;
+      max-height: 68px;
+    }
+
+    
+    .modulex-mainnav-wrap {
+      display: none;
+    }
+
+    .modulexmenubody {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: min(92vw, 340px);
+      height: 100vh;
+      max-height: 100dvh;
+      flex: none;
+      z-index: 1000;
+      transform: translateX(100%);
+      transition: transform 0.28s ease;
+      box-shadow: -8px 0 32px color-mix(in srgb, --color-- 15%, transparent);
+      overflow-y: auto;
+      background: --bgcolor--;
+      border-left: 1px solid color-mix(in srgb, --color-- 10%, transparent);
+      align-items: stretch;
+    }
+
+    .modulex.modulexmenu-open .modulexmenubody {
+      transform: translateX(0);
+    }
+
+    .modulex-menu-backdrop {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: color-mix(in srgb, #000000 40%, transparent);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      cursor: pointer;
+    }
+
+    .modulex.modulexmenu-open .modulex-menu-backdrop {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .modulex-drawer-header {
+      display: flex;
+    }
+
+    .modulexmenu {
+      align-items: stretch;
+      min-height: 100%;
+    }
+
+    .modulex-mainnav-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+      gap: 0;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .modulexmenulistbody {
+      flex: 1;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .modulexmenulist {
+      width: 100%;
+      padding: 8px 12px;
+      box-sizing: border-box;
+    }
+
+    .modulexmenunav ul {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 2px;
+    }
+
+    .modulexmenunav ul a {
+      width: 100%;
+      text-align: left;
+      white-space: normal;
+      border-radius: 6px;
+      border-bottom: none;
+      border-left: 3px solid transparent;
+    }
+
+    .modulexmenunav ul a:hover {
+      border-bottom-color: transparent;
+      border-left-color: color-mix(in srgb, --activebgcolor-- 45%, transparent);
+    }
+
+    .modulexmenunav ul a.modulex-menu-list-active,
+    .modulex.modulexmenu-open .modulexmenunav ul a.modulex-menu-list-active {
+      border-left-color: --activebgcolor--;
+      border-bottom: none;
+      background: color-mix(in srgb, --activebgcolor-- 8%, transparent);
+    }
+
+    .modulex-cta {
+      width: auto;
+      max-width: none;
+      margin: 12px 16px 8px 16px;
+      text-align: center;
+    }
+
+    .modulex.modulexmenu-open .modulexlanguages-mobile {
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+</style>
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      var wrapper = root.closest ? root.closest(".modulex") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("modulexmenu-open")) {
+        target.classList.remove("modulexmenu-open");
+      } else {
+        target.classList.add("modulexmenu-open");
+      }
+    }
+  }
+</script>

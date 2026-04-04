@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=ga6dd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=ga6dd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=sv5k4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=sv5k4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ga6dd" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=sv5k4" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,78 +50,96 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=ga6dd">
+<link rel="stylesheet" href="style.css?v=sv5k4">
 </head>
 
 <body>
-  <div id="header"><div class="cfxng">
-  <div class="cfxngtitle">
-    <div class="cfxngtitlebody">
-      <div class="cfxngtitlebodylang">
+  <div id="header">
+<div class="f3suz">
+  
+  <div class="f3suztitle">
+    <div class="f3suztitlebody">
+      <div class="f3suztitlebodylang">
         <ul>
           <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="cfxngbody">
-    <a href="/ru/"
-      ><img
-        src="/img/logo.png?v=zkbwu"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="cfxngbodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="cfxng-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="cfxng-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="cfxngmenubody">
-    <div class="cfxngmenu" id="menu-2-root">
-      <div class="cfxngmenulistbody">
-        <div class="cfxngmenulist">
+
+  <div class="f3suz-bar">
+    <div class="f3suzbody">
+      <div class="f3suzbody-inner">
+        <a href="/ru/" class="f3suzbodylogolink" title="Домашняя страница"
+          ><img
+            src="/img/logo.png?v=daog4"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="f3suzbodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="f3suz-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="f3suz-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="f3suzmenubody">
+      <div class="f3suzmenu" id="menu-2-root">
+        <div class="f3suz-drawer-header">
+          <span class="f3suz-drawer-title">Меню</span>
+          <button type="button" class="f3suz-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="f3suz-mainnav-wrap">
+          <div class="f3suzmenulistbody">
+            <div class="f3suzmenulist">
+              <nav class="f3suzmenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/ru/">Домашняя страница </a></li><li><a href="/ru/ozgecmis/">Резюме</a></li><li><a href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li><a class="f3suz-menu-list-active" aria-current="page" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li><a href="/ru/iletisim/">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="f3suz-cta" href="/ru/iletisim/">Связаться с нами</a>
+        </div>
+        <div class="f3suzlanguages-mobile">
           <ul>
-            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a class="cfxng-menu-list-active" href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
+            <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
           </ul>
         </div>
-      </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="cfxnglanguages-mobile">
-        <ul>
-          <li><a href="/tr/akademik-yayinlar/">TR</a></li><li><a href="/en/akademik-yayinlar/">EN</a></li><li><a href="/de/akademik-yayinlar/">DE</a></li><li><a href="/ru/akademik-yayinlar/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.cfxng) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".cfxng") : null;
+      var wrapper = root.closest ? root.closest(".f3suz") : null;
       var target = wrapper || root;
-      if (target.classList.contains("cfxngmenu-open")) {
-        target.classList.remove("cfxngmenu-open");
+      if (target.classList.contains("f3suzmenu-open")) {
+        target.classList.remove("f3suzmenu-open");
       } else {
-        target.classList.add("cfxngmenu-open");
+        target.classList.add("f3suzmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="faauc">
-  <div class="faaucbody"><a href="/ru/yonetilen-yuksek-lisans-tezleri/" class="faaucbodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="faaucbodyitem lefts"><span class="faaucbodyitemtitle">Научное руководство магистерскими диссертациями</span><div class="faaucbodyitechile">Коронарное шунтирование с пульсативным и непульсативным искусственным кровообращением (д-р Хасан Эрдем, 2004); Результаты проксимальной хирургии аорты (д-р Дениз Джейлан); Модифицированная хирургия лабиринта при вторичной фибрилляции предсердий (ADEAH, 2004).</div></div></a><a href="/ru/dergi-hakemligi/" class="faaucbodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="faaucbodyitem rights"><span class="faaucbodyitemtitle">Рецензирование журналов</span><div class="faaucbodyitechile">Рецензирование: турецкий журнал торакальной и сердечно-сосудистой хирургии, Türkiye Klinikleri, Cardiovascular Journal of Africa.</div></div></a><a href="/ru/kongre-hakemligi/" class="faaucbodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="faaucbodyitem lefts"><span class="faaucbodyitemtitle">Рецензирование конгрессов</span><div class="faaucbodyitechile">Рецензирование тезисов 11-го и 12-го Турецкого конгресса торакальной и сердечно-сосудистой хирургии.</div></div></a><a href="/ru/bilimsel-etkinlikler/" class="faaucbodyitems right" style="animation-delay: 0.8s; cursor: pointer;"><div class="faaucbodyitem rights"><span class="faaucbodyitemtitle">Научная деятельность</span><div class="faaucbodyitechile">Приглашённый докладчик на международной панели (Кыргызстан), национальных конгрессах (AAA 2012 Анталья), курс эндоваскулярных вмешательств Сакарья, председатель секций 9-го Международного конгресса кардиологии и 22nd Asian Society, XV–XVI Национального конгресса сосудистой хирургии.</div></div></a><a href="/ru/oduller/" class="faaucbodyitems left" style="animation-delay: 1s; cursor: pointer;"><div class="faaucbodyitem lefts"><span class="faaucbodyitemtitle">Награды</span><div class="faaucbodyitechile">Награда за лучший постер: Chlamydia pneumonia ompA Gene DNA (2-й конгресс молекулярной и диагностической микробиологии, 2002 Кемер-Анталья). Благодарность от губернаторства Трабзона.</div></div></a></div>
+  <div id="content"><div class="hqstf">
+  <div class="hqstfbody"><a href="/ru/yonetilen-yuksek-lisans-tezleri/" class="hqstfbodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="hqstfbodyitem lefts"><span class="hqstfbodyitemtitle">Научное руководство магистерскими диссертациями</span><div class="hqstfbodyitechile">Коронарное шунтирование с пульсативным и непульсативным искусственным кровообращением (д-р Хасан Эрдем, 2004); Результаты проксимальной хирургии аорты (д-р Дениз Джейлан); Модифицированная хирургия лабиринта при вторичной фибрилляции предсердий (ADEAH, 2004).</div></div></a><a href="/ru/dergi-hakemligi/" class="hqstfbodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="hqstfbodyitem rights"><span class="hqstfbodyitemtitle">Рецензирование журналов</span><div class="hqstfbodyitechile">Рецензирование: турецкий журнал торакальной и сердечно-сосудистой хирургии, Türkiye Klinikleri, Cardiovascular Journal of Africa.</div></div></a><a href="/ru/kongre-hakemligi/" class="hqstfbodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="hqstfbodyitem lefts"><span class="hqstfbodyitemtitle">Рецензирование конгрессов</span><div class="hqstfbodyitechile">Рецензирование тезисов 11-го и 12-го Турецкого конгресса торакальной и сердечно-сосудистой хирургии.</div></div></a><a href="/ru/bilimsel-etkinlikler/" class="hqstfbodyitems right" style="animation-delay: 0.8s; cursor: pointer;"><div class="hqstfbodyitem rights"><span class="hqstfbodyitemtitle">Научная деятельность</span><div class="hqstfbodyitechile">Приглашённый докладчик на международной панели (Кыргызстан), национальных конгрессах (AAA 2012 Анталья), курс эндоваскулярных вмешательств Сакарья, председатель секций 9-го Международного конгресса кардиологии и 22nd Asian Society, XV–XVI Национального конгресса сосудистой хирургии.</div></div></a><a href="/ru/oduller/" class="hqstfbodyitems left" style="animation-delay: 1s; cursor: pointer;"><div class="hqstfbodyitem lefts"><span class="hqstfbodyitemtitle">Награды</span><div class="hqstfbodyitechile">Награда за лучший постер: Chlamydia pneumonia ompA Gene DNA (2-й конгресс молекулярной и диагностической микробиологии, 2002 Кемер-Анталья). Благодарность от губернаторства Трабзона.</div></div></a></div>
 </div>
 
 <script>
-  /* Viewport'a girdiğinde kartları sırayla görünür yap (setTimeout: DOMContentLoaded yasak) */
+  
   setTimeout(function () {
     var observer = new IntersectionObserver(
       function (entries) {
@@ -141,7 +159,7 @@
       },
       { threshold: 0.1, rootMargin: "0px 0px -24px 0px" }
     );
-    var items = Array.prototype.slice.call(document.querySelectorAll(".faaucbodyitems"));
+    var items = Array.prototype.slice.call(document.querySelectorAll(".hqstfbodyitems"));
     items
       .sort(function (a, b) {
         return a.offsetTop - b.offsetTop;
@@ -158,7 +176,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/ru/">Домашняя страница</a></li><li class="menu__item"><a class="menu_link" href="/ru/kurumsal/">Резюме</a></li><li class="menu__item"><a class="menu_link" href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li class="menu__item"><a class="menu_link" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li class="menu__item"><a class="menu_link" href="/ru/iletisim/">Контакты</a></li>
+      <li class="menu__item"><a class="menu_link" href="/ru/">Домашняя страница</a></li><li class="menu__item"><a class="menu_link" href="/ru/ozgecmis/">Резюме</a></li><li class="menu__item"><a class="menu_link" href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li class="menu__item"><a class="menu_link" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li class="menu__item"><a class="menu_link" href="/ru/iletisim/">Контакты</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -177,20 +195,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=ga6dd"></script>
-<script defer src="/src/cookie.js?v=ga6dd"></script>
+<script defer type="text/javascript" src="/src/js.js?v=sv5k4"></script>
+<script defer src="/src/cookie.js?v=sv5k4"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

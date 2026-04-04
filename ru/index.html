@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=g5op1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=g5op1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=zni8f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=zni8f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=g5op1" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=zni8f" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,82 +50,97 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=g5op1">
+<link rel="stylesheet" href="style.css?v=zni8f">
 </head>
 
 <body>
-  <div id="header"><div class="zvifc">
-  <div class="zvifctitle">
-    <div class="zvifctitlebody">
-      <div class="zvifctitlebodylang">
+  <div id="header">
+<div class="cykkj">
+  
+  <div class="cykkjtitle">
+    <div class="cykkjtitlebody">
+      <div class="cykkjtitlebodylang">
         <ul>
           <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="zvifcbody">
-    <a href="/ru/"
-      ><img
-        src="/img/logo.png?v=gi1j6"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="zvifcbodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="zvifc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="zvifc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="zvifcmenubody">
-    <div class="zvifcmenu" id="menu-2-root">
-      <div class="zvifcmenulistbody">
-        <div class="zvifcmenulist">
+
+  <div class="cykkj-bar">
+    <div class="cykkjbody">
+      <div class="cykkjbody-inner">
+        <a href="/ru/" class="cykkjbodylogolink" title="Домашняя страница"
+          ><img
+            src="/img/logo.png?v=uxfrd"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="cykkjbodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="cykkj-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="cykkj-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="cykkjmenubody">
+      <div class="cykkjmenu" id="menu-2-root">
+        <div class="cykkj-drawer-header">
+          <span class="cykkj-drawer-title">Меню</span>
+          <button type="button" class="cykkj-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="cykkj-mainnav-wrap">
+          <div class="cykkjmenulistbody">
+            <div class="cykkjmenulist">
+              <nav class="cykkjmenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/ru/">Домашняя страница </a></li><li><a href="/ru/ozgecmis/">Резюме</a></li><li><a href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li><a href="/ru/akademik-yayinlar/">Научные публикации</a></li><li><a href="/ru/iletisim/">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="cykkj-cta" href="/ru/iletisim/">Связаться с нами</a>
+        </div>
+        <div class="cykkjlanguages-mobile">
           <ul>
-            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
+            <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
           </ul>
         </div>
-      </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="zvifclanguages-mobile">
-        <ul>
-          <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.zvifc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".zvifc") : null;
+      var wrapper = root.closest ? root.closest(".cykkj") : null;
       var target = wrapper || root;
-      if (target.classList.contains("zvifcmenu-open")) {
-        target.classList.remove("zvifcmenu-open");
+      if (target.classList.contains("cykkjmenu-open")) {
+        target.classList.remove("cykkjmenu-open");
       } else {
-        target.classList.add("zvifcmenu-open");
+        target.classList.add("cykkjmenu-open");
       }
     }
   }
 </script>
-<div class="swiper-container oc5lo">
-  <div class="swiper-wrapper" id="oc5lo"><div class="swiper-slide"><img src="/img/vey1el/1.webp?v=1775153423018" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/2.webp?v=1775153423018" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/3.webp?v=1775153423018" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/4.webp?v=1775153423018" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div></div>
+<div class="swiper-container i96rl">
+  <div class="swiper-wrapper" id="i96rl"><div class="swiper-slide"><img src="/img/vey1el/1.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/2.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/3.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/4.webp?v=1775281181155" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
 </div>
 
 <script>
-
-
-  // Ekran boyutuna göre dinamik resim yolu seçimi
   function updateImagePaths() {
     const isMobile = window.innerWidth <= 768;
     const images = document.querySelectorAll('.swiper-slide img');
@@ -133,13 +148,9 @@
     images.forEach(img => {
       let src = img.getAttribute('src');
       if (!src || !src.match(/^\/img\/[^\/]+\//)) return;
-
-      // Query string'i (cache busting) ayır
       const urlParts = src.split('?');
       const pathOnly = urlParts[0];
       const queryString = urlParts[1] ? '?' + urlParts[1] : '';
-
-      // Yol formatını kontrol et: /img/${json.id}/ veya /img/${json.id}/mobil/
       const pathMatch = pathOnly.match(/^(\/img\/[^\/]+\/)(mobil\/)?([^\/]+\.\w+)$/);
       if (!pathMatch) return;
 
@@ -148,10 +159,8 @@
 
       let newPath;
       if (isMobile) {
-        // Mobil: /img/${json.id}/mobil/img.jpg
         newPath = basePath + 'mobil/' + fileName;
       } else {
-        // Web: /img/${json.id}/img.jpg (mobil klasörünü kaldır)
         newPath = basePath + fileName;
       }
 
@@ -161,8 +170,6 @@
       }
     });
   }
-
-  // Sayfa yüklendiğinde ve pencere boyutu değiştiğinde güncelle
   document.addEventListener('DOMContentLoaded', updateImagePaths);
   window.addEventListener('resize', updateImagePaths);
 
@@ -177,7 +184,7 @@
       attempts++;
       if (typeof Swiper === "function") {
         clearInterval(timer);
-        new Swiper(".oc5lo", {
+        new Swiper(".i96rl", {
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
@@ -201,92 +208,167 @@
     }, 250);
   })();
 </script></div>
-  <div id="content"><div class="qq0k2">
-  <div class="qq0k2body"><div class="qq0k2bodyitem left" style="animation-delay: 0s;">
-        <a href="/ru/varis-nedir/" class="qq0k2bodyitemlink">
-          <div class="qq0k2bodyitemimg">
-            <img alt="Что такое варикоз?" src="/page/z7cy6mn33q/ilj83.webp" alt="Что такое варикоз?" loading="lazy">
-          </div>
-          <div class="qq0k2bodyitemcontent">
-            <div class="qq0k2bodyitemtitle">Что такое варикоз?</div>
-            <div class="qq0k2bodyitemdesc">Информационная страница о том, что такое варикоз, почему он возникает и какими симптомами проявляется.</div>
-          </div>
-        </a>
-      </div><div class="qq0k2bodyitem right" style="animation-delay: 0.15s;">
-        <a href="/ru/varis-turleri/" class="qq0k2bodyitemlink">
-          <div class="qq0k2bodyitemcontent">
-            <div class="qq0k2bodyitemtitle">Какие бывают типы варикоза?</div>
-            <div class="qq0k2bodyitemdesc">Страница с основными типами варикоза: сосудистые звездочки, ретикулярные и стволовые вены с клиническими особенностями.</div>
-          </div>
-          <div class="qq0k2bodyitemimg">
-            <img alt="Какие бывают типы варикоза?" src="/page/varisTurleri/uqfhy.webp" alt="Какие бывают типы варикоза?" loading="lazy">
-          </div>
-        </a>
-      </div><div class="qq0k2bodyitem left" style="animation-delay: 0.3s;">
-        <a href="/ru/varis-neden-olur/" class="qq0k2bodyitemlink">
-          <div class="qq0k2bodyitemimg">
-            <img alt="Почему возникает варикоз?" src="/page/varisNedenOlur/d39qw.webp" alt="Почему возникает варикоз?" loading="lazy">
-          </div>
-          <div class="qq0k2bodyitemcontent">
-            <div class="qq0k2bodyitemtitle">Почему возникает варикоз?</div>
-            <div class="qq0k2bodyitemdesc">Причины: венозная недостаточность, повреждение клапанов, длительное стояние, генетика.</div>
-          </div>
-        </a>
-      </div></div>
+  <div id="content"><div class="qhvyr qhvyrcardio" role="region" aria-label="">
+  <div class="qhvyrcardio-inner">
+    <header class="qhvyrcardio-hero">
+      <div class="qhvyrcardio-hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="qhvyrcardio-svg-ring" cx="32" cy="32" r="30" stroke="#0D9488" stroke-width="2" opacity="0.4" />
+          <path class="qhvyrcardio-svg-ekg" d="M8 34h8l4-12 6 24 8-32 6 20h16" stroke="#0F766E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+      </div>
+      <p class="qhvyrcardio-eyebrow"></p>
+      <h2 class="qhvyrcardio-title"></h2>
+      <p class="qhvyrcardio-lead"></p>
+    </header>
+    <div class="qhvyrbody"><div class="qhvyrbodyitem left" style="transition-delay: 0s;"><a href="/ru/varis-nedir/" class="qhvyrbodyitemlink" title="Что такое варикоз?"><div class="qhvyrbodyitemimg"><img alt="Что такое варикоз?" src="/page/z7cy6mn33q/ilj83.webp" loading="lazy"></div><div class="qhvyrbodyitemcontent"><div class="qhvyrbodyitemtitle">Что такое варикоз?</div><div class="qhvyrbodyitemdesc">Информационная страница о том, что такое варикоз, почему он возникает и какими симптомами проявляется.</div><span class="qhvyrbodyitemcta"><span class="qhvyrbodyitemcta-text">Detaylı bilgi</span><span class="qhvyrbodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div><div class="qhvyrbodyitem right" style="transition-delay: 0.12s;"><a href="/ru/varis-turleri/" class="qhvyrbodyitemlink" title="Какие бывают типы варикоза?"><div class="qhvyrbodyitemcontent"><div class="qhvyrbodyitemtitle">Какие бывают типы варикоза?</div><div class="qhvyrbodyitemdesc">Страница с основными типами варикоза: сосудистые звездочки, ретикулярные и стволовые вены с клиническими особенностями.</div><span class="qhvyrbodyitemcta"><span class="qhvyrbodyitemcta-text">Detaylı bilgi</span><span class="qhvyrbodyitemcta-arrow" aria-hidden="true">→</span></span></div><div class="qhvyrbodyitemimg"><img alt="Какие бывают типы варикоза?" src="/page/varisTurleri/uqfhy.webp" loading="lazy"></div></a></div><div class="qhvyrbodyitem left" style="transition-delay: 0.24s;"><a href="/ru/varis-neden-olur/" class="qhvyrbodyitemlink" title="Почему возникает варикоз?"><div class="qhvyrbodyitemimg"><img alt="Почему возникает варикоз?" src="/page/varisNedenOlur/d39qw.webp" loading="lazy"></div><div class="qhvyrbodyitemcontent"><div class="qhvyrbodyitemtitle">Почему возникает варикоз?</div><div class="qhvyrbodyitemdesc">Причины: венозная недостаточность, повреждение клапанов, длительное стояние, генетика.</div><span class="qhvyrbodyitemcta"><span class="qhvyrbodyitemcta-text">Detaylı bilgi</span><span class="qhvyrbodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div></div>
+  </div>
 </div>
 
+<script>
+  
+  setTimeout(function() {
+    if (typeof IntersectionObserver !== 'undefined') {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.06,
+        rootMargin: '0px 0px -32px 0px'
+      });
+      var items = document.querySelectorAll('.qhvyrbodyitem');
+      items.forEach(function(item) {
+        observer.observe(item);
+      });
+    } else {
+      var items = document.querySelectorAll('.qhvyrbodyitem');
+      items.forEach(function(item) {
+        item.classList.add('visible');
+      });
+    }
+  }, 100);
+</script>
 
+<div class="ytb4ndyentnbody">
+  <div class="ytb4ndyentn">
+    
+    <div class="ytb4ndyentntitle">YouTube videoları</div>
+    <div class="ytb4ndyentnchannel"><a href="https://www.youtube.com/@Prof.Dr.OrhanVeliDogan" target="_blank" rel="noopener noreferrer">YouTube kanalı →</a></div>
+    
+    <div class="yentn swiper-container ytb4nd-yentn-swiper">
+      <div class="swiper-wrapper"><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/pManSQfMPYI?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 1/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/FRXNY3teHVc?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 2/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/ryqt2MUVe7U?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 3/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/SpZeJZ50Z9U?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 4/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/YDHpkw7kSnA?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 5/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div></div>
+      <div
+        class="swiper-button-next swiper-button-next-ytb4nd-yentn"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="swiper-button-prev swiper-button-prev-ytb4nd-yentn"
+        aria-hidden="true"
+      ></div>
+      <div class="swiper-pagination swiper-pagination-ytb4nd-yentn"></div>
+    </div>
+  </div>
+</div>
 
 <script>
-  // Intersection Observer ile scroll-based animasyon
-setTimeout(function() {
-  if (typeof IntersectionObserver !== 'undefined') {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+  
+  setTimeout(function ytb4ndSwiperBoot() {
+    var rootSel = ".ytb4nd-yentn-swiper";
+    var maxTry = 24;
+    var intervalMs = 250;
+    var n = 0;
+    var timer = setInterval(function () {
+      n++;
+      if (typeof Swiper !== "function") {
+        if (n >= maxTry) {
+          clearInterval(timer);
+          console.warn("ytb4nd: Swiper yüklenemedi, slayt başlatılamadı.");
         }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    var items = document.querySelectorAll('.qq0k2bodyitem');
-    items.forEach(function(item) {
-      observer.observe(item);
-    });
-  } else {
-    // Fallback: IntersectionObserver desteklenmiyorsa direkt göster
-    var items = document.querySelectorAll('.qq0k2bodyitem');
-    items.forEach(function(item) {
-      item.classList.add('visible');
-    });
-  }
-}, 100);
-
-</script><div class="sliderxb90subody">
-  <div class="sliderxb90su">
-    <div class="sliderxb90sutitle"></div>
-    <div class="b90su">
+        return;
+      }
+      clearInterval(timer);
+      var jsonslider = {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        simulateTouch: true,
+        loop: true,
+        speed: 500,
+        autoplay: { delay: 8000, disableOnInteraction: false },
+        pagination: {
+          el: ".swiper-pagination-ytb4nd-yentn",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-ytb4nd-yentn",
+          prevEl: ".swiper-button-prev-ytb4nd-yentn",
+        },
+        
+        on: {
+          slideChange: function ytb4ndOnSlideChangePauseOthers() {
+            var box = document.querySelector(rootSel);
+            if (!box) {
+              return;
+            }
+            var pausePayload = '{"event":"command","func":"pauseVideo","args":""}';
+            var allSlides = box.querySelectorAll(".swiper-slide");
+            var s = 0;
+            for (s = 0; s < allSlides.length; s++) {
+              var oneSlide = allSlides[s];
+              if (oneSlide.classList.contains("swiper-slide-active")) {
+                continue;
+              }
+              var frame = oneSlide.querySelector("iframe");
+              if (!frame || !frame.contentWindow) {
+                continue;
+              }
+              try {
+                frame.contentWindow.postMessage(pausePayload, "*");
+              } catch (errPause) {
+                
+              }
+            }
+          },
+        },
+      };
+      if ("true" !== "true") {
+        var btnNext = document.querySelector(".swiper-button-next-ytb4nd-yentn");
+        var btnPrev = document.querySelector(".swiper-button-prev-ytb4nd-yentn");
+        if (btnNext) {
+          btnNext.style.display = "none";
+        }
+        if (btnPrev) {
+          btnPrev.style.display = "none";
+        }
+      }
+      new Swiper(rootSel, jsonslider);
+    }, intervalMs);
+  }, 500);
+</script>
+<div class="sliderxzw445body">
+  <div class="sliderxzw445">
+    <div class="sliderxzw445title"></div>
+    <div class="zw445">
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Facebook">
-            <img src="/src/icon/facebook.png" alt="Facebook" class="b90su-media" loading="lazy" />
+            <img src="/src/icon/facebook.png" alt="Facebook" class="zw445-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Instagram">
-            <img src="/src/icon/instagram.png" alt="Instagram" class="b90su-media" loading="lazy" />
+            <img src="/src/icon/instagram.png" alt="Instagram" class="zw445-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="LinkedIn">
-            <img src="/src/icon/linkedin.png" alt="LinkedIn" class="b90su-media" loading="lazy" />
+            <img src="/src/icon/linkedin.png" alt="LinkedIn" class="zw445-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="YouTube">
-            <img src="/src/icon/youtube.png" alt="YouTube" class="b90su-media" loading="lazy" />
+            <img src="/src/icon/youtube.png" alt="YouTube" class="zw445-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="WhatsApp">
-            <img src="/src/icon/whatsapp.png" alt="WhatsApp" class="b90su-media" loading="lazy" />
+            <img src="/src/icon/whatsapp.png" alt="WhatsApp" class="zw445-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Google Maps">
-            <img src="/src/icon/google-maps.png" alt="Google Maps" class="b90su-media" loading="lazy" />
+            <img src="/src/icon/google-maps.png" alt="Google Maps" class="zw445-media" loading="lazy" />
         </a></div>
   </div>
 </div>
@@ -298,7 +380,7 @@ setTimeout(function() {
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/ru/">Домашняя страница</a></li><li class="menu__item"><a class="menu_link" href="/ru/kurumsal/">Резюме</a></li><li class="menu__item"><a class="menu_link" href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li class="menu__item"><a class="menu_link" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li class="menu__item"><a class="menu_link" href="/ru/iletisim/">Контакты</a></li>
+      <li class="menu__item"><a class="menu_link" href="/ru/">Домашняя страница</a></li><li class="menu__item"><a class="menu_link" href="/ru/ozgecmis/">Резюме</a></li><li class="menu__item"><a class="menu_link" href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li class="menu__item"><a class="menu_link" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li class="menu__item"><a class="menu_link" href="/ru/iletisim/">Контакты</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -317,20 +399,17 @@ setTimeout(function() {
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=g5op1"></script>
-<script defer src="/src/cookie.js?v=g5op1"></script>
+<script defer type="text/javascript" src="/src/js.js?v=zni8f"></script>
+<script defer src="/src/cookie.js?v=zni8f"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

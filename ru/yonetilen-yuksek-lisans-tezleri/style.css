@@ -1,195 +1,371 @@
 
- 
+  
 
-  .pnl7k {
+  .qhikr {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    background: #ffffff;
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    border-bottom: 1px solid color-mix(in srgb, #1a2f45 12%, transparent);
+    box-shadow: 0 2px 12px color-mix(in srgb, #1a2f45 5%, transparent);
   }
 
-  .pnl7ktitle {
+  
+  .qhikrtitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
+    background: color-mix(in srgb, #1a2f45 5%, #ffffff);
+    border-bottom: 1px solid color-mix(in srgb, #1a2f45 8%, transparent);
   }
 
-  .pnl7ktitle:has(.pnl7ktitlebodylang:empty),
-  .pnl7ktitle:has(.pnl7ktitlebodylang ul:empty) {
+  .qhikrtitle:has(.qhikrtitlebodylang:empty),
+  .qhikrtitle:has(.qhikrtitlebodylang ul:empty) {
     display: none;
   }
 
-  .pnl7ktitlebody {
-    color: #ffffff;
+  .qhikrtitlebody {
+    color: #1a2f45;
     width: var(--max);
+    max-width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    padding: 10px 0px 10px 0px;
+    padding: 6px 20px;
+    box-sizing: border-box;
   }
 
-  .pnl7ktitlebodytitle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-  }
-
-  .pnl7ktitlebodylang {
-    width: auto;
-    margin: -5px 0px -5px 0px;
-  }
-
-  .pnl7ktitlebodylang:empty,
-  .pnl7ktitlebodylang ul:empty {
+  .qhikrtitlebodylang:empty,
+  .qhikrtitlebodylang ul:empty {
     display: none;
   }
 
-  .pnl7ktitlebodylang ul {
+  .qhikrtitlebodylang ul {
     display: flex;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
   }
 
-  /* Dil seçici: TR / EN metin, bordür tema rengiyle uyumlu (renk uyumsuzluğu yok) */
-  .pnl7ktitlebodylang li {
+  .qhikrtitlebodylang li {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .pnl7ktitlebodylang li a {
+  .qhikrtitlebodylang li a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-width: 26px;
-    padding: 6px 12px;
-    font-size: 13px;
+    padding: 6px 8px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.02em;
-    color: #9a3d23 !important;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, #1a2f45 70%, transparent) !important;
     text-decoration: none;
-    border: 1px solid color-mix(in srgb, #9a3d23 40%, transparent);
-    border-radius: 8px;
-    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    border-radius: 4px;
+    transition: color 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+    min-height: 32px;
+    box-sizing: border-box;
+  }
+
+  .qhikrtitlebodylang li:not(:last-child) a {
+    margin-right: 6px;
+    padding-right: 12px;
+    border-right: 1px solid color-mix(in srgb, #1a2f45 15%, transparent);
+  }
+
+  .qhikrtitlebodylang li a:hover {
+    color: #0b6ead !important;
+    background: color-mix(in srgb, #0b6ead 6%, transparent);
+  }
+
+  .qhikrtitlebodylang li a:focus-visible {
+    outline: 2px solid #0b6ead;
+    outline-offset: 2px;
+  }
+
+  
+  .qhikr-bar {
+    width: 100%;
+    max-width: var(--max);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 12px 20px 14px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .qhikrbody {
+    flex: 0 1 auto;
+    max-width: 42%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .qhikrbody-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 48px;
+  }
+
+  .qhikrbodylogolink {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
     cursor: pointer;
   }
 
-  .pnl7ktitlebodylang li a:hover {
-    border-color: #000000;
-    background: #ffffff;
-    color: #000000 !important;
+  .qhikrbodylogolink:hover {
+    opacity: 0.85;
   }
 
-  .pnl7kbody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
-    position: relative;
+  .qhikrbodylogolink:focus-visible {
+    outline: 2px solid #0b6ead;
+    outline-offset: 4px;
   }
 
-  /* Mobil hamburger butonu: onclick olduğu için cursor: pointer zorunlu (kural) */
-  .pnl7k-mobile-toggle {
+  .qhikr-mobile-toggle {
     display: none;
-    background: #9a3d23;
-    color: #ffffff;
-    border: none;
+    background: transparent;
+    color: #1a2f45;
+    border: 1px solid color-mix(in srgb, #1a2f45 18%, transparent);
     border-radius: 6px;
-    padding: 10px 12px;
+    padding: 10px 11px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: absolute;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 44px;
+    min-height: 44px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
   }
 
-  .pnl7k-mobile-toggle span {
+  .qhikr-mobile-toggle:hover {
+    border-color: #0b6ead;
+    color: #0b6ead;
+    background: color-mix(in srgb, #0b6ead 6%, transparent);
+  }
+
+  .qhikr-mobile-toggle:focus-visible {
+    outline: 2px solid #0b6ead;
+    outline-offset: 2px;
+  }
+
+  .qhikr-mobile-toggle span {
     font-size: 24px;
   }
 
-  .pnl7kmenu {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: var(--max);
-  }
-
-  .pnl7kmenulist {
-    width: calc(100% - 20px);
-    background-color: #9a3d23;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-  }
-
-  .pnl7kmenubody {
-    width: 100%;
-    background-color: #9a3d23;
+  .qhikrmenubody {
+    flex: 1 1 auto;
+    min-width: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
   }
 
-  .pnl7kmenulist ul {
-    width: 100%;
-    list-style-type: none;
+  .qhikrmenu {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .qhikr-mainnav-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px 20px;
+    width: 100%;
+  }
+
+  .qhikrmenulist {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .qhikrmenunav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px 4px;
     margin: 0;
     padding: 0;
   }
 
-  .pnl7kmenulist ul a {
-    padding: 10px 15px;
-    font-size: 16px;
-    color: #ffffff !important;
-    border-bottom: 1px solid transparent;
-    width: 100%;
-    text-align: center;
+  .qhikrmenunav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .qhikrmenunav ul a {
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #1a2f45 !important;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
-    margin: 0 2px;
+    border-radius: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+    min-height: 44px;
+    box-sizing: border-box;
   }
 
-  .pnl7kmenulist ul a:hover {
-    background-color: #ffffff;
-    border-radius: 5px;
-    color: #000000 !important;
+  .qhikrmenunav ul a:hover {
+    color: #0b6ead !important;
+    background: color-mix(in srgb, #0b6ead 6%, transparent);
+    border-bottom-color: color-mix(in srgb, #0b6ead 35%, transparent);
+  }
+
+  .qhikrmenunav ul a:focus-visible {
+    outline: 2px solid #0b6ead;
+    outline-offset: 2px;
+  }
+
+  .qhikrmenunav ul a.qhikr-menu-list-active,
+  .qhikr-menu-list-active {
+    color: #0b6ead !important;
+    border-bottom-color: #0b6ead;
+    font-weight: 600;
     cursor: pointer;
   }
 
-  .pnl7kmenulist ul a.pnl7k-menu-list-active {
-    color: #000000 !important;
-  }
-
-  .pnl7k-menu-list-active {
-    background-color: #ffffff;
-    border-radius: 5px;
-    color: #000000 !important;
+  
+  .qhikr-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    min-height: 44px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #ffffff !important;
+    background: #0b6ead;
+    border: 1px solid color-mix(in srgb, #0b6ead 90%, transparent);
+    border-radius: 6px;
     cursor: pointer;
+    transition: filter 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
   }
 
-  .pnl7kmenulistbody {
-    width: 100%;
+  .qhikr-cta:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 2px 10px color-mix(in srgb, #0b6ead 35%, transparent);
   }
 
-  .pnl7klanguages-mobile {
+  .qhikr-cta:focus-visible {
+    outline: 2px solid #0b6ead;
+    outline-offset: 3px;
+  }
+
+  .qhikrmenulistbody {
+    width: auto;
+  }
+
+  .qhikr-drawer-header {
     display: none;
-    padding-top: 15px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid color-mix(in srgb, #1a2f45 10%, transparent);
+    background: color-mix(in srgb, #1a2f45 4%, #ffffff);
+    flex-shrink: 0;
   }
 
-  .pnl7klanguages-mobile:empty,
-  .pnl7klanguages-mobile ul:empty {
+  .qhikr-drawer-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a2f45;
+  }
+
+  .qhikr-drawer-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid color-mix(in srgb, #1a2f45 16%, transparent);
+    background: transparent;
+    color: #1a2f45;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .qhikr-drawer-close:hover {
+    background: color-mix(in srgb, #0b6ead 8%, transparent);
+    color: #0b6ead;
+  }
+
+  .qhikr-drawer-close:focus-visible {
+    outline: 2px solid #0b6ead;
+    outline-offset: 2px;
+  }
+
+  .qhikr-drawer-close span {
+    font-size: 22px;
+  }
+
+  .qhikrlanguages-mobile {
+    display: none;
+    padding: 14px 16px 20px 16px;
+    border-top: 1px solid color-mix(in srgb, #1a2f45 10%, transparent);
+  }
+
+  .qhikrlanguages-mobile:empty,
+  .qhikrlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .pnl7klanguages-mobile ul {
+  .qhikrlanguages-mobile ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin: 0;
     padding: 0;
@@ -197,123 +373,151 @@
     justify-content: center;
   }
 
-  /* Dil seçici: TR / EN metin, bordür ve arka plan tema ile uyumlu */
-  .pnl7klanguages-mobile li {
+  .qhikrlanguages-mobile li {
     list-style: none;
-    border: 1px solid color-mix(in srgb, #ffffff 35%, transparent);
-    padding: 0;
-    min-width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: color-mix(in srgb, #ffffff 8%, transparent);
-    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid color-mix(in srgb, #1a2f45 14%, transparent);
+    border-radius: 6px;
   }
 
-  .pnl7klanguages-mobile li a {
+  .qhikrlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px 14px;
-    font-size: 14px;
+    min-width: 48px;
+    min-height: 44px;
+    padding: 8px 14px;
+    font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.03em;
-    color: #ffffff !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1a2f45 !important;
     text-decoration: none;
     cursor: pointer;
   }
 
-  .pnl7klanguages-mobile li:hover {
-    background-color: #ffffff;
-    border-color: #000000;
-    box-shadow: 0 2px 8px color-mix(in srgb, #000000 25%, transparent);
+  .qhikrlanguages-mobile li:hover {
+    border-color: #0b6ead;
+    background: color-mix(in srgb, #0b6ead 6%, transparent);
   }
 
-  .pnl7klanguages-mobile li:hover a {
-    color: #000000 !important;
+  .qhikrlanguages-mobile li:hover a {
+    color: #0b6ead !important;
   }
 
-  /* Mobil drawer için backdrop: masaüstünde görünmez */
-  .pnl7k-menu-backdrop {
+  .qhikr-menu-backdrop {
     display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    .pnl7kbodylogo {
-      height: 100px;
-      max-width: 90vw;
-      max-height: 100px;
+    .qhikrbodylogo {
+      max-width: min(300px, 36vw);
+      max-height: 84px;
+      object-fit: contain;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .qhikr-bar {
+      flex-wrap: wrap;
+      padding: 10px 16px 12px 16px;
     }
 
-    .pnl7ktitle {
-    margin-bottom: -30px;
-  }
+    .qhikrbody {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
 
-
-  }
-
-  @media screen and (max-width: 1024px) {
-    .pnl7kbody {
-      width: calc(100% - 20px);
-      padding: 0 10px;
+    .qhikrbody-inner {
       justify-content: center;
     }
 
-    .pnl7kmenulist ul {
-      flex-direction: row;
+    .qhikrbodylogo {
+      max-width: 240px;
+      max-height: 76px;
+      object-fit: contain;
     }
 
-    .pnl7kbodylogo {
-      width: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .qhikrmenubody {
+      flex: 1 1 100%;
+      width: 100%;
+      justify-content: center;
     }
 
-    .pnl7ktitlebody {
-      flex-direction: column;
-      gap: 10px;
+    .qhikrmenu {
       align-items: center;
-      display: none;
     }
 
-    .pnl7ktitlebodytitle {
-      text-align: center;
-      font-size: 14px;
+    .qhikr-mainnav-wrap {
+      justify-content: center;
+      border-top: 1px solid color-mix(in srgb, #1a2f45 8%, transparent);
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+
+    .qhikrmenunav ul {
+      justify-content: center;
+    }
+
+    .qhikr-cta {
+      width: 100%;
+      max-width: 280px;
     }
   }
 
-    /* Mobil: app tarzı sağdan kayan drawer menü */
   @media screen and (max-width: 768px) {
-    .pnl7ktitlebodylang {
+    .qhikrtitlebodylang {
       display: none;
     }
 
-    .pnl7kbody {
-      width: calc(100% - 20px);
-      padding: 0 10px;
-      justify-content: space-between;
+    .qhikr-bar {
+      padding: 8px 12px 10px 12px;
     }
 
-    .pnl7k-mobile-toggle {
+    .qhikrbody-inner {
+      justify-content: flex-start;
+    }
+
+    .qhikr-mobile-toggle {
       display: inline-flex;
     }
 
-    .pnl7kbodylogo {
-      width: 40vw;
-      max-width: 40vw;
-      max-height: 80px;
+    .qhikrbodylogo {
+      max-width: 190px;
+      max-height: 68px;
     }
 
-    /* Backdrop: sadece menü açıkken görünür; tıklanınca menü kapanır (onclick ile) */
-    .pnl7k-menu-backdrop {
+    
+    .qhikr-mainnav-wrap {
+      display: none;
+    }
+
+    .qhikrmenubody {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: min(92vw, 340px);
+      height: 100vh;
+      max-height: 100dvh;
+      flex: none;
+      z-index: 1000;
+      transform: translateX(100%);
+      transition: transform 0.28s ease;
+      box-shadow: -8px 0 32px color-mix(in srgb, #1a2f45 15%, transparent);
+      overflow-y: auto;
+      background: #ffffff;
+      border-left: 1px solid color-mix(in srgb, #1a2f45 10%, transparent);
+      align-items: stretch;
+    }
+
+    .qhikr.qhikrmenu-open .qhikrmenubody {
+      transform: translateX(0);
+    }
+
+    .qhikr-menu-backdrop {
       display: block;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.4);
+      background: color-mix(in srgb, #000000 40%, transparent);
       z-index: 999;
       opacity: 0;
       visibility: hidden;
@@ -322,106 +526,83 @@
       cursor: pointer;
     }
 
-    .pnl7k.pnl7kmenu-open .pnl7k-menu-backdrop {
+    .qhikr.qhikrmenu-open .qhikr-menu-backdrop {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
-    /* Drawer: sağdan kayan panel, fixed, tam yükseklik; kapalıyken ekran dışında */
-    .pnl7kmenubody {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 85%;
-      max-width: 320px;
-      height: 100vh;
-      max-height: 100vh;
+    .qhikr-drawer-header {
+      display: flex;
+    }
+
+    .qhikrmenu {
+      align-items: stretch;
+      min-height: 100%;
+    }
+
+    .qhikr-mainnav-wrap {
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      justify-content: flex-start;
-      box-sizing: border-box;
-      z-index: 1000;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
-      overflow-y: auto;
-    }
-
-    .pnl7k.pnl7kmenu-open .pnl7kmenubody {
-      transform: translateX(0);
-    }
-
-    .pnl7kmenu {
       width: 100%;
-      flex-direction: column;
-      height: 100%;
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+      gap: 0;
+      flex: 1;
+      min-height: 0;
     }
 
-    .pnl7kmenulistbody {
+    .qhikrmenulistbody {
       flex: 1;
       overflow-y: auto;
+      width: 100%;
     }
 
-    .pnl7kmenulist {
-      display: flex;
-      flex-direction: column;
+    .qhikrmenulist {
       width: 100%;
-      padding: 16px 12px;
+      padding: 8px 12px;
       box-sizing: border-box;
-      border-radius: 0;
-      box-shadow: none;
     }
 
-    .pnl7k.pnl7kmenu-open .pnl7kmenulist {
-      display: flex;
-    }
-
-    /* Mobil kural: lang sayfanın (drawer) en altında ve ortada */
-    .pnl7k.pnl7kmenu-open .pnl7klanguages-mobile {
-      display: flex;
+    .qhikrmenunav ul {
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      align-items: stretch;
+      gap: 2px;
+    }
+
+    .qhikrmenunav ul a {
       width: 100%;
-      padding: 16px 12px;
-      box-sizing: border-box;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      flex-shrink: 0;
-    }
-
-    .pnl7k.pnl7kmenu-open .pnl7klanguages-mobile ul {
-      justify-content: center;
-    }
-
-    .pnl7kmenulist ul {
-      flex-direction: column;
-      gap: 0;
-    }
-
-    .pnl7kmenulist ul a {
-      font-size: 15px;
-      width: 100%;
-      padding: 14px 12px;
       text-align: left;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 0;
-      cursor: pointer;
-      box-sizing: border-box;
-    }
-
-    .pnl7kmenulist ul a:last-child {
+      white-space: normal;
+      border-radius: 6px;
       border-bottom: none;
+      border-left: 3px solid transparent;
     }
 
-    .pnl7kmenulist ul a:hover {
-      background-color: #ffffff;
-      border-radius: 0;
+    .qhikrmenunav ul a:hover {
+      border-bottom-color: transparent;
+      border-left-color: color-mix(in srgb, #0b6ead 45%, transparent);
     }
 
-    .pnl7ktitlebodytitle {
-      font-size: 12px;
+    .qhikrmenunav ul a.qhikr-menu-list-active,
+    .qhikr.qhikrmenu-open .qhikrmenunav ul a.qhikr-menu-list-active {
+      border-left-color: #0b6ead;
+      border-bottom: none;
+      background: color-mix(in srgb, #0b6ead 8%, transparent);
+    }
+
+    .qhikr-cta {
+      width: auto;
+      max-width: none;
+      margin: 12px 16px 8px 16px;
+      text-align: center;
+    }
+
+    .qhikr.qhikrmenu-open .qhikrlanguages-mobile {
+      display: block;
+      flex-shrink: 0;
     }
   }
 
@@ -430,7 +611,7 @@
     justify-content: start;
   }
 
-  .ijtz3 {
+  .mqc4l {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -439,11 +620,11 @@
     box-sizing: border-box;
   }
 
-  .ijtz3 * {
+  .mqc4l * {
     box-sizing: border-box;
   }
 
-  .ijtz3-menu-btn {
+  .mqc4l-menu-btn {
     display: none;
     background-color: #000;
     padding: 10px 20px;
@@ -455,11 +636,11 @@
     align-items: center;
   }
 
-  .ijtz3-menu-btn .ijtz3-icon {
+  .mqc4l-menu-btn .mqc4l-icon {
     font-size: 20px;
   }
 
-  .ijtz3-menu {
+  .mqc4l-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -470,15 +651,15 @@
     float: left;
   }
 
-  .ijtz3-desc {
+  .mqc4l-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .ijtz3-menu-link,
-  .ijtz3-top {
+  .mqc4l-menu-link,
+  .mqc4l-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -493,52 +674,52 @@
     text-align: left;
   }
 
-  .ijtz3-menu-link.active,
-  .ijtz3-menu-link:hover,
-  .ijtz3-top.active,
-  .ijtz3-top:hover {
+  .mqc4l-menu-link.active,
+  .mqc4l-menu-link:hover,
+  .mqc4l-top.active,
+  .mqc4l-top:hover {
     background-color: #000;
     color: #fff;
   }
 
-  .ijtz3-menu-group {
+  .mqc4l-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .ijtz3-top {
+  .mqc4l-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .ijtz3-top > div {
+  .mqc4l-top > div {
     text-align: left;
   }
 
-  .ijtz3-top .ijtz3-icon {
+  .mqc4l-top .mqc4l-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .ijtz3-menu-group.open .ijtz3-top .ijtz3-icon {
+  .mqc4l-menu-group.open .mqc4l-top .mqc4l-icon {
     transform: rotate(180deg);
   }
 
-  .ijtz3-sub {
+  .mqc4l-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .ijtz3-sub.show {
+  .mqc4l-sub.show {
     display: flex;
   }
 
-  .ijtz3-sub-link {
+  .mqc4l-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -548,13 +729,13 @@
     text-align: left;
   }
 
-  .ijtz3-sub-link.active,
-  .ijtz3-sub-link:hover {
+  .mqc4l-sub-link.active,
+  .mqc4l-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .ijtz3-desc-menu {
+  .mqc4l-desc-menu {
     width: 200px;
     background-color: #000;
     display: flex;
@@ -562,19 +743,19 @@
     border-radius: 5px;
   }
 
-  .ijtz3-desc-menu > div {
+  .mqc4l-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .ijtz3-desc-body {
+  .mqc4l-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .ijtz3-title {
+  .mqc4l-title {
     width: 100%;
     height: 200px;
     background-color: #000;
@@ -587,7 +768,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .ijtz3-title::before {
+  .mqc4l-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -602,7 +783,7 @@
     z-index: 1;
   }
 
-  .ijtz3-title h1 {
+  .mqc4l-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -610,39 +791,39 @@
     color: #fff !important;
   }
 
-  .ijtz3-body {
+  .mqc4l-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .ijtz3-img {
+  .mqc4l-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .ijtz3-img img {
+  .mqc4l-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .ijtz3-menu-overlay {
+    .mqc4l-menu-overlay {
       display: none !important;
     }
 
-    .ijtz3-menu-close {
+    .mqc4l-menu-close {
       display: none !important;
     }
 
-    .ijtz3-desc {
+    .mqc4l-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .ijtz3-menu {
+    .mqc4l-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -654,17 +835,17 @@
       padding: 10px;
     }
 
-    .ijtz3-menu-link {
+    .mqc4l-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .ijtz3-top {
+    .mqc4l-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .ijtz3-menu-btn {
+    .mqc4l-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -673,13 +854,13 @@
       z-index: 1;
     }
 
-    .ijtz3-menu-btn:focus {
+    .mqc4l-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
-    /* Overlay/Backdrop */
-    .ijtz3-menu-overlay {
+    
+    .mqc4l-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -693,13 +874,13 @@
       pointer-events: none;
     }
 
-    .ijtz3-menu-overlay.active {
+    .mqc4l-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .ijtz3 {
+    .mqc4l {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -708,18 +889,18 @@
       margin-top: 0px;
     }
 
-    .ijtz3-img {
+    .mqc4l-img {
       width: 100%;
     }
 
-    .ijtz3-body {
+    .mqc4l-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
-    /* Slide-in Menü - Soldan */
-    .ijtz3-menu {
+    
+    .mqc4l-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -741,13 +922,13 @@
       visibility: hidden;
     }
 
-    .ijtz3-menu.active {
+    .mqc4l-menu.active {
       left: 0;
       visibility: visible;
     }
 
-    /* Kapatma Butonu */
-    .ijtz3-menu-close {
+    
+    .mqc4l-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -762,22 +943,22 @@
       flex-shrink: 0;
     }
 
-    /* Menü içeriği için padding */
-    .ijtz3-menu > .ijtz3-menu-group,
-    .ijtz3-menu > .ijtz3-menu-link {
+    
+    .mqc4l-menu > .mqc4l-menu-group,
+    .mqc4l-menu > .mqc4l-menu-link {
       padding: 10px;
     }
 
-    .ijtz3-menu-close span {
+    .mqc4l-menu-close span {
       font-size: 28px;
     }
 
-    .ijtz3-menu-close:focus {
+    .mqc4l-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .ijtz3-desc {
+    .mqc4l-desc {
       width: 100% !important;
       order: 2;
     }
@@ -788,7 +969,7 @@
     background-color: #333;
     color: #fff !important;
     padding: 20px;
-    border-top: 5px solid #000;
+    border-top: 5px solid --bordercolor--;
   }
 
   .footer-top {

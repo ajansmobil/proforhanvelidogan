@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=gywxo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=gywxo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=rnd8b" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=rnd8b" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=gywxo" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=rnd8b" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,100 +50,117 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=gywxo">
+<link rel="stylesheet" href="style.css?v=rnd8b">
 </head>
 
 <body>
   <div id="header">
-<div class="sdskg">
-  <div class="sdskgtitle">
-    <div class="sdskgtitlebody">
-      <div class="sdskgtitlebodylang">
+<div class="uywm5">
+  
+  <div class="uywm5title">
+    <div class="uywm5titlebody">
+      <div class="uywm5titlebodylang">
         <ul>
           <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="sdskgbody">
-    <a href="/en/"
-      ><img
-        src="/img/logo.png?v=ujtdt"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="sdskgbodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="sdskg-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  
-  <div class="sdskg-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="sdskgmenubody">
-    <div class="sdskgmenu" id="menu-2-root">
-      <div class="sdskgmenulistbody">
-        <div class="sdskgmenulist">
+
+  <div class="uywm5-bar">
+    <div class="uywm5body">
+      <div class="uywm5body-inner">
+        <a href="/en/" class="uywm5bodylogolink" title="Home"
+          ><img
+            src="/img/logo.png?v=b4tik"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="uywm5bodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="uywm5-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="uywm5-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="uywm5menubody">
+      <div class="uywm5menu" id="menu-2-root">
+        <div class="uywm5-drawer-header">
+          <span class="uywm5-drawer-title">Menu</span>
+          <button type="button" class="uywm5-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="uywm5-mainnav-wrap">
+          <div class="uywm5menulistbody">
+            <div class="uywm5menulist">
+              <nav class="uywm5menunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/en/">Home </a></li><li><a href="/en/ozgecmis/">Curriculum Vitae</a></li><li><a href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li><a href="/en/akademik-yayinlar/">Academic Publications</a></li><li><a href="/en/iletisim/">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="uywm5-cta" href="/en/iletisim/">Contact us</a>
+        </div>
+        <div class="uywm5languages-mobile">
           <ul>
-            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
+            <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
           </ul>
         </div>
-      </div>
-      
-      <div class="sdskglanguages-mobile">
-        <ul>
-          <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".sdskg") : null;
+      var wrapper = root.closest ? root.closest(".uywm5") : null;
       var target = wrapper || root;
-      if (target.classList.contains("sdskgmenu-open")) {
-        target.classList.remove("sdskgmenu-open");
+      if (target.classList.contains("uywm5menu-open")) {
+        target.classList.remove("uywm5menu-open");
       } else {
-        target.classList.add("sdskgmenu-open");
+        target.classList.add("uywm5menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="yao1f-title f36">
+  <div id="content"><div class="b89i7-title f36">
   <h1>Legal Notice</h1>
 </div>
-<div class="yao1f">
-  <div class="yao1f-menu-btn">
+<div class="b89i7">
+  <div class="b89i7-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined yao1f-icon">menu</span>
+    <span class="material-symbols-outlined b89i7-icon">menu</span>
   </div>
-  <div class="yao1f-menu-overlay" id="yao1f-menu-overlay" aria-hidden="true"></div>
-  <div class="yao1f-menu" id="yao1f-menu">
-    <button class="yao1f-menu-close" type="button" aria-label="Close Menu" aria-controls="yao1f-menu">
+  <div class="b89i7-menu-overlay" id="b89i7-menu-overlay" aria-hidden="true"></div>
+  <div class="b89i7-menu" id="b89i7-menu">
+    <button class="b89i7-menu-close" type="button" aria-label="Close Menu" aria-controls="b89i7-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="yao1f-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="yao1f-menu-link" href="/en/misyon/">Mission</a><a class="yao1f-menu-link" href="/en/vizyon/">Vision</a><a class="yao1f-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="yao1f-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="yao1f-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="yao1f-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="yao1f-menu-link active" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="b89i7-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="b89i7-menu-link" href="/en/misyon/">Mission</a><a class="b89i7-menu-link" href="/en/vizyon/">Vision</a><a class="b89i7-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="b89i7-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="b89i7-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="b89i7-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="b89i7-menu-link active" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="yao1f-desc">
+  <div class="b89i7-desc">
     
-    <div class="yao1f-body"><p><b>Legal notice</b></p> <p>Access to and use of proforhanvelidogan.com implies acceptance of the following conditions. This site is published for information and communication purposes relating to Assoc. Prof. Orhan Veli Doğan – Cardiovascular Surgery. Medical information on the site is for general information only and does not replace personal diagnosis or treatment; always consult a doctor for health decisions. Content is protected by intellectual property laws. We disclaim liability for any errors or omissions. For the full text, see the Turkish version or contact us.</p></div>
+    <div class="b89i7-body"><p><b>Legal notice</b></p> <p>Access to and use of proforhanvelidogan.com implies acceptance of the following conditions. This site is published for information and communication purposes relating to Assoc. Prof. Orhan Veli Doğan – Cardiovascular Surgery. Medical information on the site is for general information only and does not replace personal diagnosis or treatment; always consult a doctor for health decisions. Content is protected by intellectual property laws. We disclaim liability for any errors or omissions. For the full text, see the Turkish version or contact us.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".yao1f-menu-btn");
-    var menu = document.querySelector(".yao1f-menu");
-    var overlay = document.querySelector(".yao1f-menu-overlay");
-    var closeButton = document.querySelector(".yao1f-menu-close");
+    var menuToggleBtn = document.querySelector(".b89i7-menu-btn");
+    var menu = document.querySelector(".b89i7-menu");
+    var overlay = document.querySelector(".b89i7-menu-overlay");
+    var closeButton = document.querySelector(".b89i7-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -207,7 +224,7 @@
 
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".yao1f-menu-close");
+      var closeBtn = event.target.closest(".b89i7-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -251,15 +268,15 @@
     }
     handleBreakpoint();
 
-    document.querySelectorAll(".yao1f-top").forEach(function (button) {
+    document.querySelectorAll(".b89i7-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".yao1f-menu-group");
+        var group = this.closest(".b89i7-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".yao1f-sub");
+        var sub = group.querySelector(".b89i7-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".yao1f-icon");
+        var icon = this.querySelector(".b89i7-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -297,8 +314,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=gywxo"></script>
-<script defer src="/src/cookie.js?v=gywxo"></script>
+<script defer type="text/javascript" src="/src/js.js?v=rnd8b"></script>
+<script defer src="/src/cookie.js?v=rnd8b"></script>
 
 <script>
   setTimeout(function() {

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=fa3w5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=fa3w5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=jslzf" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=jslzf" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=fa3w5" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=jslzf" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,107 +50,124 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=fa3w5">
+<link rel="stylesheet" href="style.css?v=jslzf">
 </head>
 
 <body>
-  <div id="header"><div class="f9rly">
-  <div class="f9rlytitle">
-    <div class="f9rlytitlebody">
-      <div class="f9rlytitlebodylang">
+  <div id="header">
+<div class="ksrme">
+  
+  <div class="ksrmetitle">
+    <div class="ksrmetitlebody">
+      <div class="ksrmetitlebodylang">
         <ul>
           <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="f9rlybody">
-    <a href="/de/"
-      ><img
-        src="/img/logo.png?v=v2ub8"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="f9rlybodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="f9rly-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="f9rly-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="f9rlymenubody">
-    <div class="f9rlymenu" id="menu-2-root">
-      <div class="f9rlymenulistbody">
-        <div class="f9rlymenulist">
+
+  <div class="ksrme-bar">
+    <div class="ksrmebody">
+      <div class="ksrmebody-inner">
+        <a href="/de/" class="ksrmebodylogolink" title="Startseite"
+          ><img
+            src="/img/logo.png?v=yccx3"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="ksrmebodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="ksrme-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="ksrme-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="ksrmemenubody">
+      <div class="ksrmemenu" id="menu-2-root">
+        <div class="ksrme-drawer-header">
+          <span class="ksrme-drawer-title">Menü</span>
+          <button type="button" class="ksrme-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="ksrme-mainnav-wrap">
+          <div class="ksrmemenulistbody">
+            <div class="ksrmemenulist">
+              <nav class="ksrmemenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/de/">Startseite </a></li><li><a href="/de/ozgecmis/">Lebenslauf</a></li><li><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li><a href="/de/iletisim/">Kontakt</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="ksrme-cta" href="/de/iletisim/">Kontakt</a>
+        </div>
+        <div class="ksrmelanguages-mobile">
           <ul>
-            <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
+            <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
           </ul>
         </div>
-      </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="f9rlylanguages-mobile">
-        <ul>
-          <li><a href="/tr/yasal-uyari/">TR</a></li><li><a href="/en/yasal-uyari/">EN</a></li><li><a href="/de/yasal-uyari/">DE</a></li><li><a href="/ru/yasal-uyari/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.f9rly) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".f9rly") : null;
+      var wrapper = root.closest ? root.closest(".ksrme") : null;
       var target = wrapper || root;
-      if (target.classList.contains("f9rlymenu-open")) {
-        target.classList.remove("f9rlymenu-open");
+      if (target.classList.contains("ksrmemenu-open")) {
+        target.classList.remove("ksrmemenu-open");
       } else {
-        target.classList.add("f9rlymenu-open");
+        target.classList.add("ksrmemenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="xd550-title f36">
+  <div id="content"><div class="yaxms-title f36">
   <h1>Impressum / Rechtlicher Hinweis</h1>
 </div>
-<div class="xd550">
-  <div class="xd550-menu-btn">
+<div class="yaxms">
+  <div class="yaxms-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined xd550-icon">menu</span>
+    <span class="material-symbols-outlined yaxms-icon">menu</span>
   </div>
-  <div class="xd550-menu-overlay" id="xd550-menu-overlay" aria-hidden="true"></div>
-  <div class="xd550-menu" id="xd550-menu">
-    <button class="xd550-menu-close" type="button" aria-label="Menü schließen" aria-controls="xd550-menu">
+  <div class="yaxms-menu-overlay" id="yaxms-menu-overlay" aria-hidden="true"></div>
+  <div class="yaxms-menu" id="yaxms-menu">
+    <button class="yaxms-menu-close" type="button" aria-label="Menü schließen" aria-controls="yaxms-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="xd550-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="xd550-menu-link" href="/de/misyon/">Mission</a><a class="xd550-menu-link" href="/de/vizyon/">Vision</a><a class="xd550-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="xd550-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="xd550-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="xd550-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="xd550-menu-link active" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
+    <a class="yaxms-menu-link" href="/de/ozgecmis/">Lebenslauf</a><a class="yaxms-menu-link" href="/de/misyon/">Mission</a><a class="yaxms-menu-link" href="/de/vizyon/">Vision</a><a class="yaxms-menu-link" href="/de/kalite-politikamiz/">Unsere Qualitätspolitik</a><a class="yaxms-menu-link" href="/de/gizlilik-politikasi/">Datenschutz</a><a class="yaxms-menu-link" href="/de/kisisel-veriler/">Personenbezogene Daten</a><a class="yaxms-menu-link" href="/de/kullanici-haklari/">Betroffenenrechte</a><a class="yaxms-menu-link active" href="/de/yasal-uyari/">Impressum / Rechtlicher Hinweis</a>
   </div>
-  <div class="xd550-desc">
+  <div class="yaxms-desc">
     
-    <div class="xd550-body"><p><b>Rechtlicher Hinweis</b></p> <p>Der Zugriff auf und die Nutzung von proforhanvelidogan.com setzen die Akzeptanz der Nutzungsbedingungen voraus. Die medizinischen Informationen sind nur zur allgemeinen Information bestimmt und ersetzen keine persönliche Diagnose oder Therapie. Volltext: siehe türkische Version oder Kontakt.</p></div>
+    <div class="yaxms-body"><p><b>Rechtlicher Hinweis</b></p> <p>Der Zugriff auf und die Nutzung von proforhanvelidogan.com setzen die Akzeptanz der Nutzungsbedingungen voraus. Die medizinischen Informationen sind nur zur allgemeinen Information bestimmt und ersetzen keine persönliche Diagnose oder Therapie. Volltext: siehe türkische Version oder Kontakt.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".xd550-menu-btn");
-    var menu = document.querySelector(".xd550-menu");
-    var overlay = document.querySelector(".xd550-menu-overlay");
-    var closeButton = document.querySelector(".xd550-menu-close");
+    var menuToggleBtn = document.querySelector(".yaxms-menu-btn");
+    var menu = document.querySelector(".yaxms-menu");
+    var overlay = document.querySelector(".yaxms-menu-overlay");
+    var closeButton = document.querySelector(".yaxms-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
     }
     
     var mql = window.matchMedia("(max-width: 1024px)");
-    
-    // Menüyü aç fonksiyonu
+
     function openMenu() {
       if (menu) {
         menu.classList.add("active");
@@ -159,11 +176,10 @@
         overlay.classList.add("active");
         overlay.setAttribute("aria-hidden", "false");
       }
-      // Body scroll'u engelle
+
       document.body.style.overflow = "hidden";
     }
-    
-    // Menüyü kapat fonksiyonu
+
     function closeMenu() {
       if (menu) {
         menu.classList.remove("active");
@@ -172,15 +188,14 @@
         overlay.classList.remove("active");
         overlay.setAttribute("aria-hidden", "true");
       }
-      // Body scroll'u geri getir
+
       document.body.style.overflow = "";
-      // Focus'u menü butonuna geri ver
+
       if (menuToggleBtn) {
         menuToggleBtn.focus();
       }
     }
-    
-    // Toggle butonu
+
     menuToggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -190,8 +205,7 @@
         openMenu();
       }
     });
-    
-    // Kapatma butonu
+
     if (closeButton) {
       closeButton.addEventListener("click", function (e) {
         e.preventDefault();
@@ -199,8 +213,7 @@
         closeMenu();
       });
     }
-    
-    // Overlay'e tıklanınca kapat
+
     if (overlay) {
       overlay.addEventListener("click", function (e) {
         e.preventDefault();
@@ -208,24 +221,21 @@
         closeMenu();
       });
     }
-    
-    // Menü içindeki linklere tıklanınca kapat
+
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".xd550-menu-close");
+      var closeBtn = event.target.closest(".yaxms-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
     });
-    
-    // ESC tuşu ile kapat
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menu && menu.classList.contains("active")) {
         closeMenu();
       }
     });
-    
-    // Klavye navigasyonu (Enter ve Space)
+
     menuToggleBtn.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -236,11 +246,10 @@
         }
       }
     });
-    
-    // Breakpoint değişikliği
+
     function handleBreakpoint() {
       if (!mql.matches) {
-        // Desktop'ta menüyü kapat
+
         if (menu) {
           menu.classList.remove("active");
         }
@@ -259,16 +268,15 @@
     }
     handleBreakpoint();
 
-    // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".xd550-top").forEach(function (button) {
+    document.querySelectorAll(".yaxms-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".xd550-menu-group");
+        var group = this.closest(".yaxms-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".xd550-sub");
+        var sub = group.querySelector(".yaxms-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".xd550-icon");
+        var icon = this.querySelector(".yaxms-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -287,7 +295,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/de/">Startseite</a></li><li class="menu__item"><a class="menu_link" href="/de/kurumsal/">Lebenslauf</a></li><li class="menu__item"><a class="menu_link" href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li class="menu__item"><a class="menu_link" href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li class="menu__item"><a class="menu_link" href="/de/iletisim/">Kontakt</a></li>
+      <li class="menu__item"><a class="menu_link" href="/de/">Startseite</a></li><li class="menu__item"><a class="menu_link" href="/de/ozgecmis/">Lebenslauf</a></li><li class="menu__item"><a class="menu_link" href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li class="menu__item"><a class="menu_link" href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li class="menu__item"><a class="menu_link" href="/de/iletisim/">Kontakt</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -306,20 +314,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=fa3w5"></script>
-<script defer src="/src/cookie.js?v=fa3w5"></script>
+<script defer type="text/javascript" src="/src/js.js?v=jslzf"></script>
+<script defer src="/src/cookie.js?v=jslzf"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

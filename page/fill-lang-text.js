@@ -1,7 +1,4 @@
-/**
- * text-translations.json icerigini ilgili page/[id]/index.json dosyalarindaki
- * text.en, text.de, text.ru alanlarina yazar. Calistirma: node fill-lang-text.js (web/page dizininden)
- */
+
 const fs = require('fs');
 const path = require('path');
 

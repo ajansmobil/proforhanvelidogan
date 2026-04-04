@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=wwb43" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=wwb43" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=c6w4z" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=c6w4z" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=wwb43" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=c6w4z" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,74 +50,91 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=wwb43">
+<link rel="stylesheet" href="style.css?v=c6w4z">
 </head>
 
 <body>
   <div id="header">
-<div class="qzrl2">
-  <div class="qzrl2title">
-    <div class="qzrl2titlebody">
-      <div class="qzrl2titlebodylang">
+<div class="j0niz">
+  
+  <div class="j0niztitle">
+    <div class="j0niztitlebody">
+      <div class="j0niztitlebodylang">
         <ul>
           <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="qzrl2body">
-    <a href="/de/"
-      ><img
-        src="/img/logo.png?v=v1av8"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="qzrl2bodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="qzrl2-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  
-  <div class="qzrl2-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="qzrl2menubody">
-    <div class="qzrl2menu" id="menu-2-root">
-      <div class="qzrl2menulistbody">
-        <div class="qzrl2menulist">
+
+  <div class="j0niz-bar">
+    <div class="j0nizbody">
+      <div class="j0nizbody-inner">
+        <a href="/de/" class="j0nizbodylogolink" title="Startseite"
+          ><img
+            src="/img/logo.png?v=y52at"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="j0nizbodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="j0niz-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="j0niz-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="j0nizmenubody">
+      <div class="j0nizmenu" id="menu-2-root">
+        <div class="j0niz-drawer-header">
+          <span class="j0niz-drawer-title">Menü</span>
+          <button type="button" class="j0niz-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="j0niz-mainnav-wrap">
+          <div class="j0nizmenulistbody">
+            <div class="j0nizmenulist">
+              <nav class="j0nizmenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/de/">Startseite </a></li><li><a href="/de/ozgecmis/">Lebenslauf</a></li><li><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li><a href="/de/iletisim/">Kontakt</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="j0niz-cta" href="/de/iletisim/">Kontakt</a>
+        </div>
+        <div class="j0nizlanguages-mobile">
           <ul>
-            <a href="/de/">Startseite </a><a href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
+            <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
           </ul>
         </div>
-      </div>
-      
-      <div class="qzrl2languages-mobile">
-        <ul>
-          <li><a href="/tr/">TR</a></li><li><a href="/en/">EN</a></li><li><a href="/de/">DE</a></li><li><a href="/ru/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".qzrl2") : null;
+      var wrapper = root.closest ? root.closest(".j0niz") : null;
       var target = wrapper || root;
-      if (target.classList.contains("qzrl2menu-open")) {
-        target.classList.remove("qzrl2menu-open");
+      if (target.classList.contains("j0nizmenu-open")) {
+        target.classList.remove("j0nizmenu-open");
       } else {
-        target.classList.add("qzrl2menu-open");
+        target.classList.add("j0nizmenu-open");
       }
     }
   }
 </script>
-<div class="swiper-container byy98">
-  <div class="swiper-wrapper" id="byy98"><div class="swiper-slide"><img src="/img/vey1el/1.webp?v=1775279184514" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/2.webp?v=1775279184514" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/3.webp?v=1775279184514" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/4.webp?v=1775279184514" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div></div>
+<div class="swiper-container udjbx">
+  <div class="swiper-wrapper" id="udjbx"><div class="swiper-slide"><img src="/img/vey1el/1.webp?v=1775281181091" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/2.webp?v=1775281181091" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/3.webp?v=1775281181091" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/vey1el/4.webp?v=1775281181091" alt="Prof OVD Orhan VELİ DOĞAN"  loading="lazy"/></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -167,7 +184,7 @@
       attempts++;
       if (typeof Swiper === "function") {
         clearInterval(timer);
-        new Swiper(".byy98", {
+        new Swiper(".udjbx", {
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
@@ -191,90 +208,167 @@
     }, 250);
   })();
 </script></div>
-  <div id="content"><div class="y0d3w">
-  <div class="y0d3wbody"><div class="y0d3wbodyitem left" style="animation-delay: 0s;">
-        <a href="/de/varis-nedir/" class="y0d3wbodyitemlink">
-          <div class="y0d3wbodyitemimg">
-            <img alt="Was sind Krampfadern?" src="/page/z7cy6mn33q/ilj83.webp" alt="Was sind Krampfadern?" loading="lazy">
-          </div>
-          <div class="y0d3wbodyitemcontent">
-            <div class="y0d3wbodyitemtitle">Was sind Krampfadern?</div>
-            <div class="y0d3wbodyitemdesc">Informationsseite dazu, was Krampfadern sind, warum sie entstehen und welche Symptome haufig auftreten.</div>
-          </div>
-        </a>
-      </div><div class="y0d3wbodyitem right" style="animation-delay: 0.15s;">
-        <a href="/de/varis-turleri/" class="y0d3wbodyitemlink">
-          <div class="y0d3wbodyitemcontent">
-            <div class="y0d3wbodyitemtitle">Welche Arten von Krampfadern gibt es?</div>
-            <div class="y0d3wbodyitemdesc">Seite mit den wichtigsten Krampfadertypen wie Besenreiser, retikulare und Stammvenenvarizen samt klinischen Merkmalen.</div>
-          </div>
-          <div class="y0d3wbodyitemimg">
-            <img alt="Welche Arten von Krampfadern gibt es?" src="/page/varisTurleri/uqfhy.webp" alt="Welche Arten von Krampfadern gibt es?" loading="lazy">
-          </div>
-        </a>
-      </div><div class="y0d3wbodyitem left" style="animation-delay: 0.3s;">
-        <a href="/de/varis-neden-olur/" class="y0d3wbodyitemlink">
-          <div class="y0d3wbodyitemimg">
-            <img alt="Was verursacht Krampfadern?" src="/page/varisNedenOlur/d39qw.webp" alt="Was verursacht Krampfadern?" loading="lazy">
-          </div>
-          <div class="y0d3wbodyitemcontent">
-            <div class="y0d3wbodyitemtitle">Was verursacht Krampfadern?</div>
-            <div class="y0d3wbodyitemdesc">Ursachen: venöse Insuffizienz, Klappenschaden, langes Stehen, Genetik.</div>
-          </div>
-        </a>
-      </div></div>
+  <div id="content"><div class="zt5rr zt5rrcardio" role="region" aria-label="">
+  <div class="zt5rrcardio-inner">
+    <header class="zt5rrcardio-hero">
+      <div class="zt5rrcardio-hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="zt5rrcardio-svg-ring" cx="32" cy="32" r="30" stroke="#0D9488" stroke-width="2" opacity="0.4" />
+          <path class="zt5rrcardio-svg-ekg" d="M8 34h8l4-12 6 24 8-32 6 20h16" stroke="#0F766E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+      </div>
+      <p class="zt5rrcardio-eyebrow"></p>
+      <h2 class="zt5rrcardio-title"></h2>
+      <p class="zt5rrcardio-lead"></p>
+    </header>
+    <div class="zt5rrbody"><div class="zt5rrbodyitem left" style="transition-delay: 0s;"><a href="/de/varis-nedir/" class="zt5rrbodyitemlink" title="Was sind Krampfadern?"><div class="zt5rrbodyitemimg"><img alt="Was sind Krampfadern?" src="/page/z7cy6mn33q/ilj83.webp" loading="lazy"></div><div class="zt5rrbodyitemcontent"><div class="zt5rrbodyitemtitle">Was sind Krampfadern?</div><div class="zt5rrbodyitemdesc">Informationsseite dazu, was Krampfadern sind, warum sie entstehen und welche Symptome haufig auftreten.</div><span class="zt5rrbodyitemcta"><span class="zt5rrbodyitemcta-text">Detaylı bilgi</span><span class="zt5rrbodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div><div class="zt5rrbodyitem right" style="transition-delay: 0.12s;"><a href="/de/varis-turleri/" class="zt5rrbodyitemlink" title="Welche Arten von Krampfadern gibt es?"><div class="zt5rrbodyitemcontent"><div class="zt5rrbodyitemtitle">Welche Arten von Krampfadern gibt es?</div><div class="zt5rrbodyitemdesc">Seite mit den wichtigsten Krampfadertypen wie Besenreiser, retikulare und Stammvenenvarizen samt klinischen Merkmalen.</div><span class="zt5rrbodyitemcta"><span class="zt5rrbodyitemcta-text">Detaylı bilgi</span><span class="zt5rrbodyitemcta-arrow" aria-hidden="true">→</span></span></div><div class="zt5rrbodyitemimg"><img alt="Welche Arten von Krampfadern gibt es?" src="/page/varisTurleri/uqfhy.webp" loading="lazy"></div></a></div><div class="zt5rrbodyitem left" style="transition-delay: 0.24s;"><a href="/de/varis-neden-olur/" class="zt5rrbodyitemlink" title="Was verursacht Krampfadern?"><div class="zt5rrbodyitemimg"><img alt="Was verursacht Krampfadern?" src="/page/varisNedenOlur/d39qw.webp" loading="lazy"></div><div class="zt5rrbodyitemcontent"><div class="zt5rrbodyitemtitle">Was verursacht Krampfadern?</div><div class="zt5rrbodyitemdesc">Ursachen: venöse Insuffizienz, Klappenschaden, langes Stehen, Genetik.</div><span class="zt5rrbodyitemcta"><span class="zt5rrbodyitemcta-text">Detaylı bilgi</span><span class="zt5rrbodyitemcta-arrow" aria-hidden="true">→</span></span></div></a></div></div>
+  </div>
 </div>
 
+<script>
+  
+  setTimeout(function() {
+    if (typeof IntersectionObserver !== 'undefined') {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.06,
+        rootMargin: '0px 0px -32px 0px'
+      });
+      var items = document.querySelectorAll('.zt5rrbodyitem');
+      items.forEach(function(item) {
+        observer.observe(item);
+      });
+    } else {
+      var items = document.querySelectorAll('.zt5rrbodyitem');
+      items.forEach(function(item) {
+        item.classList.add('visible');
+      });
+    }
+  }, 100);
+</script>
 
+<div class="ytb4nden7y8body">
+  <div class="ytb4nden7y8">
+    
+    <div class="ytb4nden7y8title">YouTube videoları</div>
+    <div class="ytb4nden7y8channel"><a href="https://www.youtube.com/@Prof.Dr.OrhanVeliDogan" target="_blank" rel="noopener noreferrer">YouTube kanalı →</a></div>
+    
+    <div class="en7y8 swiper-container ytb4nd-en7y8-swiper">
+      <div class="swiper-wrapper"><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/pManSQfMPYI?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 1/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/FRXNY3teHVc?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 2/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/ryqt2MUVe7U?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 3/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/SpZeJZ50Z9U?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 4/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="swiper-slide"><div class="ytb4nd-frame"><iframe src="https://www.youtube-nocookie.com/embed/YDHpkw7kSnA?rel=0&modestbranding=1&enablejsapi=1" title="YouTube videoları — 5/5" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div></div>
+      <div
+        class="swiper-button-next swiper-button-next-ytb4nd-en7y8"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="swiper-button-prev swiper-button-prev-ytb4nd-en7y8"
+        aria-hidden="true"
+      ></div>
+      <div class="swiper-pagination swiper-pagination-ytb4nd-en7y8"></div>
+    </div>
+  </div>
+</div>
 
 <script>
-setTimeout(function() {
-  if (typeof IntersectionObserver !== 'undefined') {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+  
+  setTimeout(function ytb4ndSwiperBoot() {
+    var rootSel = ".ytb4nd-en7y8-swiper";
+    var maxTry = 24;
+    var intervalMs = 250;
+    var n = 0;
+    var timer = setInterval(function () {
+      n++;
+      if (typeof Swiper !== "function") {
+        if (n >= maxTry) {
+          clearInterval(timer);
+          console.warn("ytb4nd: Swiper yüklenemedi, slayt başlatılamadı.");
         }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    var items = document.querySelectorAll('.y0d3wbodyitem');
-    items.forEach(function(item) {
-      observer.observe(item);
-    });
-  } else {
-    var items = document.querySelectorAll('.y0d3wbodyitem');
-    items.forEach(function(item) {
-      item.classList.add('visible');
-    });
-  }
-}, 100);
-
-</script><div class="sliderxtuptgbody">
-  <div class="sliderxtuptg">
-    <div class="sliderxtuptgtitle"></div>
-    <div class="tuptg">
+        return;
+      }
+      clearInterval(timer);
+      var jsonslider = {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        simulateTouch: true,
+        loop: true,
+        speed: 500,
+        autoplay: { delay: 8000, disableOnInteraction: false },
+        pagination: {
+          el: ".swiper-pagination-ytb4nd-en7y8",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-ytb4nd-en7y8",
+          prevEl: ".swiper-button-prev-ytb4nd-en7y8",
+        },
+        
+        on: {
+          slideChange: function ytb4ndOnSlideChangePauseOthers() {
+            var box = document.querySelector(rootSel);
+            if (!box) {
+              return;
+            }
+            var pausePayload = '{"event":"command","func":"pauseVideo","args":""}';
+            var allSlides = box.querySelectorAll(".swiper-slide");
+            var s = 0;
+            for (s = 0; s < allSlides.length; s++) {
+              var oneSlide = allSlides[s];
+              if (oneSlide.classList.contains("swiper-slide-active")) {
+                continue;
+              }
+              var frame = oneSlide.querySelector("iframe");
+              if (!frame || !frame.contentWindow) {
+                continue;
+              }
+              try {
+                frame.contentWindow.postMessage(pausePayload, "*");
+              } catch (errPause) {
+                
+              }
+            }
+          },
+        },
+      };
+      if ("true" !== "true") {
+        var btnNext = document.querySelector(".swiper-button-next-ytb4nd-en7y8");
+        var btnPrev = document.querySelector(".swiper-button-prev-ytb4nd-en7y8");
+        if (btnNext) {
+          btnNext.style.display = "none";
+        }
+        if (btnPrev) {
+          btnPrev.style.display = "none";
+        }
+      }
+      new Swiper(rootSel, jsonslider);
+    }, intervalMs);
+  }, 500);
+</script>
+<div class="sliderxpuefbbody">
+  <div class="sliderxpuefb">
+    <div class="sliderxpuefbtitle"></div>
+    <div class="puefb">
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Facebook">
-            <img src="/src/icon/facebook.png" alt="Facebook" class="tuptg-media" loading="lazy" />
+            <img src="/src/icon/facebook.png" alt="Facebook" class="puefb-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Instagram">
-            <img src="/src/icon/instagram.png" alt="Instagram" class="tuptg-media" loading="lazy" />
+            <img src="/src/icon/instagram.png" alt="Instagram" class="puefb-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="LinkedIn">
-            <img src="/src/icon/linkedin.png" alt="LinkedIn" class="tuptg-media" loading="lazy" />
+            <img src="/src/icon/linkedin.png" alt="LinkedIn" class="puefb-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="YouTube">
-            <img src="/src/icon/youtube.png" alt="YouTube" class="tuptg-media" loading="lazy" />
+            <img src="/src/icon/youtube.png" alt="YouTube" class="puefb-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="WhatsApp">
-            <img src="/src/icon/whatsapp.png" alt="WhatsApp" class="tuptg-media" loading="lazy" />
+            <img src="/src/icon/whatsapp.png" alt="WhatsApp" class="puefb-media" loading="lazy" />
         </a>
         <a href="" target="_blank" style="text-decoration: none;" aria-label="Google Maps">
-            <img src="/src/icon/google-maps.png" alt="Google Maps" class="tuptg-media" loading="lazy" />
+            <img src="/src/icon/google-maps.png" alt="Google Maps" class="puefb-media" loading="lazy" />
         </a></div>
   </div>
 </div>
@@ -305,8 +399,8 @@ setTimeout(function() {
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=wwb43"></script>
-<script defer src="/src/cookie.js?v=wwb43"></script>
+<script defer type="text/javascript" src="/src/js.js?v=c6w4z"></script>
+<script defer src="/src/cookie.js?v=c6w4z"></script>
 
 <script>
   setTimeout(function() {

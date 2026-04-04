@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=jlmud" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=jlmud" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=pypvc" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=pypvc" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=jlmud" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=pypvc" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,103 +50,120 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=jlmud">
+<link rel="stylesheet" href="style.css?v=pypvc">
 </head>
 
 <body>
   <div id="header">
-<div class="lba79">
-  <div class="lba79title">
-    <div class="lba79titlebody">
-      <div class="lba79titlebodylang">
+<div class="j55jo">
+  
+  <div class="j55jotitle">
+    <div class="j55jotitlebody">
+      <div class="j55jotitlebodylang">
         <ul>
           <li><a href="/tr/varis-turleri/">TR</a></li><li><a href="/en/varis-turleri/">EN</a></li><li><a href="/de/varis-turleri/">DE</a></li><li><a href="/ru/varis-turleri/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="lba79body">
-    <a href="/en/"
-      ><img
-        src="/img/logo.png?v=q4tfr"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="lba79bodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="lba79-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  
-  <div class="lba79-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="lba79menubody">
-    <div class="lba79menu" id="menu-2-root">
-      <div class="lba79menulistbody">
-        <div class="lba79menulist">
+
+  <div class="j55jo-bar">
+    <div class="j55jobody">
+      <div class="j55jobody-inner">
+        <a href="/en/" class="j55jobodylogolink" title="Home"
+          ><img
+            src="/img/logo.png?v=vbj3b"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="j55jobodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="j55jo-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="j55jo-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="j55jomenubody">
+      <div class="j55jomenu" id="menu-2-root">
+        <div class="j55jo-drawer-header">
+          <span class="j55jo-drawer-title">Menu</span>
+          <button type="button" class="j55jo-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="j55jo-mainnav-wrap">
+          <div class="j55jomenulistbody">
+            <div class="j55jomenulist">
+              <nav class="j55jomenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/en/">Home </a></li><li><a href="/en/ozgecmis/">Curriculum Vitae</a></li><li><a href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li><a href="/en/akademik-yayinlar/">Academic Publications</a></li><li><a href="/en/iletisim/">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="j55jo-cta" href="/en/iletisim/">Contact us</a>
+        </div>
+        <div class="j55jolanguages-mobile">
           <ul>
-            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
+            <li><a href="/tr/varis-turleri/">TR</a></li><li><a href="/en/varis-turleri/">EN</a></li><li><a href="/de/varis-turleri/">DE</a></li><li><a href="/ru/varis-turleri/">RU</a></li>
           </ul>
         </div>
-      </div>
-      
-      <div class="lba79languages-mobile">
-        <ul>
-          <li><a href="/tr/varis-turleri/">TR</a></li><li><a href="/en/varis-turleri/">EN</a></li><li><a href="/de/varis-turleri/">DE</a></li><li><a href="/ru/varis-turleri/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".lba79") : null;
+      var wrapper = root.closest ? root.closest(".j55jo") : null;
       var target = wrapper || root;
-      if (target.classList.contains("lba79menu-open")) {
-        target.classList.remove("lba79menu-open");
+      if (target.classList.contains("j55jomenu-open")) {
+        target.classList.remove("j55jomenu-open");
       } else {
-        target.classList.add("lba79menu-open");
+        target.classList.add("j55jomenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="lnn8a-title f36">
+  <div id="content"><div class="gfzkp-title f36">
   <h1>What Are the Types of Varicose Veins?</h1>
 </div>
-<div class="lnn8a">
-  <div class="lnn8a-menu-btn">
+<div class="gfzkp">
+  <div class="gfzkp-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined lnn8a-icon">menu</span>
+    <span class="material-symbols-outlined gfzkp-icon">menu</span>
   </div>
-  <div class="lnn8a-menu-overlay" id="lnn8a-menu-overlay" aria-hidden="true"></div>
-  <div class="lnn8a-menu" id="lnn8a-menu">
-    <button class="lnn8a-menu-close" type="button" aria-label="Close Menu" aria-controls="lnn8a-menu">
+  <div class="gfzkp-menu-overlay" id="gfzkp-menu-overlay" aria-hidden="true"></div>
+  <div class="gfzkp-menu" id="gfzkp-menu">
+    <button class="gfzkp-menu-close" type="button" aria-label="Close Menu" aria-controls="gfzkp-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="lnn8a-menu-link" href="/en/varis-nedir/">What Are Varicose Veins?</a><a class="lnn8a-menu-link active" href="/en/varis-turleri/">What Are the Types of Varicose Veins?</a><a class="lnn8a-menu-link" href="/en/varis-neden-olur/">What Causes Varicose Veins?</a>
+    <a class="gfzkp-menu-link" href="/en/varis-nedir/">What Are Varicose Veins?</a><a class="gfzkp-menu-link active" href="/en/varis-turleri/">What Are the Types of Varicose Veins?</a><a class="gfzkp-menu-link" href="/en/varis-neden-olur/">What Causes Varicose Veins?</a>
   </div>
-  <div class="lnn8a-desc">
+  <div class="gfzkp-desc">
     
-    <div class="lnn8a-desc-body">
-            <img src="/page/varisTurleri/uqfhy.webp?v=exvdw" width="100%" alt="What Are the Types of Varicose Veins?" loading="lazy" />
+    <div class="gfzkp-desc-body">
+            <img src="/page/varisTurleri/uqfhy.webp?v=ljgdi" width="100%" alt="What Are the Types of Varicose Veins?" loading="lazy" />
     </div>
-    <div class="lnn8a-body"><h2>Types of Varicose Veins</h2><p>Varicose vein disease can appear in different veins and severity levels. The common clinical groups are spider veins (telangiectasia), reticular varicose veins and truncal saphenous varicose veins.</p><p>The type is determined according to symptoms, cosmetic expectations and Doppler ultrasound findings. Treatment is individualized for each patient based on this classification.</p></div>
+    <div class="gfzkp-body"><h2>Types of Varicose Veins</h2><p>Varicose vein disease can appear in different veins and severity levels. The common clinical groups are spider veins (telangiectasia), reticular varicose veins and truncal saphenous varicose veins.</p><p>The type is determined according to symptoms, cosmetic expectations and Doppler ultrasound findings. Treatment is individualized for each patient based on this classification.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".lnn8a-menu-btn");
-    var menu = document.querySelector(".lnn8a-menu");
-    var overlay = document.querySelector(".lnn8a-menu-overlay");
-    var closeButton = document.querySelector(".lnn8a-menu-close");
+    var menuToggleBtn = document.querySelector(".gfzkp-menu-btn");
+    var menu = document.querySelector(".gfzkp-menu");
+    var overlay = document.querySelector(".gfzkp-menu-overlay");
+    var closeButton = document.querySelector(".gfzkp-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -210,7 +227,7 @@
 
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".lnn8a-menu-close");
+      var closeBtn = event.target.closest(".gfzkp-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -254,15 +271,15 @@
     }
     handleBreakpoint();
 
-    document.querySelectorAll(".lnn8a-top").forEach(function (button) {
+    document.querySelectorAll(".gfzkp-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".lnn8a-menu-group");
+        var group = this.closest(".gfzkp-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".lnn8a-sub");
+        var sub = group.querySelector(".gfzkp-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".lnn8a-icon");
+        var icon = this.querySelector(".gfzkp-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -300,8 +317,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=jlmud"></script>
-<script defer src="/src/cookie.js?v=jlmud"></script>
+<script defer type="text/javascript" src="/src/js.js?v=pypvc"></script>
+<script defer src="/src/cookie.js?v=pypvc"></script>
 
 <script>
   setTimeout(function() {

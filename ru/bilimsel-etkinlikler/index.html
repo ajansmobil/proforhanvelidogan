@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=d40kx" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=d40kx" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=yybvo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=yybvo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=d40kx" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=yybvo" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,107 +50,124 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=d40kx">
+<link rel="stylesheet" href="style.css?v=yybvo">
 </head>
 
 <body>
-  <div id="header"><div class="a188i">
-  <div class="a188ititle">
-    <div class="a188ititlebody">
-      <div class="a188ititlebodylang">
+  <div id="header">
+<div class="fuusw">
+  
+  <div class="fuuswtitle">
+    <div class="fuuswtitlebody">
+      <div class="fuuswtitlebodylang">
         <ul>
           <li><a href="/tr/bilimsel-etkinlikler/">TR</a></li><li><a href="/en/bilimsel-etkinlikler/">EN</a></li><li><a href="/de/bilimsel-etkinlikler/">DE</a></li><li><a href="/ru/bilimsel-etkinlikler/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="a188ibody">
-    <a href="/ru/"
-      ><img
-        src="/img/logo.png?v=qx2u7"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="a188ibodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="a188i-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="a188i-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="a188imenubody">
-    <div class="a188imenu" id="menu-2-root">
-      <div class="a188imenulistbody">
-        <div class="a188imenulist">
+
+  <div class="fuusw-bar">
+    <div class="fuuswbody">
+      <div class="fuuswbody-inner">
+        <a href="/ru/" class="fuuswbodylogolink" title="Домашняя страница"
+          ><img
+            src="/img/logo.png?v=yyg5k"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="fuuswbodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="fuusw-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="fuusw-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="fuuswmenubody">
+      <div class="fuuswmenu" id="menu-2-root">
+        <div class="fuusw-drawer-header">
+          <span class="fuusw-drawer-title">Меню</span>
+          <button type="button" class="fuusw-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="fuusw-mainnav-wrap">
+          <div class="fuuswmenulistbody">
+            <div class="fuuswmenulist">
+              <nav class="fuuswmenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/ru/">Домашняя страница </a></li><li><a href="/ru/ozgecmis/">Резюме</a></li><li><a href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li><a href="/ru/akademik-yayinlar/">Научные публикации</a></li><li><a href="/ru/iletisim/">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="fuusw-cta" href="/ru/iletisim/">Связаться с нами</a>
+        </div>
+        <div class="fuuswlanguages-mobile">
           <ul>
-            <a href="/ru/">Домашняя страница </a><a href="/ru/ozgecmis/">Резюме</a><a href="/ru/tedavi-yontemleri/">Методы лечения</a><a href="/ru/akademik-yayinlar/">Научные публикации</a><a href="/ru/iletisim/">Контакты</a>
+            <li><a href="/tr/bilimsel-etkinlikler/">TR</a></li><li><a href="/en/bilimsel-etkinlikler/">EN</a></li><li><a href="/de/bilimsel-etkinlikler/">DE</a></li><li><a href="/ru/bilimsel-etkinlikler/">RU</a></li>
           </ul>
         </div>
-      </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="a188ilanguages-mobile">
-        <ul>
-          <li><a href="/tr/bilimsel-etkinlikler/">TR</a></li><li><a href="/en/bilimsel-etkinlikler/">EN</a></li><li><a href="/de/bilimsel-etkinlikler/">DE</a></li><li><a href="/ru/bilimsel-etkinlikler/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.a188i) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".a188i") : null;
+      var wrapper = root.closest ? root.closest(".fuusw") : null;
       var target = wrapper || root;
-      if (target.classList.contains("a188imenu-open")) {
-        target.classList.remove("a188imenu-open");
+      if (target.classList.contains("fuuswmenu-open")) {
+        target.classList.remove("fuuswmenu-open");
       } else {
-        target.classList.add("a188imenu-open");
+        target.classList.add("fuuswmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="k2mvh-title f36">
+  <div id="content"><div class="gumya-title f36">
   <h1>Научная деятельность</h1>
 </div>
-<div class="k2mvh">
-  <div class="k2mvh-menu-btn">
+<div class="gumya">
+  <div class="gumya-menu-btn">
     <span>Меню</span>
-    <span class="material-symbols-outlined k2mvh-icon">menu</span>
+    <span class="material-symbols-outlined gumya-icon">menu</span>
   </div>
-  <div class="k2mvh-menu-overlay" id="k2mvh-menu-overlay" aria-hidden="true"></div>
-  <div class="k2mvh-menu" id="k2mvh-menu">
-    <button class="k2mvh-menu-close" type="button" aria-label="Закрыть меню" aria-controls="k2mvh-menu">
+  <div class="gumya-menu-overlay" id="gumya-menu-overlay" aria-hidden="true"></div>
+  <div class="gumya-menu" id="gumya-menu">
+    <button class="gumya-menu-close" type="button" aria-label="Закрыть меню" aria-controls="gumya-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="k2mvh-menu-link" href="/ru/yonetilen-yuksek-lisans-tezleri/">Научное руководство магистерскими диссертациями</a><a class="k2mvh-menu-link" href="/ru/dergi-hakemligi/">Рецензирование журналов</a><a class="k2mvh-menu-link" href="/ru/kongre-hakemligi/">Рецензирование конгрессов</a><a class="k2mvh-menu-link active" href="/ru/bilimsel-etkinlikler/">Научная деятельность</a><a class="k2mvh-menu-link" href="/ru/oduller/">Награды</a>
+    <a class="gumya-menu-link" href="/ru/yonetilen-yuksek-lisans-tezleri/">Научное руководство магистерскими диссертациями</a><a class="gumya-menu-link" href="/ru/dergi-hakemligi/">Рецензирование журналов</a><a class="gumya-menu-link" href="/ru/kongre-hakemligi/">Рецензирование конгрессов</a><a class="gumya-menu-link active" href="/ru/bilimsel-etkinlikler/">Научная деятельность</a><a class="gumya-menu-link" href="/ru/oduller/">Награды</a>
   </div>
-  <div class="k2mvh-desc">
+  <div class="gumya-desc">
     
-    <div class="k2mvh-body"><p>Доц. д-р Орхан Вели Доган – приглашённый докладчик на национальных и международных научных мероприятиях. Международная панель Кыргызстан, председатель секций конгрессов.</p></div>
+    <div class="gumya-body"><p>Доц. д-р Орхан Вели Доган – приглашённый докладчик на национальных и международных научных мероприятиях. Международная панель Кыргызстан, председатель секций конгрессов.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".k2mvh-menu-btn");
-    var menu = document.querySelector(".k2mvh-menu");
-    var overlay = document.querySelector(".k2mvh-menu-overlay");
-    var closeButton = document.querySelector(".k2mvh-menu-close");
+    var menuToggleBtn = document.querySelector(".gumya-menu-btn");
+    var menu = document.querySelector(".gumya-menu");
+    var overlay = document.querySelector(".gumya-menu-overlay");
+    var closeButton = document.querySelector(".gumya-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
     }
     
     var mql = window.matchMedia("(max-width: 1024px)");
-    
-    // Menüyü aç fonksiyonu
+
     function openMenu() {
       if (menu) {
         menu.classList.add("active");
@@ -159,11 +176,10 @@
         overlay.classList.add("active");
         overlay.setAttribute("aria-hidden", "false");
       }
-      // Body scroll'u engelle
+
       document.body.style.overflow = "hidden";
     }
-    
-    // Menüyü kapat fonksiyonu
+
     function closeMenu() {
       if (menu) {
         menu.classList.remove("active");
@@ -172,15 +188,14 @@
         overlay.classList.remove("active");
         overlay.setAttribute("aria-hidden", "true");
       }
-      // Body scroll'u geri getir
+
       document.body.style.overflow = "";
-      // Focus'u menü butonuna geri ver
+
       if (menuToggleBtn) {
         menuToggleBtn.focus();
       }
     }
-    
-    // Toggle butonu
+
     menuToggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -190,8 +205,7 @@
         openMenu();
       }
     });
-    
-    // Kapatma butonu
+
     if (closeButton) {
       closeButton.addEventListener("click", function (e) {
         e.preventDefault();
@@ -199,8 +213,7 @@
         closeMenu();
       });
     }
-    
-    // Overlay'e tıklanınca kapat
+
     if (overlay) {
       overlay.addEventListener("click", function (e) {
         e.preventDefault();
@@ -208,24 +221,21 @@
         closeMenu();
       });
     }
-    
-    // Menü içindeki linklere tıklanınca kapat
+
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".k2mvh-menu-close");
+      var closeBtn = event.target.closest(".gumya-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
     });
-    
-    // ESC tuşu ile kapat
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menu && menu.classList.contains("active")) {
         closeMenu();
       }
     });
-    
-    // Klavye navigasyonu (Enter ve Space)
+
     menuToggleBtn.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -236,11 +246,10 @@
         }
       }
     });
-    
-    // Breakpoint değişikliği
+
     function handleBreakpoint() {
       if (!mql.matches) {
-        // Desktop'ta menüyü kapat
+
         if (menu) {
           menu.classList.remove("active");
         }
@@ -259,16 +268,15 @@
     }
     handleBreakpoint();
 
-    // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".k2mvh-top").forEach(function (button) {
+    document.querySelectorAll(".gumya-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".k2mvh-menu-group");
+        var group = this.closest(".gumya-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".k2mvh-sub");
+        var sub = group.querySelector(".gumya-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".k2mvh-icon");
+        var icon = this.querySelector(".gumya-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -287,7 +295,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/ru/">Домашняя страница</a></li><li class="menu__item"><a class="menu_link" href="/ru/kurumsal/">Резюме</a></li><li class="menu__item"><a class="menu_link" href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li class="menu__item"><a class="menu_link" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li class="menu__item"><a class="menu_link" href="/ru/iletisim/">Контакты</a></li>
+      <li class="menu__item"><a class="menu_link" href="/ru/">Домашняя страница</a></li><li class="menu__item"><a class="menu_link" href="/ru/ozgecmis/">Резюме</a></li><li class="menu__item"><a class="menu_link" href="/ru/tedavi-yontemleri/">Методы лечения</a></li><li class="menu__item"><a class="menu_link" href="/ru/akademik-yayinlar/">Научные публикации</a></li><li class="menu__item"><a class="menu_link" href="/ru/iletisim/">Контакты</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -306,20 +314,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=d40kx"></script>
-<script defer src="/src/cookie.js?v=d40kx"></script>
+<script defer type="text/javascript" src="/src/js.js?v=yybvo"></script>
+<script defer src="/src/cookie.js?v=yybvo"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

@@ -1,7 +1,4 @@
-/**
- * page/[id]/index.json dosyalarinda tr dolu ama en/de/ru bos alanlari
- * ceviri verisi ile doldurur. Calistirma: node fill-lang.js (web/page dizininden)
- */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -10,8 +7,6 @@ const ids = fs.readdirSync(base).filter(f => {
   const p = path.join(base, f);
   return fs.statSync(p).isDirectory() && fs.existsSync(path.join(p, 'index.json'));
 });
-
-// Kısa alan çevirileri: [id] -> { name: {en,de,ru}, description: {}, keyword: {}, spot: {} }
 const shortTranslations = {
   'bilimsel-etkinlikler': {
     name: { en: 'Scientific Activities', de: 'Wissenschaftliche Aktivitäten', ru: 'Научная деятельность' },

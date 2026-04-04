@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=qbras" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=qbras" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=he6kl" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=he6kl" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qbras" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=he6kl" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,100 +50,117 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=qbras">
+<link rel="stylesheet" href="style.css?v=he6kl">
 </head>
 
 <body>
   <div id="header">
-<div class="yzqoj">
-  <div class="yzqojtitle">
-    <div class="yzqojtitlebody">
-      <div class="yzqojtitlebodylang">
+<div class="h184h">
+  
+  <div class="h184htitle">
+    <div class="h184htitlebody">
+      <div class="h184htitlebodylang">
         <ul>
           <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="yzqojbody">
-    <a href="/en/"
-      ><img
-        src="/img/logo.png?v=ktc5g"
-        alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="yzqojbodylogo"
-        loading="lazy"
-    /></a>
-    <button type="button" class="yzqoj-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
-      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
-    </button>
-  </div>
-  
-  <div class="yzqoj-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="yzqojmenubody">
-    <div class="yzqojmenu" id="menu-2-root">
-      <div class="yzqojmenulistbody">
-        <div class="yzqojmenulist">
+
+  <div class="h184h-bar">
+    <div class="h184hbody">
+      <div class="h184hbody-inner">
+        <a href="/en/" class="h184hbodylogolink" title="Home"
+          ><img
+            src="/img/logo.png?v=ygrf1"
+            alt="Prof OVD Orhan VELİ DOĞAN Logo"
+            class="h184hbodylogo"
+            loading="lazy"
+        /></a>
+        <button type="button" class="h184h-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat" title="Menü">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="h184h-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+
+    <div class="h184hmenubody">
+      <div class="h184hmenu" id="menu-2-root">
+        <div class="h184h-drawer-header">
+          <span class="h184h-drawer-title">Menu</span>
+          <button type="button" class="h184h-drawer-close" onclick="menu2_toggle()" aria-label="Menüyü kapat" title="Kapat">
+            <span class="material-symbols-outlined" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="h184h-mainnav-wrap">
+          <div class="h184hmenulistbody">
+            <div class="h184hmenulist">
+              <nav class="h184hmenunav" aria-label="Ana menü">
+                <ul>
+                  <li><a href="/en/">Home </a></li><li><a href="/en/ozgecmis/">Curriculum Vitae</a></li><li><a href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li><a href="/en/akademik-yayinlar/">Academic Publications</a></li><li><a href="/en/iletisim/">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <a class="h184h-cta" href="/en/iletisim/">Contact us</a>
+        </div>
+        <div class="h184hlanguages-mobile">
           <ul>
-            <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
+            <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
           </ul>
         </div>
-      </div>
-      
-      <div class="yzqojlanguages-mobile">
-        <ul>
-          <li><a href="/tr/misyon/">TR</a></li><li><a href="/en/misyon/">EN</a></li><li><a href="/de/misyon/">DE</a></li><li><a href="/ru/misyon/">RU</a></li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".yzqoj") : null;
+      var wrapper = root.closest ? root.closest(".h184h") : null;
       var target = wrapper || root;
-      if (target.classList.contains("yzqojmenu-open")) {
-        target.classList.remove("yzqojmenu-open");
+      if (target.classList.contains("h184hmenu-open")) {
+        target.classList.remove("h184hmenu-open");
       } else {
-        target.classList.add("yzqojmenu-open");
+        target.classList.add("h184hmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="izq03-title f36">
+  <div id="content"><div class="b6j7k-title f36">
   <h1>Mission</h1>
 </div>
-<div class="izq03">
-  <div class="izq03-menu-btn">
+<div class="b6j7k">
+  <div class="b6j7k-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined izq03-icon">menu</span>
+    <span class="material-symbols-outlined b6j7k-icon">menu</span>
   </div>
-  <div class="izq03-menu-overlay" id="izq03-menu-overlay" aria-hidden="true"></div>
-  <div class="izq03-menu" id="izq03-menu">
-    <button class="izq03-menu-close" type="button" aria-label="Close Menu" aria-controls="izq03-menu">
+  <div class="b6j7k-menu-overlay" id="b6j7k-menu-overlay" aria-hidden="true"></div>
+  <div class="b6j7k-menu" id="b6j7k-menu">
+    <button class="b6j7k-menu-close" type="button" aria-label="Close Menu" aria-controls="b6j7k-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="izq03-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="izq03-menu-link active" href="/en/misyon/">Mission</a><a class="izq03-menu-link" href="/en/vizyon/">Vision</a><a class="izq03-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="izq03-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="izq03-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="izq03-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="izq03-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="b6j7k-menu-link" href="/en/ozgecmis/">Curriculum Vitae</a><a class="b6j7k-menu-link active" href="/en/misyon/">Mission</a><a class="b6j7k-menu-link" href="/en/vizyon/">Vision</a><a class="b6j7k-menu-link" href="/en/kalite-politikamiz/">Our Quality Policy</a><a class="b6j7k-menu-link" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="b6j7k-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="b6j7k-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="b6j7k-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="izq03-desc">
+  <div class="b6j7k-desc">
     
-    <div class="izq03-body"><p><b>Our mission</b></p> <p>Assoc. Prof. Orhan Veli Doğan and his team are committed to patient-centred, evidence-based and reliable cardiovascular surgery care. We apply current guidelines in diagnosis and treatment; we aim to be a reference centre in coronary bypass, valve surgery, TAVI and vascular and endovascular interventions. Patient safety and quality standards are our priority. For more information, see the Turkish version or contact us.</p></div>
+    <div class="b6j7k-body"><p><b>Our mission</b></p> <p>Assoc. Prof. Orhan Veli Doğan and his team are committed to patient-centred, evidence-based and reliable cardiovascular surgery care. We apply current guidelines in diagnosis and treatment; we aim to be a reference centre in coronary bypass, valve surgery, TAVI and vascular and endovascular interventions. Patient safety and quality standards are our priority. For more information, see the Turkish version or contact us.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".izq03-menu-btn");
-    var menu = document.querySelector(".izq03-menu");
-    var overlay = document.querySelector(".izq03-menu-overlay");
-    var closeButton = document.querySelector(".izq03-menu-close");
+    var menuToggleBtn = document.querySelector(".b6j7k-menu-btn");
+    var menu = document.querySelector(".b6j7k-menu");
+    var overlay = document.querySelector(".b6j7k-menu-overlay");
+    var closeButton = document.querySelector(".b6j7k-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -207,7 +224,7 @@
 
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".izq03-menu-close");
+      var closeBtn = event.target.closest(".b6j7k-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -251,15 +268,15 @@
     }
     handleBreakpoint();
 
-    document.querySelectorAll(".izq03-top").forEach(function (button) {
+    document.querySelectorAll(".b6j7k-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".izq03-menu-group");
+        var group = this.closest(".b6j7k-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".izq03-sub");
+        var sub = group.querySelector(".b6j7k-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".izq03-icon");
+        var icon = this.querySelector(".b6j7k-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -297,8 +314,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=qbras"></script>
-<script defer src="/src/cookie.js?v=qbras"></script>
+<script defer type="text/javascript" src="/src/js.js?v=he6kl"></script>
+<script defer src="/src/cookie.js?v=he6kl"></script>
 
 <script>
   setTimeout(function() {
