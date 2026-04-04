@@ -1,7 +1,7 @@
 <nav>
   <div href="/" class="menu">
     <a href="/" class="website_name"
-      ><img src="/img/logo.png?v=haodb" width="300" alt="Prof OVD Orhan VELİ DOĞAN Logo"
+      ><img src="/img/logo.png?v=j080g" width="300" alt="Prof OVD Orhan VELİ DOĞAN Logo"
     /></a>
   </div>
 </nav>
@@ -578,7 +578,7 @@
     justify-content: center;
   }
 
-  /* RTL (Right-to-Left) Dil Desteği - Arapça için */
+  
   [dir="rtl"] {
     direction: rtl;
     text-align: right;
@@ -816,16 +816,11 @@
   }
 </style>
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

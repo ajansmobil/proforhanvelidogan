@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=ivccw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=ivccw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=x43ap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=x43ap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ivccw" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=x43ap" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,46 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=ivccw">
+<link rel="stylesheet" href="style.css?v=x43ap">
 </head>
 
 <body>
-  <div id="header"><div class="nuehm">
-  <div class="nuehmtitle">
-    <div class="nuehmtitlebody">
-      <div class="nuehmtitlebodylang">
+  <div id="header">
+<div class="sttan">
+  <div class="sttantitle">
+    <div class="sttantitlebody">
+      <div class="sttantitlebodylang">
         <ul>
           <li><a href="/tr/varis-nedir/">TR</a></li><li><a href="/en/varis-nedir/">EN</a></li><li><a href="/de/varis-nedir/">DE</a></li><li><a href="/ru/varis-nedir/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="nuehmbody">
+  <div class="sttanbody">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=hpewf"
+        src="/img/logo.png?v=pv985"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="nuehmbodylogo"
+        class="sttanbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="nuehm-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="sttan-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="nuehm-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="nuehmmenubody">
-    <div class="nuehmmenu" id="menu-2-root">
-      <div class="nuehmmenulistbody">
-        <div class="nuehmmenulist">
+  
+  <div class="sttan-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="sttanmenubody">
+    <div class="sttanmenu" id="menu-2-root">
+      <div class="sttanmenulistbody">
+        <div class="sttanmenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="nuehmlanguages-mobile">
+      
+      <div class="sttanlanguages-mobile">
         <ul>
           <li><a href="/tr/varis-nedir/">TR</a></li><li><a href="/en/varis-nedir/">EN</a></li><li><a href="/de/varis-nedir/">DE</a></li><li><a href="/ru/varis-nedir/">RU</a></li>
         </ul>
@@ -98,62 +99,61 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.nuehm) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".nuehm") : null;
+      var wrapper = root.closest ? root.closest(".sttan") : null;
       var target = wrapper || root;
-      if (target.classList.contains("nuehmmenu-open")) {
-        target.classList.remove("nuehmmenu-open");
+      if (target.classList.contains("sttanmenu-open")) {
+        target.classList.remove("sttanmenu-open");
       } else {
-        target.classList.add("nuehmmenu-open");
+        target.classList.add("sttanmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="z1yu7-title f36">
+  <div id="content"><div class="couih-title f36">
   <h1>What Are Varicose Veins?</h1>
 </div>
-<div class="z1yu7">
-  <div class="z1yu7-menu-btn">
+<div class="couih">
+  <div class="couih-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined z1yu7-icon">menu</span>
+    <span class="material-symbols-outlined couih-icon">menu</span>
   </div>
-  <div class="z1yu7-menu-overlay" id="z1yu7-menu-overlay" aria-hidden="true"></div>
-  <div class="z1yu7-menu" id="z1yu7-menu">
-    <button class="z1yu7-menu-close" type="button" aria-label="Close Menu" aria-controls="z1yu7-menu">
+  <div class="couih-menu-overlay" id="couih-menu-overlay" aria-hidden="true"></div>
+  <div class="couih-menu" id="couih-menu">
+    <button class="couih-menu-close" type="button" aria-label="Close Menu" aria-controls="couih-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="z1yu7-menu-link active" href="/en/varis-nedir/">What Are Varicose Veins?</a><a class="z1yu7-menu-link" href="/en/varis-turleri/">What Are the Types of Varicose Veins?</a><a class="z1yu7-menu-link" href="/en/varis-neden-olur/">What Causes Varicose Veins?</a>
+    <a class="couih-menu-link active" href="/en/varis-nedir/">What Are Varicose Veins?</a><a class="couih-menu-link" href="/en/varis-turleri/">What Are the Types of Varicose Veins?</a><a class="couih-menu-link" href="/en/varis-neden-olur/">What Causes Varicose Veins?</a>
   </div>
-  <div class="z1yu7-desc">
+  <div class="couih-desc">
     
-    <div class="z1yu7-desc-body">
-            <img src="/page/z7cy6mn33q/ilj83.webp?v=lmp9i" width="100%" alt="What Are Varicose Veins?" loading="lazy" />
+    <div class="couih-desc-body">
+            <img src="/page/z7cy6mn33q/ilj83.webp?v=s7yf5" width="100%" alt="What Are Varicose Veins?" loading="lazy" />
     </div>
-    <div class="z1yu7-body"><h2>What Are Varicose Veins?</h2><p>Varicose veins are a circulation problem where superficial veins enlarge and become twisted. They are mostly seen in the legs and may increase with prolonged standing, genetic tendency, pregnancy and low physical activity.</p><p>Early findings include heaviness, pain, evening swelling and visible dilated veins. Diagnosis is clarified by clinical examination and Doppler ultrasound.</p></div>
+    <div class="couih-body"><h2>What Are Varicose Veins?</h2><p>Varicose veins are a circulation problem where superficial veins enlarge and become twisted. They are mostly seen in the legs and may increase with prolonged standing, genetic tendency, pregnancy and low physical activity.</p><p>Early findings include heaviness, pain, evening swelling and visible dilated veins. Diagnosis is clarified by clinical examination and Doppler ultrasound.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".z1yu7-menu-btn");
-    var menu = document.querySelector(".z1yu7-menu");
-    var overlay = document.querySelector(".z1yu7-menu-overlay");
-    var closeButton = document.querySelector(".z1yu7-menu-close");
+    var menuToggleBtn = document.querySelector(".couih-menu-btn");
+    var menu = document.querySelector(".couih-menu");
+    var overlay = document.querySelector(".couih-menu-overlay");
+    var closeButton = document.querySelector(".couih-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
     }
     
     var mql = window.matchMedia("(max-width: 1024px)");
-    
-    // Menüyü aç fonksiyonu
+
     function openMenu() {
       if (menu) {
         menu.classList.add("active");
@@ -162,11 +162,10 @@
         overlay.classList.add("active");
         overlay.setAttribute("aria-hidden", "false");
       }
-      // Body scroll'u engelle
+
       document.body.style.overflow = "hidden";
     }
-    
-    // Menüyü kapat fonksiyonu
+
     function closeMenu() {
       if (menu) {
         menu.classList.remove("active");
@@ -175,15 +174,14 @@
         overlay.classList.remove("active");
         overlay.setAttribute("aria-hidden", "true");
       }
-      // Body scroll'u geri getir
+
       document.body.style.overflow = "";
-      // Focus'u menü butonuna geri ver
+
       if (menuToggleBtn) {
         menuToggleBtn.focus();
       }
     }
-    
-    // Toggle butonu
+
     menuToggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -193,8 +191,7 @@
         openMenu();
       }
     });
-    
-    // Kapatma butonu
+
     if (closeButton) {
       closeButton.addEventListener("click", function (e) {
         e.preventDefault();
@@ -202,8 +199,7 @@
         closeMenu();
       });
     }
-    
-    // Overlay'e tıklanınca kapat
+
     if (overlay) {
       overlay.addEventListener("click", function (e) {
         e.preventDefault();
@@ -211,24 +207,21 @@
         closeMenu();
       });
     }
-    
-    // Menü içindeki linklere tıklanınca kapat
+
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".z1yu7-menu-close");
+      var closeBtn = event.target.closest(".couih-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
     });
-    
-    // ESC tuşu ile kapat
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menu && menu.classList.contains("active")) {
         closeMenu();
       }
     });
-    
-    // Klavye navigasyonu (Enter ve Space)
+
     menuToggleBtn.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -239,11 +232,10 @@
         }
       }
     });
-    
-    // Breakpoint değişikliği
+
     function handleBreakpoint() {
       if (!mql.matches) {
-        // Desktop'ta menüyü kapat
+
         if (menu) {
           menu.classList.remove("active");
         }
@@ -262,16 +254,15 @@
     }
     handleBreakpoint();
 
-    // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".z1yu7-top").forEach(function (button) {
+    document.querySelectorAll(".couih-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".z1yu7-menu-group");
+        var group = this.closest(".couih-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".z1yu7-sub");
+        var sub = group.querySelector(".couih-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".z1yu7-icon");
+        var icon = this.querySelector(".couih-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -290,7 +281,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/en/">Home</a></li><li class="menu__item"><a class="menu_link" href="/en/kurumsal/">Curriculum Vitae</a></li><li class="menu__item"><a class="menu_link" href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li class="menu__item"><a class="menu_link" href="/en/akademik-yayinlar/">Academic Publications</a></li><li class="menu__item"><a class="menu_link" href="/en/iletisim/">Contact</a></li>
+      <li class="menu__item"><a class="menu_link" href="/en/">Home</a></li><li class="menu__item"><a class="menu_link" href="/en/ozgecmis/">Curriculum Vitae</a></li><li class="menu__item"><a class="menu_link" href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li class="menu__item"><a class="menu_link" href="/en/akademik-yayinlar/">Academic Publications</a></li><li class="menu__item"><a class="menu_link" href="/en/iletisim/">Contact</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -309,20 +300,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=ivccw"></script>
-<script defer src="/src/cookie.js?v=ivccw"></script>
+<script defer type="text/javascript" src="/src/js.js?v=x43ap"></script>
+<script defer src="/src/cookie.js?v=x43ap"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

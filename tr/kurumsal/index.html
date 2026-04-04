@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=savkl" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=savkl" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=nx4yc" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=nx4yc" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=savkl" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=nx4yc" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,47 +50,48 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=savkl">
+<link rel="stylesheet" href="style.css?v=nx4yc">
 </head>
 
 <body>
-  <div id="header"><div class="f795l">
-  <div class="f795ltitle">
-    <div class="f795ltitlebody">
-      <div class="f795ltitlebodylang">
+  <div id="header">
+<div class="i6q6g">
+  <div class="i6q6gtitle">
+    <div class="i6q6gtitlebody">
+      <div class="i6q6gtitlebodylang">
         <ul>
-          <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
+          <li><a href="/tr/ozgecmis/">TR</a></li><li><a href="/en/ozgecmis/">EN</a></li><li><a href="/de/ozgecmis/">DE</a></li><li><a href="/ru/ozgecmis/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="f795lbody">
+  <div class="i6q6gbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=a4081"
+        src="/img/logo.png?v=dtazp"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="f795lbodylogo"
+        class="i6q6gbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="f795l-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="i6q6g-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="f795l-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="f795lmenubody">
-    <div class="f795lmenu" id="menu-2-root">
-      <div class="f795lmenulistbody">
-        <div class="f795lmenulist">
+  
+  <div class="i6q6g-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="i6q6gmenubody">
+    <div class="i6q6gmenu" id="menu-2-root">
+      <div class="i6q6gmenulistbody">
+        <div class="i6q6gmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a class="f795l-menu-list-active" href="/tr/kurumsal/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Hastalıklar</a><a href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a class="i6q6g-menu-list-active" href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Hastalıklar</a><a href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="f795llanguages-mobile">
+      
+      <div class="i6q6glanguages-mobile">
         <ul>
-          <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
+          <li><a href="/tr/ozgecmis/">TR</a></li><li><a href="/en/ozgecmis/">EN</a></li><li><a href="/de/ozgecmis/">DE</a></li><li><a href="/ru/ozgecmis/">RU</a></li>
         </ul>
       </div>
     </div>
@@ -98,19 +99,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.f795l) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".f795l") : null;
+      var wrapper = root.closest ? root.closest(".i6q6g") : null;
       var target = wrapper || root;
-      if (target.classList.contains("f795lmenu-open")) {
-        target.classList.remove("f795lmenu-open");
+      if (target.classList.contains("i6q6gmenu-open")) {
+        target.classList.remove("i6q6gmenu-open");
       } else {
-        target.classList.add("f795lmenu-open");
+        target.classList.add("i6q6gmenu-open");
       }
     }
   }
@@ -123,7 +124,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/kurumsal/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
+      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/ozgecmis/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -142,20 +143,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=savkl"></script>
-<script defer src="/src/cookie.js?v=savkl"></script>
+<script defer type="text/javascript" src="/src/js.js?v=nx4yc"></script>
+<script defer src="/src/cookie.js?v=nx4yc"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

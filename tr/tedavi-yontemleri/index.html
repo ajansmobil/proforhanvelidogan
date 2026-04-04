@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=u0441" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=u0441" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=gmllu" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=gmllu" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=u0441" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=gmllu" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,46 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=u0441">
+<link rel="stylesheet" href="style.css?v=gmllu">
 </head>
 
 <body>
-  <div id="header"><div class="rl8n9">
-  <div class="rl8n9title">
-    <div class="rl8n9titlebody">
-      <div class="rl8n9titlebodylang">
+  <div id="header">
+<div class="hzqfw">
+  <div class="hzqfwtitle">
+    <div class="hzqfwtitlebody">
+      <div class="hzqfwtitlebodylang">
         <ul>
           <li><a href="/tr/tedavi-yontemleri/">TR</a></li><li><a href="/en/tedavi-yontemleri/">EN</a></li><li><a href="/de/tedavi-yontemleri/">DE</a></li><li><a href="/ru/tedavi-yontemleri/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="rl8n9body">
+  <div class="hzqfwbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=dz0y8"
+        src="/img/logo.png?v=y1ybv"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="rl8n9bodylogo"
+        class="hzqfwbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="rl8n9-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="hzqfw-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="rl8n9-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="rl8n9menubody">
-    <div class="rl8n9menu" id="menu-2-root">
-      <div class="rl8n9menulistbody">
-        <div class="rl8n9menulist">
+  
+  <div class="hzqfw-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="hzqfwmenubody">
+    <div class="hzqfwmenu" id="menu-2-root">
+      <div class="hzqfwmenulistbody">
+        <div class="hzqfwmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a class="rl8n9-menu-list-active" href="/tr/tedavi-yontemleri/">Hastalıklar</a><a href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a class="hzqfw-menu-list-active" href="/tr/tedavi-yontemleri/">Hastalıklar</a><a href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="rl8n9languages-mobile">
+      
+      <div class="hzqfwlanguages-mobile">
         <ul>
           <li><a href="/tr/tedavi-yontemleri/">TR</a></li><li><a href="/en/tedavi-yontemleri/">EN</a></li><li><a href="/de/tedavi-yontemleri/">DE</a></li><li><a href="/ru/tedavi-yontemleri/">RU</a></li>
         </ul>
@@ -98,30 +99,30 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.rl8n9) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".rl8n9") : null;
+      var wrapper = root.closest ? root.closest(".hzqfw") : null;
       var target = wrapper || root;
-      if (target.classList.contains("rl8n9menu-open")) {
-        target.classList.remove("rl8n9menu-open");
+      if (target.classList.contains("hzqfwmenu-open")) {
+        target.classList.remove("hzqfwmenu-open");
       } else {
-        target.classList.add("rl8n9menu-open");
+        target.classList.add("hzqfwmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="dn3nr">
-  <div class="dn3nrbody"><a href="/tr/varis-nedir/" class="dn3nrbodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="dn3nrbodyitem lefts"><span class="dn3nrbodyitemtitle">Varis Nedir?</span><div class="dn3nrbodyitechile">Varisin ne olduğunu, neden oluştuğunu ve hangi belirtilerle ortaya çıktığını temel düzeyde açıklayan bilgilendirici sayfa.</div></div></a><a href="/tr/varis-turleri/" class="dn3nrbodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="dn3nrbodyitem rights"><span class="dn3nrbodyitemtitle">Varis Türleri Nelerdir?</span><div class="dn3nrbodyitechile">Kılcal, retikuler ve buyuk toplardamar varisleri gibi temel varis tiplerini klinik özellikleriyle açıklayan sayfa.</div></div></a><a href="/tr/varis-neden-olur/" class="dn3nrbodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="dn3nrbodyitem lefts"><span class="dn3nrbodyitemtitle">Varis Tedavisi Yöntemleri</span><div class="dn3nrbodyitechile">Varis nedenleri: venöz yetmezlik, kapakçık hasarı, uzun süre ayakta kalma, genetik. Doç. Dr. Orhan Veli Doğan vasküler ve endovasküler tanı ve tedavi sunar.</div></div></a></div>
+  <div id="content"><div class="ycz9y">
+  <div class="ycz9ybody"><a href="/tr/varis-nedir/" class="ycz9ybodyitems left" style="animation-delay: 0.2s; cursor: pointer;"><div class="ycz9ybodyitem lefts"><span class="ycz9ybodyitemtitle">Varis Nedir?</span><div class="ycz9ybodyitechile">Varisin ne olduğunu, neden oluştuğunu ve hangi belirtilerle ortaya çıktığını temel düzeyde açıklayan bilgilendirici sayfa.</div></div></a><a href="/tr/varis-turleri/" class="ycz9ybodyitems right" style="animation-delay: 0.4s; cursor: pointer;"><div class="ycz9ybodyitem rights"><span class="ycz9ybodyitemtitle">Varis Türleri Nelerdir?</span><div class="ycz9ybodyitechile">Kılcal, retikuler ve buyuk toplardamar varisleri gibi temel varis tiplerini klinik özellikleriyle açıklayan sayfa.</div></div></a><a href="/tr/varis-neden-olur/" class="ycz9ybodyitems left" style="animation-delay: 0.6000000000000001s; cursor: pointer;"><div class="ycz9ybodyitem lefts"><span class="ycz9ybodyitemtitle">Varis Tedavisi Yöntemleri</span><div class="ycz9ybodyitechile">Varis nedenleri: venöz yetmezlik, kapakçık hasarı, uzun süre ayakta kalma, genetik. Doç. Dr. Orhan Veli Doğan vasküler ve endovasküler tanı ve tedavi sunar.</div></div></a></div>
 </div>
 
 <script>
-  /* Viewport'a girdiğinde kartları sırayla görünür yap (setTimeout: DOMContentLoaded yasak) */
+  
   setTimeout(function () {
     var observer = new IntersectionObserver(
       function (entries) {
@@ -141,7 +142,7 @@
       },
       { threshold: 0.1, rootMargin: "0px 0px -24px 0px" }
     );
-    var items = Array.prototype.slice.call(document.querySelectorAll(".dn3nrbodyitems"));
+    var items = Array.prototype.slice.call(document.querySelectorAll(".ycz9ybodyitems"));
     items
       .sort(function (a, b) {
         return a.offsetTop - b.offsetTop;
@@ -158,7 +159,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/kurumsal/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
+      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/ozgecmis/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -177,20 +178,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=u0441"></script>
-<script defer src="/src/cookie.js?v=u0441"></script>
+<script defer type="text/javascript" src="/src/js.js?v=gmllu"></script>
+<script defer src="/src/cookie.js?v=gmllu"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=hdt10" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=hdt10" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=u3huo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=u3huo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=hdt10" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=u3huo" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,46 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=hdt10">
+<link rel="stylesheet" href="style.css?v=u3huo">
 </head>
 
 <body>
-  <div id="header"><div class="imn4t">
-  <div class="imn4ttitle">
-    <div class="imn4ttitlebody">
-      <div class="imn4ttitlebodylang">
+  <div id="header">
+<div class="r2104">
+  <div class="r2104title">
+    <div class="r2104titlebody">
+      <div class="r2104titlebodylang">
         <ul>
           <li><a href="/tr/varis-nedir/">TR</a></li><li><a href="/en/varis-nedir/">EN</a></li><li><a href="/de/varis-nedir/">DE</a></li><li><a href="/ru/varis-nedir/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="imn4tbody">
+  <div class="r2104body">
     <a href="/tr/"
       ><img
-        src="/img/logo.png?v=jvaad"
+        src="/img/logo.png?v=mp4eg"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="imn4tbodylogo"
+        class="r2104bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="imn4t-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="r2104-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="imn4t-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="imn4tmenubody">
-    <div class="imn4tmenu" id="menu-2-root">
-      <div class="imn4tmenulistbody">
-        <div class="imn4tmenulist">
+  
+  <div class="r2104-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="r2104menubody">
+    <div class="r2104menu" id="menu-2-root">
+      <div class="r2104menulistbody">
+        <div class="r2104menulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/ozgecmis/">Özgeçmiş</a><a href="/tr/tedavi-yontemleri/">Hastalıklar</a><a href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
         </div>
       </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="imn4tlanguages-mobile">
+      
+      <div class="r2104languages-mobile">
         <ul>
           <li><a href="/tr/varis-nedir/">TR</a></li><li><a href="/en/varis-nedir/">EN</a></li><li><a href="/de/varis-nedir/">DE</a></li><li><a href="/ru/varis-nedir/">RU</a></li>
         </ul>
@@ -98,62 +99,61 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.imn4t) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".imn4t") : null;
+      var wrapper = root.closest ? root.closest(".r2104") : null;
       var target = wrapper || root;
-      if (target.classList.contains("imn4tmenu-open")) {
-        target.classList.remove("imn4tmenu-open");
+      if (target.classList.contains("r2104menu-open")) {
+        target.classList.remove("r2104menu-open");
       } else {
-        target.classList.add("imn4tmenu-open");
+        target.classList.add("r2104menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="mien2-title f36">
+  <div id="content"><div class="wp7ve-title f36">
   <h1>Varis Nedir?</h1>
 </div>
-<div class="mien2">
-  <div class="mien2-menu-btn">
+<div class="wp7ve">
+  <div class="wp7ve-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined mien2-icon">menu</span>
+    <span class="material-symbols-outlined wp7ve-icon">menu</span>
   </div>
-  <div class="mien2-menu-overlay" id="mien2-menu-overlay" aria-hidden="true"></div>
-  <div class="mien2-menu" id="mien2-menu">
-    <button class="mien2-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="mien2-menu">
+  <div class="wp7ve-menu-overlay" id="wp7ve-menu-overlay" aria-hidden="true"></div>
+  <div class="wp7ve-menu" id="wp7ve-menu">
+    <button class="wp7ve-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="wp7ve-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="mien2-menu-link active" href="/tr/varis-nedir/">Varis Nedir?</a><a class="mien2-menu-link" href="/tr/varis-turleri/">Varis Türleri Nelerdir?</a><a class="mien2-menu-link" href="/tr/varis-neden-olur/">Varis Tedavisi Yöntemleri</a>
+    <a class="wp7ve-menu-link active" href="/tr/varis-nedir/">Varis Nedir?</a><a class="wp7ve-menu-link" href="/tr/varis-turleri/">Varis Türleri Nelerdir?</a><a class="wp7ve-menu-link" href="/tr/varis-neden-olur/">Varis Tedavisi Yöntemleri</a>
   </div>
-  <div class="mien2-desc">
+  <div class="wp7ve-desc">
     
-    <div class="mien2-desc-body">
-            <img src="/page/z7cy6mn33q/ilj83.webp?v=hme69" width="100%" alt="Varis Nedir?" loading="lazy" />
+    <div class="wp7ve-desc-body">
+            <img src="/page/z7cy6mn33q/ilj83.webp?v=mndtt" width="100%" alt="Varis Nedir?" loading="lazy" />
     </div>
-    <div class="mien2-body"><h2>Varis Nedir?</h2><p>Varis, toplardamarların genişleyip kıvrımlı hale gelmesiyle ortaya çıkan bir dolaşım problemidir. En sık bacaklarda görülür ve uzun süre ayakta kalma, genetik yatkınlık, gebelik ve hareketsiz yaşam gibi etkenlerle artabilir.</p><p>Erken dönemde ağırlık hissi, ağrı, akşam saatlerinde şişlik ve ciltte belirgin damar görüntüsü oluşabilir. Uygun muayene ve Doppler ultrason değerlendirmesi ile tanı netleştirilir.</p></div>
+    <div class="wp7ve-body"><h2>Varis Nedir?</h2><p>Varis, toplardamarların genişleyip kıvrımlı hale gelmesiyle ortaya çıkan bir dolaşım problemidir. En sık bacaklarda görülür ve uzun süre ayakta kalma, genetik yatkınlık, gebelik ve hareketsiz yaşam gibi etkenlerle artabilir.</p><p>Erken dönemde ağırlık hissi, ağrı, akşam saatlerinde şişlik ve ciltte belirgin damar görüntüsü oluşabilir. Uygun muayene ve Doppler ultrason değerlendirmesi ile tanı netleştirilir.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".mien2-menu-btn");
-    var menu = document.querySelector(".mien2-menu");
-    var overlay = document.querySelector(".mien2-menu-overlay");
-    var closeButton = document.querySelector(".mien2-menu-close");
+    var menuToggleBtn = document.querySelector(".wp7ve-menu-btn");
+    var menu = document.querySelector(".wp7ve-menu");
+    var overlay = document.querySelector(".wp7ve-menu-overlay");
+    var closeButton = document.querySelector(".wp7ve-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
     }
     
     var mql = window.matchMedia("(max-width: 1024px)");
-    
-    // Menüyü aç fonksiyonu
+
     function openMenu() {
       if (menu) {
         menu.classList.add("active");
@@ -162,11 +162,10 @@
         overlay.classList.add("active");
         overlay.setAttribute("aria-hidden", "false");
       }
-      // Body scroll'u engelle
+
       document.body.style.overflow = "hidden";
     }
-    
-    // Menüyü kapat fonksiyonu
+
     function closeMenu() {
       if (menu) {
         menu.classList.remove("active");
@@ -175,15 +174,14 @@
         overlay.classList.remove("active");
         overlay.setAttribute("aria-hidden", "true");
       }
-      // Body scroll'u geri getir
+
       document.body.style.overflow = "";
-      // Focus'u menü butonuna geri ver
+
       if (menuToggleBtn) {
         menuToggleBtn.focus();
       }
     }
-    
-    // Toggle butonu
+
     menuToggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -193,8 +191,7 @@
         openMenu();
       }
     });
-    
-    // Kapatma butonu
+
     if (closeButton) {
       closeButton.addEventListener("click", function (e) {
         e.preventDefault();
@@ -202,8 +199,7 @@
         closeMenu();
       });
     }
-    
-    // Overlay'e tıklanınca kapat
+
     if (overlay) {
       overlay.addEventListener("click", function (e) {
         e.preventDefault();
@@ -211,24 +207,21 @@
         closeMenu();
       });
     }
-    
-    // Menü içindeki linklere tıklanınca kapat
+
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".mien2-menu-close");
+      var closeBtn = event.target.closest(".wp7ve-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
     });
-    
-    // ESC tuşu ile kapat
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menu && menu.classList.contains("active")) {
         closeMenu();
       }
     });
-    
-    // Klavye navigasyonu (Enter ve Space)
+
     menuToggleBtn.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -239,11 +232,10 @@
         }
       }
     });
-    
-    // Breakpoint değişikliği
+
     function handleBreakpoint() {
       if (!mql.matches) {
-        // Desktop'ta menüyü kapat
+
         if (menu) {
           menu.classList.remove("active");
         }
@@ -262,16 +254,15 @@
     }
     handleBreakpoint();
 
-    // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".mien2-top").forEach(function (button) {
+    document.querySelectorAll(".wp7ve-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".mien2-menu-group");
+        var group = this.closest(".wp7ve-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".mien2-sub");
+        var sub = group.querySelector(".wp7ve-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".mien2-icon");
+        var icon = this.querySelector(".wp7ve-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -290,7 +281,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/kurumsal/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
+      <li class="menu__item"><a class="menu_link" href="/tr/">Anasayfa</a></li><li class="menu__item"><a class="menu_link" href="/tr/ozgecmis/">Özgeçmiş</a></li><li class="menu__item"><a class="menu_link" href="/tr/tedavi-yontemleri/">Hastalıklar</a></li><li class="menu__item"><a class="menu_link" href="/tr/akademik-yayinlar/">Bilimsel Çalışmalar</a></li><li class="menu__item"><a class="menu_link" href="/tr/iletisim/">İletişim</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -309,20 +300,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=hdt10"></script>
-<script defer src="/src/cookie.js?v=hdt10"></script>
+<script defer type="text/javascript" src="/src/js.js?v=u3huo"></script>
+<script defer src="/src/cookie.js?v=u3huo"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

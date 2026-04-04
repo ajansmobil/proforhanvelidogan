@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=oyrwm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=oyrwm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=i9bjd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=i9bjd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=oyrwm" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=i9bjd" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,45 +50,46 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=oyrwm">
+<link rel="stylesheet" href="style.css?v=i9bjd">
 </head>
 
 <body>
-  <div id="header"><div class="wyvbs">
-  <div class="wyvbstitle">
-    <div class="wyvbstitlebody">
-      <div class="wyvbstitlebodylang">
+  <div id="header">
+<div class="v1jcy">
+  <div class="v1jcytitle">
+    <div class="v1jcytitlebody">
+      <div class="v1jcytitlebodylang">
         <ul>
           <li><a href="/tr/bilimsel-etkinlikler/">TR</a></li><li><a href="/en/bilimsel-etkinlikler/">EN</a></li><li><a href="/de/bilimsel-etkinlikler/">DE</a></li><li><a href="/ru/bilimsel-etkinlikler/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="wyvbsbody">
+  <div class="v1jcybody">
     <a href="/en/"
       ><img
-        src="/img/logo.png?v=tt6sm"
+        src="/img/logo.png?v=dmijv"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="wyvbsbodylogo"
+        class="v1jcybodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="wyvbs-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="v1jcy-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="wyvbs-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="wyvbsmenubody">
-    <div class="wyvbsmenu" id="menu-2-root">
-      <div class="wyvbsmenulistbody">
-        <div class="wyvbsmenulist">
+  
+  <div class="v1jcy-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="v1jcymenubody">
+    <div class="v1jcymenu" id="menu-2-root">
+      <div class="v1jcymenulistbody">
+        <div class="v1jcymenulist">
           <ul>
             <a href="/en/">Home </a><a href="/en/ozgecmis/">Curriculum Vitae</a><a href="/en/tedavi-yontemleri/">Treatment Methods</a><a href="/en/akademik-yayinlar/">Academic Publications</a><a href="/en/iletisim/">Contact</a>
           </ul>
         </div>
       </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="wyvbslanguages-mobile">
+      
+      <div class="v1jcylanguages-mobile">
         <ul>
           <li><a href="/tr/bilimsel-etkinlikler/">TR</a></li><li><a href="/en/bilimsel-etkinlikler/">EN</a></li><li><a href="/de/bilimsel-etkinlikler/">DE</a></li><li><a href="/ru/bilimsel-etkinlikler/">RU</a></li>
         </ul>
@@ -98,59 +99,58 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.wyvbs) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".wyvbs") : null;
+      var wrapper = root.closest ? root.closest(".v1jcy") : null;
       var target = wrapper || root;
-      if (target.classList.contains("wyvbsmenu-open")) {
-        target.classList.remove("wyvbsmenu-open");
+      if (target.classList.contains("v1jcymenu-open")) {
+        target.classList.remove("v1jcymenu-open");
       } else {
-        target.classList.add("wyvbsmenu-open");
+        target.classList.add("v1jcymenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="yibq8-title f36">
+  <div id="content"><div class="euqjk-title f36">
   <h1>Scientific Activities</h1>
 </div>
-<div class="yibq8">
-  <div class="yibq8-menu-btn">
+<div class="euqjk">
+  <div class="euqjk-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined yibq8-icon">menu</span>
+    <span class="material-symbols-outlined euqjk-icon">menu</span>
   </div>
-  <div class="yibq8-menu-overlay" id="yibq8-menu-overlay" aria-hidden="true"></div>
-  <div class="yibq8-menu" id="yibq8-menu">
-    <button class="yibq8-menu-close" type="button" aria-label="Close Menu" aria-controls="yibq8-menu">
+  <div class="euqjk-menu-overlay" id="euqjk-menu-overlay" aria-hidden="true"></div>
+  <div class="euqjk-menu" id="euqjk-menu">
+    <button class="euqjk-menu-close" type="button" aria-label="Close Menu" aria-controls="euqjk-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="yibq8-menu-link" href="/en/yonetilen-yuksek-lisans-tezleri/">Supervised Master's Theses</a><a class="yibq8-menu-link" href="/en/dergi-hakemligi/">Journal Peer Review</a><a class="yibq8-menu-link" href="/en/kongre-hakemligi/">Congress Peer Review</a><a class="yibq8-menu-link active" href="/en/bilimsel-etkinlikler/">Scientific Activities</a><a class="yibq8-menu-link" href="/en/oduller/">Awards</a>
+    <a class="euqjk-menu-link" href="/en/yonetilen-yuksek-lisans-tezleri/">Supervised Master's Theses</a><a class="euqjk-menu-link" href="/en/dergi-hakemligi/">Journal Peer Review</a><a class="euqjk-menu-link" href="/en/kongre-hakemligi/">Congress Peer Review</a><a class="euqjk-menu-link active" href="/en/bilimsel-etkinlikler/">Scientific Activities</a><a class="euqjk-menu-link" href="/en/oduller/">Awards</a>
   </div>
-  <div class="yibq8-desc">
+  <div class="euqjk-desc">
     
-    <div class="yibq8-body"><p>Assoc. Prof. Orhan Veli Doğan participates as invited speaker at national and international scientific events. International panel Kyrgyzstan, AAA 2012 Antalya, Sakarya Endovascular Course, session chair at 9th International Cardiology Congress and XV-XVI National Vascular Surgery Congress.</p></div>
+    <div class="euqjk-body"><p>Assoc. Prof. Orhan Veli Doğan participates as invited speaker at national and international scientific events. International panel Kyrgyzstan, AAA 2012 Antalya, Sakarya Endovascular Course, session chair at 9th International Cardiology Congress and XV-XVI National Vascular Surgery Congress.</p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".yibq8-menu-btn");
-    var menu = document.querySelector(".yibq8-menu");
-    var overlay = document.querySelector(".yibq8-menu-overlay");
-    var closeButton = document.querySelector(".yibq8-menu-close");
+    var menuToggleBtn = document.querySelector(".euqjk-menu-btn");
+    var menu = document.querySelector(".euqjk-menu");
+    var overlay = document.querySelector(".euqjk-menu-overlay");
+    var closeButton = document.querySelector(".euqjk-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
     }
     
     var mql = window.matchMedia("(max-width: 1024px)");
-    
-    // Menüyü aç fonksiyonu
+
     function openMenu() {
       if (menu) {
         menu.classList.add("active");
@@ -159,11 +159,10 @@
         overlay.classList.add("active");
         overlay.setAttribute("aria-hidden", "false");
       }
-      // Body scroll'u engelle
+
       document.body.style.overflow = "hidden";
     }
-    
-    // Menüyü kapat fonksiyonu
+
     function closeMenu() {
       if (menu) {
         menu.classList.remove("active");
@@ -172,15 +171,14 @@
         overlay.classList.remove("active");
         overlay.setAttribute("aria-hidden", "true");
       }
-      // Body scroll'u geri getir
+
       document.body.style.overflow = "";
-      // Focus'u menü butonuna geri ver
+
       if (menuToggleBtn) {
         menuToggleBtn.focus();
       }
     }
-    
-    // Toggle butonu
+
     menuToggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -190,8 +188,7 @@
         openMenu();
       }
     });
-    
-    // Kapatma butonu
+
     if (closeButton) {
       closeButton.addEventListener("click", function (e) {
         e.preventDefault();
@@ -199,8 +196,7 @@
         closeMenu();
       });
     }
-    
-    // Overlay'e tıklanınca kapat
+
     if (overlay) {
       overlay.addEventListener("click", function (e) {
         e.preventDefault();
@@ -208,24 +204,21 @@
         closeMenu();
       });
     }
-    
-    // Menü içindeki linklere tıklanınca kapat
+
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".yibq8-menu-close");
+      var closeBtn = event.target.closest(".euqjk-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
     });
-    
-    // ESC tuşu ile kapat
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menu && menu.classList.contains("active")) {
         closeMenu();
       }
     });
-    
-    // Klavye navigasyonu (Enter ve Space)
+
     menuToggleBtn.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
@@ -236,11 +229,10 @@
         }
       }
     });
-    
-    // Breakpoint değişikliği
+
     function handleBreakpoint() {
       if (!mql.matches) {
-        // Desktop'ta menüyü kapat
+
         if (menu) {
           menu.classList.remove("active");
         }
@@ -259,16 +251,15 @@
     }
     handleBreakpoint();
 
-    // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".yibq8-top").forEach(function (button) {
+    document.querySelectorAll(".euqjk-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".yibq8-menu-group");
+        var group = this.closest(".euqjk-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".yibq8-sub");
+        var sub = group.querySelector(".euqjk-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".yibq8-icon");
+        var icon = this.querySelector(".euqjk-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -287,7 +278,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/en/">Home</a></li><li class="menu__item"><a class="menu_link" href="/en/kurumsal/">Curriculum Vitae</a></li><li class="menu__item"><a class="menu_link" href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li class="menu__item"><a class="menu_link" href="/en/akademik-yayinlar/">Academic Publications</a></li><li class="menu__item"><a class="menu_link" href="/en/iletisim/">Contact</a></li>
+      <li class="menu__item"><a class="menu_link" href="/en/">Home</a></li><li class="menu__item"><a class="menu_link" href="/en/ozgecmis/">Curriculum Vitae</a></li><li class="menu__item"><a class="menu_link" href="/en/tedavi-yontemleri/">Treatment Methods</a></li><li class="menu__item"><a class="menu_link" href="/en/akademik-yayinlar/">Academic Publications</a></li><li class="menu__item"><a class="menu_link" href="/en/iletisim/">Contact</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -306,20 +297,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=oyrwm"></script>
-<script defer src="/src/cookie.js?v=oyrwm"></script>
+<script defer type="text/javascript" src="/src/js.js?v=i9bjd"></script>
+<script defer src="/src/cookie.js?v=i9bjd"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

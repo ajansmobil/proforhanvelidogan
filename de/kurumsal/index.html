@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=btusy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=btusy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=cijc4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=cijc4" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=btusy" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=cijc4" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,47 +50,48 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=btusy">
+<link rel="stylesheet" href="style.css?v=cijc4">
 </head>
 
 <body>
-  <div id="header"><div class="jdpot">
-  <div class="jdpottitle">
-    <div class="jdpottitlebody">
-      <div class="jdpottitlebodylang">
+  <div id="header">
+<div class="x38m7">
+  <div class="x38m7title">
+    <div class="x38m7titlebody">
+      <div class="x38m7titlebodylang">
         <ul>
-          <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
+          <li><a href="/tr/ozgecmis/">TR</a></li><li><a href="/en/ozgecmis/">EN</a></li><li><a href="/de/ozgecmis/">DE</a></li><li><a href="/ru/ozgecmis/">RU</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="jdpotbody">
+  <div class="x38m7body">
     <a href="/de/"
       ><img
-        src="/img/logo.png?v=qraqo"
+        src="/img/logo.png?v=q2dn0"
         alt="Prof OVD Orhan VELİ DOĞAN Logo"
-        class="jdpotbodylogo"
+        class="x38m7bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="jdpot-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="x38m7-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
-  <div class="jdpot-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
-  <div class="jdpotmenubody">
-    <div class="jdpotmenu" id="menu-2-root">
-      <div class="jdpotmenulistbody">
-        <div class="jdpotmenulist">
+  
+  <div class="x38m7-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="x38m7menubody">
+    <div class="x38m7menu" id="menu-2-root">
+      <div class="x38m7menulistbody">
+        <div class="x38m7menulist">
           <ul>
-            <a href="/de/">Startseite </a><a class="jdpot-menu-list-active" href="/de/kurumsal/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
+            <a href="/de/">Startseite </a><a class="x38m7-menu-list-active" href="/de/ozgecmis/">Lebenslauf</a><a href="/de/tedavi-yontemleri/">Behandlungsmethoden</a><a href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a><a href="/de/iletisim/">Kontakt</a>
           </ul>
         </div>
       </div>
-      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
-      <div class="jdpotlanguages-mobile">
+      
+      <div class="x38m7languages-mobile">
         <ul>
-          <li><a href="/tr/kurumsal/">TR</a></li><li><a href="/en/kurumsal/">EN</a></li><li><a href="/de/kurumsal/">DE</a></li><li><a href="/ru/kurumsal/">RU</a></li>
+          <li><a href="/tr/ozgecmis/">TR</a></li><li><a href="/en/ozgecmis/">EN</a></li><li><a href="/de/ozgecmis/">DE</a></li><li><a href="/ru/ozgecmis/">RU</a></li>
         </ul>
       </div>
     </div>
@@ -98,19 +99,19 @@
 </div>
 
 <script>
-  /* Mobil menü aç/kapat: class wrapper (.jdpot) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
+  
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      var wrapper = root.closest ? root.closest(".jdpot") : null;
+      var wrapper = root.closest ? root.closest(".x38m7") : null;
       var target = wrapper || root;
-      if (target.classList.contains("jdpotmenu-open")) {
-        target.classList.remove("jdpotmenu-open");
+      if (target.classList.contains("x38m7menu-open")) {
+        target.classList.remove("x38m7menu-open");
       } else {
-        target.classList.add("jdpotmenu-open");
+        target.classList.add("x38m7menu-open");
       }
     }
   }
@@ -123,7 +124,7 @@
       <img src="/img/logo.png" height="60"   alt="Prof OVD Orhan VELİ DOĞAN Logo"  loading="lazy"/>
     </div>
     <ul class="menu">
-      <li class="menu__item"><a class="menu_link" href="/de/">Startseite</a></li><li class="menu__item"><a class="menu_link" href="/de/kurumsal/">Lebenslauf</a></li><li class="menu__item"><a class="menu_link" href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li class="menu__item"><a class="menu_link" href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li class="menu__item"><a class="menu_link" href="/de/iletisim/">Kontakt</a></li>
+      <li class="menu__item"><a class="menu_link" href="/de/">Startseite</a></li><li class="menu__item"><a class="menu_link" href="/de/ozgecmis/">Lebenslauf</a></li><li class="menu__item"><a class="menu_link" href="/de/tedavi-yontemleri/">Behandlungsmethoden</a></li><li class="menu__item"><a class="menu_link" href="/de/akademik-yayinlar/">Wissenschaftliche Publikationen</a></li><li class="menu__item"><a class="menu_link" href="/de/iletisim/">Kontakt</a></li>
     </ul>
   </div>
   <div class="footer-bottom">
@@ -142,20 +143,17 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=btusy"></script>
-<script defer src="/src/cookie.js?v=btusy"></script>
+<script defer type="text/javascript" src="/src/js.js?v=cijc4"></script>
+<script defer src="/src/cookie.js?v=cijc4"></script>
 
 <script>
-  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
-    
-    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
-    
-    // Eğer RTL dil ise dir="rtl" set et
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

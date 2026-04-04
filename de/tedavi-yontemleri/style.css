@@ -1,7 +1,7 @@
 
  
 
-  .wm93s {
+  .fbacn {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .wm93stitle {
+  .fbacntitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .wm93stitle:has(.wm93stitlebodylang:empty),
-  .wm93stitle:has(.wm93stitlebodylang ul:empty) {
+  .fbacntitle:has(.fbacntitlebodylang:empty),
+  .fbacntitle:has(.fbacntitlebodylang ul:empty) {
     display: none;
   }
 
-  .wm93stitlebody {
+  .fbacntitlebody {
     color: #ffffff;
     width: var(--max);
     display: flex;
@@ -31,34 +31,34 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .wm93stitlebodytitle {
+  .fbacntitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .wm93stitlebodylang {
+  .fbacntitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .wm93stitlebodylang:empty,
-  .wm93stitlebodylang ul:empty {
+  .fbacntitlebodylang:empty,
+  .fbacntitlebodylang ul:empty {
     display: none;
   }
 
-  .wm93stitlebodylang ul {
+  .fbacntitlebodylang ul {
     display: flex;
     gap: 8px;
   }
 
-  /* Dil seçici: TR / EN metin, bordür tema rengiyle uyumlu (renk uyumsuzluğu yok) */
-  .wm93stitlebodylang li {
+  
+  .fbacntitlebodylang li {
     list-style: none;
   }
 
-  .wm93stitlebodylang li a {
+  .fbacntitlebodylang li a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -67,21 +67,21 @@
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.02em;
-    color: #9a3d23 !important;
+    color: #1e3046 !important;
     text-decoration: none;
-    border: 1px solid color-mix(in srgb, #9a3d23 40%, transparent);
+    border: 1px solid color-mix(in srgb, #1e3046 40%, transparent);
     border-radius: 8px;
     transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
     cursor: pointer;
   }
 
-  .wm93stitlebodylang li a:hover {
+  .fbacntitlebodylang li a:hover {
     border-color: #000000;
     background: #ffffff;
     color: #000000 !important;
   }
 
-  .wm93sbody {
+  .fbacnbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,10 +90,10 @@
     position: relative;
   }
 
-  /* Mobil hamburger butonu: onclick olduğu için cursor: pointer zorunlu (kural) */
-  .wm93s-mobile-toggle {
+  
+  .fbacn-mobile-toggle {
     display: none;
-    background: #9a3d23;
+    background: #1e3046;
     color: #ffffff;
     border: none;
     border-radius: 6px;
@@ -105,35 +105,35 @@
     right: 0;
   }
 
-  .wm93s-mobile-toggle span {
+  .fbacn-mobile-toggle span {
     font-size: 24px;
   }
 
-  .wm93smenu {
+  .fbacnmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .wm93smenulist {
+  .fbacnmenulist {
     width: calc(100% - 20px);
-    background-color: #9a3d23;
+    background-color: #1e3046;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
   }
 
-  .wm93smenubody {
+  .fbacnmenubody {
     width: 100%;
-    background-color: #9a3d23;
+    background-color: #1e3046;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .wm93smenulist ul {
+  .fbacnmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -142,7 +142,7 @@
     padding: 0;
   }
 
-  .wm93smenulist ul a {
+  .fbacnmenulist ul a {
     padding: 10px 15px;
     font-size: 16px;
     color: #ffffff !important;
@@ -155,40 +155,40 @@
     margin: 0 2px;
   }
 
-  .wm93smenulist ul a:hover {
+  .fbacnmenulist ul a:hover {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .wm93smenulist ul a.wm93s-menu-list-active {
+  .fbacnmenulist ul a.fbacn-menu-list-active {
     color: #000000 !important;
   }
 
-  .wm93s-menu-list-active {
+  .fbacn-menu-list-active {
     background-color: #ffffff;
     border-radius: 5px;
     color: #000000 !important;
     cursor: pointer;
   }
 
-  .wm93smenulistbody {
+  .fbacnmenulistbody {
     width: 100%;
   }
 
-  .wm93slanguages-mobile {
+  .fbacnlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .wm93slanguages-mobile:empty,
-  .wm93slanguages-mobile ul:empty {
+  .fbacnlanguages-mobile:empty,
+  .fbacnlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .wm93slanguages-mobile ul {
+  .fbacnlanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -197,8 +197,8 @@
     justify-content: center;
   }
 
-  /* Dil seçici: TR / EN metin, bordür ve arka plan tema ile uyumlu */
-  .wm93slanguages-mobile li {
+  
+  .fbacnlanguages-mobile li {
     list-style: none;
     border: 1px solid color-mix(in srgb, #ffffff 35%, transparent);
     padding: 0;
@@ -212,7 +212,7 @@
     transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .wm93slanguages-mobile li a {
+  .fbacnlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,29 +227,29 @@
     cursor: pointer;
   }
 
-  .wm93slanguages-mobile li:hover {
+  .fbacnlanguages-mobile li:hover {
     background-color: #ffffff;
     border-color: #000000;
     box-shadow: 0 2px 8px color-mix(in srgb, #000000 25%, transparent);
   }
 
-  .wm93slanguages-mobile li:hover a {
+  .fbacnlanguages-mobile li:hover a {
     color: #000000 !important;
   }
 
-  /* Mobil drawer için backdrop: masaüstünde görünmez */
-  .wm93s-menu-backdrop {
+  
+  .fbacn-menu-backdrop {
     display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    .wm93sbodylogo {
+    .fbacnbodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .wm93stitle {
+    .fbacntitle {
     margin-bottom: -30px;
   }
 
@@ -257,59 +257,59 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .wm93sbody {
+    .fbacnbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .wm93smenulist ul {
+    .fbacnmenulist ul {
       flex-direction: row;
     }
 
-    .wm93sbodylogo {
+    .fbacnbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .wm93stitlebody {
+    .fbacntitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .wm93stitlebodytitle {
+    .fbacntitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
   }
 
-    /* Mobil: app tarzı sağdan kayan drawer menü */
+    
   @media screen and (max-width: 768px) {
-    .wm93stitlebodylang {
+    .fbacntitlebodylang {
       display: none;
     }
 
-    .wm93sbody {
+    .fbacnbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .wm93s-mobile-toggle {
+    .fbacn-mobile-toggle {
       display: inline-flex;
     }
 
-    .wm93sbodylogo {
+    .fbacnbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
-    /* Backdrop: sadece menü açıkken görünür; tıklanınca menü kapanır (onclick ile) */
-    .wm93s-menu-backdrop {
+    
+    .fbacn-menu-backdrop {
       display: block;
       position: fixed;
       inset: 0;
@@ -322,14 +322,14 @@
       cursor: pointer;
     }
 
-    .wm93s.wm93smenu-open .wm93s-menu-backdrop {
+    .fbacn.fbacnmenu-open .fbacn-menu-backdrop {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
-    /* Drawer: sağdan kayan panel, fixed, tam yükseklik; kapalıyken ekran dışında */
-    .wm93smenubody {
+    
+    .fbacnmenubody {
       position: fixed;
       top: 0;
       right: 0;
@@ -349,22 +349,22 @@
       overflow-y: auto;
     }
 
-    .wm93s.wm93smenu-open .wm93smenubody {
+    .fbacn.fbacnmenu-open .fbacnmenubody {
       transform: translateX(0);
     }
 
-    .wm93smenu {
+    .fbacnmenu {
       width: 100%;
       flex-direction: column;
       height: 100%;
     }
 
-    .wm93smenulistbody {
+    .fbacnmenulistbody {
       flex: 1;
       overflow-y: auto;
     }
 
-    .wm93smenulist {
+    .fbacnmenulist {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -374,12 +374,12 @@
       box-shadow: none;
     }
 
-    .wm93s.wm93smenu-open .wm93smenulist {
+    .fbacn.fbacnmenu-open .fbacnmenulist {
       display: flex;
     }
 
-    /* Mobil kural: lang sayfanın (drawer) en altında ve ortada */
-    .wm93s.wm93smenu-open .wm93slanguages-mobile {
+    
+    .fbacn.fbacnmenu-open .fbacnlanguages-mobile {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -391,16 +391,16 @@
       flex-shrink: 0;
     }
 
-    .wm93s.wm93smenu-open .wm93slanguages-mobile ul {
+    .fbacn.fbacnmenu-open .fbacnlanguages-mobile ul {
       justify-content: center;
     }
 
-    .wm93smenulist ul {
+    .fbacnmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .wm93smenulist ul a {
+    .fbacnmenulist ul a {
       font-size: 15px;
       width: 100%;
       padding: 14px 12px;
@@ -411,34 +411,31 @@
       box-sizing: border-box;
     }
 
-    .wm93smenulist ul a:last-child {
+    .fbacnmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .wm93smenulist ul a:hover {
+    .fbacnmenulist ul a:hover {
       background-color: #ffffff;
       border-radius: 0;
     }
 
-    .wm93stitlebodytitle {
+    .fbacntitlebodytitle {
       font-size: 12px;
     }
   }
 
 
-  /* -------------------------------------------------------------------------
-     page-list-text-2: Sadece metin sayfa listesi (2 sütun).
-     Arka plan yok; kartlar ve tipografi webmaker --key-- ile özelleşir.
-  ------------------------------------------------------------------------- */
-  .lrrj4 {
+  
+  .i19t7 {
     width: 100%;
     box-sizing: border-box;
     padding: 24px 16px;
     margin: 0;
   }
 
-  /* İçerik container: ortalanmış, max genişlik, 2 sütun grid */
-  .lrrj4body {
+  
+  .i19t7body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -447,8 +444,8 @@
     box-sizing: border-box;
   }
 
-  /* Kart (link): tıklanabilir, cursor: pointer back.js'de inline; arka plansız hafif kutu */
-  .lrrj4bodyitems {
+  
+  .i19t7bodyitems {
     display: block;
     text-decoration: none;
     padding: 18px 20px;
@@ -462,28 +459,28 @@
     box-shadow: none;
     position: relative;
     overflow: hidden;
-    /* Görünüm animasyonu: hafif fade + kısa slide */
+    
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.35s ease, transform 0.35s ease, border-color 0.2s ease, background-color 0.2s ease;
   }
 
-  .lrrj4bodyitems.right {
+  .i19t7bodyitems.right {
     transform: translateY(10px);
   }
 
-  .lrrj4bodyitems.visible {
+  .i19t7bodyitems.visible {
     opacity: 1;
     transform: translateY(0);
   }
 
-  .lrrj4bodyitems.visible:hover {
+  .i19t7bodyitems.visible:hover {
     border-color: #6ab04c;
     background-color: rgba(0, 0, 0, 0.02);
   }
 
-  /* Sol kenar vurgu çizgisi (accent), hover'da belirir */
-  .lrrj4bodyitems::before {
+  
+  .i19t7bodyitems::before {
     content: "";
     position: absolute;
     left: 0;
@@ -496,18 +493,18 @@
     transition: opacity 0.2s ease;
   }
 
-  .lrrj4bodyitems.visible:hover::before {
+  .i19t7bodyitems.visible:hover::before {
     opacity: 1;
   }
 
-  /* İçerik sarmalayıcı (back.js ile uyumlu) */
-  .lrrj4bodyitem {
+  
+  .i19t7bodyitem {
     position: relative;
     z-index: 1;
   }
 
-  /* Başlık: net hiyerarşi, alt çizgi yok (daha sade) */
-  .lrrj4bodyitemtitle {
+  
+  .i19t7bodyitemtitle {
     display: block;
     font-size: 18px;
     font-weight: 600;
@@ -518,30 +515,30 @@
     transition: color 0.2s ease;
   }
 
-  /* Açıklama metni */
-  .lrrj4bodyitechile {
+  
+  .i19t7bodyitechile {
     font-size: 14px;
     line-height: 1.55;
     margin: 0;
   }
 
-  /* Mobil: tek sütun, daha az gap */
+  
   @media screen and (max-width: 768px) {
-    .lrrj4 {
+    .i19t7 {
       padding: 20px 12px;
     }
-    .lrrj4body {
+    .i19t7body {
       grid-template-columns: 1fr;
       gap: 12px;
     }
-    .lrrj4bodyitems {
+    .i19t7bodyitems {
       padding: 16px 18px;
     }
   }
 
-  /* Tablet: gap orta */
+  
   @media screen and (max-width: 1024px) {
-    .lrrj4body {
+    .i19t7body {
       gap: 16px;
     }
   }
@@ -551,7 +548,7 @@
     background-color: #333;
     color: #fff !important;
     padding: 20px;
-    border-top: 5px solid #000;
+    border-top: 5px solid --bordercolor--;
   }
 
   .footer-top {
