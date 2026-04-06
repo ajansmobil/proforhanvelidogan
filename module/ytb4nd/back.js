@@ -53,18 +53,8 @@ if (backhtml === "" && channelUrl) {
 }
 
 var loopOn = ids.length > 1 ? "true" : "false";
-var delayMs = d.delay != null ? parseInt(d.delay, 10) : 8000;
-if (isNaN(delayMs) || delayMs < 2000) {
-  delayMs = 8000;
-}
-var autoplayBlock =
-  ids.length > 1
-    ? "{ delay: " +
-      delayMs +
-      ", disableOnInteraction: false }"
-    : "false";
 html = html.replace(new RegExp("__YT_LOOP__", "g"), loopOn);
-html = html.replace(new RegExp("__YT_AUTOPLAY__", "g"), autoplayBlock);
+html = html.replace(new RegExp("__YT_AUTOPLAY__", "g"), "false");
 html = html.replace(new RegExp("{{name}}", "g"), safeTitle);
 html = html.replace(new RegExp("{{channel_html}}", "g"), channelHtml);
 html = html.replace(new RegExp("{{html}}", "g"), backhtml);
