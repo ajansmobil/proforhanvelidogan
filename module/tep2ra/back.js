@@ -35,7 +35,13 @@ try {
       langCount++;
       var langUrl = (currentPagePath === "") ? `/${key}/` : `/${key}/${currentPagePath}/`;
       
-      langhtml += `<li><a href="${langUrl}">${key.toUpperCase()}</a></li>`;
+      var isActiveLang = String(key).toLowerCase() === String(json.lang).toLowerCase();
+      var activeAttr = isActiveLang ? ' class="modulex-lang-link-active" aria-current="page"' : "";
+      var labelUpper = String(key).toUpperCase();
+      langhtml +=
+        `<li><a href="${langUrl}"${activeAttr} title="${labelUpper}" aria-label="${labelUpper}">` +
+        `<img class="modulex-lang-flag" width="28" height="28" src="/src/lang/${key}.png" alt="" loading="lazy">` +
+        `</a></li>`;
     }
   }
   if (langCount <= 1) {
